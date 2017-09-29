@@ -11,14 +11,14 @@ echo ""
 sleep 1s
 
 
-doSVD=0
+doSVD=1
 doBayes=1
 useSimpleBinning=0
 
 
 #### anabins, 30/30 for rec/genpt
 ### R = 3
-source run_unfoldMCSpectra.sh 3 1 20 1 ${doBayes} ${doSVD} ${useSimpleBinning}
+#source run_unfoldMCSpectra.sh 3 1 20 1 ${doBayes} ${doSVD} ${useSimpleBinning}
 sleep 0.5s
 ### R = 4
 source run_unfoldMCSpectra.sh 4 1 20 1 ${doBayes} ${doSVD} ${useSimpleBinning}
@@ -31,7 +31,7 @@ useSimpleBinning=1
 
 #### simpbins, 30/30 for rec/genpt
 ### R = 3
-source run_unfoldMCSpectra.sh 3 1 21 1 ${doBayes} ${doSVD} ${useSimpleBinning}
+#source run_unfoldMCSpectra.sh 3 1 21 1 ${doBayes} ${doSVD} ${useSimpleBinning}
 sleep 0.5s
 ### R = 4
 source run_unfoldMCSpectra.sh 4 1 20 1 ${doBayes} ${doSVD} ${useSimpleBinning}

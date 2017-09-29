@@ -375,7 +375,9 @@ int unfoldMCSpectra( std::string inFile_MC_dir , const std::string baseName ,
 	tempCanvForPdfPrint->SetLogy(1);       
 	tempCanvForPdfPrint->SetLogz(1);         } 
 
-  
+  	  //drawing line at slope = 1
+	  TLine* line = new TLine(0,0,100,1000);
+	  
       tempCanvForPdfPrint->Print(open_outPdfFile.c_str()); 
 
 
@@ -396,6 +398,8 @@ int unfoldMCSpectra( std::string inFile_MC_dir , const std::string baseName ,
       hmat->GetXaxis()->SetTitleSize(0.025);
       hmat->GetXaxis()->SetTitle("reco p_{t}");
 
+	
+	  
       // input resp matrix w/ full range ---------------
       tempCanvForPdfPrint->cd();
       
@@ -406,7 +410,6 @@ int unfoldMCSpectra( std::string inFile_MC_dir , const std::string baseName ,
       hmat->SetAxisRange(0.000000000000000001,.001,"Z");
       
       hmat->Draw("COLZ");           
-      
       tempCanvForPdfPrint->Print(outPdfFile.c_str());
       
       // matrix w/ specific range ---------------
@@ -443,6 +446,7 @@ int unfoldMCSpectra( std::string inFile_MC_dir , const std::string baseName ,
       hmat_anabin->SetTitle("ppMC Resp Matrix rebinned");
       
       hmat_anabin->Draw("COLZ");           
+	  line->Draw("SAME");
       
       tempCanvForPdfPrint->Print(outPdfFile.c_str());
 

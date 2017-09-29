@@ -5,8 +5,8 @@
 #data_date="05-25-17"
 #data_date_condor="5.25.17"
 #data_outCondorDir="${data_date_condor}_outputCondor"
-MC_date="06-05-17"
-MC_date_condor="6.05.17"
+MC_date="09-21-17"
+MC_date_condor="09.21.17"
 MC_outCondorDir="${MC_date_condor}_outputCondor"
 ##CONST
 
