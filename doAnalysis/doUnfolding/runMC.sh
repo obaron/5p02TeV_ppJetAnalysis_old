@@ -21,7 +21,7 @@ useSimpleBinning=0
 #source run_unfoldMCSpectra.sh 3 1 20 1 ${doBayes} ${doSVD} ${useSimpleBinning}
 sleep 0.5s
 ### R = 4
-source run_unfoldMCSpectra.sh 4 1 20 1 ${doBayes} ${doSVD} ${useSimpleBinning}
+source run_unfoldMCSpectra.sh 4 1 31 1 ${doBayes} ${doSVD} ${useSimpleBinning}
 sleep 0.5s
 #### R = 5
 #source run_unfoldMCSpectra.sh 5 1 20 1 ${doBayes} ${doSVD} ${useSimpleBinning}
@@ -34,7 +34,7 @@ useSimpleBinning=1
 #source run_unfoldMCSpectra.sh 3 1 21 1 ${doBayes} ${doSVD} ${useSimpleBinning}
 sleep 0.5s
 ### R = 4
-source run_unfoldMCSpectra.sh 4 1 20 1 ${doBayes} ${doSVD} ${useSimpleBinning}
+source run_unfoldMCSpectra.sh 4 1 7 1 ${doBayes} ${doSVD} ${useSimpleBinning}
 sleep 0.5s
 #### R = 5
 #source run_unfoldMCSpectra.sh 5 1 20 1 ${doBayes} ${doSVD} ${useSimpleBinning}

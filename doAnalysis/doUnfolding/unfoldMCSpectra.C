@@ -376,7 +376,7 @@ int unfoldMCSpectra( std::string inFile_MC_dir , const std::string baseName ,
 	tempCanvForPdfPrint->SetLogz(1);         } 
 
   	  //drawing line at slope = 1
-	  TLine* line = new TLine(0,0,100,1000);
+	  TLine* line = new TLine(0,0,1000,1000);
 	  
       tempCanvForPdfPrint->Print(open_outPdfFile.c_str()); 
 
@@ -523,7 +523,7 @@ int unfoldMCSpectra( std::string inFile_MC_dir , const std::string baseName ,
 
 
       hmat_anabin_colnormd->SetAxisRange(0.00001,10,"Z");            
-      hmat_anabin_colnormd->SetTitle("Resp Matrix, Columns Normallized");
+      hmat_anabin_colnormd->SetTitle("Resp Matrix, Columns Normalized");
       hmat_anabin_colnormd->Draw("COLZ");                 
 
       tempCanvForPdfPrint->Print(outPdfFile.c_str());
@@ -550,7 +550,7 @@ int unfoldMCSpectra( std::string inFile_MC_dir , const std::string baseName ,
 
 
       hmat_anabin_rownormd->SetAxisRange(0.00001,10,"Z");            
-      hmat_anabin_rownormd->SetTitle("Resp Matrix, Rows Normallized");
+      hmat_anabin_rownormd->SetTitle("Resp Matrix, Rows Normalized");
       hmat_anabin_rownormd->Draw("COLZ");                 
 
       tempCanvForPdfPrint->Print(outPdfFile.c_str());
@@ -580,7 +580,7 @@ int unfoldMCSpectra( std::string inFile_MC_dir , const std::string baseName ,
 
     // RooUnfoldResponse, Bayes --------------------
     std::cout<<"calling RooUnfoldResponse "<<std::endl;
-    RooUnfoldResponse roo_resp( hrec_resp_anabin, hgen_resp_anabin, hmat_anabin, ("Response_matrix"+RandEtaRange).c_str()) ;
+    RooUnfoldResponse roo_resp( hrec_resp_anabin, hgen_resp_anabin, hmat_anabin_rownormd, ("Response_matrix"+RandEtaRange).c_str()) ;
     roo_resp.UseOverflow(doOverUnderflows);    
         
 
@@ -882,7 +882,7 @@ int unfoldMCSpectra( std::string inFile_MC_dir , const std::string baseName ,
     // setup RooUnfoldResponse, and histogram arrays
     std::cout<<"calling RooUnfoldResponse"<<std::endl;
 
-    RooUnfoldResponse roo_resp(hrec_resp_anabin, hgen_resp_anabin, hmat_anabin, ("Response_matrix_anabin"+Rstring).c_str());    
+    RooUnfoldResponse roo_resp(hrec_resp_anabin, hgen_resp_anabin, hmat_anabin_rownormd, ("Response_matrix_anabin"+Rstring).c_str());    
     roo_resp.UseOverflow(doOverUnderflows);
 
 
