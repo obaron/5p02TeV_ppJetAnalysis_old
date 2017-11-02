@@ -1,95 +1,71 @@
 #!/bin/bash
 
-echo ""
-echo "compiling unfoldMCSpectra"
-echo ""
-rooUnfoldCompile unfoldMCSpectra.C
+### ----------------------------------------------------------------------------------
 
-echo ""
-echo "done compiling unfoldMCSpectra"
-echo ""
-sleep 1s
+dirTag=$1
+MM=$2
+DD=$3
+YY=$4
+runBayes=$5
+runSVD=$6
 
+condorDate="${MM}.${DD}.${YY}"
+sampleDate="${MM}-${DD}-${YY}"
 
-doSVD=1
-doBayes=1
-useSimpleBinning=0
+### ----------------------------------------------------------------------------------
+if [ $runBayes -eq 1 ]
+then
 
+    source run_bayesUnfoldMCSpectra.sh  "4" "${condorDate}_outputCondor" "${sampleDate}" "0.0eta2.0${dirTag}" "Bayes_00eta20_${condorDate}${dirTag}" 0
+    #source run_bayesUnfoldMCSpectra.sh  "4" "${condorDate}_outputCondor" "${sampleDate}" "0.0eta2.0${dirTag}" "Bayes_00eta20_${condorDate}${dirTag}" 1
+    
+#source run_bayesUnfoldMCSpectra.sh "4" "10.03.17_outputCondor" "10-03-17" "0.0eta2.0" "Bayes_00eta20_10.9.17" 6 0
+#source run_bayesUnfoldMCSpectra.sh "4" "10.03.17_outputCondor" "10-03-17" "0.0eta2.0" "Bayes_00eta20_10.9.17_alt2" 6 0
+#source run_bayesUnfoldMCSpectra.sh "4" "10.03.17_outputCondor" "10-03-17" "0.0eta2.0" "Bayes_00eta20_10.9.17" 6 1
+    
+    echo ""
+    echo "Bayes MC Unfolding Done."
+    echo ""
+    
+fi
 
-#### anabins, 30/30 for rec/genpt
-### R = 3
-#source run_unfoldMCSpectra.sh 3 1 20 1 ${doBayes} ${doSVD} ${useSimpleBinning}
-sleep 0.5s
-### R = 4
-source run_unfoldMCSpectra.sh 4 1 31 1 ${doBayes} ${doSVD} ${useSimpleBinning}
-sleep 0.5s
-#### R = 5
-#source run_unfoldMCSpectra.sh 5 1 20 1 ${doBayes} ${doSVD} ${useSimpleBinning}
-#sleep 0.5s
-
-useSimpleBinning=1
-
-#### simpbins, 30/30 for rec/genpt
-### R = 3
-#source run_unfoldMCSpectra.sh 3 1 21 1 ${doBayes} ${doSVD} ${useSimpleBinning}
-sleep 0.5s
-### R = 4
-source run_unfoldMCSpectra.sh 4 1 7 1 ${doBayes} ${doSVD} ${useSimpleBinning}
-sleep 0.5s
-#### R = 5
-#source run_unfoldMCSpectra.sh 5 1 20 1 ${doBayes} ${doSVD} ${useSimpleBinning}
-#sleep 0.5s
-
-
-
-
-##### anabins, 40/40 for rec/genpt
-#### R = 3
-#source run_unfoldMCSpectra.sh 3 1 25 1 ${doBayes} ${doSVD} ${useSimpleBinning}
-#sleep 0.5s
-#### R = 4
-#source run_unfoldMCSpectra.sh 4 1 25 1 ${doBayes} ${doSVD} ${useSimpleBinning}
-#sleep 0.5s
-#### R = 5
-#source run_unfoldMCSpectra.sh 5 1 21 1 ${doBayes} ${doSVD} ${useSimpleBinning}
-#sleep 0.5s
-#
-#useSimpleBinning=1
-
-#### simpbins, 40/40 for rec/genpt
-#### R = 3
-#source run_unfoldMCSpectra.sh 3 1 19 1 ${doBayes} ${doSVD} ${useSimpleBinning}
-#sleep 0.5s
-#### R = 4
-#source run_unfoldMCSpectra.sh 4 1 18 1 ${doBayes} ${doSVD} ${useSimpleBinning}
-#sleep 0.5s
-#### R = 5
-#source run_unfoldMCSpectra.sh 5 1 21 1 ${doBayes} ${doSVD} ${useSimpleBinning}
-#sleep 0.5s
-#echo ""
-#echo "done."
-#echo ""
-
-
-
-
-###### anabins, 40/40 for low kReg
-#### R = 3
-#source run_unfoldMCSpectra.sh 3 1 13 1 ${doBayes} ${doSVD} ${useSimpleBinning}
-#sleep 0.5s
-#### R = 4
-#source run_unfoldMCSpectra.sh 4 1 13 1 ${doBayes} ${doSVD} ${useSimpleBinning}
-#sleep 0.5s
-#### R = 5
-#source run_unfoldMCSpectra.sh 5 1 13 1 ${doBayes} ${doSVD} ${useSimpleBinning}
-#sleep 0.5s
-
-
+### ----------------------------------------------------------------------------------
+if [ $runSVD -eq 1 ]
+then
+    
+    source run_SVDUnfoldMCSpectra.sh "4" "${condorDate}_outputCondor" "${sampleDate}" "0.0eta2.0${dirTag}" "SVD_00eta20_${condorDate}${dirTag}" 5 0
+    source run_SVDUnfoldMCSpectra.sh "4" "${condorDate}_outputCondor" "${sampleDate}" "0.0eta2.0${dirTag}" "SVD_00eta20_${condorDate}${dirTag}" 5 1
+    
+#source run_SVDUnfoldMCSpectra.sh "4" "10.03.17_outputCondor" "10-03-17" "0.0eta2.0" "SVD_00eta20_10.9.17" 6 0
+#source run_SVDUnfoldMCSpectra.sh "4" "10.03.17_outputCondor" "10-03-17" "0.0eta2.0" "SVD_00eta20_10.9.17_alt2" 6 0
+#source run_SVDUnfoldMCSpectra.sh "4" "10.03.17_outputCondor" "10-03-17" "0.0eta2.0" "SVD_00eta20_10.9.17" 6 1
+    
+    echo ""
+    echo "SVD MC Unfolding Done."
+    echo ""
+    
+fi
 
 
 echo ""
-echo "done."
+echo "done unfolding MC."
 echo ""
 
+return
 
-return 
+### ----------------------------------------------------------------------------------
+
+#source run_unfoldMCSpectra.sh <R> <condorDir>          <date_output> <etaBin>    <outputTag> <kReg> <useSimpleBinning>
+
+#source run_unfoldMCSpectra.sh "4" "10.02.17_outputCondor" "10-02-17" "0.0eta2.0" "00eta20_10.2.17" 10 0
+#source run_unfoldMCSpectra.sh "4" "10.02.17_outputCondor" "10-02-17" "0.0eta2.0" "00eta20_10.2.17" 6 1
+
+#source run_unfoldMCSpectra.sh "4" "10.03.17_outputCondor" "10-03-17" "0.0eta2.0" "00eta20_10.3.17" 6 0
+#source run_unfoldMCSpectra.sh "4" "10.03.17_outputCondor" "10-03-17" "0.0eta2.0" "00eta20_10.3.17" 6 1
+
+echo ""
+echo "done unfolding MC."
+echo ""
+
+return
+

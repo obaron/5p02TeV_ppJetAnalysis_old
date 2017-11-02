@@ -9,8 +9,9 @@ function hadd_ppMC_allInDir(){
         echo "hadd_ppMC_allInDir <radiusInt> "
         return
     fi
+    echo "in dir $PWD"
     R=$1
-    hadd Py8_CUETP8M1_QCDjetAllPtBins_ak${R}PF-allFiles.root *.root
+    hadd Py8_CUETP8M1_QCDjetAllPtBins_ak${R}PF-allFiles.root ./*.root
     return
 }
 
@@ -21,6 +22,8 @@ function hadd_ppData_allInDir(){
         echo "hadd_ppData_allInDir <radiusInt> "
         return
     fi
+    R=$1
+    echo "in dir $PWD"
     hadd HighPtJetTrig_ak${R}PF-allFiles.root ./ppData*/*.root
     return
 }
@@ -58,7 +61,7 @@ date_scratch=$3
 etabin=$4
 type=$5
 
-workingDir=$PWD
+
 
 #theSCRATCHdir=${SCRATCH}/5p02TeV_ppJetAnalysis/readForests/${date_scratch}_outputCondor/
 #theSCRATCHdir=/cms/heavyion/ilaflott/T2_US_MIT_SCRATCH/5p02TeV_ppJetAnalysis/readForests/${date_scratch}_outputCondor/
@@ -76,6 +79,7 @@ fi
 
 
 
+
 ##########################################################################################
 #### HADD N MOVE ppMC JOBS
 ##########################################################################################
@@ -86,8 +90,9 @@ then
     echo ""
     sleep 1s
     
+    ppMCjetPlotsDir=ppMC_Py8_CUETP8M1_QCDjetAllPtBins_ak${R}PFJets_${date_output}_${etabin}/
     #ppMCjetPlotsDir=ppMC_Py8_CUETP8M1_QCDjetAllPtBins_ak${R}PFJets_${date_output}_jetPlots_${etabin}/
-    ppMCjetPlotsDir=ppMC_Py8_CUETP8M1_QCDjetAllPtBins_ak${R}PFJets_${date_output}_JERS_${etabin}
+    #ppMCjetPlotsDir=ppMC_Py8_CUETP8M1_QCDjetAllPtBins_ak${R}PFJets_${date_output}_JERS_${etabin}
     sleep 1s
     
     
@@ -97,10 +102,11 @@ then
     echo ""
     echo "done hadding ppMC"
     echo ""
+
     cd ${workingDir}
     sleep 1s
         
-    cp --parents ppMC*/*allFiles*.root 4scp/
+    cp --parents $ppMCjetPlotsDir/*allFiles*.root 4scp/
     
     echo ""
     echo "moving ppMC to ${theSCRATCHdir}"
@@ -122,7 +128,8 @@ then
     echo ""
     sleep 1s
     
-    ppDataHPtDir=ppData_HighPtJetTrig_ak${R}PFJets_${date_output}_jetPlots_${etabin}/    
+    #ppDataHPtDir=ppData_HighPtJetTrig_ak${R}PFJets_${date_output}_jetPlots_${etabin}/    
+    ppDataHPtDir=ppData_HighPtJetTrig_ak${R}PFJets_${date_output}_jetMult_${etabin}/    
     mkdir ${ppDataHPtDir}
     sleep 1s
 
@@ -131,8 +138,10 @@ then
     echo ""
     sleep 1s
     
-    ppDatajet80=ppData_HighPtJet80_ak${R}PFJets_${date_output}_jetPlots_${etabin}/
-    ppDatalowJets=ppData_HighPtLowerJets_ak${R}PFJets_${date_output}_jetPlots_${etabin}/
+    #ppDatajet80=ppData_HighPtJet80_ak${R}PFJets_${date_output}_jetPlots_${etabin}/
+    #ppDatalowJets=ppData_HighPtLowerJets_ak${R}PFJets_${date_output}_jetPlots_${etabin}/
+    ppDatajet80=ppData_HighPtJet80_ak${R}PFJets_${date_output}_jetMult_${etabin}/
+    ppDatalowJets=ppData_HighPtLowerJets_ak${R}PFJets_${date_output}_jetMult_${etabin}/
     mv ${ppDatajet80} ${ppDataHPtDir}
     mv ${ppDatalowJets} ${ppDataHPtDir}
     cd ${ppDataHPtDir}
@@ -152,7 +161,8 @@ then
     cd ${workingDir}
     sleep 1s
     
-    cp --parents ppData*/*allFiles*.root 4scp/
+    cp --parents $ppDataHPtDir/*allFiles*.root 4scp/
+    
     
     echo ""
     echo "moving to SCRATCH space"
@@ -164,7 +174,8 @@ fi
 
 
 echo ""
-echo "done"
+echo "done. output in"
+echo "${theSCRATCHdir}"
 echo ""
 
 return 
