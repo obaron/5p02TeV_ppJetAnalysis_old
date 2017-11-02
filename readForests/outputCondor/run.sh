@@ -4,10 +4,10 @@ echo ""
 echo "rename/hadd'ing..."
 echo ""
 
-localDir=/Users/ilaflott/Working/Dropbox/localAnalysis/src/5p02TeV_ppJetAnalysis-master/doAnalysis/printPlots/outputCondor
+localDir=/home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/readForests/outputCondor
 
 MM="09"
-DD="13"
+DD="21"
 YY="17"
 
 rm -rf 4scp/pp*
@@ -26,9 +26,9 @@ cp -r pp* backup/.
 
 
 source renameNhadd.sh 4 "${MM}-${DD}-${YY}" "${MM}.${DD}.${YY}" "0.0eta0.5" "ppMC"
-source renameNhadd.sh 4 "${MM}-${DD}-${YY}" "${MM}.${DD}.${YY}" "0.5eta1.0" "ppMC"
-source renameNhadd.sh 4 "${MM}-${DD}-${YY}" "${MM}.${DD}.${YY}" "1.0eta1.5" "ppMC"
-source renameNhadd.sh 4 "${MM}-${DD}-${YY}" "${MM}.${DD}.${YY}" "1.5eta2.0" "ppMC"
+#source renameNhadd.sh 4 "${MM}-${DD}-${YY}" "${MM}.${DD}.${YY}" "0.5eta1.0" "ppMC"
+#source renameNhadd.sh 4 "${MM}-${DD}-${YY}" "${MM}.${DD}.${YY}" "1.0eta1.5" "ppMC"
+#source renameNhadd.sh 4 "${MM}-${DD}-${YY}" "${MM}.${DD}.${YY}" "1.5eta2.0" "ppMC"
 
 #source renameNhadd.sh 4 "${MM}-${DD}-${YY}" "${MM}.${DD}.${YY}" "0.0eta0.5" "ppMC"
 #source renameNhadd.sh 4 "${MM}-${DD}-${YY}" "${MM}.${DD}.${YY}" "0.5eta1.0" "ppMC"

@@ -20,10 +20,11 @@ echo ""
 #source run_readForests_JERS.sh 4 "0.0" "0.5"
 #sleep 60s
 source run_readForests_JERS.sh 4 "0.5" "1.0"
+source run_readForests_JERS.sh 3 "0.5" "1.0"
 #sleep 60s
-source run_readForests_JERS.sh 4 "1.0" "1.5"
+#source run_readForests_JERS.sh 4 "1.0" "1.5"
 #sleep 60s
-source run_readForests_JERS.sh 4 "1.5" "2.0"
+#source run_readForests_JERS.sh 4 "1.5" "2.0"
 #sleep 60s
 #source run_readForests_JERS.sh 4 "2.0" "2.5"
 #sleep 60s
@@ -70,7 +71,7 @@ rootcompile readForests_ppData_jetPlots.C
 #sleep 60s
 
 ### INCL. JET SPECTRA, LARGER |y| REGIONS
-source run_readForests_jetPlots.sh 4 "0.0" "2.0"
+#source run_readForests_jetPlots.sh 4 "0.0" "2.0"
 #source run_readForests_jetPlots.sh 4 "2.0" "3.0"
 #source run_readForests_jetPlots.sh 4 "3.2" "4.7"
 #sleep 60s

@@ -19,13 +19,13 @@ const std::string defMCInFilelist="filelists/test_readForests_ppMC_Py8_CUETP8M1_
 const std::string defMCOutputName="readForests_ppMC_JERS_defOut.root";
 int readForests_ppMC_JERS( std::string inFilelist=defMCInFilelist, int startfile=0, int endfile=20,
 			   int radius=4, std::string jetType="PF",
-			   bool debugMode=true, 
+			   bool debugMode=true,
 			   std::string outfile=defMCOutputName,
 			   float jtEtaCutLo=0., float jtEtaCutHi=4.7      );
 
 //const int readForestsArgCount=7+minArgs;
-const float jtPtCut     = 20.  ;
-const float genJetPtCut = 20. ;
+const float jtPtCut     = 32.  ;
+const float genJetPtCut = 32. ;
 
 const int genptBin1Low = 56 , genptBin1High = 64 ;	 
 const int genptBin2Low = 64 , genptBin2High  = 74 ;

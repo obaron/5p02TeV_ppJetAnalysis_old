@@ -24,6 +24,6 @@ echo ""
 echo "done submitting JERS job(s)"
 echo ""
 
-condor_q ilaflott
+condor_q obaron
 
 return

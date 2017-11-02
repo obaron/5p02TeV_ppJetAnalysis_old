@@ -135,14 +135,14 @@ TH2F* normalizeCol_RespMatrix( TH2F* inputTH2,
   //double numEntries=inputTH2->GetEntries();
   
   int xstart=1;
-  TAxis *xaxis = inputTH2->GetXaxis();
+  TAxis *xaxis = inputTH2->GetXaxis(); //get x-axis and bins from input histo
   int nbins_x= xaxis->GetNbins();
   
   int ystart=1;
-  TAxis *yaxis = inputTH2->GetYaxis();
+  TAxis *yaxis = inputTH2->GetYaxis(); //likewise for y-axis
   int nbins_y = yaxis->GetNbins();
   
-  const int colSums_len=nbins_x;
+  const int colSums_len=nbins_x; //huh?
   float colSums[colSums_len]={0.};
   float colSumErrs[colSums_len]={0.};
 
@@ -161,8 +161,8 @@ TH2F* normalizeCol_RespMatrix( TH2F* inputTH2,
       theSumErr+=(theValErr*theValErr);
     }
 
-    colSums[colNum]=theSum;
-    colSumErrs[colNum]=std::sqrt(theSumErr);
+    colSums[colNum]=theSum; //sum of a given column
+    colSumErrs[colNum]=std::sqrt(theSumErr); //calculated error of column sum; this should be the error of the integral
   }
   std::cout<<std::endl;
 
