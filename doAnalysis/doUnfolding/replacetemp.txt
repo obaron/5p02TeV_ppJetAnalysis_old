@@ -1,0 +1,14 @@
+# Unmerged paths:
+#   (use "git add/rm <file>..." as appropriate to mark resolution)
+
+O       both modified:      doAnalysis/doUnfolding/runMC.sh
+O       both modified:      doAnalysis/doUnfolding/run_unfoldMCSpectra.sh
+       deleted by them:    doAnalysis/doUnfolding/unfoldMCSpectra.C
+O      both modified:      doAnalysis/doUnfolding/unfoldSpectra.h
+O      both modified:      doAnalysis/doUnfolding/unfoldSpectra_TH2_funcs.h
+O      both modified:      doAnalysis/doUnfolding/unfoldSpectra_anabins.h
+O      both modified:      doAnalysis/doUnfolding/unfoldSpectra_simpbins.h
+O       both modified:      readForests/outputCondor/renameNhadd.sh
+O      both modified:      readForests/outputCondor/run.sh
+O      both modified:      readForests/readForests_JERS.h
+O      both modified:      readForests/run.sh

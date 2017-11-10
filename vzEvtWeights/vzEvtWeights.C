@@ -42,18 +42,18 @@
 
 //CMSSW_BASE
 const std::string CMSSW_BASE= 
-  "/net/hisrv0001/home/ilaflott/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/";
+  "/home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/";
 const std::string SCRATCH_BASE= 
-  "/export/d00/scratch/ilaflott/5p02TeV_ppJetAnalysis/readForests/";
+  "/cms/heavyion/ilaflott/T2_US_MIT_SCRATCH/5p02TeV_ppJetAnalysis/readForests/";
 
 const std::string input_dir=SCRATCH_BASE;//+"4.07.16_outputCondor/readForests_HIJetRECO_4-07-17/";
 //const std::string readForests_condor_dir=CMSSW_BASE+"src/readForests/outputCondor";
 
-const std::string ppData_inCondorDir=input_dir+"7.25.17_outputCondor/ppData_HighPtJetTrig_ak4PFJets_07-25-17_jetPlots_0.0eta0.5/";
+const std::string ppData_inCondorDir=input_dir+"10.11.17_outputCondor/ppData_HighPtJetTrig_ak4PFJets_10-11-17_jetPlots_0.0eta2.0_rec56_HLTCalo/";
 const std::string input_ppData_Filename=ppData_inCondorDir+"HighPtJetTrig_ak4PF-allFiles.root";
 //const std::string input_ppData_Filename="HighPtJetTrig_ak4PF-allFiles.root";
 
-const std::string ppMC_inCondorDir  =input_dir+"7.25.17_outputCondor/ppMC_Py8_CUETP8M1_QCDjetAllPtBins_ak4PFJets_07-25-17_jetPlots_0.0eta0.5/";
+const std::string ppMC_inCondorDir  =input_dir+"10.11.17_outputCondor/ppMC_Py8_CUETP8M1_QCDjetAllPtBins_ak4PFJets_10-11-17_JERS_0.0eta2.0_rec56_gen32_HLTCalo/";
 const std::string input_ppMC_Filename=ppMC_inCondorDir+"Py8_CUETP8M1_QCDjetAllPtBins_ak4PF-allFiles.root";
 //const std::string input_ppMC_Filename="Py8_CUETP8M1_QCDjetAllPtBins_ak4PF-allFiles.root";
 
@@ -107,7 +107,10 @@ int main (int argc, char *argv[]){
   theMCEvtQAHist->Scale( 1/theMCEvtQAHist->GetBinWidth(0) );
   theMCEvtQAHist->Scale( theDataEvtQAHist->Integral()/theMCEvtQAHist->Integral() );
   
-  TH1F *theRatio=(TH1F*)theDataEvtQAHist->Clone("theDataHistClone");
+  //TH1F *theRatio=(TH1F*)theDataEvtQAHist->Clone("theDataHistClone"); I'm going to replace this with the rebin which should make its own clone
+  TH1F *theRatio = (TH1F*)theDataEvtQAHist->Rebin(2,"theDataHistClone");
+  theDataHistClone->GetBinWidth(1);
+  
   theRatio->Divide(theMCEvtQAHist);
   //theRatio->Draw();  
   //theRatio->SetLineColor( altRatioLineColor1 );
