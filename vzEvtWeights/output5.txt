@@ -1,0 +1,1001 @@
+ now opening Data File 
+/cms/heavyion/ilaflott/T2_US_MIT_SCRATCH/5p02TeV_ppJetAnalysis/readForests/10.11.17_outputCondor/ppData_HighPtJetTrig_ak4PFJets_10-11-17_jetPlots_0.0eta2.0_rec56_HLTCalo/HighPtJetTrig_ak4PF-allFiles.root
+
+
+NEvents in dataset=60465239
+NEvents passing vz/skim cut=60347126
+
+
+Lumi Efficiency post vz+skim cuts=NEvents_vzCut/NEvents =LumiEff_vz =0.998047
+
+
+effective Intgrted Lumi =2.77457e+07
+
+ now opening MC File 
+/cms/heavyion/ilaflott/T2_US_MIT_SCRATCH/5p02TeV_ppJetAnalysis/readForests/10.11.17_outputCondor/ppMC_Py8_CUETP8M1_QCDjetAllPtBins_ak4PFJets_10-11-17_JERS_0.0eta2.0_rec56_gen32_HLTCalo/Py8_CUETP8M1_QCDjetAllPtBins_ak4PF-allFiles.root
+
+Error in <TFormula::Compile>:  Bad numerical expression : "gauss"
+Error in <TF1::TF1>: function: fgauss/gauss has 0 parameters instead of 1
+Error in <Fit>: function is zombie
+Fit Status: -2, Fit Error: 0
+float-division says NBins=480 (exactly)
+int-typecast says NBins=480
+now grabbing vzWeights for 480 bins for ( -24< vz <24 )
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==0, vzWeight=0 , vzLow=-24
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==1, vzWeight=0
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==2, vzWeight=0
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==3, vzWeight=0
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==4, vzWeight=0
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==5, vzWeight=0 , vzLow=-23.5
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==6, vzWeight=0
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==7, vzWeight=0
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==8, vzWeight=0.0517853
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==9, vzWeight=0.0750007
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==10, vzWeight=0.0249748 , vzLow=-23
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==11, vzWeight=0.0215821
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==12, vzWeight=0.0700952
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==13, vzWeight=0.0736384
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==14, vzWeight=0.125229
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==15, vzWeight=0.0458415 , vzLow=-22.5
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==16, vzWeight=0.0439558
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==17, vzWeight=0.0403531
+bin content = 7.71291e-05
+i==18, vzWeight=0.0569556
+bin content = 5.55041e-05
+i==19, vzWeight=0.0621536
+bin content = 0.000144887
+i==20, vzWeight=0.0870667 , vzLow=-22
+bin content = 0.000144887
+i==21, vzWeight=0.0762312
+bin content = 0.000142004
+i==22, vzWeight=0.052972
+bin content = 3.74833e-05
+i==23, vzWeight=0.111043
+bin content = 6.05499e-05
+i==24, vzWeight=0.0722402
+bin content = 8.07332e-05
+i==25, vzWeight=0.0858987 , vzLow=-21.5
+bin content = 0.000174441
+i==26, vzWeight=0.114306
+bin content = 0.000183812
+i==27, vzWeight=0.0720754
+bin content = 0.0002076
+i==28, vzWeight=0.0612768
+bin content = 0.000151375
+i==29, vzWeight=0.0924849
+bin content = 0.000247966
+i==30, vzWeight=0.0619599 , vzLow=-21
+bin content = 0.000376995
+i==31, vzWeight=0.072883
+bin content = 0.000182371
+i==32, vzWeight=0.0899396
+bin content = 0.000142004
+i==33, vzWeight=0.0563365
+bin content = 0.000304912
+i==34, vzWeight=0.070509
+bin content = 0.000179487
+i==35, vzWeight=0.113079 , vzLow=-20.5
+bin content = 0.000339512
+i==36, vzWeight=0.0785287
+bin content = 8.36166e-05
+i==37, vzWeight=0.0955366
+bin content = 0.000248687
+i==38, vzWeight=0.092898
+bin content = 0.000206879
+i==39, vzWeight=0.122386
+bin content = 0.000209762
+i==40, vzWeight=0.0919298 , vzLow=-20
+bin content = 0.000487283
+i==41, vzWeight=0.0890711
+bin content = 0.000373391
+i==42, vzWeight=0.0652374
+bin content = 0.000356091
+i==43, vzWeight=0.0989131
+bin content = 0.000271033
+i==44, vzWeight=0.0665617
+bin content = 0.000420966
+i==45, vzWeight=0.0925861 , vzLow=-19.5
+bin content = 0.000338791
+i==46, vzWeight=0.133002
+bin content = 0.000278962
+i==47, vzWeight=0.121556
+bin content = 0.000552158
+i==48, vzWeight=0.14507
+bin content = 0.000305633
+i==49, vzWeight=0.111634
+bin content = 0.000326537
+i==50, vzWeight=0.11184 , vzLow=-19
+bin content = 0.000253012
+i==51, vzWeight=0.096257
+bin content = 0.000314283
+i==52, vzWeight=0.116124
+bin content = 0.000480795
+i==53, vzWeight=0.1265
+bin content = 0.000604058
+i==54, vzWeight=0.132096
+bin content = 0.000463495
+i==55, vzWeight=0.147684 , vzLow=-18.5
+bin content = 0.00040727
+i==56, vzWeight=0.127302
+bin content = 0.000430337
+i==57, vzWeight=0.151232
+bin content = 0.000327258
+i==58, vzWeight=0.170747
+bin content = 0.000323654
+i==59, vzWeight=0.128507
+bin content = 0.000550716
+i==60, vzWeight=0.15509 , vzLow=-18
+bin content = 0.000391412
+i==61, vzWeight=0.16225
+bin content = 0.000219854
+i==62, vzWeight=0.169334
+bin content = 0.000858512
+i==63, vzWeight=0.155401
+bin content = 0.000557924
+i==64, vzWeight=0.154634
+bin content = 0.000721553
+i==65, vzWeight=0.148014 , vzLow=-17.5
+bin content = 0.000630008
+i==66, vzWeight=0.153017
+bin content = 0.000622078
+i==67, vzWeight=0.164199
+bin content = 0.000619916
+i==68, vzWeight=0.153808
+bin content = 0.00037195
+i==69, vzWeight=0.186748
+bin content = 0.000615591
+i==70, vzWeight=0.20684 , vzLow=-17
+bin content = 0.000495212
+i==71, vzWeight=0.19668
+bin content = 0.00069272
+i==72, vzWeight=0.194294
+bin content = 0.000825353
+i==73, vzWeight=0.218358
+bin content = 0.000651633
+i==74, vzWeight=0.206125
+bin content = 0.000539904
+i==75, vzWeight=0.192908 , vzLow=-16.5
+bin content = 0.000839049
+i==76, vzWeight=0.20658
+bin content = 0.000430337
+i==77, vzWeight=0.22707
+bin content = 0.00106827
+i==78, vzWeight=0.248399
+bin content = 0.000604778
+i==79, vzWeight=0.238024
+bin content = 0.00126218
+i==80, vzWeight=0.261386 , vzLow=-16
+bin content = 0.00106611
+i==81, vzWeight=0.240991
+bin content = 0.00103872
+i==82, vzWeight=0.237626
+bin content = 0.000999074
+i==83, vzWeight=0.263513
+bin content = 0.000970241
+i==84, vzWeight=0.270379
+bin content = 0.00110287
+i==85, vzWeight=0.272804 , vzLow=-15.5
+bin content = 0.000795078
+i==86, vzWeight=0.307887
+bin content = 0.000890949
+i==87, vzWeight=0.321623
+bin content = 0.0013148
+i==88, vzWeight=0.290896
+bin content = 0.00116126
+i==89, vzWeight=0.283696
+bin content = 0.000816703
+i==90, vzWeight=0.337669 , vzLow=-15
+bin content = 0.000890949
+i==91, vzWeight=0.320236
+bin content = 0.00140851
+i==92, vzWeight=0.338771
+bin content = 0.00128164
+i==93, vzWeight=0.322936
+bin content = 0.00149573
+i==94, vzWeight=0.333338
+bin content = 0.00186479
+i==95, vzWeight=0.333281 , vzLow=-14.5
+bin content = 0.00156925
+i==96, vzWeight=0.402355
+bin content = 0.00152312
+i==97, vzWeight=0.388359
+bin content = 0.00146113
+i==98, vzWeight=0.369057
+bin content = 0.00205581
+i==99, vzWeight=0.389849
+bin content = 0.00185831
+i==100, vzWeight=0.3931 , vzLow=-14
+bin content = 0.00173721
+i==101, vzWeight=0.38523
+bin content = 0.00256256
+i==102, vzWeight=0.426224
+bin content = 0.00150077
+i==103, vzWeight=0.413295
+bin content = 0.0018338
+i==104, vzWeight=0.422349
+bin content = 0.00179415
+i==105, vzWeight=0.425863 , vzLow=-13.5
+bin content = 0.00226558
+i==106, vzWeight=0.446469
+bin content = 0.00195634
+i==107, vzWeight=0.457987
+bin content = 0.00215745
+i==108, vzWeight=0.425318
+bin content = 0.00170909
+i==109, vzWeight=0.446969
+bin content = 0.0024775
+i==110, vzWeight=0.481663 , vzLow=-13
+bin content = 0.00273051
+i==111, vzWeight=0.495915
+bin content = 0.0025294
+i==112, vzWeight=0.497501
+bin content = 0.00276656
+i==113, vzWeight=0.504444
+bin content = 0.00262455
+i==114, vzWeight=0.479111
+bin content = 0.00280981
+i==115, vzWeight=0.502409 , vzLow=-12.5
+bin content = 0.00350757
+i==116, vzWeight=0.502393
+bin content = 0.00261806
+i==117, vzWeight=0.51403
+bin content = 0.00345639
+i==118, vzWeight=0.523813
+bin content = 0.00352055
+i==119, vzWeight=0.551032
+bin content = 0.0026988
+i==120, vzWeight=0.53486 , vzLow=-12
+bin content = 0.00329493
+i==121, vzWeight=0.541757
+bin content = 0.00359047
+i==122, vzWeight=0.545387
+bin content = 0.00355731
+i==123, vzWeight=0.583327
+bin content = 0.00399846
+i==124, vzWeight=0.547069
+bin content = 0.00375842
+i==125, vzWeight=0.608359 , vzLow=-11.5
+bin content = 0.00460179
+i==126, vzWeight=0.613335
+bin content = 0.0038579
+i==127, vzWeight=0.590613
+bin content = 0.00367264
+i==128, vzWeight=0.628671
+bin content = 0.00438555
+i==129, vzWeight=0.63898
+bin content = 0.00378509
+i==130, vzWeight=0.652757 , vzLow=-11
+bin content = 0.00493914
+i==131, vzWeight=0.645991
+bin content = 0.00419308
+i==132, vzWeight=0.665065
+bin content = 0.00393286
+i==133, vzWeight=0.648374
+bin content = 0.00446484
+i==134, vzWeight=0.622434
+bin content = 0.00526136
+i==135, vzWeight=0.635655 , vzLow=-10.4999
+bin content = 0.00488869
+i==136, vzWeight=0.650594
+bin content = 0.00528803
+i==137, vzWeight=0.652847
+bin content = 0.00477335
+i==138, vzWeight=0.674347
+bin content = 0.00557492
+i==139, vzWeight=0.710256
+bin content = 0.00555257
+i==140, vzWeight=0.696097 , vzLow=-9.99995
+bin content = 0.00555546
+i==141, vzWeight=0.709879
+bin content = 0.00597066
+i==142, vzWeight=0.726825
+bin content = 0.00646154
+i==143, vzWeight=0.720531
+bin content = 0.00746134
+i==144, vzWeight=0.728595
+bin content = 0.0069755
+i==145, vzWeight=0.718911 , vzLow=-9.49994
+bin content = 0.00748152
+i==146, vzWeight=0.736957
+bin content = 0.00679601
+i==147, vzWeight=0.756571
+bin content = 0.00705839
+i==148, vzWeight=0.773886
+bin content = 0.00883236
+i==149, vzWeight=0.763508
+bin content = 0.0080654
+i==150, vzWeight=0.764561 , vzLow=-8.99994
+bin content = 0.00925837
+i==151, vzWeight=0.780064
+bin content = 0.00759109
+i==152, vzWeight=0.780293
+bin content = 0.00894914
+i==153, vzWeight=0.842588
+bin content = 0.00884606
+i==154, vzWeight=0.806459
+bin content = 0.00918269
+i==155, vzWeight=0.79309 , vzLow=-8.49994
+bin content = 0.00878551
+i==156, vzWeight=0.814386
+bin content = 0.00965699
+i==157, vzWeight=0.845598
+bin content = 0.0101508
+i==158, vzWeight=0.839493
+bin content = 0.0106863
+i==159, vzWeight=0.828682
+bin content = 0.0114252
+i==160, vzWeight=0.847233 , vzLow=-7.99994
+bin content = 0.0116624
+i==161, vzWeight=0.83854
+bin content = 0.0112753
+i==162, vzWeight=0.849374
+bin content = 0.0118526
+i==163, vzWeight=0.859919
+bin content = 0.011986
+i==164, vzWeight=0.860995
+bin content = 0.01274
+i==165, vzWeight=0.875308 , vzLow=-7.49994
+bin content = 0.0124207
+i==166, vzWeight=0.897602
+bin content = 0.0128935
+i==167, vzWeight=0.875367
+bin content = 0.0139726
+i==168, vzWeight=0.893188
+bin content = 0.0133606
+i==169, vzWeight=0.901936
+bin content = 0.0150906
+i==170, vzWeight=0.905305 , vzLow=-6.99994
+bin content = 0.0147158
+i==171, vzWeight=0.885105
+bin content = 0.0140735
+i==172, vzWeight=0.913061
+bin content = 0.0161683
+i==173, vzWeight=0.91391
+bin content = 0.0165474
+i==174, vzWeight=0.906709
+bin content = 0.0168769
+i==175, vzWeight=0.918151 , vzLow=-6.49994
+bin content = 0.0190141
+i==176, vzWeight=0.92222
+bin content = 0.0179646
+i==177, vzWeight=0.921396
+bin content = 0.0187683
+i==178, vzWeight=0.927895
+bin content = 0.0179084
+i==179, vzWeight=0.936276
+bin content = 0.0188159
+i==180, vzWeight=0.947859 , vzLow=-5.99994
+bin content = 0.0192448
+i==181, vzWeight=0.953153
+bin content = 0.0198582
+i==182, vzWeight=0.980831
+bin content = 0.0227221
+i==183, vzWeight=0.942597
+bin content = 0.0205675
+i==184, vzWeight=1.00455
+bin content = 0.022655
+i==185, vzWeight=0.97729 , vzLow=-5.49994
+bin content = 0.0226363
+i==186, vzWeight=0.98961
+bin content = 0.0239922
+i==187, vzWeight=1.01308
+bin content = 0.0229621
+i==188, vzWeight=1.02048
+bin content = 0.0251297
+i==189, vzWeight=1.03312
+bin content = 0.0234775
+i==190, vzWeight=1.01741 , vzLow=-4.99994
+bin content = 0.0249732
+i==191, vzWeight=1.0355
+bin content = 0.0258649
+i==192, vzWeight=1.03273
+bin content = 0.0279005
+i==193, vzWeight=1.01691
+bin content = 0.0289039
+i==194, vzWeight=1.01173
+bin content = 0.0295686
+i==195, vzWeight=1.03778 , vzLow=-4.49994
+bin content = 0.0304235
+i==196, vzWeight=1.02751
+bin content = 0.0306923
+i==197, vzWeight=1.04521
+bin content = 0.0314189
+i==198, vzWeight=1.02536
+bin content = 0.0295606
+i==199, vzWeight=1.03982
+bin content = 0.0329918
+i==200, vzWeight=1.02658 , vzLow=-3.99994
+bin content = 0.0337321
+i==201, vzWeight=1.04558
+bin content = 0.0346857
+i==202, vzWeight=1.04554
+bin content = 0.0343217
+i==203, vzWeight=1.06993
+bin content = 0.0338085
+i==204, vzWeight=1.08087
+bin content = 0.03924
+i==205, vzWeight=1.05827 , vzLow=-3.49994
+bin content = 0.0390338
+i==206, vzWeight=1.04478
+bin content = 0.0403291
+i==207, vzWeight=1.07567
+bin content = 0.0385386
+i==208, vzWeight=1.0805
+bin content = 0.0428557
+i==209, vzWeight=1.1071
+bin content = 0.0404344
+i==210, vzWeight=1.0865 , vzLow=-2.99994
+bin content = 0.0427353
+i==211, vzWeight=1.05007
+bin content = 0.0421521
+i==212, vzWeight=1.09422
+bin content = 0.0445828
+i==213, vzWeight=1.1088
+bin content = 0.0462003
+i==214, vzWeight=1.08563
+bin content = 0.0472549
+i==215, vzWeight=1.09911 , vzLow=-2.49994
+bin content = 0.0501815
+i==216, vzWeight=1.07861
+bin content = 0.0492653
+i==217, vzWeight=1.11775
+bin content = 0.0485661
+i==218, vzWeight=1.12411
+bin content = 0.0505664
+i==219, vzWeight=1.10876
+bin content = 0.0540141
+i==220, vzWeight=1.11068 , vzLow=-1.99995
+bin content = 0.0515229
+i==221, vzWeight=1.08115
+bin content = 0.0534807
+i==222, vzWeight=1.11298
+bin content = 0.0584754
+i==223, vzWeight=1.10993
+bin content = 0.060968
+i==224, vzWeight=1.13585
+bin content = 0.0573091
+i==225, vzWeight=1.13001 , vzLow=-1.49994
+bin content = 0.0624637
+i==226, vzWeight=1.13544
+bin content = 0.0612917
+i==227, vzWeight=1.13565
+bin content = 0.0635313
+i==228, vzWeight=1.1321
+bin content = 0.0638996
+i==229, vzWeight=1.12801
+bin content = 0.0642932
+i==230, vzWeight=1.14225 , vzLow=-0.999945
+bin content = 0.0653406
+i==231, vzWeight=1.14568
+bin content = 0.0722981
+i==232, vzWeight=1.14388
+bin content = 0.066765
+i==233, vzWeight=1.1323
+bin content = 0.0682441
+i==234, vzWeight=1.13885
+bin content = 0.0722505
+i==235, vzWeight=1.1451 , vzLow=-0.499945
+bin content = 0.075709
+i==236, vzWeight=1.16257
+bin content = 0.0745651
+i==237, vzWeight=1.14432
+bin content = 0.0769388
+i==238, vzWeight=1.12241
+bin content = 0.0769107
+i==239, vzWeight=1.14904
+bin content = 0.0856414
+i==240, vzWeight=1.15077 , vzLow=5.52669e-05
+bin content = 0.079634
+i==241, vzWeight=1.157
+bin content = 0.0851584
+i==242, vzWeight=1.14005
+bin content = 0.0865612
+i==243, vzWeight=1.17108
+bin content = 0.0866131
+i==244, vzWeight=1.1645
+bin content = 0.0866167
+i==245, vzWeight=1.15151 , vzLow=0.500055
+bin content = 0.0904421
+i==246, vzWeight=1.158
+bin content = 0.0916149
+i==247, vzWeight=1.16254
+bin content = 0.0920172
+i==248, vzWeight=1.1646
+bin content = 0.0990316
+i==249, vzWeight=1.15385
+bin content = 0.0954231
+i==250, vzWeight=1.17907 , vzLow=1.00006
+bin content = 0.100323
+i==251, vzWeight=1.14388
+bin content = 0.105492
+i==252, vzWeight=1.16576
+bin content = 0.10369
+i==253, vzWeight=1.16411
+bin content = 0.110569
+i==254, vzWeight=1.16061
+bin content = 0.109203
+i==255, vzWeight=1.17227 , vzLow=1.50006
+bin content = 0.108319
+i==256, vzWeight=1.16315
+bin content = 0.114054
+i==257, vzWeight=1.16247
+bin content = 0.115934
+i==258, vzWeight=1.15317
+bin content = 0.118271
+i==259, vzWeight=1.17936
+bin content = 0.116454
+i==260, vzWeight=1.15455 , vzLow=2.00006
+bin content = 0.123003
+i==261, vzWeight=1.15758
+bin content = 0.12266
+i==262, vzWeight=1.14933
+bin content = 0.123719
+i==263, vzWeight=1.19079
+bin content = 0.125863
+i==264, vzWeight=1.17641
+bin content = 0.132991
+i==265, vzWeight=1.16237 , vzLow=2.50006
+bin content = 0.130587
+i==266, vzWeight=1.16054
+bin content = 0.13686
+i==267, vzWeight=1.17536
+bin content = 0.13838
+i==268, vzWeight=1.17296
+bin content = 0.139238
+i==269, vzWeight=1.15801
+bin content = 0.142017
+i==270, vzWeight=1.14315 , vzLow=3.00005
+bin content = 0.143472
+i==271, vzWeight=1.16767
+bin content = 0.146803
+i==272, vzWeight=1.13794
+bin content = 0.148984
+i==273, vzWeight=1.18107
+bin content = 0.152359
+i==274, vzWeight=1.14848
+bin content = 0.152918
+i==275, vzWeight=1.16952 , vzLow=3.50005
+bin content = 0.152966
+i==276, vzWeight=1.17425
+bin content = 0.159206
+i==277, vzWeight=1.20554
+bin content = 0.167126
+i==278, vzWeight=1.13643
+bin content = 0.166865
+i==279, vzWeight=1.16606
+bin content = 0.167336
+i==280, vzWeight=1.1658 , vzLow=4.00005
+bin content = 0.170353
+i==281, vzWeight=1.12143
+bin content = 0.171773
+i==282, vzWeight=1.15891
+bin content = 0.175511
+i==283, vzWeight=1.12217
+bin content = 0.174903
+i==284, vzWeight=1.1397
+bin content = 0.183829
+i==285, vzWeight=1.17211 , vzLow=4.50005
+bin content = 0.182402
+i==286, vzWeight=1.14171
+bin content = 0.190954
+i==287, vzWeight=1.14324
+bin content = 0.192348
+i==288, vzWeight=1.17641
+bin content = 0.195899
+i==289, vzWeight=1.12413
+bin content = 0.198893
+i==290, vzWeight=1.13316 , vzLow=5.00005
+bin content = 0.19587
+i==291, vzWeight=1.13085
+bin content = 0.202056
+i==292, vzWeight=1.12657
+bin content = 0.205528
+i==293, vzWeight=1.13305
+bin content = 0.20953
+i==294, vzWeight=1.12065
+bin content = 0.206408
+i==295, vzWeight=1.11951 , vzLow=5.50005
+bin content = 0.210015
+i==296, vzWeight=1.11763
+bin content = 0.215739
+i==297, vzWeight=1.13541
+bin content = 0.225097
+i==298, vzWeight=1.11617
+bin content = 0.2257
+i==299, vzWeight=1.13276
+bin content = 0.221138
+i==300, vzWeight=1.13886 , vzLow=6.00005
+bin content = 0.234176
+i==301, vzWeight=1.11247
+bin content = 0.242254
+i==302, vzWeight=1.09618
+bin content = 0.243058
+i==303, vzWeight=1.11981
+bin content = 0.241741
+i==304, vzWeight=1.10312
+bin content = 0.245862
+i==305, vzWeight=1.1314 , vzLow=6.50005
+bin content = 0.251731
+i==306, vzWeight=1.08679
+bin content = 0.248168
+i==307, vzWeight=1.12316
+bin content = 0.259041
+i==308, vzWeight=1.08691
+bin content = 0.260513
+i==309, vzWeight=1.07787
+bin content = 0.260472
+i==310, vzWeight=1.09815 , vzLow=7.00005
+bin content = 0.265858
+i==311, vzWeight=1.11489
+bin content = 0.265008
+i==312, vzWeight=1.08037
+bin content = 0.273327
+i==313, vzWeight=1.06745
+bin content = 0.277203
+i==314, vzWeight=1.03884
+bin content = 0.273896
+i==315, vzWeight=1.09174 , vzLow=7.50005
+bin content = 0.287209
+i==316, vzWeight=1.03147
+bin content = 0.287888
+i==317, vzWeight=1.02004
+bin content = 0.293375
+i==318, vzWeight=1.03684
+bin content = 0.303211
+i==319, vzWeight=1.0498
+bin content = 0.300939
+i==320, vzWeight=1.04227 , vzLow=8.00005
+bin content = 0.303809
+i==321, vzWeight=1.04865
+bin content = 0.311163
+i==322, vzWeight=1.04217
+bin content = 0.314329
+i==323, vzWeight=1.02373
+bin content = 0.312004
+i==324, vzWeight=0.998766
+bin content = 0.323642
+i==325, vzWeight=1.02009 , vzLow=8.50005
+bin content = 0.323763
+i==326, vzWeight=1.01359
+bin content = 0.326797
+i==327, vzWeight=1.02474
+bin content = 0.335268
+i==328, vzWeight=0.976417
+bin content = 0.331251
+i==329, vzWeight=0.987471
+bin content = 0.338452
+i==330, vzWeight=0.989013 , vzLow=9.00005
+bin content = 0.34373
+i==331, vzWeight=0.973199
+bin content = 0.348844
+i==332, vzWeight=1.00168
+bin content = 0.353656
+i==333, vzWeight=0.965437
+bin content = 0.360346
+i==334, vzWeight=0.97457
+bin content = 0.356122
+i==335, vzWeight=0.933076 , vzLow=9.50006
+bin content = 0.361492
+i==336, vzWeight=0.949908
+bin content = 0.366367
+i==337, vzWeight=0.967012
+bin content = 0.368209
+i==338, vzWeight=0.966876
+bin content = 0.376399
+i==339, vzWeight=0.924282
+bin content = 0.383685
+i==340, vzWeight=0.909964 , vzLow=10.0001
+bin content = 0.379231
+i==341, vzWeight=0.915665
+bin content = 0.383879
+i==342, vzWeight=0.933913
+bin content = 0.396664
+i==343, vzWeight=0.938168
+bin content = 0.403504
+i==344, vzWeight=0.921808
+bin content = 0.405491
+i==345, vzWeight=0.925362 , vzLow=10.5001
+bin content = 0.404772
+i==346, vzWeight=0.881331
+bin content = 0.41005
+i==347, vzWeight=0.904866
+bin content = 0.406175
+i==348, vzWeight=0.91726
+bin content = 0.41951
+i==349, vzWeight=0.868775
+bin content = 0.430232
+i==350, vzWeight=0.859464 , vzLow=11.0001
+bin content = 0.42144
+i==351, vzWeight=0.888381
+bin content = 0.426819
+i==352, vzWeight=0.899024
+bin content = 0.438617
+i==353, vzWeight=0.81954
+bin content = 0.440565
+i==354, vzWeight=0.82711
+bin content = 0.447515
+i==355, vzWeight=0.831996 , vzLow=11.5001
+bin content = 0.447093
+i==356, vzWeight=0.811947
+bin content = 0.455843
+i==357, vzWeight=0.839312
+bin content = 0.451276
+i==358, vzWeight=0.819823
+bin content = 0.470386
+i==359, vzWeight=0.818477
+bin content = 0.46516
+i==360, vzWeight=0.80245 , vzLow=12.0001
+bin content = 0.472485
+i==361, vzWeight=0.819312
+bin content = 0.479558
+i==362, vzWeight=0.802612
+bin content = 0.484079
+i==363, vzWeight=0.768327
+bin content = 0.484033
+i==364, vzWeight=0.780291
+bin content = 0.493912
+i==365, vzWeight=0.760397 , vzLow=12.5001
+bin content = 0.500872
+i==366, vzWeight=0.725535
+bin content = 0.51146
+i==367, vzWeight=0.702742
+bin content = 0.501517
+i==368, vzWeight=0.748403
+bin content = 0.508338
+i==369, vzWeight=0.740829
+bin content = 0.508224
+i==370, vzWeight=0.704518 , vzLow=13.0001
+bin content = 0.521827
+i==371, vzWeight=0.72492
+bin content = 0.521225
+i==372, vzWeight=0.748486
+bin content = 0.531832
+i==373, vzWeight=0.684221
+bin content = 0.539365
+i==374, vzWeight=0.645883
+bin content = 0.532368
+i==375, vzWeight=0.718001 , vzLow=13.5001
+bin content = 0.544826
+i==376, vzWeight=0.644524
+bin content = 0.541068
+i==377, vzWeight=0.686049
+bin content = 0.552701
+i==378, vzWeight=0.678566
+bin content = 0.552143
+i==379, vzWeight=0.645618
+bin content = 0.563221
+i==380, vzWeight=0.637579 , vzLow=14.0001
+bin content = 0.56557
+i==381, vzWeight=0.631931
+bin content = 0.569151
+i==382, vzWeight=0.627866
+bin content = 0.571093
+i==383, vzWeight=0.598764
+bin content = 0.578457
+i==384, vzWeight=0.603811
+bin content = 0.586725
+i==385, vzWeight=0.579834 , vzLow=14.5001
+bin content = 0.589668
+i==386, vzWeight=0.618893
+bin content = 0.593563
+i==387, vzWeight=0.589254
+bin content = 0.598837
+i==388, vzWeight=0.607857
+bin content = 0.594799
+i==389, vzWeight=0.568996
+bin content = 0.608432
+i==390, vzWeight=0.556205 , vzLow=15.0001
+bin content = 0.610581
+i==391, vzWeight=0.553804
+bin content = 0.622672
+i==392, vzWeight=0.548915
+bin content = 0.627219
+i==393, vzWeight=0.521978
+bin content = 0.625696
+i==394, vzWeight=0.508788
+bin content = 0.620911
+i==395, vzWeight=0.518212 , vzLow=15.5001
+bin content = 0.63833
+i==396, vzWeight=0.475178
+bin content = 0.634343
+i==397, vzWeight=0.453585
+bin content = 0.630147
+i==398, vzWeight=0.511558
+bin content = 0.648385
+i==399, vzWeight=0.44857
+bin content = 0.655203
+i==400, vzWeight=0.454867 , vzLow=16.0001
+bin content = 0.663012
+i==401, vzWeight=0.476483
+bin content = 0.648831
+i==402, vzWeight=0.454714
+bin content = 0.66357
+i==403, vzWeight=0.468142
+bin content = 0.671951
+i==404, vzWeight=0.428615
+bin content = 0.676777
+i==405, vzWeight=0.432244 , vzLow=16.5001
+bin content = 0.668481
+i==406, vzWeight=0.410062
+bin content = 0.682221
+i==407, vzWeight=0.397133
+bin content = 0.686104
+i==408, vzWeight=0.393327
+bin content = 0.686326
+i==409, vzWeight=0.433892
+bin content = 0.697995
+i==410, vzWeight=0.356488 , vzLow=17.0001
+bin content = 0.703992
+i==411, vzWeight=0.383025
+bin content = 0.710453
+i==412, vzWeight=0.389635
+bin content = 0.70988
+i==413, vzWeight=0.37159
+bin content = 0.705908
+i==414, vzWeight=0.346925
+bin content = 0.716808
+i==415, vzWeight=0.374432 , vzLow=17.5001
+bin content = 0.714607
+i==416, vzWeight=0.320862
+bin content = 0.714731
+i==417, vzWeight=0.315108
+bin content = 0.727146
+i==418, vzWeight=0.301609
+bin content = 0.732497
+i==419, vzWeight=0.314621
+bin content = 0.734094
+i==420, vzWeight=0.341115 , vzLow=18.0001
+bin content = 0.740115
+i==421, vzWeight=0.298723
+bin content = 0.741992
+i==422, vzWeight=0.264461
+bin content = 0.752212
+i==423, vzWeight=0.326804
+bin content = 0.754355
+i==424, vzWeight=0.260548
+bin content = 0.745579
+i==425, vzWeight=0.257008 , vzLow=18.5001
+bin content = 0.765068
+i==426, vzWeight=0.285318
+bin content = 0.756677
+i==427, vzWeight=0.25409
+bin content = 0.767323
+i==428, vzWeight=0.243075
+bin content = 0.771744
+i==429, vzWeight=0.235124
+bin content = 0.776299
+i==430, vzWeight=0.21776 , vzLow=19.0001
+bin content = 0.785509
+i==431, vzWeight=0.236387
+bin content = 0.779113
+i==432, vzWeight=0.246632
+bin content = 0.787311
+i==433, vzWeight=0.228055
+bin content = 0.781393
+i==434, vzWeight=0.220591
+bin content = 0.793868
+i==435, vzWeight=0.237701 , vzLow=19.5001
+bin content = 0.797955
+i==436, vzWeight=0.219628
+bin content = 0.785471
+i==437, vzWeight=0.192836
+bin content = 0.804798
+i==438, vzWeight=0.20549
+bin content = 0.805858
+i==439, vzWeight=0.204447
+bin content = 0.816919
+i==440, vzWeight=0.157256 , vzLow=20.0001
+bin content = 0.814005
+i==441, vzWeight=0.186271
+bin content = 0.817409
+i==442, vzWeight=0.233017
+bin content = 0.818229
+i==443, vzWeight=0.150253
+bin content = 0.814072
+i==444, vzWeight=0.166933
+bin content = 0.819887
+i==445, vzWeight=0.200374 , vzLow=20.5001
+bin content = 0.827499
+i==446, vzWeight=0.159533
+bin content = 0.835186
+i==447, vzWeight=0.146922
+bin content = 0.822112
+i==448, vzWeight=0.18168
+bin content = 0.835944
+i==449, vzWeight=0.160411
+bin content = 0.846779
+i==450, vzWeight=0.169097 , vzLow=21.0001
+bin content = 0.847964
+i==451, vzWeight=0.155197
+bin content = 0.855432
+i==452, vzWeight=0.161934
+bin content = 0.85453
+i==453, vzWeight=0.145489
+bin content = 0.851021
+i==454, vzWeight=0.123902
+bin content = 0.857833
+i==455, vzWeight=0.119742 , vzLow=21.5001
+bin content = 0.855381
+i==456, vzWeight=0.134192
+bin content = 0.865974
+i==457, vzWeight=0.137462
+bin content = 0.859293
+i==458, vzWeight=0.172528
+bin content = 0.86107
+i==459, vzWeight=0.1252
+bin content = 0.868254
+i==460, vzWeight=0.150138 , vzLow=22.0001
+bin content = 0.86998
+i==461, vzWeight=0.145134
+bin content = 0.87739
+i==462, vzWeight=0.0816703
+bin content = 0.876843
+i==463, vzWeight=0.0640217
+bin content = 0.878356
+i==464, vzWeight=0.133259
+bin content = 0.868293
+i==465, vzWeight=0.0558461 , vzLow=22.5001
+bin content = 0.877752
+i==466, vzWeight=0.0983745
+bin content = 0.887108
+i==467, vzWeight=0.116233
+bin content = 0.872556
+i==468, vzWeight=0.134384
+bin content = 0.873152
+i==469, vzWeight=0.0852044
+bin content = 0.889213
+i==470, vzWeight=0.129839 , vzLow=23.0001
+bin content = 0.898375
+i==471, vzWeight=0.0889904
+bin content = 0.885072
+i==472, vzWeight=0.0963516
+bin content = 0.897036
+i==473, vzWeight=0.0814205
+bin content = 0.90013
+i==474, vzWeight=0.058349
+bin content = 0.906783
+i==475, vzWeight=0.14622 , vzLow=23.5001
+bin content = 0.900452
+i==476, vzWeight=0.0994205
+bin content = 0.904248
+i==477, vzWeight=0.0540032
+bin content = 0.901616
+i==478, vzWeight=0.0626211
+bin content = 0.893342
+i==479, vzWeight=0.0357023

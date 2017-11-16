@@ -98,7 +98,7 @@ int main (int argc, char *argv[]){
   //theDataEvtQAHist->SetMarkerColor( kBlack);
   //theDataEvtQAHist->SetLineColor( theRatioLineColor );
   //theDataEvtQAHist->SetAxisRange(0.,1.5,"Y");
-  
+  TF1* fgauss = NULL;
   
   std::cout<<" now opening MC File "<<std::endl<<input_ppMC_Filename<<std::endl<<std::endl;
   TFile* finMC = new TFile(input_ppMC_Filename.c_str());  
@@ -107,10 +107,19 @@ int main (int argc, char *argv[]){
   theMCEvtQAHist->Scale( 1/theMCEvtQAHist->GetBinWidth(0) );
   theMCEvtQAHist->Scale( theDataEvtQAHist->Integral()/theMCEvtQAHist->Integral() );
   
-  //TH1F *theRatio=(TH1F*)theDataEvtQAHist->Clone("theDataHistClone"); I'm going to replace this with the rebin which should make its own clone
-  TH1F *theRatio = (TH1F*)theDataEvtQAHist->Rebin(2,"theDataHistClone");
-  theDataHistClone->GetBinWidth(1);
+   
+
   
+  //TH1F *theRatio=(TH1F*)theDataEvtQAHist->Clone("theDataHistClone"); I'm going to replace this with the rebin which should make its own clone
+  TH1F *theRatio = (TH1F*)theDataEvtQAHist->Rebin(2,"theRatio");
+
+  double norm = theRatio->GetMaximumStored();
+  fgauss = new TF1("fgauss","gauss", 0.80, 1.20);
+  fgauss->SetParameters(norm, 0.9999, 0.15); 
+
+  int fitstatus = 0; 
+  fitstatus = theRatio->Fit(fgauss);
+  std::cout<< "Fit Status: "<< fitstatus<< ", Fit Error: "<< fgauss->GetParError(1)<< std::endl;
   theRatio->Divide(theMCEvtQAHist);
   //theRatio->Draw();  
   //theRatio->SetLineColor( altRatioLineColor1 );
@@ -130,6 +139,7 @@ int main (int argc, char *argv[]){
     Float_t vzWeight = theRatio->TH1::GetBinContent(i+3);    //TH1 bin counting starts at i=1?! why?!
     if(theDataEvtQAHist->GetBinContent(i+3)<=0.)
       std::cout<<"warning! bin content in data hist zero (numerator)"<<std::endl;
+	  std::cout<<"bin content = "<<theDataEvtQAHist->GetBinContent(i+3)<<std::endl;
     if(i%5==0)
       
       std::cout<<"i=="<<i<<", vzWeight="<<vzWeight <<" , vzLow="<<xLow<<std::endl;
@@ -146,68 +156,3 @@ int main (int argc, char *argv[]){
   
   return 0 ;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
