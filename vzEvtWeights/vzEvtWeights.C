@@ -135,7 +135,7 @@ int main (int argc, char *argv[]){
   
   //Compare fit to histogram
   TCanMC->cd();
-  
+  theMCEvtQAhist->Draw();
   fgausMC->Draw("same");
   TCanMC->Print("MCgaussfit.png","png");
   
