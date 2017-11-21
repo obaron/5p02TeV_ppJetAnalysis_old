@@ -59,6 +59,7 @@ const std::string input_ppMC_Filename=ppMC_inCondorDir+"Py8_CUETP8M1_QCDjetAllPt
 
 int main (int argc, char *argv[]){
   
+  gStyle->SetOptFit(1111);
   
   std::cout<<" now opening Data File "<<std::endl<<input_ppData_Filename<<std::endl<<std::endl;
   TFile* finData = new TFile(input_ppData_Filename.c_str());
@@ -98,7 +99,7 @@ int main (int argc, char *argv[]){
   //theDataEvtQAHist->SetMarkerColor( kBlack);
   //theDataEvtQAHist->SetLineColor( theRatioLineColor );
   //theDataEvtQAHist->SetAxisRange(0.,1.5,"Y");
-  TF1* fgaussdata = NULL;
+  TF1* fgaussData = NULL;
   TF1* fgaussMC = NULL;
   //TF1* fgaussratio = NULL;
   
@@ -119,24 +120,24 @@ int main (int argc, char *argv[]){
   double norm = theRatio->GetMaximumStored();
   
   //make fit functions
-  fgaussdata = new TF1("fgaussdata","gaus", -24, 24);
-  fgaussdata->SetParameters(norm, 0.9999, 0.15); 
+  fgaussData = new TF1("fgaussData","gaus", -24, 24);
+  fgaussData->SetParameters(norm, 0.9999, 0.15); 
 
   fgaussMC = new TF1("fgaussMC","gaus", -24, 24);
   fgaussMC->SetParameters(norm, 0.9999, 0.15); 
   
   int fitstatusdata = 0; 
-  fitstatusdata = theRatio->Fit(fgaussdata);
-  std::cout<< "Data Fit Status: "<< fitstatusdata<< ", Fit Error: "<< fgaussdata->GetParError(1)<< std::endl;
+  fitstatusdata = theRatio->Fit(fgaussData, "R");
+  std::cout<< "Data Fit Status: "<< fitstatusdata<< ", Fit Error: "<< fgaussData->GetParError(1)<< std::endl;
   
   int fitstatusMC = 0; 
-  fitstatusMC = theMCEvtQAHist->Fit(fgaussMC);
+  fitstatusMC = theMCEvtQAHist->Fit(fgaussMC, "R");
   std::cout<< "MC Fit Status: "<< fitstatusMC<< ", Fit Error: "<< fgaussMC->GetParError(1)<< std::endl;
   
   //Compare fit to histogram
   TCanMC->cd();
-  theMCEvtQAhist->Draw();
-  fgausMC->Draw("same");
+  theMCEvtQAHist->Draw();
+  fgaussMC->Draw("same");
   TCanMC->Print("MCgaussfit.png","png");
   
   theRatio->Divide(theMCEvtQAHist);
@@ -156,17 +157,24 @@ int main (int argc, char *argv[]){
   for (int i=0;i<NvzWeightBins;++i){//binsX loop
 
     Float_t vzWeight = theRatio->TH1::GetBinContent(i+3);    //TH1 bin counting starts at i=1?! why?!
+	
+	//function fit ratio weights
+	Double_t gaussMC = fgaussMC->Eval(theMCEvtQAHist->GetBinContent(i+3));
+	Double_t gaussData = fgaussData->Eval(theMCEvtQAHist->GetBinContent(i+3));
+	Double_t gaussFit = (gaussData/gaussMC);
+	
     if(theDataEvtQAHist->GetBinContent(i+3)<=0.)
       std::cout<<"warning! bin content in data hist zero (numerator)"<<std::endl;
 	  std::cout<<"bin content = "<<theDataEvtQAHist->GetBinContent(i+3)<<std::endl;
     if(i%5==0) {
       
       std::cout<<"i=="<<i<<", vzWeight="<<vzWeight <<" , vzLow="<<xLow<<std::endl;
-	  std::cout<<"test of vz fit funtion: "<<fgaussMC->Eval(theMCEvtQAHist->GetBinContent(i+3))<<std::endl;
+	  std::cout<<"Function fit weight="<<gaussFit<<std::endl;
 	}
-    else
+    else{
       std::cout<<"i=="<<i<<", vzWeight="<<vzWeight<< std::endl;
-
+	  std::cout<<"Function fit weight="<<gaussFit<<std::endl;
+	}
   
 
     //Float_t leftSideOfBin=xLow+(i)*theVzBinWidth;
@@ -184,7 +192,7 @@ int main (int argc, char *argv[]){
 //Might not be a good approach:
 
   //make ratio of fit function
-  fgaussratio = new TF1("fgaussratio",fgaussdata/fgaussMC,-2,2);
+  fgaussratio = new TF1("fgaussratio",fgaussData/fgaussMC,-2,2);
 */
   
   
