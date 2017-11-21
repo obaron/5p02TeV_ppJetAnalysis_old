@@ -22,15 +22,7 @@ Info in <TCanvas::MakeDefCanvas>:  created default TCanvas with name c1
    1  Constant     1.88978e+00   8.37219e-04   3.63293e-05   1.77847e-03
    2  Mean         2.88491e-01   2.20027e-03   1.13866e-04  -1.76242e-03
    3  Sigma        5.90977e+00   1.43325e-03   3.50142e-06   1.86475e-01
-Data Fit Status: 0, Fit Error: 0.00220027
- FCN=489.208 FROM MIGRAD    STATUS=CONVERGED      61 CALLS          62 TOTAL
-                     EDM=2.38946e-11    STRATEGY= 1      ERROR MATRIX ACCURATE 
-  EXT PARAMETER                                   STEP         FIRST   
-  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
-   1  Constant     1.58501e+00   1.89276e-03   1.66268e-05   3.19477e-04
-   2  Mean         1.48928e-03   6.87744e-03   7.43501e-05  -6.05238e-04
-   3  Sigma        7.05791e+00   4.95409e-03   2.05912e-06  -2.18680e-02
-MC Fit Status: 0, Fit Error: 0.00687744
+Fit Status: 0, Fit Error: 0.00220027
 float-division says NBins=480 (exactly)
 int-typecast says NBins=480
 now grabbing vzWeights for 480 bins for ( -24< vz <24 )

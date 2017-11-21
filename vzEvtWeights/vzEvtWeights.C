@@ -98,7 +98,11 @@ int main (int argc, char *argv[]){
   //theDataEvtQAHist->SetMarkerColor( kBlack);
   //theDataEvtQAHist->SetLineColor( theRatioLineColor );
   //theDataEvtQAHist->SetAxisRange(0.,1.5,"Y");
-  TF1* fgauss = NULL;
+  TF1* fgaussdata = NULL;
+  TF1* fgaussMC = NULL;
+  //TF1* fgaussratio = NULL;
+  
+  TCanvas* TCanMC = NULL;
   
   std::cout<<" now opening MC File "<<std::endl<<input_ppMC_Filename<<std::endl<<std::endl;
   TFile* finMC = new TFile(input_ppMC_Filename.c_str());  
@@ -107,19 +111,34 @@ int main (int argc, char *argv[]){
   theMCEvtQAHist->Scale( 1/theMCEvtQAHist->GetBinWidth(0) );
   theMCEvtQAHist->Scale( theDataEvtQAHist->Integral()/theMCEvtQAHist->Integral() );
   
-   
-
-  
+  TCanMC = new TCanvas("TCanMC","cMC",600,600);   
+    
   //TH1F *theRatio=(TH1F*)theDataEvtQAHist->Clone("theDataHistClone"); I'm going to replace this with the rebin which should make its own clone
   TH1F *theRatio = (TH1F*)theDataEvtQAHist->Rebin(2,"theRatio");
 
   double norm = theRatio->GetMaximumStored();
-  fgauss = new TF1("fgauss","gauss", 0.80, 1.20);
-  fgauss->SetParameters(norm, 0.9999, 0.15); 
+  
+  //make fit functions
+  fgaussdata = new TF1("fgaussdata","gaus", -24, 24);
+  fgaussdata->SetParameters(norm, 0.9999, 0.15); 
 
-  int fitstatus = 0; 
-  fitstatus = theRatio->Fit(fgauss);
-  std::cout<< "Fit Status: "<< fitstatus<< ", Fit Error: "<< fgauss->GetParError(1)<< std::endl;
+  fgaussMC = new TF1("fgaussMC","gaus", -24, 24);
+  fgaussMC->SetParameters(norm, 0.9999, 0.15); 
+  
+  int fitstatusdata = 0; 
+  fitstatusdata = theRatio->Fit(fgaussdata);
+  std::cout<< "Data Fit Status: "<< fitstatusdata<< ", Fit Error: "<< fgaussdata->GetParError(1)<< std::endl;
+  
+  int fitstatusMC = 0; 
+  fitstatusMC = theMCEvtQAHist->Fit(fgaussMC);
+  std::cout<< "MC Fit Status: "<< fitstatusMC<< ", Fit Error: "<< fgaussMC->GetParError(1)<< std::endl;
+  
+  //Compare fit to histogram
+  TCanMC->cd();
+  
+  fgausMC->Draw("same");
+  TCanMC->Print("MCgaussfit.png","png");
+  
   theRatio->Divide(theMCEvtQAHist);
   //theRatio->Draw();  
   //theRatio->SetLineColor( altRatioLineColor1 );
@@ -140,11 +159,15 @@ int main (int argc, char *argv[]){
     if(theDataEvtQAHist->GetBinContent(i+3)<=0.)
       std::cout<<"warning! bin content in data hist zero (numerator)"<<std::endl;
 	  std::cout<<"bin content = "<<theDataEvtQAHist->GetBinContent(i+3)<<std::endl;
-    if(i%5==0)
+    if(i%5==0) {
       
       std::cout<<"i=="<<i<<", vzWeight="<<vzWeight <<" , vzLow="<<xLow<<std::endl;
+	  std::cout<<"test of vz fit funtion: "<<fgaussMC->Eval(theMCEvtQAHist->GetBinContent(i+3))<<std::endl;
+	}
     else
       std::cout<<"i=="<<i<<", vzWeight="<<vzWeight<< std::endl;
+
+  
 
     //Float_t leftSideOfBin=xLow+(i)*theVzBinWidth;
     //Float_t rightSideOfBin=xLow+(i+1)*theVzBinWidth;
@@ -153,6 +176,17 @@ int main (int argc, char *argv[]){
     
     
   }
+  //vz from function loop - testing. I think this needs its own loop.
+  	  
+
+  
+/*
+//Might not be a good approach:
+
+  //make ratio of fit function
+  fgaussratio = new TF1("fgaussratio",fgaussdata/fgaussMC,-2,2);
+*/
+  
   
   return 0 ;
 }
