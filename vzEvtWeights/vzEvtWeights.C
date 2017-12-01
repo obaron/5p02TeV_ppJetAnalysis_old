@@ -101,9 +101,9 @@ int main (int argc, char *argv[]){
   //theDataEvtQAHist->SetAxisRange(0.,1.5,"Y");
   TF1* fgaussData = NULL;
   TF1* fgaussMC = NULL;
-  //TF1* fgaussratio = NULL;
   
   TCanvas* TCanMC = NULL;
+  TCanvas* TCanWeight = NULL;
   
   std::cout<<" now opening MC File "<<std::endl<<input_ppMC_Filename<<std::endl<<std::endl;
   TFile* finMC = new TFile(input_ppMC_Filename.c_str());  
@@ -113,11 +113,15 @@ int main (int argc, char *argv[]){
   theMCEvtQAHist->Scale( theDataEvtQAHist->Integral()/theMCEvtQAHist->Integral() );
   
   TCanMC = new TCanvas("TCanMC","cMC",600,600);   
+  TCanWeight = new TCanvas("TCanWeight","Weight: Data/MC",600,600);   
     
   //TH1F *theRatio=(TH1F*)theDataEvtQAHist->Clone("theDataHistClone"); I'm going to replace this with the rebin which should make its own clone
   TH1F *theRatio = (TH1F*)theDataEvtQAHist->Rebin(2,"theRatio");
 
   double norm = theRatio->GetMaximumStored();
+  
+  TH1F* binWeight = new TH1F("binWeight","Bin-based Weight",480,-24,24);
+  TH1F* fnWeight = new TH1F("fnWeight","Fn-based Weight",480,-24,24);
   
   //make fit functions
   fgaussData = new TF1("fgaussData","gaus", -24, 24);
@@ -154,14 +158,18 @@ int main (int argc, char *argv[]){
   std::cout<<"int-typecast says NBins="<<NvzWeightBins<<std::endl;
   
   std::cout<<"now grabbing vzWeights for "<<NvzWeightBins<<" bins for ( "<<xLow<<"< vz <"<<xHigh<<" )"<<std::endl;
+  
   for (int i=0;i<NvzWeightBins;++i){//binsX loop
 
+	Float_t hist_xLow = theRatio->TH1::GetBinLowEdge(i+3);
     Float_t vzWeight = theRatio->TH1::GetBinContent(i+3);    //TH1 bin counting starts at i=1?! why?!
-	
-	//function fit ratio weights
-	Double_t gaussMC = fgaussMC->Eval(theMCEvtQAHist->GetBinContent(i+3));
-	Double_t gaussData = fgaussData->Eval(theMCEvtQAHist->GetBinContent(i+3));
+	binWeight->Fill(vzWeight);
+	//function fit ratio weights //No no no - this needs to be the x value, not the bin content! //so do I want center, low edge, or high edge? Or something else?
+	Double_t gaussMC = fgaussMC->Eval(theMCEvtQAHist->GetBinLowEdge(i+3));
+	Double_t gaussData = fgaussData->Eval(theMCEvtQAHist->GetBinLowEdge(i+3));
 	Double_t gaussFit = (gaussData/gaussMC);
+	fnWeight->Fill(gaussFit);
+	std::cout<<"MC function LowEdge = "<<theMCEvtQAHist->GetBinLowEdge(i+3)<<std::endl;
 	
     if(theDataEvtQAHist->GetBinContent(i+3)<=0.)
       std::cout<<"warning! bin content in data hist zero (numerator)"<<std::endl;
@@ -175,8 +183,7 @@ int main (int argc, char *argv[]){
       std::cout<<"i=="<<i<<", vzWeight="<<vzWeight<< std::endl;
 	  std::cout<<"Function fit weight="<<gaussFit<<std::endl;
 	}
-  
-
+    std::cout<<std::endl;
     //Float_t leftSideOfBin=xLow+(i)*theVzBinWidth;
     //Float_t rightSideOfBin=xLow+(i+1)*theVzBinWidth;
     //std::cout<<"i=="<<i<<", "<<leftSideOfBin<<"<vz<="<<rightSideOfBin<<", vzWeight="<<vzWeight<< std::endl;
@@ -187,7 +194,12 @@ int main (int argc, char *argv[]){
   //vz from function loop - testing. I think this needs its own loop.
   	  
 
-  
+  TH1F* fweightRatio = (TH1F*)binWeight->Clone("fweightRatio");
+  fweightRatio->Divide(fnWeight);
+  TCanWeight->cd();
+  fweightRatio->Draw();
+  //fnWeight->Draw();
+  TCanWeight->Print("WeightRatio.png","png");
 /*
 //Might not be a good approach:
 
