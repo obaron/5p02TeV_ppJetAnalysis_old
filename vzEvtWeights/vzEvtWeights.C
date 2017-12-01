@@ -158,10 +158,11 @@ int main (int argc, char *argv[]){
   std::cout<<"int-typecast says NBins="<<NvzWeightBins<<std::endl;
   
   std::cout<<"now grabbing vzWeights for "<<NvzWeightBins<<" bins for ( "<<xLow<<"< vz <"<<xHigh<<" )"<<std::endl;
-  
+  std::cout<<std::endl;
   for (int i=0;i<NvzWeightBins;++i){//binsX loop
 
 	Float_t hist_xLow = theRatio->TH1::GetBinLowEdge(i+3);
+	std::cout<<"Low Bin Edge = "<<hist_xLow<<std::endl;
     Float_t vzWeight = theRatio->TH1::GetBinContent(i+3);    //TH1 bin counting starts at i=1?! why?!
 	binWeight->Fill(vzWeight);
 	//function fit ratio weights //No no no - this needs to be the x value, not the bin content! //so do I want center, low edge, or high edge? Or something else?
@@ -169,14 +170,14 @@ int main (int argc, char *argv[]){
 	Double_t gaussData = fgaussData->Eval(theMCEvtQAHist->GetBinLowEdge(i+3));
 	Double_t gaussFit = (gaussData/gaussMC);
 	fnWeight->Fill(gaussFit);
-	std::cout<<"MC function LowEdge = "<<theMCEvtQAHist->GetBinLowEdge(i+3)<<std::endl;
-	
+		
     if(theDataEvtQAHist->GetBinContent(i+3)<=0.)
       std::cout<<"warning! bin content in data hist zero (numerator)"<<std::endl;
 	  std::cout<<"bin content = "<<theDataEvtQAHist->GetBinContent(i+3)<<std::endl;
     if(i%5==0) {
       
       std::cout<<"i=="<<i<<", vzWeight="<<vzWeight <<" , vzLow="<<xLow<<std::endl;
+	  std::cout<<"MC function LowEdge = "<<theMCEvtQAHist->GetBinLowEdge(i+3)<<std::endl;
 	  std::cout<<"Function fit weight="<<gaussFit<<std::endl;
 	}
     else{
