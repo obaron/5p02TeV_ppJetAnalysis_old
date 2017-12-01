@@ -31,2522 +31,2629 @@ Data Fit Status: 0, Fit Error: 0.00220027
    3  Sigma        7.05791e+00   4.95409e-03   2.05912e-06  -2.18680e-02
 MC Fit Status: 0, Fit Error: 0.00687744
 Info in <TCanvas::Print>: png file MCgaussfit.png has been created
-float-division says NBins=480 (exactly)
-int-typecast says NBins=480
-now grabbing vzWeights for 480 bins for ( -24< vz <24 )
+float-division says NBins=499 (exactly)
+int-typecast says NBins=500
+now grabbing vzWeights for 500 bins for ( -25< vz <24.9 )
 
-Low Bin Edge = -24.8
+Low Bin Edge = -25.1
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==0, vzWeight=0 , vzLow=-24
-MC function LowEdge = -24.8
+i==0, vzWeight=0 , vzLow=-25
+MC function LowEdge = -25.1
 Function fit weight=0.0698698
 
-Low Bin Edge = -24.7
+Low Bin Edge = -25
 warning! bin content in data hist zero (numerator)
 bin content = 0
 i==1, vzWeight=0
 Function fit weight=0.0714242
 
-Low Bin Edge = -24.6
+Low Bin Edge = -24.9
 warning! bin content in data hist zero (numerator)
 bin content = 0
 i==2, vzWeight=0
 Function fit weight=0.0730069
 
-Low Bin Edge = -24.5
+Low Bin Edge = -24.8
 warning! bin content in data hist zero (numerator)
 bin content = 0
 i==3, vzWeight=0
 Function fit weight=0.0746184
 
-Low Bin Edge = -24.4
+Low Bin Edge = -24.7
 warning! bin content in data hist zero (numerator)
 bin content = 0
 i==4, vzWeight=0
 Function fit weight=0.0762589
 
-Low Bin Edge = -24.3
+Low Bin Edge = -24.6
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==5, vzWeight=0 , vzLow=-23.5
-MC function LowEdge = -24.3
+i==5, vzWeight=0 , vzLow=-24.5
+MC function LowEdge = -24.6
 Function fit weight=0.0779287
 
-Low Bin Edge = -24.2
+Low Bin Edge = -24.5
 warning! bin content in data hist zero (numerator)
 bin content = 0
 i==6, vzWeight=0
 Function fit weight=0.0796284
 
-Low Bin Edge = -24.1
+Low Bin Edge = -24.4
 warning! bin content in data hist zero (numerator)
 bin content = 0
 i==7, vzWeight=0
 Function fit weight=0.0813581
 
+Low Bin Edge = -24.3
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==8, vzWeight=0
+Function fit weight=0.0831183
+
+Low Bin Edge = -24.2
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==9, vzWeight=0
+Function fit weight=0.0849093
+
+Low Bin Edge = -24.1
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==10, vzWeight=0 , vzLow=-24
+MC function LowEdge = -24.1
+Function fit weight=0.0867315
+
 Low Bin Edge = -24
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==8, vzWeight=0.0517853
-Function fit weight=0.0831183
+i==11, vzWeight=0.0517853
+Function fit weight=0.0885852
 
 Low Bin Edge = -23.9
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==9, vzWeight=0.0750007
-Function fit weight=0.0849093
+i==12, vzWeight=0.0750007
+Function fit weight=0.0904708
 
 Low Bin Edge = -23.8
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==10, vzWeight=0.0249748 , vzLow=-23
-MC function LowEdge = -23.8
-Function fit weight=0.0867315
+i==13, vzWeight=0.0249748
+Function fit weight=0.0923886
 
 Low Bin Edge = -23.7
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==11, vzWeight=0.0215821
-Function fit weight=0.0885852
+i==14, vzWeight=0.0215821
+Function fit weight=0.094339
 
 Low Bin Edge = -23.6
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==12, vzWeight=0.0700952
-Function fit weight=0.0904708
+i==15, vzWeight=0.0700952 , vzLow=-23.5
+MC function LowEdge = -23.6
+Function fit weight=0.0963223
 
 Low Bin Edge = -23.5
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==13, vzWeight=0.0736384
-Function fit weight=0.0923886
+i==16, vzWeight=0.0736384
+Function fit weight=0.0983389
 
 Low Bin Edge = -23.4
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==14, vzWeight=0.125229
-Function fit weight=0.094339
+i==17, vzWeight=0.125229
+Function fit weight=0.100389
 
 Low Bin Edge = -23.3
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==15, vzWeight=0.0458415 , vzLow=-22.5
-MC function LowEdge = -23.3
-Function fit weight=0.0963223
+i==18, vzWeight=0.0458415
+Function fit weight=0.102473
 
 Low Bin Edge = -23.2
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==16, vzWeight=0.0439558
-Function fit weight=0.0983389
+i==19, vzWeight=0.0439558
+Function fit weight=0.104592
 
 Low Bin Edge = -23.1
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==17, vzWeight=0.0403531
-Function fit weight=0.100389
+i==20, vzWeight=0.0403531 , vzLow=-23
+MC function LowEdge = -23.1
+Function fit weight=0.106745
 
 Low Bin Edge = -23
 bin content = 7.71291e-05
-i==18, vzWeight=0.0569556
-Function fit weight=0.102473
+i==21, vzWeight=0.0569556
+Function fit weight=0.108933
 
 Low Bin Edge = -22.9
 bin content = 5.55041e-05
-i==19, vzWeight=0.0621536
-Function fit weight=0.104592
+i==22, vzWeight=0.0621536
+Function fit weight=0.111157
 
 Low Bin Edge = -22.8
 bin content = 0.000144887
-i==20, vzWeight=0.0870667 , vzLow=-22
-MC function LowEdge = -22.8
-Function fit weight=0.106745
+i==23, vzWeight=0.0870667
+Function fit weight=0.113416
 
 Low Bin Edge = -22.7
 bin content = 0.000144887
-i==21, vzWeight=0.0762312
-Function fit weight=0.108933
+i==24, vzWeight=0.0762312
+Function fit weight=0.115711
 
 Low Bin Edge = -22.6
 bin content = 0.000142004
-i==22, vzWeight=0.052972
-Function fit weight=0.111157
+i==25, vzWeight=0.052972 , vzLow=-22.5
+MC function LowEdge = -22.6
+Function fit weight=0.118043
 
 Low Bin Edge = -22.5
 bin content = 3.74833e-05
-i==23, vzWeight=0.111043
-Function fit weight=0.113416
+i==26, vzWeight=0.111043
+Function fit weight=0.120411
 
 Low Bin Edge = -22.4
 bin content = 6.05499e-05
-i==24, vzWeight=0.0722402
-Function fit weight=0.115711
+i==27, vzWeight=0.0722402
+Function fit weight=0.122816
 
 Low Bin Edge = -22.3
 bin content = 8.07332e-05
-i==25, vzWeight=0.0858987 , vzLow=-21.5
-MC function LowEdge = -22.3
-Function fit weight=0.118043
+i==28, vzWeight=0.0858987
+Function fit weight=0.125259
 
 Low Bin Edge = -22.2
 bin content = 0.000174441
-i==26, vzWeight=0.114306
-Function fit weight=0.120411
+i==29, vzWeight=0.114306
+Function fit weight=0.127739
 
 Low Bin Edge = -22.1
 bin content = 0.000183812
-i==27, vzWeight=0.0720754
-Function fit weight=0.122816
+i==30, vzWeight=0.0720754 , vzLow=-22
+MC function LowEdge = -22.1
+Function fit weight=0.130257
 
 Low Bin Edge = -22
 bin content = 0.0002076
-i==28, vzWeight=0.0612768
-Function fit weight=0.125259
+i==31, vzWeight=0.0612768
+Function fit weight=0.132814
 
 Low Bin Edge = -21.9
 bin content = 0.000151375
-i==29, vzWeight=0.0924849
-Function fit weight=0.127739
+i==32, vzWeight=0.0924849
+Function fit weight=0.135409
 
 Low Bin Edge = -21.8
 bin content = 0.000247966
-i==30, vzWeight=0.0619599 , vzLow=-21
-MC function LowEdge = -21.8
-Function fit weight=0.130257
+i==33, vzWeight=0.0619599
+Function fit weight=0.138043
 
 Low Bin Edge = -21.7
 bin content = 0.000376995
-i==31, vzWeight=0.072883
-Function fit weight=0.132814
+i==34, vzWeight=0.072883
+Function fit weight=0.140716
 
 Low Bin Edge = -21.6
 bin content = 0.000182371
-i==32, vzWeight=0.0899396
-Function fit weight=0.135409
+i==35, vzWeight=0.0899396 , vzLow=-21.5
+MC function LowEdge = -21.6
+Function fit weight=0.143429
 
 Low Bin Edge = -21.5
 bin content = 0.000142004
-i==33, vzWeight=0.0563365
-Function fit weight=0.138043
+i==36, vzWeight=0.0563365
+Function fit weight=0.146181
 
 Low Bin Edge = -21.4
 bin content = 0.000304912
-i==34, vzWeight=0.070509
-Function fit weight=0.140716
+i==37, vzWeight=0.070509
+Function fit weight=0.148974
 
 Low Bin Edge = -21.3
 bin content = 0.000179487
-i==35, vzWeight=0.113079 , vzLow=-20.5
-MC function LowEdge = -21.3
-Function fit weight=0.143429
+i==38, vzWeight=0.113079
+Function fit weight=0.151806
 
 Low Bin Edge = -21.2
 bin content = 0.000339512
-i==36, vzWeight=0.0785287
-Function fit weight=0.146181
+i==39, vzWeight=0.0785287
+Function fit weight=0.15468
 
 Low Bin Edge = -21.1
 bin content = 8.36166e-05
-i==37, vzWeight=0.0955366
-Function fit weight=0.148974
+i==40, vzWeight=0.0955366 , vzLow=-21
+MC function LowEdge = -21.1
+Function fit weight=0.157594
 
 Low Bin Edge = -21
 bin content = 0.000248687
-i==38, vzWeight=0.092898
-Function fit weight=0.151806
+i==41, vzWeight=0.092898
+Function fit weight=0.16055
 
 Low Bin Edge = -20.9
 bin content = 0.000206879
-i==39, vzWeight=0.122386
-Function fit weight=0.15468
+i==42, vzWeight=0.122386
+Function fit weight=0.163547
 
 Low Bin Edge = -20.8
 bin content = 0.000209762
-i==40, vzWeight=0.0919298 , vzLow=-20
-MC function LowEdge = -20.8
-Function fit weight=0.157594
+i==43, vzWeight=0.0919298
+Function fit weight=0.166585
 
 Low Bin Edge = -20.7
 bin content = 0.000487283
-i==41, vzWeight=0.0890711
-Function fit weight=0.16055
+i==44, vzWeight=0.0890711
+Function fit weight=0.169666
 
 Low Bin Edge = -20.6
 bin content = 0.000373391
-i==42, vzWeight=0.0652374
-Function fit weight=0.163547
+i==45, vzWeight=0.0652374 , vzLow=-20.5
+MC function LowEdge = -20.6
+Function fit weight=0.172789
 
 Low Bin Edge = -20.5
 bin content = 0.000356091
-i==43, vzWeight=0.0989131
-Function fit weight=0.166585
+i==46, vzWeight=0.0989131
+Function fit weight=0.175954
 
 Low Bin Edge = -20.4
 bin content = 0.000271033
-i==44, vzWeight=0.0665617
-Function fit weight=0.169666
+i==47, vzWeight=0.0665617
+Function fit weight=0.179162
 
 Low Bin Edge = -20.3
 bin content = 0.000420966
-i==45, vzWeight=0.0925861 , vzLow=-19.5
-MC function LowEdge = -20.3
-Function fit weight=0.172789
+i==48, vzWeight=0.0925861
+Function fit weight=0.182413
 
 Low Bin Edge = -20.2
 bin content = 0.000338791
-i==46, vzWeight=0.133002
-Function fit weight=0.175954
+i==49, vzWeight=0.133002
+Function fit weight=0.185706
 
 Low Bin Edge = -20.1
 bin content = 0.000278962
-i==47, vzWeight=0.121556
-Function fit weight=0.179162
+i==50, vzWeight=0.121556 , vzLow=-20
+MC function LowEdge = -20.1
+Function fit weight=0.189043
 
 Low Bin Edge = -20
 bin content = 0.000552158
-i==48, vzWeight=0.14507
-Function fit weight=0.182413
+i==51, vzWeight=0.14507
+Function fit weight=0.192424
 
 Low Bin Edge = -19.9
 bin content = 0.000305633
-i==49, vzWeight=0.111634
-Function fit weight=0.185706
+i==52, vzWeight=0.111634
+Function fit weight=0.195848
 
 Low Bin Edge = -19.8
 bin content = 0.000326537
-i==50, vzWeight=0.11184 , vzLow=-19
-MC function LowEdge = -19.8
-Function fit weight=0.189043
+i==53, vzWeight=0.11184
+Function fit weight=0.199316
 
 Low Bin Edge = -19.7
 bin content = 0.000253012
-i==51, vzWeight=0.096257
-Function fit weight=0.192424
+i==54, vzWeight=0.096257
+Function fit weight=0.202829
 
 Low Bin Edge = -19.6
 bin content = 0.000314283
-i==52, vzWeight=0.116124
-Function fit weight=0.195848
+i==55, vzWeight=0.116124 , vzLow=-19.5
+MC function LowEdge = -19.6
+Function fit weight=0.206385
 
 Low Bin Edge = -19.5
 bin content = 0.000480795
-i==53, vzWeight=0.1265
-Function fit weight=0.199316
+i==56, vzWeight=0.1265
+Function fit weight=0.209986
 
 Low Bin Edge = -19.4
 bin content = 0.000604058
-i==54, vzWeight=0.132096
-Function fit weight=0.202829
+i==57, vzWeight=0.132096
+Function fit weight=0.213631
 
 Low Bin Edge = -19.3
 bin content = 0.000463495
-i==55, vzWeight=0.147684 , vzLow=-18.5
-MC function LowEdge = -19.3
-Function fit weight=0.206385
+i==58, vzWeight=0.147684
+Function fit weight=0.217321
 
 Low Bin Edge = -19.2
 bin content = 0.00040727
-i==56, vzWeight=0.127302
-Function fit weight=0.209986
+i==59, vzWeight=0.127302
+Function fit weight=0.221056
 
 Low Bin Edge = -19.1
 bin content = 0.000430337
-i==57, vzWeight=0.151232
-Function fit weight=0.213631
+i==60, vzWeight=0.151232 , vzLow=-19
+MC function LowEdge = -19.1
+Function fit weight=0.224836
 
 Low Bin Edge = -19
 bin content = 0.000327258
-i==58, vzWeight=0.170747
-Function fit weight=0.217321
+i==61, vzWeight=0.170747
+Function fit weight=0.228661
 
 Low Bin Edge = -18.9
 bin content = 0.000323654
-i==59, vzWeight=0.128507
-Function fit weight=0.221056
+i==62, vzWeight=0.128507
+Function fit weight=0.232531
 
 Low Bin Edge = -18.8
 bin content = 0.000550716
-i==60, vzWeight=0.15509 , vzLow=-18
-MC function LowEdge = -18.8
-Function fit weight=0.224836
+i==63, vzWeight=0.15509
+Function fit weight=0.236447
 
 Low Bin Edge = -18.7
 bin content = 0.000391412
-i==61, vzWeight=0.16225
-Function fit weight=0.228661
+i==64, vzWeight=0.16225
+Function fit weight=0.240407
 
 Low Bin Edge = -18.6
 bin content = 0.000219854
-i==62, vzWeight=0.169334
-Function fit weight=0.232531
+i==65, vzWeight=0.169334 , vzLow=-18.5
+MC function LowEdge = -18.6
+Function fit weight=0.244413
 
 Low Bin Edge = -18.5
 bin content = 0.000858512
-i==63, vzWeight=0.155401
-Function fit weight=0.236447
+i==66, vzWeight=0.155401
+Function fit weight=0.248465
 
 Low Bin Edge = -18.4
 bin content = 0.000557924
-i==64, vzWeight=0.154634
-Function fit weight=0.240407
+i==67, vzWeight=0.154634
+Function fit weight=0.252562
 
 Low Bin Edge = -18.3
 bin content = 0.000721553
-i==65, vzWeight=0.148014 , vzLow=-17.5
-MC function LowEdge = -18.3
-Function fit weight=0.244413
+i==68, vzWeight=0.148014
+Function fit weight=0.256705
 
 Low Bin Edge = -18.2
 bin content = 0.000630008
-i==66, vzWeight=0.153017
-Function fit weight=0.248465
+i==69, vzWeight=0.153017
+Function fit weight=0.260893
 
 Low Bin Edge = -18.1
 bin content = 0.000622078
-i==67, vzWeight=0.164199
-Function fit weight=0.252562
+i==70, vzWeight=0.164199 , vzLow=-18
+MC function LowEdge = -18.1
+Function fit weight=0.265127
 
 Low Bin Edge = -18
 bin content = 0.000619916
-i==68, vzWeight=0.153808
-Function fit weight=0.256705
+i==71, vzWeight=0.153808
+Function fit weight=0.269407
 
 Low Bin Edge = -17.9
 bin content = 0.00037195
-i==69, vzWeight=0.186748
-Function fit weight=0.260893
+i==72, vzWeight=0.186748
+Function fit weight=0.273732
 
 Low Bin Edge = -17.8
 bin content = 0.000615591
-i==70, vzWeight=0.20684 , vzLow=-17
-MC function LowEdge = -17.8
-Function fit weight=0.265127
+i==73, vzWeight=0.20684
+Function fit weight=0.278103
 
 Low Bin Edge = -17.7
 bin content = 0.000495212
-i==71, vzWeight=0.19668
-Function fit weight=0.269407
+i==74, vzWeight=0.19668
+Function fit weight=0.28252
 
 Low Bin Edge = -17.6
 bin content = 0.00069272
-i==72, vzWeight=0.194294
-Function fit weight=0.273732
+i==75, vzWeight=0.194294 , vzLow=-17.5
+MC function LowEdge = -17.6
+Function fit weight=0.286982
 
 Low Bin Edge = -17.5
 bin content = 0.000825353
-i==73, vzWeight=0.218358
-Function fit weight=0.278103
+i==76, vzWeight=0.218358
+Function fit weight=0.29149
 
 Low Bin Edge = -17.4
 bin content = 0.000651633
-i==74, vzWeight=0.206125
-Function fit weight=0.28252
+i==77, vzWeight=0.206125
+Function fit weight=0.296043
 
 Low Bin Edge = -17.3
 bin content = 0.000539904
-i==75, vzWeight=0.192908 , vzLow=-16.5
-MC function LowEdge = -17.3
-Function fit weight=0.286982
+i==78, vzWeight=0.192908
+Function fit weight=0.300641
 
 Low Bin Edge = -17.2
 bin content = 0.000839049
-i==76, vzWeight=0.20658
-Function fit weight=0.29149
+i==79, vzWeight=0.20658
+Function fit weight=0.305285
 
 Low Bin Edge = -17.1
 bin content = 0.000430337
-i==77, vzWeight=0.22707
-Function fit weight=0.296043
+i==80, vzWeight=0.22707 , vzLow=-17
+MC function LowEdge = -17.1
+Function fit weight=0.309974
 
 Low Bin Edge = -17
 bin content = 0.00106827
-i==78, vzWeight=0.248399
-Function fit weight=0.300641
+i==81, vzWeight=0.248399
+Function fit weight=0.314709
 
 Low Bin Edge = -16.9
 bin content = 0.000604778
-i==79, vzWeight=0.238024
-Function fit weight=0.305285
+i==82, vzWeight=0.238024
+Function fit weight=0.319488
 
 Low Bin Edge = -16.8
 bin content = 0.00126218
-i==80, vzWeight=0.261386 , vzLow=-16
-MC function LowEdge = -16.8
-Function fit weight=0.309974
+i==83, vzWeight=0.261386
+Function fit weight=0.324312
 
 Low Bin Edge = -16.7
 bin content = 0.00106611
-i==81, vzWeight=0.240991
-Function fit weight=0.314709
+i==84, vzWeight=0.240991
+Function fit weight=0.32918
 
 Low Bin Edge = -16.6
 bin content = 0.00103872
-i==82, vzWeight=0.237626
-Function fit weight=0.319488
+i==85, vzWeight=0.237626 , vzLow=-16.5
+MC function LowEdge = -16.6
+Function fit weight=0.334093
 
 Low Bin Edge = -16.5
 bin content = 0.000999074
-i==83, vzWeight=0.263513
-Function fit weight=0.324312
+i==86, vzWeight=0.263513
+Function fit weight=0.339051
 
 Low Bin Edge = -16.4
 bin content = 0.000970241
-i==84, vzWeight=0.270379
-Function fit weight=0.32918
+i==87, vzWeight=0.270379
+Function fit weight=0.344052
 
 Low Bin Edge = -16.3
 bin content = 0.00110287
-i==85, vzWeight=0.272804 , vzLow=-15.5
-MC function LowEdge = -16.3
-Function fit weight=0.334093
+i==88, vzWeight=0.272804
+Function fit weight=0.349098
 
 Low Bin Edge = -16.2
 bin content = 0.000795078
-i==86, vzWeight=0.307887
-Function fit weight=0.339051
+i==89, vzWeight=0.307887
+Function fit weight=0.354187
 
 Low Bin Edge = -16.1
 bin content = 0.000890949
-i==87, vzWeight=0.321623
-Function fit weight=0.344052
+i==90, vzWeight=0.321623 , vzLow=-16
+MC function LowEdge = -16.1
+Function fit weight=0.359319
 
 Low Bin Edge = -16
 bin content = 0.0013148
-i==88, vzWeight=0.290896
-Function fit weight=0.349098
+i==91, vzWeight=0.290896
+Function fit weight=0.364495
 
 Low Bin Edge = -15.9
 bin content = 0.00116126
-i==89, vzWeight=0.283696
-Function fit weight=0.354187
+i==92, vzWeight=0.283696
+Function fit weight=0.369714
 
 Low Bin Edge = -15.8
 bin content = 0.000816703
-i==90, vzWeight=0.337669 , vzLow=-15
-MC function LowEdge = -15.8
-Function fit weight=0.359319
+i==93, vzWeight=0.337669
+Function fit weight=0.374975
 
 Low Bin Edge = -15.7
 bin content = 0.000890949
-i==91, vzWeight=0.320236
-Function fit weight=0.364495
+i==94, vzWeight=0.320236
+Function fit weight=0.380279
 
 Low Bin Edge = -15.6
 bin content = 0.00140851
-i==92, vzWeight=0.338771
-Function fit weight=0.369714
+i==95, vzWeight=0.338771 , vzLow=-15.5
+MC function LowEdge = -15.6
+Function fit weight=0.385624
 
 Low Bin Edge = -15.5
 bin content = 0.00128164
-i==93, vzWeight=0.322936
-Function fit weight=0.374975
+i==96, vzWeight=0.322936
+Function fit weight=0.391012
 
 Low Bin Edge = -15.4
 bin content = 0.00149573
-i==94, vzWeight=0.333338
-Function fit weight=0.380279
+i==97, vzWeight=0.333338
+Function fit weight=0.39644
 
 Low Bin Edge = -15.3
 bin content = 0.00186479
-i==95, vzWeight=0.333281 , vzLow=-14.5
-MC function LowEdge = -15.3
-Function fit weight=0.385624
+i==98, vzWeight=0.333281
+Function fit weight=0.40191
 
 Low Bin Edge = -15.2
 bin content = 0.00156925
-i==96, vzWeight=0.402355
-Function fit weight=0.391012
+i==99, vzWeight=0.402355
+Function fit weight=0.40742
 
 Low Bin Edge = -15.1
 bin content = 0.00152312
-i==97, vzWeight=0.388359
-Function fit weight=0.39644
+i==100, vzWeight=0.388359 , vzLow=-15
+MC function LowEdge = -15.1
+Function fit weight=0.41297
 
 Low Bin Edge = -15
 bin content = 0.00146113
-i==98, vzWeight=0.369057
-Function fit weight=0.40191
+i==101, vzWeight=0.369057
+Function fit weight=0.418561
 
 Low Bin Edge = -14.9
 bin content = 0.00205581
-i==99, vzWeight=0.389849
-Function fit weight=0.40742
+i==102, vzWeight=0.389849
+Function fit weight=0.42419
 
 Low Bin Edge = -14.8
 bin content = 0.00185831
-i==100, vzWeight=0.3931 , vzLow=-14
-MC function LowEdge = -14.8
-Function fit weight=0.41297
+i==103, vzWeight=0.3931
+Function fit weight=0.429859
 
 Low Bin Edge = -14.7
 bin content = 0.00173721
-i==101, vzWeight=0.38523
-Function fit weight=0.418561
+i==104, vzWeight=0.38523
+Function fit weight=0.435566
 
 Low Bin Edge = -14.6
 bin content = 0.00256256
-i==102, vzWeight=0.426224
-Function fit weight=0.42419
+i==105, vzWeight=0.426224 , vzLow=-14.5
+MC function LowEdge = -14.6
+Function fit weight=0.441311
 
 Low Bin Edge = -14.5
 bin content = 0.00150077
-i==103, vzWeight=0.413295
-Function fit weight=0.429859
+i==106, vzWeight=0.413295
+Function fit weight=0.447093
 
 Low Bin Edge = -14.4
 bin content = 0.0018338
-i==104, vzWeight=0.422349
-Function fit weight=0.435566
+i==107, vzWeight=0.422349
+Function fit weight=0.452913
 
 Low Bin Edge = -14.3
 bin content = 0.00179415
-i==105, vzWeight=0.425863 , vzLow=-13.5
-MC function LowEdge = -14.3
-Function fit weight=0.441311
+i==108, vzWeight=0.425863
+Function fit weight=0.458769
 
 Low Bin Edge = -14.2
 bin content = 0.00226558
-i==106, vzWeight=0.446469
-Function fit weight=0.447093
+i==109, vzWeight=0.446469
+Function fit weight=0.464661
 
 Low Bin Edge = -14.1
 bin content = 0.00195634
-i==107, vzWeight=0.457987
-Function fit weight=0.452913
+i==110, vzWeight=0.457987 , vzLow=-14
+MC function LowEdge = -14.1
+Function fit weight=0.470588
 
 Low Bin Edge = -14
 bin content = 0.00215745
-i==108, vzWeight=0.425318
-Function fit weight=0.458769
+i==111, vzWeight=0.425318
+Function fit weight=0.47655
 
 Low Bin Edge = -13.9
 bin content = 0.00170909
-i==109, vzWeight=0.446969
-Function fit weight=0.464661
+i==112, vzWeight=0.446969
+Function fit weight=0.482546
 
 Low Bin Edge = -13.8
 bin content = 0.0024775
-i==110, vzWeight=0.481663 , vzLow=-13
-MC function LowEdge = -13.8
-Function fit weight=0.470588
+i==113, vzWeight=0.481663
+Function fit weight=0.488576
 
 Low Bin Edge = -13.7
 bin content = 0.00273051
-i==111, vzWeight=0.495915
-Function fit weight=0.47655
+i==114, vzWeight=0.495915
+Function fit weight=0.494639
 
 Low Bin Edge = -13.6
 bin content = 0.0025294
-i==112, vzWeight=0.497501
-Function fit weight=0.482546
+i==115, vzWeight=0.497501 , vzLow=-13.5
+MC function LowEdge = -13.6
+Function fit weight=0.500735
 
 Low Bin Edge = -13.5
 bin content = 0.00276656
-i==113, vzWeight=0.504444
-Function fit weight=0.488576
+i==116, vzWeight=0.504444
+Function fit weight=0.506862
 
 Low Bin Edge = -13.4
 bin content = 0.00262455
-i==114, vzWeight=0.479111
-Function fit weight=0.494639
+i==117, vzWeight=0.479111
+Function fit weight=0.51302
 
 Low Bin Edge = -13.3
 bin content = 0.00280981
-i==115, vzWeight=0.502409 , vzLow=-12.5
-MC function LowEdge = -13.3
-Function fit weight=0.500735
+i==118, vzWeight=0.502409
+Function fit weight=0.519209
 
 Low Bin Edge = -13.2
 bin content = 0.00350757
-i==116, vzWeight=0.502393
-Function fit weight=0.506862
+i==119, vzWeight=0.502393
+Function fit weight=0.525427
 
 Low Bin Edge = -13.1
 bin content = 0.00261806
-i==117, vzWeight=0.51403
-Function fit weight=0.51302
+i==120, vzWeight=0.51403 , vzLow=-13
+MC function LowEdge = -13.1
+Function fit weight=0.531674
 
 Low Bin Edge = -13
 bin content = 0.00345639
-i==118, vzWeight=0.523813
-Function fit weight=0.519209
+i==121, vzWeight=0.523813
+Function fit weight=0.53795
 
 Low Bin Edge = -12.9
 bin content = 0.00352055
-i==119, vzWeight=0.551032
-Function fit weight=0.525427
+i==122, vzWeight=0.551032
+Function fit weight=0.544253
 
 Low Bin Edge = -12.8
 bin content = 0.0026988
-i==120, vzWeight=0.53486 , vzLow=-12
-MC function LowEdge = -12.8
-Function fit weight=0.531674
+i==123, vzWeight=0.53486
+Function fit weight=0.550583
 
 Low Bin Edge = -12.7
 bin content = 0.00329493
-i==121, vzWeight=0.541757
-Function fit weight=0.53795
+i==124, vzWeight=0.541757
+Function fit weight=0.556938
 
 Low Bin Edge = -12.6
 bin content = 0.00359047
-i==122, vzWeight=0.545387
-Function fit weight=0.544253
+i==125, vzWeight=0.545387 , vzLow=-12.5
+MC function LowEdge = -12.6
+Function fit weight=0.563319
 
 Low Bin Edge = -12.5
 bin content = 0.00355731
-i==123, vzWeight=0.583327
-Function fit weight=0.550583
+i==126, vzWeight=0.583327
+Function fit weight=0.569724
 
 Low Bin Edge = -12.4
 bin content = 0.00399846
-i==124, vzWeight=0.547069
-Function fit weight=0.556938
+i==127, vzWeight=0.547069
+Function fit weight=0.576153
 
 Low Bin Edge = -12.3
 bin content = 0.00375842
-i==125, vzWeight=0.608359 , vzLow=-11.5
-MC function LowEdge = -12.3
-Function fit weight=0.563319
+i==128, vzWeight=0.608359
+Function fit weight=0.582605
 
 Low Bin Edge = -12.2
 bin content = 0.00460179
-i==126, vzWeight=0.613335
-Function fit weight=0.569724
+i==129, vzWeight=0.613335
+Function fit weight=0.589078
 
 Low Bin Edge = -12.1
 bin content = 0.0038579
-i==127, vzWeight=0.590613
-Function fit weight=0.576153
+i==130, vzWeight=0.590613 , vzLow=-12
+MC function LowEdge = -12.1
+Function fit weight=0.595572
 
 Low Bin Edge = -12
 bin content = 0.00367264
-i==128, vzWeight=0.628671
-Function fit weight=0.582605
+i==131, vzWeight=0.628671
+Function fit weight=0.602086
 
 Low Bin Edge = -11.9
 bin content = 0.00438555
-i==129, vzWeight=0.63898
-Function fit weight=0.589078
+i==132, vzWeight=0.63898
+Function fit weight=0.60862
 
 Low Bin Edge = -11.8
 bin content = 0.00378509
-i==130, vzWeight=0.652757 , vzLow=-11
-MC function LowEdge = -11.8
-Function fit weight=0.595572
+i==133, vzWeight=0.652757
+Function fit weight=0.615171
 
 Low Bin Edge = -11.7
 bin content = 0.00493914
-i==131, vzWeight=0.645991
-Function fit weight=0.602086
+i==134, vzWeight=0.645991
+Function fit weight=0.62174
 
 Low Bin Edge = -11.6
 bin content = 0.00419308
-i==132, vzWeight=0.665065
-Function fit weight=0.60862
+i==135, vzWeight=0.665065 , vzLow=-11.4999
+MC function LowEdge = -11.6
+Function fit weight=0.628326
 
 Low Bin Edge = -11.5
 bin content = 0.00393286
-i==133, vzWeight=0.648374
-Function fit weight=0.615171
+i==136, vzWeight=0.648374
+Function fit weight=0.634926
 
 Low Bin Edge = -11.4
 bin content = 0.00446484
-i==134, vzWeight=0.622434
-Function fit weight=0.62174
+i==137, vzWeight=0.622434
+Function fit weight=0.641542
 
 Low Bin Edge = -11.3
 bin content = 0.00526136
-i==135, vzWeight=0.635655 , vzLow=-10.4999
-MC function LowEdge = -11.3
-Function fit weight=0.628326
+i==138, vzWeight=0.635655
+Function fit weight=0.64817
 
 Low Bin Edge = -11.2
 bin content = 0.00488869
-i==136, vzWeight=0.650594
-Function fit weight=0.634926
+i==139, vzWeight=0.650594
+Function fit weight=0.654811
 
 Low Bin Edge = -11.1
 bin content = 0.00528803
-i==137, vzWeight=0.652847
-Function fit weight=0.641542
+i==140, vzWeight=0.652847 , vzLow=-10.9999
+MC function LowEdge = -11.1
+Function fit weight=0.661464
 
 Low Bin Edge = -11
 bin content = 0.00477335
-i==138, vzWeight=0.674347
-Function fit weight=0.64817
+i==141, vzWeight=0.674347
+Function fit weight=0.668127
 
 Low Bin Edge = -10.9
 bin content = 0.00557492
-i==139, vzWeight=0.710256
-Function fit weight=0.654811
+i==142, vzWeight=0.710256
+Function fit weight=0.674799
 
 Low Bin Edge = -10.8
 bin content = 0.00555257
-i==140, vzWeight=0.696097 , vzLow=-9.99995
-MC function LowEdge = -10.8
-Function fit weight=0.661464
+i==143, vzWeight=0.696097
+Function fit weight=0.68148
 
 Low Bin Edge = -10.7
 bin content = 0.00555546
-i==141, vzWeight=0.709879
-Function fit weight=0.668127
+i==144, vzWeight=0.709879
+Function fit weight=0.688168
 
 Low Bin Edge = -10.6
 bin content = 0.00597066
-i==142, vzWeight=0.726825
-Function fit weight=0.674799
+i==145, vzWeight=0.726825 , vzLow=-10.4999
+MC function LowEdge = -10.6
+Function fit weight=0.694862
 
 Low Bin Edge = -10.5
 bin content = 0.00646154
-i==143, vzWeight=0.720531
-Function fit weight=0.68148
+i==146, vzWeight=0.720531
+Function fit weight=0.701561
 
 Low Bin Edge = -10.4
 bin content = 0.00746134
-i==144, vzWeight=0.728595
-Function fit weight=0.688168
+i==147, vzWeight=0.728595
+Function fit weight=0.708264
 
 Low Bin Edge = -10.3
 bin content = 0.0069755
-i==145, vzWeight=0.718911 , vzLow=-9.49994
-MC function LowEdge = -10.3
-Function fit weight=0.694862
+i==148, vzWeight=0.718911
+Function fit weight=0.71497
 
 Low Bin Edge = -10.2
 bin content = 0.00748152
-i==146, vzWeight=0.736957
-Function fit weight=0.701561
+i==149, vzWeight=0.736957
+Function fit weight=0.721678
 
 Low Bin Edge = -10.1
 bin content = 0.00679601
-i==147, vzWeight=0.756571
-Function fit weight=0.708264
+i==150, vzWeight=0.756571 , vzLow=-9.99994
+MC function LowEdge = -10.1
+Function fit weight=0.728386
 
 Low Bin Edge = -10
 bin content = 0.00705839
-i==148, vzWeight=0.773886
-Function fit weight=0.71497
+i==151, vzWeight=0.773886
+Function fit weight=0.735094
 
 Low Bin Edge = -9.9
 bin content = 0.00883236
-i==149, vzWeight=0.763508
-Function fit weight=0.721678
+i==152, vzWeight=0.763508
+Function fit weight=0.7418
 
 Low Bin Edge = -9.8
 bin content = 0.0080654
-i==150, vzWeight=0.764561 , vzLow=-8.99994
-MC function LowEdge = -9.8
-Function fit weight=0.728386
+i==153, vzWeight=0.764561
+Function fit weight=0.748503
 
 Low Bin Edge = -9.7
 bin content = 0.00925837
-i==151, vzWeight=0.780064
-Function fit weight=0.735094
+i==154, vzWeight=0.780064
+Function fit weight=0.755202
 
 Low Bin Edge = -9.6
 bin content = 0.00759109
-i==152, vzWeight=0.780293
-Function fit weight=0.7418
+i==155, vzWeight=0.780293 , vzLow=-9.49994
+MC function LowEdge = -9.6
+Function fit weight=0.761896
 
 Low Bin Edge = -9.5
 bin content = 0.00894914
-i==153, vzWeight=0.842588
-Function fit weight=0.748503
+i==156, vzWeight=0.842588
+Function fit weight=0.768583
 
 Low Bin Edge = -9.4
 bin content = 0.00884606
-i==154, vzWeight=0.806459
-Function fit weight=0.755202
+i==157, vzWeight=0.806459
+Function fit weight=0.775263
 
 Low Bin Edge = -9.3
 bin content = 0.00918269
-i==155, vzWeight=0.79309 , vzLow=-8.49994
-MC function LowEdge = -9.3
-Function fit weight=0.761896
+i==158, vzWeight=0.79309
+Function fit weight=0.781933
 
 Low Bin Edge = -9.2
 bin content = 0.00878551
-i==156, vzWeight=0.814386
-Function fit weight=0.768583
+i==159, vzWeight=0.814386
+Function fit weight=0.788594
 
 Low Bin Edge = -9.1
 bin content = 0.00965699
-i==157, vzWeight=0.845598
-Function fit weight=0.775263
+i==160, vzWeight=0.845598 , vzLow=-8.99994
+MC function LowEdge = -9.1
+Function fit weight=0.795244
 
 Low Bin Edge = -9
 bin content = 0.0101508
-i==158, vzWeight=0.839493
-Function fit weight=0.781933
+i==161, vzWeight=0.839493
+Function fit weight=0.801881
 
 Low Bin Edge = -8.9
 bin content = 0.0106863
-i==159, vzWeight=0.828682
-Function fit weight=0.788594
+i==162, vzWeight=0.828682
+Function fit weight=0.808504
 
 Low Bin Edge = -8.8
 bin content = 0.0114252
-i==160, vzWeight=0.847233 , vzLow=-7.99994
-MC function LowEdge = -8.8
-Function fit weight=0.795244
+i==163, vzWeight=0.847233
+Function fit weight=0.815112
 
 Low Bin Edge = -8.7
 bin content = 0.0116624
-i==161, vzWeight=0.83854
-Function fit weight=0.801881
+i==164, vzWeight=0.83854
+Function fit weight=0.821703
 
 Low Bin Edge = -8.6
 bin content = 0.0112753
-i==162, vzWeight=0.849374
-Function fit weight=0.808504
+i==165, vzWeight=0.849374 , vzLow=-8.49994
+MC function LowEdge = -8.6
+Function fit weight=0.828277
 
 Low Bin Edge = -8.5
 bin content = 0.0118526
-i==163, vzWeight=0.859919
-Function fit weight=0.815112
+i==166, vzWeight=0.859919
+Function fit weight=0.834833
 
 Low Bin Edge = -8.4
 bin content = 0.011986
-i==164, vzWeight=0.860995
-Function fit weight=0.821703
+i==167, vzWeight=0.860995
+Function fit weight=0.841368
 
 Low Bin Edge = -8.3
 bin content = 0.01274
-i==165, vzWeight=0.875308 , vzLow=-7.49994
-MC function LowEdge = -8.3
-Function fit weight=0.828277
+i==168, vzWeight=0.875308
+Function fit weight=0.847882
 
 Low Bin Edge = -8.2
 bin content = 0.0124207
-i==166, vzWeight=0.897602
-Function fit weight=0.834833
+i==169, vzWeight=0.897602
+Function fit weight=0.854373
 
 Low Bin Edge = -8.1
 bin content = 0.0128935
-i==167, vzWeight=0.875367
-Function fit weight=0.841368
+i==170, vzWeight=0.875367 , vzLow=-7.99994
+MC function LowEdge = -8.1
+Function fit weight=0.86084
 
 Low Bin Edge = -8
 bin content = 0.0139726
-i==168, vzWeight=0.893188
-Function fit weight=0.847882
+i==171, vzWeight=0.893188
+Function fit weight=0.867282
 
 Low Bin Edge = -7.9
 bin content = 0.0133606
-i==169, vzWeight=0.901936
-Function fit weight=0.854373
+i==172, vzWeight=0.901936
+Function fit weight=0.873697
 
 Low Bin Edge = -7.8
 bin content = 0.0150906
-i==170, vzWeight=0.905305 , vzLow=-6.99994
-MC function LowEdge = -7.8
-Function fit weight=0.86084
+i==173, vzWeight=0.905305
+Function fit weight=0.880084
 
 Low Bin Edge = -7.7
 bin content = 0.0147158
-i==171, vzWeight=0.885105
-Function fit weight=0.867282
+i==174, vzWeight=0.885105
+Function fit weight=0.886442
 
 Low Bin Edge = -7.6
 bin content = 0.0140735
-i==172, vzWeight=0.913061
-Function fit weight=0.873697
+i==175, vzWeight=0.913061 , vzLow=-7.49994
+MC function LowEdge = -7.6
+Function fit weight=0.89277
 
 Low Bin Edge = -7.5
 bin content = 0.0161683
-i==173, vzWeight=0.91391
-Function fit weight=0.880084
+i==176, vzWeight=0.91391
+Function fit weight=0.899066
 
 Low Bin Edge = -7.4
 bin content = 0.0165474
-i==174, vzWeight=0.906709
-Function fit weight=0.886442
+i==177, vzWeight=0.906709
+Function fit weight=0.905329
 
 Low Bin Edge = -7.3
 bin content = 0.0168769
-i==175, vzWeight=0.918151 , vzLow=-6.49994
-MC function LowEdge = -7.3
-Function fit weight=0.89277
+i==178, vzWeight=0.918151
+Function fit weight=0.911558
 
 Low Bin Edge = -7.2
 bin content = 0.0190141
-i==176, vzWeight=0.92222
-Function fit weight=0.899066
+i==179, vzWeight=0.92222
+Function fit weight=0.91775
 
 Low Bin Edge = -7.1
 bin content = 0.0179646
-i==177, vzWeight=0.921396
-Function fit weight=0.905329
+i==180, vzWeight=0.921396 , vzLow=-6.99994
+MC function LowEdge = -7.1
+Function fit weight=0.923906
 
 Low Bin Edge = -7
 bin content = 0.0187683
-i==178, vzWeight=0.927895
-Function fit weight=0.911558
+i==181, vzWeight=0.927895
+Function fit weight=0.930024
 
 Low Bin Edge = -6.9
 bin content = 0.0179084
-i==179, vzWeight=0.936276
-Function fit weight=0.91775
+i==182, vzWeight=0.936276
+Function fit weight=0.936102
 
 Low Bin Edge = -6.8
 bin content = 0.0188159
-i==180, vzWeight=0.947859 , vzLow=-5.99994
-MC function LowEdge = -6.8
-Function fit weight=0.923906
+i==183, vzWeight=0.947859
+Function fit weight=0.942139
 
 Low Bin Edge = -6.7
 bin content = 0.0192448
-i==181, vzWeight=0.953153
-Function fit weight=0.930024
+i==184, vzWeight=0.953153
+Function fit weight=0.948133
 
 Low Bin Edge = -6.6
 bin content = 0.0198582
-i==182, vzWeight=0.980831
-Function fit weight=0.936102
+i==185, vzWeight=0.980831 , vzLow=-6.49994
+MC function LowEdge = -6.6
+Function fit weight=0.954085
 
 Low Bin Edge = -6.5
 bin content = 0.0227221
-i==183, vzWeight=0.942597
-Function fit weight=0.942139
+i==186, vzWeight=0.942597
+Function fit weight=0.959991
 
 Low Bin Edge = -6.4
 bin content = 0.0205675
-i==184, vzWeight=1.00455
-Function fit weight=0.948133
+i==187, vzWeight=1.00455
+Function fit weight=0.965851
 
 Low Bin Edge = -6.3
 bin content = 0.022655
-i==185, vzWeight=0.97729 , vzLow=-5.49994
-MC function LowEdge = -6.3
-Function fit weight=0.954085
+i==188, vzWeight=0.97729
+Function fit weight=0.971664
 
 Low Bin Edge = -6.2
 bin content = 0.0226363
-i==186, vzWeight=0.98961
-Function fit weight=0.959991
+i==189, vzWeight=0.98961
+Function fit weight=0.977429
 
 Low Bin Edge = -6.1
 bin content = 0.0239922
-i==187, vzWeight=1.01308
-Function fit weight=0.965851
+i==190, vzWeight=1.01308 , vzLow=-5.99994
+MC function LowEdge = -6.1
+Function fit weight=0.983143
 
 Low Bin Edge = -6
 bin content = 0.0229621
-i==188, vzWeight=1.02048
-Function fit weight=0.971664
+i==191, vzWeight=1.02048
+Function fit weight=0.988806
 
 Low Bin Edge = -5.9
 bin content = 0.0251297
-i==189, vzWeight=1.03312
-Function fit weight=0.977429
+i==192, vzWeight=1.03312
+Function fit weight=0.994417
 
 Low Bin Edge = -5.8
 bin content = 0.0234775
-i==190, vzWeight=1.01741 , vzLow=-4.99994
-MC function LowEdge = -5.8
-Function fit weight=0.983143
+i==193, vzWeight=1.01741
+Function fit weight=0.999974
 
 Low Bin Edge = -5.7
 bin content = 0.0249732
-i==191, vzWeight=1.0355
-Function fit weight=0.988806
+i==194, vzWeight=1.0355
+Function fit weight=1.00548
 
 Low Bin Edge = -5.6
 bin content = 0.0258649
-i==192, vzWeight=1.03273
-Function fit weight=0.994417
+i==195, vzWeight=1.03273 , vzLow=-5.49994
+MC function LowEdge = -5.6
+Function fit weight=1.01092
 
 Low Bin Edge = -5.5
 bin content = 0.0279005
-i==193, vzWeight=1.01691
-Function fit weight=0.999974
+i==196, vzWeight=1.01691
+Function fit weight=1.01631
 
 Low Bin Edge = -5.4
 bin content = 0.0289039
-i==194, vzWeight=1.01173
-Function fit weight=1.00548
+i==197, vzWeight=1.01173
+Function fit weight=1.02164
 
 Low Bin Edge = -5.3
 bin content = 0.0295686
-i==195, vzWeight=1.03778 , vzLow=-4.49994
-MC function LowEdge = -5.3
-Function fit weight=1.01092
+i==198, vzWeight=1.03778
+Function fit weight=1.02691
 
 Low Bin Edge = -5.2
 bin content = 0.0304235
-i==196, vzWeight=1.02751
-Function fit weight=1.01631
+i==199, vzWeight=1.02751
+Function fit weight=1.03212
 
 Low Bin Edge = -5.1
 bin content = 0.0306923
-i==197, vzWeight=1.04521
-Function fit weight=1.02164
+i==200, vzWeight=1.04521 , vzLow=-4.99994
+MC function LowEdge = -5.1
+Function fit weight=1.03726
 
 Low Bin Edge = -5
 bin content = 0.0314189
-i==198, vzWeight=1.02536
-Function fit weight=1.02691
+i==201, vzWeight=1.02536
+Function fit weight=1.04235
 
 Low Bin Edge = -4.9
 bin content = 0.0295606
-i==199, vzWeight=1.03982
-Function fit weight=1.03212
+i==202, vzWeight=1.03982
+Function fit weight=1.04736
 
 Low Bin Edge = -4.8
 bin content = 0.0329918
-i==200, vzWeight=1.02658 , vzLow=-3.99994
-MC function LowEdge = -4.8
-Function fit weight=1.03726
+i==203, vzWeight=1.02658
+Function fit weight=1.05232
 
 Low Bin Edge = -4.7
 bin content = 0.0337321
-i==201, vzWeight=1.04558
-Function fit weight=1.04235
+i==204, vzWeight=1.04558
+Function fit weight=1.0572
 
 Low Bin Edge = -4.6
 bin content = 0.0346857
-i==202, vzWeight=1.04554
-Function fit weight=1.04736
+i==205, vzWeight=1.04554 , vzLow=-4.49994
+MC function LowEdge = -4.6
+Function fit weight=1.06202
 
 Low Bin Edge = -4.5
 bin content = 0.0343217
-i==203, vzWeight=1.06993
-Function fit weight=1.05232
+i==206, vzWeight=1.06993
+Function fit weight=1.06676
 
 Low Bin Edge = -4.4
 bin content = 0.0338085
-i==204, vzWeight=1.08087
-Function fit weight=1.0572
+i==207, vzWeight=1.08087
+Function fit weight=1.07144
 
 Low Bin Edge = -4.3
 bin content = 0.03924
-i==205, vzWeight=1.05827 , vzLow=-3.49994
-MC function LowEdge = -4.3
-Function fit weight=1.06202
+i==208, vzWeight=1.05827
+Function fit weight=1.07605
 
 Low Bin Edge = -4.2
 bin content = 0.0390338
-i==206, vzWeight=1.04478
-Function fit weight=1.06676
+i==209, vzWeight=1.04478
+Function fit weight=1.08058
 
 Low Bin Edge = -4.1
 bin content = 0.0403291
-i==207, vzWeight=1.07567
-Function fit weight=1.07144
+i==210, vzWeight=1.07567 , vzLow=-3.99994
+MC function LowEdge = -4.1
+Function fit weight=1.08504
 
 Low Bin Edge = -4
 bin content = 0.0385386
-i==208, vzWeight=1.0805
-Function fit weight=1.07605
+i==211, vzWeight=1.0805
+Function fit weight=1.08942
 
 Low Bin Edge = -3.9
 bin content = 0.0428557
-i==209, vzWeight=1.1071
-Function fit weight=1.08058
+i==212, vzWeight=1.1071
+Function fit weight=1.09373
 
 Low Bin Edge = -3.8
 bin content = 0.0404344
-i==210, vzWeight=1.0865 , vzLow=-2.99994
-MC function LowEdge = -3.8
-Function fit weight=1.08504
+i==213, vzWeight=1.0865
+Function fit weight=1.09796
 
 Low Bin Edge = -3.7
 bin content = 0.0427353
-i==211, vzWeight=1.05007
-Function fit weight=1.08942
+i==214, vzWeight=1.05007
+Function fit weight=1.10211
 
 Low Bin Edge = -3.6
 bin content = 0.0421521
-i==212, vzWeight=1.09422
-Function fit weight=1.09373
+i==215, vzWeight=1.09422 , vzLow=-3.49994
+MC function LowEdge = -3.6
+Function fit weight=1.10619
 
 Low Bin Edge = -3.5
 bin content = 0.0445828
-i==213, vzWeight=1.1088
-Function fit weight=1.09796
+i==216, vzWeight=1.1088
+Function fit weight=1.11018
 
 Low Bin Edge = -3.4
 bin content = 0.0462003
-i==214, vzWeight=1.08563
-Function fit weight=1.10211
+i==217, vzWeight=1.08563
+Function fit weight=1.1141
 
 Low Bin Edge = -3.3
 bin content = 0.0472549
-i==215, vzWeight=1.09911 , vzLow=-2.49994
-MC function LowEdge = -3.3
-Function fit weight=1.10619
+i==218, vzWeight=1.09911
+Function fit weight=1.11793
 
 Low Bin Edge = -3.2
 bin content = 0.0501815
-i==216, vzWeight=1.07861
-Function fit weight=1.11018
+i==219, vzWeight=1.07861
+Function fit weight=1.12168
 
 Low Bin Edge = -3.1
 bin content = 0.0492653
-i==217, vzWeight=1.11775
-Function fit weight=1.1141
+i==220, vzWeight=1.11775 , vzLow=-2.99994
+MC function LowEdge = -3.1
+Function fit weight=1.12534
 
 Low Bin Edge = -3
 bin content = 0.0485661
-i==218, vzWeight=1.12411
-Function fit weight=1.11793
+i==221, vzWeight=1.12411
+Function fit weight=1.12892
 
 Low Bin Edge = -2.9
 bin content = 0.0505664
-i==219, vzWeight=1.10876
-Function fit weight=1.12168
+i==222, vzWeight=1.10876
+Function fit weight=1.13242
 
 Low Bin Edge = -2.8
 bin content = 0.0540141
-i==220, vzWeight=1.11068 , vzLow=-1.99995
-MC function LowEdge = -2.8
-Function fit weight=1.12534
+i==223, vzWeight=1.11068
+Function fit weight=1.13582
 
 Low Bin Edge = -2.7
 bin content = 0.0515229
-i==221, vzWeight=1.08115
-Function fit weight=1.12892
+i==224, vzWeight=1.08115
+Function fit weight=1.13915
 
 Low Bin Edge = -2.6
 bin content = 0.0534807
-i==222, vzWeight=1.11298
-Function fit weight=1.13242
+i==225, vzWeight=1.11298 , vzLow=-2.49994
+MC function LowEdge = -2.6
+Function fit weight=1.14238
 
 Low Bin Edge = -2.5
 bin content = 0.0584754
-i==223, vzWeight=1.10993
-Function fit weight=1.13582
+i==226, vzWeight=1.10993
+Function fit weight=1.14552
 
 Low Bin Edge = -2.4
 bin content = 0.060968
-i==224, vzWeight=1.13585
-Function fit weight=1.13915
+i==227, vzWeight=1.13585
+Function fit weight=1.14858
 
 Low Bin Edge = -2.3
 bin content = 0.0573091
-i==225, vzWeight=1.13001 , vzLow=-1.49994
-MC function LowEdge = -2.3
-Function fit weight=1.14238
+i==228, vzWeight=1.13001
+Function fit weight=1.15154
 
 Low Bin Edge = -2.2
 bin content = 0.0624637
-i==226, vzWeight=1.13544
-Function fit weight=1.14552
+i==229, vzWeight=1.13544
+Function fit weight=1.15441
 
 Low Bin Edge = -2.1
 bin content = 0.0612917
-i==227, vzWeight=1.13565
-Function fit weight=1.14858
+i==230, vzWeight=1.13565 , vzLow=-1.99994
+MC function LowEdge = -2.1
+Function fit weight=1.15719
 
 Low Bin Edge = -2
 bin content = 0.0635313
-i==228, vzWeight=1.1321
-Function fit weight=1.15154
+i==231, vzWeight=1.1321
+Function fit weight=1.15988
 
 Low Bin Edge = -1.9
 bin content = 0.0638996
-i==229, vzWeight=1.12801
-Function fit weight=1.15441
+i==232, vzWeight=1.12801
+Function fit weight=1.16248
 
 Low Bin Edge = -1.8
 bin content = 0.0642932
-i==230, vzWeight=1.14225 , vzLow=-0.999945
-MC function LowEdge = -1.8
-Function fit weight=1.15719
+i==233, vzWeight=1.14225
+Function fit weight=1.16498
 
 Low Bin Edge = -1.7
 bin content = 0.0653406
-i==231, vzWeight=1.14568
-Function fit weight=1.15988
+i==234, vzWeight=1.14568
+Function fit weight=1.16739
 
 Low Bin Edge = -1.6
 bin content = 0.0722981
-i==232, vzWeight=1.14388
-Function fit weight=1.16248
+i==235, vzWeight=1.14388 , vzLow=-1.49994
+MC function LowEdge = -1.6
+Function fit weight=1.1697
 
 Low Bin Edge = -1.5
 bin content = 0.066765
-i==233, vzWeight=1.1323
-Function fit weight=1.16498
+i==236, vzWeight=1.1323
+Function fit weight=1.17191
 
 Low Bin Edge = -1.4
 bin content = 0.0682441
-i==234, vzWeight=1.13885
-Function fit weight=1.16739
+i==237, vzWeight=1.13885
+Function fit weight=1.17403
 
 Low Bin Edge = -1.3
 bin content = 0.0722505
-i==235, vzWeight=1.1451 , vzLow=-0.499945
-MC function LowEdge = -1.3
-Function fit weight=1.1697
+i==238, vzWeight=1.1451
+Function fit weight=1.17606
 
 Low Bin Edge = -1.2
 bin content = 0.075709
-i==236, vzWeight=1.16257
-Function fit weight=1.17191
+i==239, vzWeight=1.16257
+Function fit weight=1.17798
 
 Low Bin Edge = -1.1
 bin content = 0.0745651
-i==237, vzWeight=1.14432
-Function fit weight=1.17403
+i==240, vzWeight=1.14432 , vzLow=-0.999941
+MC function LowEdge = -1.1
+Function fit weight=1.17981
 
 Low Bin Edge = -1
 bin content = 0.0769388
-i==238, vzWeight=1.12241
-Function fit weight=1.17606
+i==241, vzWeight=1.12241
+Function fit weight=1.18154
 
 Low Bin Edge = -0.9
 bin content = 0.0769107
-i==239, vzWeight=1.14904
-Function fit weight=1.17798
+i==242, vzWeight=1.14904
+Function fit weight=1.18317
 
 Low Bin Edge = -0.8
 bin content = 0.0856414
-i==240, vzWeight=1.15077 , vzLow=5.52669e-05
-MC function LowEdge = -0.8
-Function fit weight=1.17981
+i==243, vzWeight=1.15077
+Function fit weight=1.1847
 
 Low Bin Edge = -0.7
 bin content = 0.079634
-i==241, vzWeight=1.157
-Function fit weight=1.18154
+i==244, vzWeight=1.157
+Function fit weight=1.18614
 
 Low Bin Edge = -0.6
 bin content = 0.0851584
-i==242, vzWeight=1.14005
-Function fit weight=1.18317
+i==245, vzWeight=1.14005 , vzLow=-0.499941
+MC function LowEdge = -0.6
+Function fit weight=1.18747
 
 Low Bin Edge = -0.5
 bin content = 0.0865612
-i==243, vzWeight=1.17108
-Function fit weight=1.1847
+i==246, vzWeight=1.17108
+Function fit weight=1.1887
 
 Low Bin Edge = -0.4
 bin content = 0.0866131
-i==244, vzWeight=1.1645
-Function fit weight=1.18614
+i==247, vzWeight=1.1645
+Function fit weight=1.18983
 
 Low Bin Edge = -0.3
 bin content = 0.0866167
-i==245, vzWeight=1.15151 , vzLow=0.500055
-MC function LowEdge = -0.3
-Function fit weight=1.18747
+i==248, vzWeight=1.15151
+Function fit weight=1.19086
 
 Low Bin Edge = -0.2
 bin content = 0.0904421
-i==246, vzWeight=1.158
-Function fit weight=1.1887
+i==249, vzWeight=1.158
+Function fit weight=1.19179
 
 Low Bin Edge = -0.1
 bin content = 0.0916149
-i==247, vzWeight=1.16254
-Function fit weight=1.18983
+i==250, vzWeight=1.16254 , vzLow=5.90816e-05
+MC function LowEdge = -0.1
+Function fit weight=1.19262
 
 Low Bin Edge = 0
 bin content = 0.0920172
-i==248, vzWeight=1.1646
-Function fit weight=1.19086
+i==251, vzWeight=1.1646
+Function fit weight=1.19335
 
 Low Bin Edge = 0.1
 bin content = 0.0990316
-i==249, vzWeight=1.15385
-Function fit weight=1.19179
+i==252, vzWeight=1.15385
+Function fit weight=1.19397
 
 Low Bin Edge = 0.2
 bin content = 0.0954231
-i==250, vzWeight=1.17907 , vzLow=1.00006
-MC function LowEdge = 0.2
-Function fit weight=1.19262
+i==253, vzWeight=1.17907
+Function fit weight=1.19449
 
 Low Bin Edge = 0.3
 bin content = 0.100323
-i==251, vzWeight=1.14388
-Function fit weight=1.19335
+i==254, vzWeight=1.14388
+Function fit weight=1.19491
 
 Low Bin Edge = 0.4
 bin content = 0.105492
-i==252, vzWeight=1.16576
-Function fit weight=1.19397
+i==255, vzWeight=1.16576 , vzLow=0.500059
+MC function LowEdge = 0.4
+Function fit weight=1.19523
 
 Low Bin Edge = 0.5
 bin content = 0.10369
-i==253, vzWeight=1.16411
-Function fit weight=1.19449
+i==256, vzWeight=1.16411
+Function fit weight=1.19545
 
 Low Bin Edge = 0.6
 bin content = 0.110569
-i==254, vzWeight=1.16061
-Function fit weight=1.19491
+i==257, vzWeight=1.16061
+Function fit weight=1.19556
 
 Low Bin Edge = 0.7
 bin content = 0.109203
-i==255, vzWeight=1.17227 , vzLow=1.50006
-MC function LowEdge = 0.7
-Function fit weight=1.19523
+i==258, vzWeight=1.17227
+Function fit weight=1.19558
 
 Low Bin Edge = 0.8
 bin content = 0.108319
-i==256, vzWeight=1.16315
-Function fit weight=1.19545
+i==259, vzWeight=1.16315
+Function fit weight=1.19549
 
 Low Bin Edge = 0.9
 bin content = 0.114054
-i==257, vzWeight=1.16247
-Function fit weight=1.19556
+i==260, vzWeight=1.16247 , vzLow=1.00006
+MC function LowEdge = 0.9
+Function fit weight=1.19529
 
 Low Bin Edge = 1
 bin content = 0.115934
-i==258, vzWeight=1.15317
-Function fit weight=1.19558
+i==261, vzWeight=1.15317
+Function fit weight=1.195
 
 Low Bin Edge = 1.1
 bin content = 0.118271
-i==259, vzWeight=1.17936
-Function fit weight=1.19549
+i==262, vzWeight=1.17936
+Function fit weight=1.1946
 
 Low Bin Edge = 1.2
 bin content = 0.116454
-i==260, vzWeight=1.15455 , vzLow=2.00006
-MC function LowEdge = 1.2
-Function fit weight=1.19529
+i==263, vzWeight=1.15455
+Function fit weight=1.1941
 
 Low Bin Edge = 1.3
 bin content = 0.123003
-i==261, vzWeight=1.15758
-Function fit weight=1.195
+i==264, vzWeight=1.15758
+Function fit weight=1.1935
 
 Low Bin Edge = 1.4
 bin content = 0.12266
-i==262, vzWeight=1.14933
-Function fit weight=1.1946
+i==265, vzWeight=1.14933 , vzLow=1.50006
+MC function LowEdge = 1.4
+Function fit weight=1.1928
 
 Low Bin Edge = 1.5
 bin content = 0.123719
-i==263, vzWeight=1.19079
-Function fit weight=1.1941
+i==266, vzWeight=1.19079
+Function fit weight=1.19199
 
 Low Bin Edge = 1.6
 bin content = 0.125863
-i==264, vzWeight=1.17641
-Function fit weight=1.1935
+i==267, vzWeight=1.17641
+Function fit weight=1.19109
 
 Low Bin Edge = 1.7
 bin content = 0.132991
-i==265, vzWeight=1.16237 , vzLow=2.50006
-MC function LowEdge = 1.7
-Function fit weight=1.1928
+i==268, vzWeight=1.16237
+Function fit weight=1.19008
 
 Low Bin Edge = 1.8
 bin content = 0.130587
-i==266, vzWeight=1.16054
-Function fit weight=1.19199
+i==269, vzWeight=1.16054
+Function fit weight=1.18897
 
 Low Bin Edge = 1.9
 bin content = 0.13686
-i==267, vzWeight=1.17536
-Function fit weight=1.19109
+i==270, vzWeight=1.17536 , vzLow=2.00006
+MC function LowEdge = 1.9
+Function fit weight=1.18777
 
 Low Bin Edge = 2
 bin content = 0.13838
-i==268, vzWeight=1.17296
-Function fit weight=1.19008
+i==271, vzWeight=1.17296
+Function fit weight=1.18646
 
 Low Bin Edge = 2.1
 bin content = 0.139238
-i==269, vzWeight=1.15801
-Function fit weight=1.18897
+i==272, vzWeight=1.15801
+Function fit weight=1.18505
 
 Low Bin Edge = 2.2
 bin content = 0.142017
-i==270, vzWeight=1.14315 , vzLow=3.00005
-MC function LowEdge = 2.2
-Function fit weight=1.18777
+i==273, vzWeight=1.14315
+Function fit weight=1.18354
 
 Low Bin Edge = 2.3
 bin content = 0.143472
-i==271, vzWeight=1.16767
-Function fit weight=1.18646
+i==274, vzWeight=1.16767
+Function fit weight=1.18193
 
 Low Bin Edge = 2.4
 bin content = 0.146803
-i==272, vzWeight=1.13794
-Function fit weight=1.18505
+i==275, vzWeight=1.13794 , vzLow=2.50006
+MC function LowEdge = 2.4
+Function fit weight=1.18023
 
 Low Bin Edge = 2.5
 bin content = 0.148984
-i==273, vzWeight=1.18107
-Function fit weight=1.18354
+i==276, vzWeight=1.18107
+Function fit weight=1.17842
 
 Low Bin Edge = 2.6
 bin content = 0.152359
-i==274, vzWeight=1.14848
-Function fit weight=1.18193
+i==277, vzWeight=1.14848
+Function fit weight=1.17652
 
 Low Bin Edge = 2.7
 bin content = 0.152918
-i==275, vzWeight=1.16952 , vzLow=3.50005
-MC function LowEdge = 2.7
-Function fit weight=1.18023
+i==278, vzWeight=1.16952
+Function fit weight=1.17452
 
 Low Bin Edge = 2.8
 bin content = 0.152966
-i==276, vzWeight=1.17425
-Function fit weight=1.17842
+i==279, vzWeight=1.17425
+Function fit weight=1.17242
 
 Low Bin Edge = 2.9
 bin content = 0.159206
-i==277, vzWeight=1.20554
-Function fit weight=1.17652
+i==280, vzWeight=1.20554 , vzLow=3.00006
+MC function LowEdge = 2.9
+Function fit weight=1.17023
 
 Low Bin Edge = 3
 bin content = 0.167126
-i==278, vzWeight=1.13643
-Function fit weight=1.17452
+i==281, vzWeight=1.13643
+Function fit weight=1.16794
 
 Low Bin Edge = 3.1
 bin content = 0.166865
-i==279, vzWeight=1.16606
-Function fit weight=1.17242
+i==282, vzWeight=1.16606
+Function fit weight=1.16555
 
 Low Bin Edge = 3.2
 bin content = 0.167336
-i==280, vzWeight=1.1658 , vzLow=4.00005
-MC function LowEdge = 3.2
-Function fit weight=1.17023
+i==283, vzWeight=1.1658
+Function fit weight=1.16307
 
 Low Bin Edge = 3.3
 bin content = 0.170353
-i==281, vzWeight=1.12143
-Function fit weight=1.16794
+i==284, vzWeight=1.12143
+Function fit weight=1.1605
 
 Low Bin Edge = 3.4
 bin content = 0.171773
-i==282, vzWeight=1.15891
-Function fit weight=1.16555
+i==285, vzWeight=1.15891 , vzLow=3.50006
+MC function LowEdge = 3.4
+Function fit weight=1.15783
 
 Low Bin Edge = 3.5
 bin content = 0.175511
-i==283, vzWeight=1.12217
-Function fit weight=1.16307
+i==286, vzWeight=1.12217
+Function fit weight=1.15507
 
 Low Bin Edge = 3.6
 bin content = 0.174903
-i==284, vzWeight=1.1397
-Function fit weight=1.1605
+i==287, vzWeight=1.1397
+Function fit weight=1.15222
 
 Low Bin Edge = 3.7
 bin content = 0.183829
-i==285, vzWeight=1.17211 , vzLow=4.50005
-MC function LowEdge = 3.7
-Function fit weight=1.15783
+i==288, vzWeight=1.17211
+Function fit weight=1.14928
 
 Low Bin Edge = 3.8
 bin content = 0.182402
-i==286, vzWeight=1.14171
-Function fit weight=1.15507
+i==289, vzWeight=1.14171
+Function fit weight=1.14625
 
 Low Bin Edge = 3.9
 bin content = 0.190954
-i==287, vzWeight=1.14324
-Function fit weight=1.15222
+i==290, vzWeight=1.14324 , vzLow=4.00006
+MC function LowEdge = 3.9
+Function fit weight=1.14312
 
 Low Bin Edge = 4
 bin content = 0.192348
-i==288, vzWeight=1.17641
-Function fit weight=1.14928
+i==291, vzWeight=1.17641
+Function fit weight=1.13991
 
 Low Bin Edge = 4.1
 bin content = 0.195899
-i==289, vzWeight=1.12413
-Function fit weight=1.14625
+i==292, vzWeight=1.12413
+Function fit weight=1.13661
 
 Low Bin Edge = 4.2
 bin content = 0.198893
-i==290, vzWeight=1.13316 , vzLow=5.00005
-MC function LowEdge = 4.2
-Function fit weight=1.14312
+i==293, vzWeight=1.13316
+Function fit weight=1.13322
 
 Low Bin Edge = 4.3
 bin content = 0.19587
-i==291, vzWeight=1.13085
-Function fit weight=1.13991
+i==294, vzWeight=1.13085
+Function fit weight=1.12975
 
 Low Bin Edge = 4.4
 bin content = 0.202056
-i==292, vzWeight=1.12657
-Function fit weight=1.13661
+i==295, vzWeight=1.12657 , vzLow=4.50006
+MC function LowEdge = 4.4
+Function fit weight=1.12619
 
 Low Bin Edge = 4.5
 bin content = 0.205528
-i==293, vzWeight=1.13305
-Function fit weight=1.13322
+i==296, vzWeight=1.13305
+Function fit weight=1.12254
 
 Low Bin Edge = 4.6
 bin content = 0.20953
-i==294, vzWeight=1.12065
-Function fit weight=1.12975
+i==297, vzWeight=1.12065
+Function fit weight=1.11881
 
 Low Bin Edge = 4.7
 bin content = 0.206408
-i==295, vzWeight=1.11951 , vzLow=5.50005
-MC function LowEdge = 4.7
-Function fit weight=1.12619
+i==298, vzWeight=1.11951
+Function fit weight=1.115
 
 Low Bin Edge = 4.8
 bin content = 0.210015
-i==296, vzWeight=1.11763
-Function fit weight=1.12254
+i==299, vzWeight=1.11763
+Function fit weight=1.11111
 
 Low Bin Edge = 4.9
 bin content = 0.215739
-i==297, vzWeight=1.13541
-Function fit weight=1.11881
+i==300, vzWeight=1.13541 , vzLow=5.00006
+MC function LowEdge = 4.9
+Function fit weight=1.10713
 
 Low Bin Edge = 5
 bin content = 0.225097
-i==298, vzWeight=1.11617
-Function fit weight=1.115
+i==301, vzWeight=1.11617
+Function fit weight=1.10308
 
 Low Bin Edge = 5.1
 bin content = 0.2257
-i==299, vzWeight=1.13276
-Function fit weight=1.11111
+i==302, vzWeight=1.13276
+Function fit weight=1.09894
 
 Low Bin Edge = 5.2
 bin content = 0.221138
-i==300, vzWeight=1.13886 , vzLow=6.00005
-MC function LowEdge = 5.2
-Function fit weight=1.10713
+i==303, vzWeight=1.13886
+Function fit weight=1.09473
 
 Low Bin Edge = 5.3
 bin content = 0.234176
-i==301, vzWeight=1.11247
-Function fit weight=1.10308
+i==304, vzWeight=1.11247
+Function fit weight=1.09044
 
 Low Bin Edge = 5.4
 bin content = 0.242254
-i==302, vzWeight=1.09618
-Function fit weight=1.09894
+i==305, vzWeight=1.09618 , vzLow=5.50006
+MC function LowEdge = 5.4
+Function fit weight=1.08607
 
 Low Bin Edge = 5.5
 bin content = 0.243058
-i==303, vzWeight=1.11981
-Function fit weight=1.09473
+i==306, vzWeight=1.11981
+Function fit weight=1.08163
 
 Low Bin Edge = 5.6
 bin content = 0.241741
-i==304, vzWeight=1.10312
-Function fit weight=1.09044
+i==307, vzWeight=1.10312
+Function fit weight=1.07712
 
 Low Bin Edge = 5.7
 bin content = 0.245862
-i==305, vzWeight=1.1314 , vzLow=6.50005
-MC function LowEdge = 5.7
-Function fit weight=1.08607
+i==308, vzWeight=1.1314
+Function fit weight=1.07253
 
 Low Bin Edge = 5.8
 bin content = 0.251731
-i==306, vzWeight=1.08679
-Function fit weight=1.08163
+i==309, vzWeight=1.08679
+Function fit weight=1.06787
 
 Low Bin Edge = 5.9
 bin content = 0.248168
-i==307, vzWeight=1.12316
-Function fit weight=1.07712
+i==310, vzWeight=1.12316 , vzLow=6.00006
+MC function LowEdge = 5.9
+Function fit weight=1.06314
 
 Low Bin Edge = 6
 bin content = 0.259041
-i==308, vzWeight=1.08691
-Function fit weight=1.07253
+i==311, vzWeight=1.08691
+Function fit weight=1.05834
 
 Low Bin Edge = 6.1
 bin content = 0.260513
-i==309, vzWeight=1.07787
-Function fit weight=1.06787
+i==312, vzWeight=1.07787
+Function fit weight=1.05347
 
 Low Bin Edge = 6.2
 bin content = 0.260472
-i==310, vzWeight=1.09815 , vzLow=7.00005
-MC function LowEdge = 6.2
-Function fit weight=1.06314
+i==313, vzWeight=1.09815
+Function fit weight=1.04853
 
 Low Bin Edge = 6.3
 bin content = 0.265858
-i==311, vzWeight=1.11489
-Function fit weight=1.05834
+i==314, vzWeight=1.11489
+Function fit weight=1.04353
 
 Low Bin Edge = 6.4
 bin content = 0.265008
-i==312, vzWeight=1.08037
-Function fit weight=1.05347
+i==315, vzWeight=1.08037 , vzLow=6.50006
+MC function LowEdge = 6.4
+Function fit weight=1.03846
 
 Low Bin Edge = 6.5
 bin content = 0.273327
-i==313, vzWeight=1.06745
-Function fit weight=1.04853
+i==316, vzWeight=1.06745
+Function fit weight=1.03333
 
 Low Bin Edge = 6.6
 bin content = 0.277203
-i==314, vzWeight=1.03884
-Function fit weight=1.04353
+i==317, vzWeight=1.03884
+Function fit weight=1.02814
 
 Low Bin Edge = 6.7
 bin content = 0.273896
-i==315, vzWeight=1.09174 , vzLow=7.50005
-MC function LowEdge = 6.7
-Function fit weight=1.03846
+i==318, vzWeight=1.09174
+Function fit weight=1.02288
 
 Low Bin Edge = 6.8
 bin content = 0.287209
-i==316, vzWeight=1.03147
-Function fit weight=1.03333
+i==319, vzWeight=1.03147
+Function fit weight=1.01757
 
 Low Bin Edge = 6.9
 bin content = 0.287888
-i==317, vzWeight=1.02004
-Function fit weight=1.02814
+i==320, vzWeight=1.02004 , vzLow=7.00005
+MC function LowEdge = 6.9
+Function fit weight=1.01219
 
 Low Bin Edge = 7
 bin content = 0.293375
-i==318, vzWeight=1.03684
-Function fit weight=1.02288
+i==321, vzWeight=1.03684
+Function fit weight=1.00676
 
 Low Bin Edge = 7.1
 bin content = 0.303211
-i==319, vzWeight=1.0498
-Function fit weight=1.01757
+i==322, vzWeight=1.0498
+Function fit weight=1.00127
 
 Low Bin Edge = 7.2
 bin content = 0.300939
-i==320, vzWeight=1.04227 , vzLow=8.00005
-MC function LowEdge = 7.2
-Function fit weight=1.01219
+i==323, vzWeight=1.04227
+Function fit weight=0.995726
 
 Low Bin Edge = 7.3
 bin content = 0.303809
-i==321, vzWeight=1.04865
-Function fit weight=1.00676
+i==324, vzWeight=1.04865
+Function fit weight=0.990128
 
 Low Bin Edge = 7.4
 bin content = 0.311163
-i==322, vzWeight=1.04217
-Function fit weight=1.00127
+i==325, vzWeight=1.04217 , vzLow=7.50005
+MC function LowEdge = 7.4
+Function fit weight=0.984477
 
 Low Bin Edge = 7.5
 bin content = 0.314329
-i==323, vzWeight=1.02373
-Function fit weight=0.995726
+i==326, vzWeight=1.02373
+Function fit weight=0.978774
 
 Low Bin Edge = 7.6
 bin content = 0.312004
-i==324, vzWeight=0.998766
-Function fit weight=0.990128
+i==327, vzWeight=0.998766
+Function fit weight=0.973022
 
 Low Bin Edge = 7.7
 bin content = 0.323642
-i==325, vzWeight=1.02009 , vzLow=8.50005
-MC function LowEdge = 7.7
-Function fit weight=0.984477
+i==328, vzWeight=1.02009
+Function fit weight=0.96722
 
 Low Bin Edge = 7.8
 bin content = 0.323763
-i==326, vzWeight=1.01359
-Function fit weight=0.978774
+i==329, vzWeight=1.01359
+Function fit weight=0.961371
 
 Low Bin Edge = 7.9
 bin content = 0.326797
-i==327, vzWeight=1.02474
-Function fit weight=0.973022
+i==330, vzWeight=1.02474 , vzLow=8.00005
+MC function LowEdge = 7.9
+Function fit weight=0.955475
 
 Low Bin Edge = 8
 bin content = 0.335268
-i==328, vzWeight=0.976417
-Function fit weight=0.96722
+i==331, vzWeight=0.976417
+Function fit weight=0.949534
 
 Low Bin Edge = 8.1
 bin content = 0.331251
-i==329, vzWeight=0.987471
-Function fit weight=0.961371
+i==332, vzWeight=0.987471
+Function fit weight=0.943549
 
 Low Bin Edge = 8.2
 bin content = 0.338452
-i==330, vzWeight=0.989013 , vzLow=9.00005
-MC function LowEdge = 8.2
-Function fit weight=0.955475
+i==333, vzWeight=0.989013
+Function fit weight=0.937522
 
 Low Bin Edge = 8.3
 bin content = 0.34373
-i==331, vzWeight=0.973199
-Function fit weight=0.949534
+i==334, vzWeight=0.973199
+Function fit weight=0.931454
 
 Low Bin Edge = 8.4
 bin content = 0.348844
-i==332, vzWeight=1.00168
-Function fit weight=0.943549
+i==335, vzWeight=1.00168 , vzLow=8.50006
+MC function LowEdge = 8.4
+Function fit weight=0.925345
 
 Low Bin Edge = 8.5
 bin content = 0.353656
-i==333, vzWeight=0.965437
-Function fit weight=0.937522
+i==336, vzWeight=0.965437
+Function fit weight=0.919198
 
 Low Bin Edge = 8.6
 bin content = 0.360346
-i==334, vzWeight=0.97457
-Function fit weight=0.931454
+i==337, vzWeight=0.97457
+Function fit weight=0.913014
 
 Low Bin Edge = 8.7
 bin content = 0.356122
-i==335, vzWeight=0.933076 , vzLow=9.50006
-MC function LowEdge = 8.7
-Function fit weight=0.925345
+i==338, vzWeight=0.933076
+Function fit weight=0.906794
 
 Low Bin Edge = 8.8
 bin content = 0.361492
-i==336, vzWeight=0.949908
-Function fit weight=0.919198
+i==339, vzWeight=0.949908
+Function fit weight=0.900539
 
 Low Bin Edge = 8.9
 bin content = 0.366367
-i==337, vzWeight=0.967012
-Function fit weight=0.913014
+i==340, vzWeight=0.967012 , vzLow=9.00006
+MC function LowEdge = 8.9
+Function fit weight=0.894251
 
 Low Bin Edge = 9
 bin content = 0.368209
-i==338, vzWeight=0.966876
-Function fit weight=0.906794
+i==341, vzWeight=0.966876
+Function fit weight=0.88793
 
 Low Bin Edge = 9.1
 bin content = 0.376399
-i==339, vzWeight=0.924282
-Function fit weight=0.900539
+i==342, vzWeight=0.924282
+Function fit weight=0.881579
 
 Low Bin Edge = 9.2
 bin content = 0.383685
-i==340, vzWeight=0.909964 , vzLow=10.0001
-MC function LowEdge = 9.2
-Function fit weight=0.894251
+i==343, vzWeight=0.909964
+Function fit weight=0.875198
 
 Low Bin Edge = 9.3
 bin content = 0.379231
-i==341, vzWeight=0.915665
-Function fit weight=0.88793
+i==344, vzWeight=0.915665
+Function fit weight=0.86879
 
 Low Bin Edge = 9.4
 bin content = 0.383879
-i==342, vzWeight=0.933913
-Function fit weight=0.881579
+i==345, vzWeight=0.933913 , vzLow=9.50006
+MC function LowEdge = 9.4
+Function fit weight=0.862354
 
 Low Bin Edge = 9.5
 bin content = 0.396664
-i==343, vzWeight=0.938168
-Function fit weight=0.875198
+i==346, vzWeight=0.938168
+Function fit weight=0.855893
 
 Low Bin Edge = 9.6
 bin content = 0.403504
-i==344, vzWeight=0.921808
-Function fit weight=0.86879
+i==347, vzWeight=0.921808
+Function fit weight=0.849407
 
 Low Bin Edge = 9.7
 bin content = 0.405491
-i==345, vzWeight=0.925362 , vzLow=10.5001
-MC function LowEdge = 9.7
-Function fit weight=0.862354
+i==348, vzWeight=0.925362
+Function fit weight=0.842899
 
 Low Bin Edge = 9.8
 bin content = 0.404772
-i==346, vzWeight=0.881331
-Function fit weight=0.855893
+i==349, vzWeight=0.881331
+Function fit weight=0.836368
 
 Low Bin Edge = 9.9
 bin content = 0.41005
-i==347, vzWeight=0.904866
-Function fit weight=0.849407
+i==350, vzWeight=0.904866 , vzLow=10.0001
+MC function LowEdge = 9.9
+Function fit weight=0.829818
 
 Low Bin Edge = 10
 bin content = 0.406175
-i==348, vzWeight=0.91726
-Function fit weight=0.842899
+i==351, vzWeight=0.91726
+Function fit weight=0.823248
 
 Low Bin Edge = 10.1
 bin content = 0.41951
-i==349, vzWeight=0.868775
-Function fit weight=0.836368
+i==352, vzWeight=0.868775
+Function fit weight=0.81666
 
 Low Bin Edge = 10.2
 bin content = 0.430232
-i==350, vzWeight=0.859464 , vzLow=11.0001
-MC function LowEdge = 10.2
-Function fit weight=0.829818
+i==353, vzWeight=0.859464
+Function fit weight=0.810056
 
 Low Bin Edge = 10.3
 bin content = 0.42144
-i==351, vzWeight=0.888381
-Function fit weight=0.823248
+i==354, vzWeight=0.888381
+Function fit weight=0.803436
 
 Low Bin Edge = 10.4
 bin content = 0.426819
-i==352, vzWeight=0.899024
-Function fit weight=0.81666
+i==355, vzWeight=0.899024 , vzLow=10.5001
+MC function LowEdge = 10.4
+Function fit weight=0.796802
 
 Low Bin Edge = 10.5
 bin content = 0.438617
-i==353, vzWeight=0.81954
-Function fit weight=0.810056
+i==356, vzWeight=0.81954
+Function fit weight=0.790156
 
 Low Bin Edge = 10.6
 bin content = 0.440565
-i==354, vzWeight=0.82711
-Function fit weight=0.803436
+i==357, vzWeight=0.82711
+Function fit weight=0.783498
 
 Low Bin Edge = 10.7
 bin content = 0.447515
-i==355, vzWeight=0.831996 , vzLow=11.5001
-MC function LowEdge = 10.7
-Function fit weight=0.796802
+i==358, vzWeight=0.831996
+Function fit weight=0.776829
 
 Low Bin Edge = 10.8
 bin content = 0.447093
-i==356, vzWeight=0.811947
-Function fit weight=0.790156
+i==359, vzWeight=0.811947
+Function fit weight=0.770151
 
 Low Bin Edge = 10.9
 bin content = 0.455843
-i==357, vzWeight=0.839312
-Function fit weight=0.783498
+i==360, vzWeight=0.839312 , vzLow=11.0001
+MC function LowEdge = 10.9
+Function fit weight=0.763466
 
 Low Bin Edge = 11
 bin content = 0.451276
-i==358, vzWeight=0.819823
-Function fit weight=0.776829
+i==361, vzWeight=0.819823
+Function fit weight=0.756773
 
 Low Bin Edge = 11.1
 bin content = 0.470386
-i==359, vzWeight=0.818477
-Function fit weight=0.770151
+i==362, vzWeight=0.818477
+Function fit weight=0.750075
 
 Low Bin Edge = 11.2
 bin content = 0.46516
-i==360, vzWeight=0.80245 , vzLow=12.0001
-MC function LowEdge = 11.2
-Function fit weight=0.763466
+i==363, vzWeight=0.80245
+Function fit weight=0.743373
 
 Low Bin Edge = 11.3
 bin content = 0.472485
-i==361, vzWeight=0.819312
-Function fit weight=0.756773
+i==364, vzWeight=0.819312
+Function fit weight=0.736668
 
 Low Bin Edge = 11.4
 bin content = 0.479558
-i==362, vzWeight=0.802612
-Function fit weight=0.750075
+i==365, vzWeight=0.802612 , vzLow=11.5001
+MC function LowEdge = 11.4
+Function fit weight=0.72996
 
 Low Bin Edge = 11.5
 bin content = 0.484079
-i==363, vzWeight=0.768327
-Function fit weight=0.743373
+i==366, vzWeight=0.768327
+Function fit weight=0.723252
 
 Low Bin Edge = 11.6
 bin content = 0.484033
-i==364, vzWeight=0.780291
-Function fit weight=0.736668
+i==367, vzWeight=0.780291
+Function fit weight=0.716544
 
 Low Bin Edge = 11.7
 bin content = 0.493912
-i==365, vzWeight=0.760397 , vzLow=12.5001
-MC function LowEdge = 11.7
-Function fit weight=0.72996
+i==368, vzWeight=0.760397
+Function fit weight=0.709837
 
 Low Bin Edge = 11.8
 bin content = 0.500872
-i==366, vzWeight=0.725535
-Function fit weight=0.723252
+i==369, vzWeight=0.725535
+Function fit weight=0.703134
 
 Low Bin Edge = 11.9
 bin content = 0.51146
-i==367, vzWeight=0.702742
-Function fit weight=0.716544
+i==370, vzWeight=0.702742 , vzLow=12.0001
+MC function LowEdge = 11.9
+Function fit weight=0.696433
 
 Low Bin Edge = 12
 bin content = 0.501517
-i==368, vzWeight=0.748403
-Function fit weight=0.709837
+i==371, vzWeight=0.748403
+Function fit weight=0.689738
 
 Low Bin Edge = 12.1
 bin content = 0.508338
-i==369, vzWeight=0.740829
-Function fit weight=0.703134
+i==372, vzWeight=0.740829
+Function fit weight=0.683049
 
 Low Bin Edge = 12.2
 bin content = 0.508224
-i==370, vzWeight=0.704518 , vzLow=13.0001
-MC function LowEdge = 12.2
-Function fit weight=0.696433
+i==373, vzWeight=0.704518
+Function fit weight=0.676366
 
 Low Bin Edge = 12.3
 bin content = 0.521827
-i==371, vzWeight=0.72492
-Function fit weight=0.689738
+i==374, vzWeight=0.72492
+Function fit weight=0.669692
 
 Low Bin Edge = 12.4
 bin content = 0.521225
-i==372, vzWeight=0.748486
-Function fit weight=0.683049
+i==375, vzWeight=0.748486 , vzLow=12.5001
+MC function LowEdge = 12.4
+Function fit weight=0.663027
 
 Low Bin Edge = 12.5
 bin content = 0.531832
-i==373, vzWeight=0.684221
-Function fit weight=0.676366
+i==376, vzWeight=0.684221
+Function fit weight=0.656372
 
 Low Bin Edge = 12.6
 bin content = 0.539365
-i==374, vzWeight=0.645883
-Function fit weight=0.669692
+i==377, vzWeight=0.645883
+Function fit weight=0.649728
 
 Low Bin Edge = 12.7
 bin content = 0.532368
-i==375, vzWeight=0.718001 , vzLow=13.5001
-MC function LowEdge = 12.7
-Function fit weight=0.663027
+i==378, vzWeight=0.718001
+Function fit weight=0.643096
 
 Low Bin Edge = 12.8
 bin content = 0.544826
-i==376, vzWeight=0.644524
-Function fit weight=0.656372
+i==379, vzWeight=0.644524
+Function fit weight=0.636478
 
 Low Bin Edge = 12.9
 bin content = 0.541068
-i==377, vzWeight=0.686049
-Function fit weight=0.649728
+i==380, vzWeight=0.686049 , vzLow=13.0001
+MC function LowEdge = 12.9
+Function fit weight=0.629873
 
 Low Bin Edge = 13
 bin content = 0.552701
-i==378, vzWeight=0.678566
-Function fit weight=0.643096
+i==381, vzWeight=0.678566
+Function fit weight=0.623284
 
 Low Bin Edge = 13.1
 bin content = 0.552143
-i==379, vzWeight=0.645618
-Function fit weight=0.636478
+i==382, vzWeight=0.645618
+Function fit weight=0.616711
 
 Low Bin Edge = 13.2
 bin content = 0.563221
-i==380, vzWeight=0.637579 , vzLow=14.0001
-MC function LowEdge = 13.2
-Function fit weight=0.629873
+i==383, vzWeight=0.637579
+Function fit weight=0.610156
 
 Low Bin Edge = 13.3
 bin content = 0.56557
-i==381, vzWeight=0.631931
-Function fit weight=0.623284
+i==384, vzWeight=0.631931
+Function fit weight=0.603618
 
 Low Bin Edge = 13.4
 bin content = 0.569151
-i==382, vzWeight=0.627866
-Function fit weight=0.616711
+i==385, vzWeight=0.627866 , vzLow=13.5001
+MC function LowEdge = 13.4
+Function fit weight=0.597099
 
 Low Bin Edge = 13.5
 bin content = 0.571093
-i==383, vzWeight=0.598764
-Function fit weight=0.610156
+i==386, vzWeight=0.598764
+Function fit weight=0.5906
 
 Low Bin Edge = 13.6
 bin content = 0.578457
-i==384, vzWeight=0.603811
-Function fit weight=0.603618
+i==387, vzWeight=0.603811
+Function fit weight=0.584122
 
 Low Bin Edge = 13.7
 bin content = 0.586725
-i==385, vzWeight=0.579834 , vzLow=14.5001
-MC function LowEdge = 13.7
-Function fit weight=0.597099
+i==388, vzWeight=0.579834
+Function fit weight=0.577665
 
 Low Bin Edge = 13.8
 bin content = 0.589668
-i==386, vzWeight=0.618893
-Function fit weight=0.5906
+i==389, vzWeight=0.618893
+Function fit weight=0.571231
 
 Low Bin Edge = 13.9
 bin content = 0.593563
-i==387, vzWeight=0.589254
-Function fit weight=0.584122
+i==390, vzWeight=0.589254 , vzLow=14.0001
+MC function LowEdge = 13.9
+Function fit weight=0.56482
 
 Low Bin Edge = 14
 bin content = 0.598837
-i==388, vzWeight=0.607857
-Function fit weight=0.577665
+i==391, vzWeight=0.607857
+Function fit weight=0.558434
 
 Low Bin Edge = 14.1
 bin content = 0.594799
-i==389, vzWeight=0.568996
-Function fit weight=0.571231
+i==392, vzWeight=0.568996
+Function fit weight=0.552072
 
 Low Bin Edge = 14.2
 bin content = 0.608432
-i==390, vzWeight=0.556205 , vzLow=15.0001
-MC function LowEdge = 14.2
-Function fit weight=0.56482
+i==393, vzWeight=0.556205
+Function fit weight=0.545736
 
 Low Bin Edge = 14.3
 bin content = 0.610581
-i==391, vzWeight=0.553804
-Function fit weight=0.558434
+i==394, vzWeight=0.553804
+Function fit weight=0.539427
 
 Low Bin Edge = 14.4
 bin content = 0.622672
-i==392, vzWeight=0.548915
-Function fit weight=0.552072
+i==395, vzWeight=0.548915 , vzLow=14.5001
+MC function LowEdge = 14.4
+Function fit weight=0.533145
 
 Low Bin Edge = 14.5
 bin content = 0.627219
-i==393, vzWeight=0.521978
-Function fit weight=0.545736
+i==396, vzWeight=0.521978
+Function fit weight=0.526891
 
 Low Bin Edge = 14.6
 bin content = 0.625696
-i==394, vzWeight=0.508788
-Function fit weight=0.539427
+i==397, vzWeight=0.508788
+Function fit weight=0.520666
 
 Low Bin Edge = 14.7
 bin content = 0.620911
-i==395, vzWeight=0.518212 , vzLow=15.5001
-MC function LowEdge = 14.7
-Function fit weight=0.533145
+i==398, vzWeight=0.518212
+Function fit weight=0.51447
 
 Low Bin Edge = 14.8
 bin content = 0.63833
-i==396, vzWeight=0.475178
-Function fit weight=0.526891
+i==399, vzWeight=0.475178
+Function fit weight=0.508304
 
 Low Bin Edge = 14.9
 bin content = 0.634343
-i==397, vzWeight=0.453585
-Function fit weight=0.520666
+i==400, vzWeight=0.453585 , vzLow=15.0001
+MC function LowEdge = 14.9
+Function fit weight=0.50217
 
 Low Bin Edge = 15
 bin content = 0.630147
-i==398, vzWeight=0.511558
-Function fit weight=0.51447
+i==401, vzWeight=0.511558
+Function fit weight=0.496067
 
 Low Bin Edge = 15.1
 bin content = 0.648385
-i==399, vzWeight=0.44857
-Function fit weight=0.508304
+i==402, vzWeight=0.44857
+Function fit weight=0.489996
 
 Low Bin Edge = 15.2
 bin content = 0.655203
-i==400, vzWeight=0.454867 , vzLow=16.0001
-MC function LowEdge = 15.2
-Function fit weight=0.50217
+i==403, vzWeight=0.454867
+Function fit weight=0.483958
 
 Low Bin Edge = 15.3
 bin content = 0.663012
-i==401, vzWeight=0.476483
-Function fit weight=0.496067
+i==404, vzWeight=0.476483
+Function fit weight=0.477954
 
 Low Bin Edge = 15.4
 bin content = 0.648831
-i==402, vzWeight=0.454714
-Function fit weight=0.489996
+i==405, vzWeight=0.454714 , vzLow=15.5001
+MC function LowEdge = 15.4
+Function fit weight=0.471984
 
 Low Bin Edge = 15.5
 bin content = 0.66357
-i==403, vzWeight=0.468142
-Function fit weight=0.483958
+i==406, vzWeight=0.468142
+Function fit weight=0.466048
 
 Low Bin Edge = 15.6
 bin content = 0.671951
-i==404, vzWeight=0.428615
-Function fit weight=0.477954
+i==407, vzWeight=0.428615
+Function fit weight=0.460148
 
 Low Bin Edge = 15.7
 bin content = 0.676777
-i==405, vzWeight=0.432244 , vzLow=16.5001
-MC function LowEdge = 15.7
-Function fit weight=0.471984
+i==408, vzWeight=0.432244
+Function fit weight=0.454284
 
 Low Bin Edge = 15.8
 bin content = 0.668481
-i==406, vzWeight=0.410062
-Function fit weight=0.466048
+i==409, vzWeight=0.410062
+Function fit weight=0.448456
 
 Low Bin Edge = 15.9
 bin content = 0.682221
-i==407, vzWeight=0.397133
-Function fit weight=0.460148
+i==410, vzWeight=0.397133 , vzLow=16.0001
+MC function LowEdge = 15.9
+Function fit weight=0.442664
 
 Low Bin Edge = 16
 bin content = 0.686104
-i==408, vzWeight=0.393327
-Function fit weight=0.454284
+i==411, vzWeight=0.393327
+Function fit weight=0.436911
 
 Low Bin Edge = 16.1
 bin content = 0.686326
-i==409, vzWeight=0.433892
-Function fit weight=0.448456
+i==412, vzWeight=0.433892
+Function fit weight=0.431195
 
 Low Bin Edge = 16.2
 bin content = 0.697995
-i==410, vzWeight=0.356488 , vzLow=17.0001
-MC function LowEdge = 16.2
-Function fit weight=0.442664
+i==413, vzWeight=0.356488
+Function fit weight=0.425517
 
 Low Bin Edge = 16.3
 bin content = 0.703992
-i==411, vzWeight=0.383025
-Function fit weight=0.436911
+i==414, vzWeight=0.383025
+Function fit weight=0.419878
 
 Low Bin Edge = 16.4
 bin content = 0.710453
-i==412, vzWeight=0.389635
-Function fit weight=0.431195
+i==415, vzWeight=0.389635 , vzLow=16.5001
+MC function LowEdge = 16.4
+Function fit weight=0.414279
 
 Low Bin Edge = 16.5
 bin content = 0.70988
-i==413, vzWeight=0.37159
-Function fit weight=0.425517
+i==416, vzWeight=0.37159
+Function fit weight=0.408719
 
 Low Bin Edge = 16.6
 bin content = 0.705908
-i==414, vzWeight=0.346925
-Function fit weight=0.419878
+i==417, vzWeight=0.346925
+Function fit weight=0.403199
 
 Low Bin Edge = 16.7
 bin content = 0.716808
-i==415, vzWeight=0.374432 , vzLow=17.5001
-MC function LowEdge = 16.7
-Function fit weight=0.414279
+i==418, vzWeight=0.374432
+Function fit weight=0.39772
 
 Low Bin Edge = 16.8
 bin content = 0.714607
-i==416, vzWeight=0.320862
-Function fit weight=0.408719
+i==419, vzWeight=0.320862
+Function fit weight=0.392282
 
 Low Bin Edge = 16.9
 bin content = 0.714731
-i==417, vzWeight=0.315108
-Function fit weight=0.403199
+i==420, vzWeight=0.315108 , vzLow=17.0001
+MC function LowEdge = 16.9
+Function fit weight=0.386885
 
 Low Bin Edge = 17
 bin content = 0.727146
-i==418, vzWeight=0.301609
-Function fit weight=0.39772
+i==421, vzWeight=0.301609
+Function fit weight=0.381529
 
 Low Bin Edge = 17.1
 bin content = 0.732497
-i==419, vzWeight=0.314621
-Function fit weight=0.392282
+i==422, vzWeight=0.314621
+Function fit weight=0.376216
 
 Low Bin Edge = 17.2
 bin content = 0.734094
-i==420, vzWeight=0.341115 , vzLow=18.0001
-MC function LowEdge = 17.2
-Function fit weight=0.386885
+i==423, vzWeight=0.341115
+Function fit weight=0.370945
 
 Low Bin Edge = 17.3
 bin content = 0.740115
-i==421, vzWeight=0.298723
-Function fit weight=0.381529
+i==424, vzWeight=0.298723
+Function fit weight=0.365716
 
 Low Bin Edge = 17.4
 bin content = 0.741992
-i==422, vzWeight=0.264461
-Function fit weight=0.376216
+i==425, vzWeight=0.264461 , vzLow=17.5001
+MC function LowEdge = 17.4
+Function fit weight=0.36053
 
 Low Bin Edge = 17.5
 bin content = 0.752212
-i==423, vzWeight=0.326804
-Function fit weight=0.370945
+i==426, vzWeight=0.326804
+Function fit weight=0.355387
 
 Low Bin Edge = 17.6
 bin content = 0.754355
-i==424, vzWeight=0.260548
-Function fit weight=0.365716
+i==427, vzWeight=0.260548
+Function fit weight=0.350288
 
 Low Bin Edge = 17.7
 bin content = 0.745579
-i==425, vzWeight=0.257008 , vzLow=18.5001
-MC function LowEdge = 17.7
-Function fit weight=0.36053
+i==428, vzWeight=0.257008
+Function fit weight=0.345232
 
 Low Bin Edge = 17.8
 bin content = 0.765068
-i==426, vzWeight=0.285318
-Function fit weight=0.355387
+i==429, vzWeight=0.285318
+Function fit weight=0.340221
 
 Low Bin Edge = 17.9
 bin content = 0.756677
-i==427, vzWeight=0.25409
-Function fit weight=0.350288
+i==430, vzWeight=0.25409 , vzLow=18.0001
+MC function LowEdge = 17.9
+Function fit weight=0.335253
 
 Low Bin Edge = 18
 bin content = 0.767323
-i==428, vzWeight=0.243075
-Function fit weight=0.345232
+i==431, vzWeight=0.243075
+Function fit weight=0.330329
 
 Low Bin Edge = 18.1
 bin content = 0.771744
-i==429, vzWeight=0.235124
-Function fit weight=0.340221
+i==432, vzWeight=0.235124
+Function fit weight=0.32545
 
 Low Bin Edge = 18.2
 bin content = 0.776299
-i==430, vzWeight=0.21776 , vzLow=19.0001
-MC function LowEdge = 18.2
-Function fit weight=0.335253
+i==433, vzWeight=0.21776
+Function fit weight=0.320616
 
 Low Bin Edge = 18.3
 bin content = 0.785509
-i==431, vzWeight=0.236387
-Function fit weight=0.330329
+i==434, vzWeight=0.236387
+Function fit weight=0.315826
 
 Low Bin Edge = 18.4
 bin content = 0.779113
-i==432, vzWeight=0.246632
-Function fit weight=0.32545
+i==435, vzWeight=0.246632 , vzLow=18.5001
+MC function LowEdge = 18.4
+Function fit weight=0.311081
 
 Low Bin Edge = 18.5
 bin content = 0.787311
-i==433, vzWeight=0.228055
-Function fit weight=0.320616
+i==436, vzWeight=0.228055
+Function fit weight=0.306382
 
 Low Bin Edge = 18.6
 bin content = 0.781393
-i==434, vzWeight=0.220591
-Function fit weight=0.315826
+i==437, vzWeight=0.220591
+Function fit weight=0.301727
 
 Low Bin Edge = 18.7
 bin content = 0.793868
-i==435, vzWeight=0.237701 , vzLow=19.5001
-MC function LowEdge = 18.7
-Function fit weight=0.311081
+i==438, vzWeight=0.237701
+Function fit weight=0.297118
 
 Low Bin Edge = 18.8
 bin content = 0.797955
-i==436, vzWeight=0.219628
-Function fit weight=0.306382
+i==439, vzWeight=0.219628
+Function fit weight=0.292554
 
 Low Bin Edge = 18.9
 bin content = 0.785471
-i==437, vzWeight=0.192836
-Function fit weight=0.301727
+i==440, vzWeight=0.192836 , vzLow=19.0001
+MC function LowEdge = 18.9
+Function fit weight=0.288036
 
 Low Bin Edge = 19
 bin content = 0.804798
-i==438, vzWeight=0.20549
-Function fit weight=0.297118
+i==441, vzWeight=0.20549
+Function fit weight=0.283563
 
 Low Bin Edge = 19.1
 bin content = 0.805858
-i==439, vzWeight=0.204447
-Function fit weight=0.292554
+i==442, vzWeight=0.204447
+Function fit weight=0.279136
 
 Low Bin Edge = 19.2
 bin content = 0.816919
-i==440, vzWeight=0.157256 , vzLow=20.0001
-MC function LowEdge = 19.2
-Function fit weight=0.288036
+i==443, vzWeight=0.157256
+Function fit weight=0.274754
 
 Low Bin Edge = 19.3
 bin content = 0.814005
-i==441, vzWeight=0.186271
-Function fit weight=0.283563
+i==444, vzWeight=0.186271
+Function fit weight=0.270418
 
 Low Bin Edge = 19.4
 bin content = 0.817409
-i==442, vzWeight=0.233017
-Function fit weight=0.279136
+i==445, vzWeight=0.233017 , vzLow=19.5001
+MC function LowEdge = 19.4
+Function fit weight=0.266127
 
 Low Bin Edge = 19.5
 bin content = 0.818229
-i==443, vzWeight=0.150253
-Function fit weight=0.274754
+i==446, vzWeight=0.150253
+Function fit weight=0.261883
 
 Low Bin Edge = 19.6
 bin content = 0.814072
-i==444, vzWeight=0.166933
-Function fit weight=0.270418
+i==447, vzWeight=0.166933
+Function fit weight=0.257684
 
 Low Bin Edge = 19.7
 bin content = 0.819887
-i==445, vzWeight=0.200374 , vzLow=20.5001
-MC function LowEdge = 19.7
-Function fit weight=0.266127
+i==448, vzWeight=0.200374
+Function fit weight=0.25353
 
 Low Bin Edge = 19.8
 bin content = 0.827499
-i==446, vzWeight=0.159533
-Function fit weight=0.261883
+i==449, vzWeight=0.159533
+Function fit weight=0.249422
 
 Low Bin Edge = 19.9
 bin content = 0.835186
-i==447, vzWeight=0.146922
-Function fit weight=0.257684
+i==450, vzWeight=0.146922 , vzLow=20.0001
+MC function LowEdge = 19.9
+Function fit weight=0.24536
 
 Low Bin Edge = 20
 bin content = 0.822112
-i==448, vzWeight=0.18168
-Function fit weight=0.25353
+i==451, vzWeight=0.18168
+Function fit weight=0.241343
 
 Low Bin Edge = 20.1
 bin content = 0.835944
-i==449, vzWeight=0.160411
-Function fit weight=0.249422
+i==452, vzWeight=0.160411
+Function fit weight=0.237372
 
 Low Bin Edge = 20.2
 bin content = 0.846779
-i==450, vzWeight=0.169097 , vzLow=21.0001
-MC function LowEdge = 20.2
-Function fit weight=0.24536
+i==453, vzWeight=0.169097
+Function fit weight=0.233446
 
 Low Bin Edge = 20.3
 bin content = 0.847964
-i==451, vzWeight=0.155197
-Function fit weight=0.241343
+i==454, vzWeight=0.155197
+Function fit weight=0.229565
 
 Low Bin Edge = 20.4
 bin content = 0.855432
-i==452, vzWeight=0.161934
-Function fit weight=0.237372
+i==455, vzWeight=0.161934 , vzLow=20.5001
+MC function LowEdge = 20.4
+Function fit weight=0.22573
 
 Low Bin Edge = 20.5
 bin content = 0.85453
-i==453, vzWeight=0.145489
-Function fit weight=0.233446
+i==456, vzWeight=0.145489
+Function fit weight=0.221939
 
 Low Bin Edge = 20.6
 bin content = 0.851021
-i==454, vzWeight=0.123902
-Function fit weight=0.229565
+i==457, vzWeight=0.123902
+Function fit weight=0.218194
 
 Low Bin Edge = 20.7
 bin content = 0.857833
-i==455, vzWeight=0.119742 , vzLow=21.5001
-MC function LowEdge = 20.7
-Function fit weight=0.22573
+i==458, vzWeight=0.119742
+Function fit weight=0.214493
 
 Low Bin Edge = 20.8
 bin content = 0.855381
-i==456, vzWeight=0.134192
-Function fit weight=0.221939
+i==459, vzWeight=0.134192
+Function fit weight=0.210838
 
 Low Bin Edge = 20.9
 bin content = 0.865974
-i==457, vzWeight=0.137462
-Function fit weight=0.218194
+i==460, vzWeight=0.137462 , vzLow=21.0001
+MC function LowEdge = 20.9
+Function fit weight=0.207226
 
 Low Bin Edge = 21
 bin content = 0.859293
-i==458, vzWeight=0.172528
-Function fit weight=0.214493
+i==461, vzWeight=0.172528
+Function fit weight=0.203659
 
 Low Bin Edge = 21.1
 bin content = 0.86107
-i==459, vzWeight=0.1252
-Function fit weight=0.210838
+i==462, vzWeight=0.1252
+Function fit weight=0.200137
 
 Low Bin Edge = 21.2
 bin content = 0.868254
-i==460, vzWeight=0.150138 , vzLow=22.0001
-MC function LowEdge = 21.2
-Function fit weight=0.207226
+i==463, vzWeight=0.150138
+Function fit weight=0.196658
 
 Low Bin Edge = 21.3
 bin content = 0.86998
-i==461, vzWeight=0.145134
-Function fit weight=0.203659
+i==464, vzWeight=0.145134
+Function fit weight=0.193224
 
 Low Bin Edge = 21.4
 bin content = 0.87739
-i==462, vzWeight=0.0816703
-Function fit weight=0.200137
+i==465, vzWeight=0.0816703 , vzLow=21.5001
+MC function LowEdge = 21.4
+Function fit weight=0.189833
 
 Low Bin Edge = 21.5
 bin content = 0.876843
-i==463, vzWeight=0.0640217
-Function fit weight=0.196658
+i==466, vzWeight=0.0640217
+Function fit weight=0.186486
 
 Low Bin Edge = 21.6
 bin content = 0.878356
-i==464, vzWeight=0.133259
-Function fit weight=0.193224
+i==467, vzWeight=0.133259
+Function fit weight=0.183182
 
 Low Bin Edge = 21.7
 bin content = 0.868293
-i==465, vzWeight=0.0558461 , vzLow=22.5001
-MC function LowEdge = 21.7
-Function fit weight=0.189833
+i==468, vzWeight=0.0558461
+Function fit weight=0.179921
 
 Low Bin Edge = 21.8
 bin content = 0.877752
-i==466, vzWeight=0.0983745
-Function fit weight=0.186486
+i==469, vzWeight=0.0983745
+Function fit weight=0.176703
 
 Low Bin Edge = 21.9
 bin content = 0.887108
-i==467, vzWeight=0.116233
-Function fit weight=0.183182
+i==470, vzWeight=0.116233 , vzLow=22.0001
+MC function LowEdge = 21.9
+Function fit weight=0.173528
 
 Low Bin Edge = 22
 bin content = 0.872556
-i==468, vzWeight=0.134384
-Function fit weight=0.179921
+i==471, vzWeight=0.134384
+Function fit weight=0.170395
 
 Low Bin Edge = 22.1
 bin content = 0.873152
-i==469, vzWeight=0.0852044
-Function fit weight=0.176703
+i==472, vzWeight=0.0852044
+Function fit weight=0.167305
 
 Low Bin Edge = 22.2
 bin content = 0.889213
-i==470, vzWeight=0.129839 , vzLow=23.0001
-MC function LowEdge = 22.2
-Function fit weight=0.173528
+i==473, vzWeight=0.129839
+Function fit weight=0.164256
 
 Low Bin Edge = 22.3
 bin content = 0.898375
-i==471, vzWeight=0.0889904
-Function fit weight=0.170395
+i==474, vzWeight=0.0889904
+Function fit weight=0.161249
 
 Low Bin Edge = 22.4
 bin content = 0.885072
-i==472, vzWeight=0.0963516
-Function fit weight=0.167305
+i==475, vzWeight=0.0963516 , vzLow=22.5001
+MC function LowEdge = 22.4
+Function fit weight=0.158284
 
 Low Bin Edge = 22.5
 bin content = 0.897036
-i==473, vzWeight=0.0814205
-Function fit weight=0.164256
+i==476, vzWeight=0.0814205
+Function fit weight=0.15536
 
 Low Bin Edge = 22.6
 bin content = 0.90013
-i==474, vzWeight=0.058349
-Function fit weight=0.161249
+i==477, vzWeight=0.058349
+Function fit weight=0.152477
 
 Low Bin Edge = 22.7
 bin content = 0.906783
-i==475, vzWeight=0.14622 , vzLow=23.5001
-MC function LowEdge = 22.7
-Function fit weight=0.158284
+i==478, vzWeight=0.14622
+Function fit weight=0.149635
 
 Low Bin Edge = 22.8
 bin content = 0.900452
-i==476, vzWeight=0.0994205
-Function fit weight=0.15536
+i==479, vzWeight=0.0994205
+Function fit weight=0.146833
 
 Low Bin Edge = 22.9
 bin content = 0.904248
-i==477, vzWeight=0.0540032
-Function fit weight=0.152477
+i==480, vzWeight=0.0540032 , vzLow=23.0001
+MC function LowEdge = 22.9
+Function fit weight=0.144071
 
 Low Bin Edge = 23
 bin content = 0.901616
-i==478, vzWeight=0.0626211
-Function fit weight=0.149635
+i==481, vzWeight=0.0626211
+Function fit weight=0.141349
 
 Low Bin Edge = 23.1
 bin content = 0.893342
-i==479, vzWeight=0.0357023
-Function fit weight=0.146833
+i==482, vzWeight=0.0357023
+Function fit weight=0.138667
+
+Low Bin Edge = 23.2
+bin content = 0.910135
+i==483, vzWeight=0.0884485
+Function fit weight=0.136024
+
+Low Bin Edge = 23.3
+bin content = 0.918942
+i==484, vzWeight=0.103991
+Function fit weight=0.133419
+
+Low Bin Edge = 23.4
+bin content = 0.907783
+i==485, vzWeight=0.0952226 , vzLow=23.5001
+MC function LowEdge = 23.4
+Function fit weight=0.130854
+
+Low Bin Edge = 23.5
+bin content = 0.905687
+i==486, vzWeight=0.112453
+Function fit weight=0.128327
+
+Low Bin Edge = 23.6
+bin content = 0.908344
+i==487, vzWeight=0.086175
+Function fit weight=0.125838
+
+Low Bin Edge = 23.7
+bin content = 0.920502
+i==488, vzWeight=0.056107
+Function fit weight=0.123386
+
+Low Bin Edge = 23.8
+bin content = 0.920027
+i==489, vzWeight=0.0930831
+Function fit weight=0.120972
+
+Low Bin Edge = 23.9
+bin content = 0.91544
+i==490, vzWeight=0.0926506 , vzLow=24.0001
+MC function LowEdge = 23.9
+Function fit weight=0.118595
+
+Low Bin Edge = 24
+bin content = 0.914997
+i==491, vzWeight=0
+Function fit weight=0.116255
+
+Low Bin Edge = 24.1
+bin content = 0.910418
+i==492, vzWeight=0
+Function fit weight=0.113951
+
+Low Bin Edge = 24.2
+bin content = 0.921613
+i==493, vzWeight=0
+Function fit weight=0.111684
+
+Low Bin Edge = 24.3
+bin content = 0.92091
+i==494, vzWeight=0
+Function fit weight=0.109452
+
+Low Bin Edge = 24.4
+bin content = 0.915522
+i==495, vzWeight=0 , vzLow=24.5001
+MC function LowEdge = 24.4
+Function fit weight=0.107255
+
+Low Bin Edge = 24.5
+bin content = 0.90663
+i==496, vzWeight=0
+Function fit weight=0.105094
+
+Low Bin Edge = 24.6
+bin content = 0.921961
+i==497, vzWeight=0
+Function fit weight=0.102967
+
+Low Bin Edge = 24.7
+bin content = 0.910928
+i==498, vzWeight=0
+Function fit weight=0.100875
+
+Low Bin Edge = 24.8
+bin content = 0.91967
+i==499, vzWeight=0
+Function fit weight=0.0988171
 
 Info in <TCanvas::Print>: png file WeightRatio.png has been created

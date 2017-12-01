@@ -109,7 +109,7 @@ int main (int argc, char *argv[]){
   TFile* finMC = new TFile(input_ppMC_Filename.c_str());  
   
   TH1F* theMCEvtQAHist= (TH1F*)finMC->Get( "hpthatWeightedVz" );
-  theMCEvtQAHist->Scale( 1/theMCEvtQAHist->GetBinWidth(0) );
+  theMCEvtQAHist->Scale( 1/theMCEvtQAHist->GetBinWidth(1) );
   theMCEvtQAHist->Scale( theDataEvtQAHist->Integral()/theMCEvtQAHist->Integral() );
   
   TCanMC = new TCanvas("TCanMC","cMC",600,600);   
@@ -150,9 +150,9 @@ int main (int argc, char *argv[]){
   //theEvtQALeg->AddEntry(theRatio,"MC not vz-weighted","lp");
   
   Float_t theVzBinWidth=theRatio->TH1::GetBinWidth(1);
-  Float_t xLow=-24., xHigh=24.;
+  Float_t xLow = theRatio->TH1::GetBinLowEdge(1), xHigh=theRatio->TH1::GetBinLowEdge(500);
   Float_t NvzWeightBins_F=(xHigh-xLow)/(theVzBinWidth);
-  Int_t NvzWeightBins=(Int_t)NvzWeightBins_F;//should be 60
+  Int_t NvzWeightBins = theRatio->TH1::GetNbinsX();//should be 60
   
   std::cout<<"float-division says NBins="<<NvzWeightBins_F<<" (exactly)"<<std::endl;
   std::cout<<"int-typecast says NBins="<<NvzWeightBins<<std::endl;
@@ -161,9 +161,9 @@ int main (int argc, char *argv[]){
   std::cout<<std::endl;
   for (int i=0;i<NvzWeightBins;++i){//binsX loop
 
-	Float_t hist_xLow = theRatio->TH1::GetBinLowEdge(i+3);
+	Float_t hist_xLow = theRatio->TH1::GetBinLowEdge(i);
 	std::cout<<"Low Bin Edge = "<<hist_xLow<<std::endl;
-    Float_t vzWeight = theRatio->TH1::GetBinContent(i+3);    //TH1 bin counting starts at i=1?! why?!
+    Float_t vzWeight = theRatio->TH1::GetBinContent(i);    //TH1 bin counting starts at i=1?! why?!
 	binWeight->Fill(vzWeight);
 	//function fit ratio weights //No no no - this needs to be the x value, not the bin content! //so do I want center, low edge, or high edge? Or something else?
 	Double_t gaussMC = fgaussMC->Eval(theMCEvtQAHist->GetBinLowEdge(i+3));
@@ -171,13 +171,13 @@ int main (int argc, char *argv[]){
 	Double_t gaussFit = (gaussData/gaussMC);
 	fnWeight->Fill(gaussFit);
 		
-    if(theDataEvtQAHist->GetBinContent(i+3)<=0.)
+    if(theDataEvtQAHist->GetBinContent(i)<=0.)
       std::cout<<"warning! bin content in data hist zero (numerator)"<<std::endl;
-	  std::cout<<"bin content = "<<theDataEvtQAHist->GetBinContent(i+3)<<std::endl;
+	  std::cout<<"bin content = "<<theDataEvtQAHist->GetBinContent(i)<<std::endl;
     if(i%5==0) {
       
       std::cout<<"i=="<<i<<", vzWeight="<<vzWeight <<" , vzLow="<<xLow<<std::endl;
-	  std::cout<<"MC function LowEdge = "<<theMCEvtQAHist->GetBinLowEdge(i+3)<<std::endl;
+	  std::cout<<"MC function LowEdge = "<<theMCEvtQAHist->GetBinLowEdge(i)<<std::endl;
 	  std::cout<<"Function fit weight="<<gaussFit<<std::endl;
 	}
     else{
