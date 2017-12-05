@@ -159,15 +159,15 @@ int main (int argc, char *argv[]){
   
   std::cout<<"now grabbing vzWeights for "<<NvzWeightBins<<" bins for ( "<<xLow<<"< vz <"<<xHigh<<" )"<<std::endl;
   std::cout<<std::endl;
-  for (int i=0;i<NvzWeightBins;++i){//binsX loop
+  for (int i=1;i<=NvzWeightBins;++i){//binsX loop
 
 	Float_t hist_xLow = theRatio->TH1::GetBinLowEdge(i);
 	std::cout<<"Low Bin Edge = "<<hist_xLow<<std::endl;
     Float_t vzWeight = theRatio->TH1::GetBinContent(i);    //TH1 bin counting starts at i=1?! why?!
 	binWeight->Fill(vzWeight);
 	//function fit ratio weights //No no no - this needs to be the x value, not the bin content! //so do I want center, low edge, or high edge? Or something else?
-	Double_t gaussMC = fgaussMC->Eval(theMCEvtQAHist->GetBinLowEdge(i+3));
-	Double_t gaussData = fgaussData->Eval(theMCEvtQAHist->GetBinLowEdge(i+3));
+	Double_t gaussMC = fgaussMC->Eval(theMCEvtQAHist->GetBinLowEdge(i));
+	Double_t gaussData = fgaussData->Eval(theMCEvtQAHist->GetBinLowEdge(i));
 	Double_t gaussFit = (gaussData/gaussMC);
 	fnWeight->Fill(gaussFit);
 		
