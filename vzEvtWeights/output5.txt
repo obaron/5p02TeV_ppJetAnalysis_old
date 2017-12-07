@@ -14,988 +14,2645 @@ effective Intgrted Lumi =2.77457e+07
  now opening MC File 
 /cms/heavyion/ilaflott/T2_US_MIT_SCRATCH/5p02TeV_ppJetAnalysis/readForests/10.11.17_outputCondor/ppMC_Py8_CUETP8M1_QCDjetAllPtBins_ak4PFJets_10-11-17_JERS_0.0eta2.0_rec56_gen32_HLTCalo/Py8_CUETP8M1_QCDjetAllPtBins_ak4PF-allFiles.root
 
-Error in <TFormula::Compile>:  Bad numerical expression : "gauss"
-Error in <TF1::TF1>: function: fgauss/gauss has 0 parameters instead of 1
-Error in <Fit>: function is zombie
-Fit Status: -2, Fit Error: 0
-float-division says NBins=480 (exactly)
-int-typecast says NBins=480
-now grabbing vzWeights for 480 bins for ( -24< vz <24 )
-warning! bin content in data hist zero (numerator)
-bin content = 0
-i==0, vzWeight=0 , vzLow=-24
+ FCN=11233.2 FROM MIGRAD    STATUS=CONVERGED      66 CALLS          67 TOTAL
+                     EDM=1.09037e-10    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     2.62166e+06   1.16146e+03   4.97017e+01   1.28286e-09
+   2  Mean         2.88491e-01   2.20027e-03   1.13866e-04  -1.76242e-03
+   3  Sigma        5.90977e+00   1.43325e-03   3.50142e-06   1.86442e-01
+Data Fit Status: 0, Fit Error: 0.00220027
+ FCN=489.208 FROM MIGRAD    STATUS=CONVERGED      61 CALLS          62 TOTAL
+                     EDM=2.38946e-11    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Constant     1.58501e+00   1.89276e-03   1.66268e-05   3.19477e-04
+   2  Mean         1.48928e-03   6.87744e-03   7.43501e-05  -6.05238e-04
+   3  Sigma        7.05791e+00   4.95409e-03   2.05912e-06  -2.18680e-02
+MC Fit Status: 0, Fit Error: 0.00687744
+Info in <TCanvas::Print>: png file MCgaussfit.png has been created
+float-division says NBins=499 (exactly)
+int-typecast says NBins=500
+now grabbing vzWeights for 500 bins for ( -25< vz <24.9 )
+
+Low Bin Edge = -25
 warning! bin content in data hist zero (numerator)
 bin content = 0
 i==1, vzWeight=0
+Function fit weight=92732.4
+
+Low Bin Edge = -24.9
 warning! bin content in data hist zero (numerator)
 bin content = 0
 i==2, vzWeight=0
+Function fit weight=94811.7
+
+Low Bin Edge = -24.8
 warning! bin content in data hist zero (numerator)
 bin content = 0
 i==3, vzWeight=0
+Function fit weight=96929.3
+
+Low Bin Edge = -24.7
 warning! bin content in data hist zero (numerator)
 bin content = 0
 i==4, vzWeight=0
+Function fit weight=99085.7
+
+Low Bin Edge = -24.6
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==5, vzWeight=0 , vzLow=-23.5
+i==5, vzWeight=0 , vzLow=-24.6
+MC function LowEdge = -24.6
+Function fit weight=101281
+
+Low Bin Edge = -24.5
 warning! bin content in data hist zero (numerator)
 bin content = 0
 i==6, vzWeight=0
+Function fit weight=103517
+
+Low Bin Edge = -24.4
 warning! bin content in data hist zero (numerator)
 bin content = 0
 i==7, vzWeight=0
+Function fit weight=105793
+
+Low Bin Edge = -24.3
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==8, vzWeight=0.0517853
+i==8, vzWeight=0
+Function fit weight=108109
+
+Low Bin Edge = -24.2
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==9, vzWeight=0.0750007
+i==9, vzWeight=0
+Function fit weight=110467
+
+Low Bin Edge = -24.1
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==10, vzWeight=0.0249748 , vzLow=-23
+i==10, vzWeight=0 , vzLow=-24.1
+MC function LowEdge = -24.1
+Function fit weight=112867
+
+Low Bin Edge = -24
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==11, vzWeight=0.0215821
+i==11, vzWeight=71840.9
+Function fit weight=115309
+
+Low Bin Edge = -23.9
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==12, vzWeight=0.0700952
+i==12, vzWeight=104047
+Function fit weight=117793
+
+Low Bin Edge = -23.8
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==13, vzWeight=0.0736384
+i==13, vzWeight=34647.2
+Function fit weight=120321
+
+Low Bin Edge = -23.7
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==14, vzWeight=0.125229
+i==14, vzWeight=29940.5
+Function fit weight=122893
+
+Low Bin Edge = -23.6
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==15, vzWeight=0.0458415 , vzLow=-22.5
+i==15, vzWeight=97242.1 , vzLow=-23.6
+MC function LowEdge = -23.6
+Function fit weight=125509
+
+Low Bin Edge = -23.5
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==16, vzWeight=0.0439558
+i==16, vzWeight=102157
+Function fit weight=128169
+
+Low Bin Edge = -23.4
 warning! bin content in data hist zero (numerator)
 bin content = 0
-i==17, vzWeight=0.0403531
+i==17, vzWeight=173729
+Function fit weight=130875
+
+Low Bin Edge = -23.3
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==18, vzWeight=63595.2
+Function fit weight=133627
+
+Low Bin Edge = -23.2
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==19, vzWeight=60979.3
+Function fit weight=136424
+
+Low Bin Edge = -23.1
+warning! bin content in data hist zero (numerator)
+bin content = 0
+i==20, vzWeight=55981.3 , vzLow=-23.1
+MC function LowEdge = -23.1
+Function fit weight=139268
+
+Low Bin Edge = -23
 bin content = 7.71291e-05
-i==18, vzWeight=0.0569556
+i==21, vzWeight=79013.6
+Function fit weight=142160
+
+Low Bin Edge = -22.9
 bin content = 5.55041e-05
-i==19, vzWeight=0.0621536
+i==22, vzWeight=86224.8
+Function fit weight=145099
+
+Low Bin Edge = -22.8
 bin content = 0.000144887
-i==20, vzWeight=0.0870667 , vzLow=-22
+i==23, vzWeight=120786
+Function fit weight=148086
+
+Low Bin Edge = -22.7
 bin content = 0.000144887
-i==21, vzWeight=0.0762312
+i==24, vzWeight=105754
+Function fit weight=151122
+
+Low Bin Edge = -22.6
 bin content = 0.000142004
-i==22, vzWeight=0.052972
+i==25, vzWeight=73487.3 , vzLow=-22.6
+MC function LowEdge = -22.6
+Function fit weight=154206
+
+Low Bin Edge = -22.5
 bin content = 3.74833e-05
-i==23, vzWeight=0.111043
+i==26, vzWeight=154048
+Function fit weight=157340
+
+Low Bin Edge = -22.4
 bin content = 6.05499e-05
-i==24, vzWeight=0.0722402
+i==27, vzWeight=100218
+Function fit weight=160525
+
+Low Bin Edge = -22.3
 bin content = 8.07332e-05
-i==25, vzWeight=0.0858987 , vzLow=-21.5
+i==28, vzWeight=119166
+Function fit weight=163759
+
+Low Bin Edge = -22.2
 bin content = 0.000174441
-i==26, vzWeight=0.114306
+i==29, vzWeight=158575
+Function fit weight=167045
+
+Low Bin Edge = -22.1
 bin content = 0.000183812
-i==27, vzWeight=0.0720754
+i==30, vzWeight=99989.1 , vzLow=-22.1
+MC function LowEdge = -22.1
+Function fit weight=170381
+
+Low Bin Edge = -22
 bin content = 0.0002076
-i==28, vzWeight=0.0612768
+i==31, vzWeight=85008.4
+Function fit weight=173770
+
+Low Bin Edge = -21.9
 bin content = 0.000151375
-i==29, vzWeight=0.0924849
+i==32, vzWeight=128303
+Function fit weight=177211
+
+Low Bin Edge = -21.8
 bin content = 0.000247966
-i==30, vzWeight=0.0619599 , vzLow=-21
+i==33, vzWeight=85956
+Function fit weight=180704
+
+Low Bin Edge = -21.7
 bin content = 0.000376995
-i==31, vzWeight=0.072883
+i==34, vzWeight=101110
+Function fit weight=184251
+
+Low Bin Edge = -21.6
 bin content = 0.000182371
-i==32, vzWeight=0.0899396
+i==35, vzWeight=124772 , vzLow=-21.6
+MC function LowEdge = -21.6
+Function fit weight=187851
+
+Low Bin Edge = -21.5
 bin content = 0.000142004
-i==33, vzWeight=0.0563365
+i==36, vzWeight=78154.8
+Function fit weight=191505
+
+Low Bin Edge = -21.4
 bin content = 0.000304912
-i==34, vzWeight=0.070509
+i==37, vzWeight=97816.1
+Function fit weight=195213
+
+Low Bin Edge = -21.3
 bin content = 0.000179487
-i==35, vzWeight=0.113079 , vzLow=-20.5
+i==38, vzWeight=156872
+Function fit weight=198976
+
+Low Bin Edge = -21.2
 bin content = 0.000339512
-i==36, vzWeight=0.0785287
+i==39, vzWeight=108942
+Function fit weight=202795
+
+Low Bin Edge = -21.1
 bin content = 8.36166e-05
-i==37, vzWeight=0.0955366
+i==40, vzWeight=132536 , vzLow=-21.1
+MC function LowEdge = -21.1
+Function fit weight=206669
+
+Low Bin Edge = -21
 bin content = 0.000248687
-i==38, vzWeight=0.092898
+i==41, vzWeight=128876
+Function fit weight=210599
+
+Low Bin Edge = -20.9
 bin content = 0.000206879
-i==39, vzWeight=0.122386
+i==42, vzWeight=169784
+Function fit weight=214585
+
+Low Bin Edge = -20.8
 bin content = 0.000209762
-i==40, vzWeight=0.0919298 , vzLow=-20
+i==43, vzWeight=127533
+Function fit weight=218628
+
+Low Bin Edge = -20.7
 bin content = 0.000487283
-i==41, vzWeight=0.0890711
+i==44, vzWeight=123567
+Function fit weight=222728
+
+Low Bin Edge = -20.6
 bin content = 0.000373391
-i==42, vzWeight=0.0652374
+i==45, vzWeight=90502.8 , vzLow=-20.6
+MC function LowEdge = -20.6
+Function fit weight=226886
+
+Low Bin Edge = -20.5
 bin content = 0.000356091
-i==43, vzWeight=0.0989131
+i==46, vzWeight=137221
+Function fit weight=231101
+
+Low Bin Edge = -20.4
 bin content = 0.000271033
-i==44, vzWeight=0.0665617
+i==47, vzWeight=92340.1
+Function fit weight=235375
+
+Low Bin Edge = -20.3
 bin content = 0.000420966
-i==45, vzWeight=0.0925861 , vzLow=-19.5
+i==48, vzWeight=128443
+Function fit weight=239707
+
+Low Bin Edge = -20.2
 bin content = 0.000338791
-i==46, vzWeight=0.133002
+i==49, vzWeight=184512
+Function fit weight=244098
+
+Low Bin Edge = -20.1
 bin content = 0.000278962
-i==47, vzWeight=0.121556
+i==50, vzWeight=168632 , vzLow=-20.1
+MC function LowEdge = -20.1
+Function fit weight=248548
+
+Low Bin Edge = -20
 bin content = 0.000552158
-i==48, vzWeight=0.14507
+i==51, vzWeight=201253
+Function fit weight=253058
+
+Low Bin Edge = -19.9
 bin content = 0.000305633
-i==49, vzWeight=0.111634
+i==52, vzWeight=154868
+Function fit weight=257628
+
+Low Bin Edge = -19.8
 bin content = 0.000326537
-i==50, vzWeight=0.11184 , vzLow=-19
+i==53, vzWeight=155154
+Function fit weight=262257
+
+Low Bin Edge = -19.7
 bin content = 0.000253012
-i==51, vzWeight=0.096257
+i==54, vzWeight=133536
+Function fit weight=266947
+
+Low Bin Edge = -19.6
 bin content = 0.000314283
-i==52, vzWeight=0.116124
+i==55, vzWeight=161096 , vzLow=-19.6
+MC function LowEdge = -19.6
+Function fit weight=271697
+
+Low Bin Edge = -19.5
 bin content = 0.000480795
-i==53, vzWeight=0.1265
+i==56, vzWeight=175492
+Function fit weight=276509
+
+Low Bin Edge = -19.4
 bin content = 0.000604058
-i==54, vzWeight=0.132096
+i==57, vzWeight=183254
+Function fit weight=281381
+
+Low Bin Edge = -19.3
 bin content = 0.000463495
-i==55, vzWeight=0.147684 , vzLow=-18.5
+i==58, vzWeight=204880
+Function fit weight=286315
+
+Low Bin Edge = -19.2
 bin content = 0.00040727
-i==56, vzWeight=0.127302
+i==59, vzWeight=176604
+Function fit weight=291310
+
+Low Bin Edge = -19.1
 bin content = 0.000430337
-i==57, vzWeight=0.151232
+i==60, vzWeight=209802 , vzLow=-19.1
+MC function LowEdge = -19.1
+Function fit weight=296368
+
+Low Bin Edge = -19
 bin content = 0.000327258
-i==58, vzWeight=0.170747
+i==61, vzWeight=236875
+Function fit weight=301487
+
+Low Bin Edge = -18.9
 bin content = 0.000323654
-i==59, vzWeight=0.128507
+i==62, vzWeight=178276
+Function fit weight=306668
+
+Low Bin Edge = -18.8
 bin content = 0.000550716
-i==60, vzWeight=0.15509 , vzLow=-18
+i==63, vzWeight=215154
+Function fit weight=311912
+
+Low Bin Edge = -18.7
 bin content = 0.000391412
-i==61, vzWeight=0.16225
+i==64, vzWeight=225087
+Function fit weight=317218
+
+Low Bin Edge = -18.6
 bin content = 0.000219854
-i==62, vzWeight=0.169334
+i==65, vzWeight=234915 , vzLow=-18.6
+MC function LowEdge = -18.6
+Function fit weight=322587
+
+Low Bin Edge = -18.5
 bin content = 0.000858512
-i==63, vzWeight=0.155401
+i==66, vzWeight=215586
+Function fit weight=328019
+
+Low Bin Edge = -18.4
 bin content = 0.000557924
-i==64, vzWeight=0.154634
+i==67, vzWeight=214521
+Function fit weight=333513
+
+Low Bin Edge = -18.3
 bin content = 0.000721553
-i==65, vzWeight=0.148014 , vzLow=-17.5
+i==68, vzWeight=205338
+Function fit weight=339071
+
+Low Bin Edge = -18.2
 bin content = 0.000630008
-i==66, vzWeight=0.153017
+i==69, vzWeight=212279
+Function fit weight=344692
+
+Low Bin Edge = -18.1
 bin content = 0.000622078
-i==67, vzWeight=0.164199
+i==70, vzWeight=227791 , vzLow=-18.1
+MC function LowEdge = -18.1
+Function fit weight=350376
+
+Low Bin Edge = -18
 bin content = 0.000619916
-i==68, vzWeight=0.153808
+i==71, vzWeight=213375
+Function fit weight=356123
+
+Low Bin Edge = -17.9
 bin content = 0.00037195
-i==69, vzWeight=0.186748
+i==72, vzWeight=259072
+Function fit weight=361933
+
+Low Bin Edge = -17.8
 bin content = 0.000615591
-i==70, vzWeight=0.20684 , vzLow=-17
+i==73, vzWeight=286946
+Function fit weight=367807
+
+Low Bin Edge = -17.7
 bin content = 0.000495212
-i==71, vzWeight=0.19668
+i==74, vzWeight=272851
+Function fit weight=373744
+
+Low Bin Edge = -17.6
 bin content = 0.00069272
-i==72, vzWeight=0.194294
+i==75, vzWeight=269541 , vzLow=-17.6
+MC function LowEdge = -17.6
+Function fit weight=379745
+
+Low Bin Edge = -17.5
 bin content = 0.000825353
-i==73, vzWeight=0.218358
+i==76, vzWeight=302924
+Function fit weight=385808
+
+Low Bin Edge = -17.4
 bin content = 0.000651633
-i==74, vzWeight=0.206125
+i==77, vzWeight=285954
+Function fit weight=391935
+
+Low Bin Edge = -17.3
 bin content = 0.000539904
-i==75, vzWeight=0.192908 , vzLow=-16.5
+i==78, vzWeight=267618
+Function fit weight=398126
+
+Low Bin Edge = -17.2
 bin content = 0.000839049
-i==76, vzWeight=0.20658
+i==79, vzWeight=286586
+Function fit weight=404379
+
+Low Bin Edge = -17.1
 bin content = 0.000430337
-i==77, vzWeight=0.22707
+i==80, vzWeight=315010 , vzLow=-17.1
+MC function LowEdge = -17.1
+Function fit weight=410696
+
+Low Bin Edge = -17
 bin content = 0.00106827
-i==78, vzWeight=0.248399
+i==81, vzWeight=344600
+Function fit weight=417075
+
+Low Bin Edge = -16.9
 bin content = 0.000604778
-i==79, vzWeight=0.238024
+i==82, vzWeight=330207
+Function fit weight=423518
+
+Low Bin Edge = -16.8
 bin content = 0.00126218
-i==80, vzWeight=0.261386 , vzLow=-16
+i==83, vzWeight=362617
+Function fit weight=430023
+
+Low Bin Edge = -16.7
 bin content = 0.00106611
-i==81, vzWeight=0.240991
+i==84, vzWeight=334322
+Function fit weight=436590
+
+Low Bin Edge = -16.6
 bin content = 0.00103872
-i==82, vzWeight=0.237626
+i==85, vzWeight=329656 , vzLow=-16.6
+MC function LowEdge = -16.6
+Function fit weight=443220
+
+Low Bin Edge = -16.5
 bin content = 0.000999074
-i==83, vzWeight=0.263513
+i==86, vzWeight=365568
+Function fit weight=449913
+
+Low Bin Edge = -16.4
 bin content = 0.000970241
-i==84, vzWeight=0.270379
+i==87, vzWeight=375093
+Function fit weight=456667
+
+Low Bin Edge = -16.3
 bin content = 0.00110287
-i==85, vzWeight=0.272804 , vzLow=-15.5
+i==88, vzWeight=378456
+Function fit weight=463483
+
+Low Bin Edge = -16.2
 bin content = 0.000795078
-i==86, vzWeight=0.307887
+i==89, vzWeight=427128
+Function fit weight=470360
+
+Low Bin Edge = -16.1
 bin content = 0.000890949
-i==87, vzWeight=0.321623
+i==90, vzWeight=446183 , vzLow=-16.1
+MC function LowEdge = -16.1
+Function fit weight=477299
+
+Low Bin Edge = -16
 bin content = 0.0013148
-i==88, vzWeight=0.290896
+i==91, vzWeight=403556
+Function fit weight=484298
+
+Low Bin Edge = -15.9
 bin content = 0.00116126
-i==89, vzWeight=0.283696
+i==92, vzWeight=393567
+Function fit weight=491358
+
+Low Bin Edge = -15.8
 bin content = 0.000816703
-i==90, vzWeight=0.337669 , vzLow=-15
+i==93, vzWeight=468443
+Function fit weight=498478
+
+Low Bin Edge = -15.7
 bin content = 0.000890949
-i==91, vzWeight=0.320236
+i==94, vzWeight=444259
+Function fit weight=505659
+
+Low Bin Edge = -15.6
 bin content = 0.00140851
-i==92, vzWeight=0.338771
+i==95, vzWeight=469971 , vzLow=-15.6
+MC function LowEdge = -15.6
+Function fit weight=512898
+
+Low Bin Edge = -15.5
 bin content = 0.00128164
-i==93, vzWeight=0.322936
+i==96, vzWeight=448004
+Function fit weight=520197
+
+Low Bin Edge = -15.4
 bin content = 0.00149573
-i==94, vzWeight=0.333338
+i==97, vzWeight=462434
+Function fit weight=527555
+
+Low Bin Edge = -15.3
 bin content = 0.00186479
-i==95, vzWeight=0.333281 , vzLow=-14.5
+i==98, vzWeight=462356
+Function fit weight=534971
+
+Low Bin Edge = -15.2
 bin content = 0.00156925
-i==96, vzWeight=0.402355
+i==99, vzWeight=558180
+Function fit weight=542444
+
+Low Bin Edge = -15.1
 bin content = 0.00152312
-i==97, vzWeight=0.388359
+i==100, vzWeight=538764 , vzLow=-15.1
+MC function LowEdge = -15.1
+Function fit weight=549976
+
+Low Bin Edge = -15
 bin content = 0.00146113
-i==98, vzWeight=0.369057
+i==101, vzWeight=511987
+Function fit weight=557563
+
+Low Bin Edge = -14.9
 bin content = 0.00205581
-i==99, vzWeight=0.389849
+i==102, vzWeight=540831
+Function fit weight=565208
+
+Low Bin Edge = -14.8
 bin content = 0.00185831
-i==100, vzWeight=0.3931 , vzLow=-14
+i==103, vzWeight=545341
+Function fit weight=572908
+
+Low Bin Edge = -14.7
 bin content = 0.00173721
-i==101, vzWeight=0.38523
+i==104, vzWeight=534424
+Function fit weight=580663
+
+Low Bin Edge = -14.6
 bin content = 0.00256256
-i==102, vzWeight=0.426224
+i==105, vzWeight=591294 , vzLow=-14.6
+MC function LowEdge = -14.6
+Function fit weight=588473
+
+Low Bin Edge = -14.5
 bin content = 0.00150077
-i==103, vzWeight=0.413295
+i==106, vzWeight=573358
+Function fit weight=596336
+
+Low Bin Edge = -14.4
 bin content = 0.0018338
-i==104, vzWeight=0.422349
+i==107, vzWeight=585918
+Function fit weight=604254
+
+Low Bin Edge = -14.3
 bin content = 0.00179415
-i==105, vzWeight=0.425863 , vzLow=-13.5
+i==108, vzWeight=590794
+Function fit weight=612224
+
+Low Bin Edge = -14.2
 bin content = 0.00226558
-i==106, vzWeight=0.446469
+i==109, vzWeight=619380
+Function fit weight=620245
+
+Low Bin Edge = -14.1
 bin content = 0.00195634
-i==107, vzWeight=0.457987
+i==110, vzWeight=635358 , vzLow=-14.1
+MC function LowEdge = -14.1
+Function fit weight=628319
+
+Low Bin Edge = -14
 bin content = 0.00215745
-i==108, vzWeight=0.425318
+i==111, vzWeight=590037
+Function fit weight=636443
+
+Low Bin Edge = -13.9
 bin content = 0.00170909
-i==109, vzWeight=0.446969
+i==112, vzWeight=620074
+Function fit weight=644616
+
+Low Bin Edge = -13.8
 bin content = 0.0024775
-i==110, vzWeight=0.481663 , vzLow=-13
+i==113, vzWeight=668204
+Function fit weight=652839
+
+Low Bin Edge = -13.7
 bin content = 0.00273051
-i==111, vzWeight=0.495915
+i==114, vzWeight=687975
+Function fit weight=661110
+
+Low Bin Edge = -13.6
 bin content = 0.0025294
-i==112, vzWeight=0.497501
+i==115, vzWeight=690175 , vzLow=-13.6
+MC function LowEdge = -13.6
+Function fit weight=669429
+
+Low Bin Edge = -13.5
 bin content = 0.00276656
-i==113, vzWeight=0.504444
+i==116, vzWeight=699807
+Function fit weight=677795
+
+Low Bin Edge = -13.4
 bin content = 0.00262455
-i==114, vzWeight=0.479111
+i==117, vzWeight=664664
+Function fit weight=686206
+
+Low Bin Edge = -13.3
 bin content = 0.00280981
-i==115, vzWeight=0.502409 , vzLow=-12.5
+i==118, vzWeight=696984
+Function fit weight=694662
+
+Low Bin Edge = -13.2
 bin content = 0.00350757
-i==116, vzWeight=0.502393
+i==119, vzWeight=696963
+Function fit weight=703162
+
+Low Bin Edge = -13.1
 bin content = 0.00261806
-i==117, vzWeight=0.51403
+i==120, vzWeight=713106 , vzLow=-13.1
+MC function LowEdge = -13.1
+Function fit weight=711705
+
+Low Bin Edge = -13
 bin content = 0.00345639
-i==118, vzWeight=0.523813
+i==121, vzWeight=726678
+Function fit weight=720291
+
+Low Bin Edge = -12.9
 bin content = 0.00352055
-i==119, vzWeight=0.551032
+i==122, vzWeight=764439
+Function fit weight=728917
+
+Low Bin Edge = -12.8
 bin content = 0.0026988
-i==120, vzWeight=0.53486 , vzLow=-12
+i==123, vzWeight=742004
+Function fit weight=737584
+
+Low Bin Edge = -12.7
 bin content = 0.00329493
-i==121, vzWeight=0.541757
+i==124, vzWeight=751571
+Function fit weight=746290
+
+Low Bin Edge = -12.6
 bin content = 0.00359047
-i==122, vzWeight=0.545387
+i==125, vzWeight=756606 , vzLow=-12.6
+MC function LowEdge = -12.6
+Function fit weight=755034
+
+Low Bin Edge = -12.5
 bin content = 0.00355731
-i==123, vzWeight=0.583327
+i==126, vzWeight=809241
+Function fit weight=763815
+
+Low Bin Edge = -12.4
 bin content = 0.00399846
-i==124, vzWeight=0.547069
+i==127, vzWeight=758941
+Function fit weight=772632
+
+Low Bin Edge = -12.3
 bin content = 0.00375842
-i==125, vzWeight=0.608359 , vzLow=-11.5
+i==128, vzWeight=843967
+Function fit weight=781484
+
+Low Bin Edge = -12.2
 bin content = 0.00460179
-i==126, vzWeight=0.613335
+i==129, vzWeight=850870
+Function fit weight=790370
+
+Low Bin Edge = -12.1
 bin content = 0.0038579
-i==127, vzWeight=0.590613
+i==130, vzWeight=819349 , vzLow=-12.1
+MC function LowEdge = -12.1
+Function fit weight=799289
+
+Low Bin Edge = -12
 bin content = 0.00367264
-i==128, vzWeight=0.628671
+i==131, vzWeight=872145
+Function fit weight=808238
+
+Low Bin Edge = -11.9
 bin content = 0.00438555
-i==129, vzWeight=0.63898
+i==132, vzWeight=886447
+Function fit weight=817219
+
+Low Bin Edge = -11.8
 bin content = 0.00378509
-i==130, vzWeight=0.652757 , vzLow=-11
+i==133, vzWeight=905560
+Function fit weight=826228
+
+Low Bin Edge = -11.7
 bin content = 0.00493914
-i==131, vzWeight=0.645991
+i==134, vzWeight=896173
+Function fit weight=835265
+
+Low Bin Edge = -11.6
 bin content = 0.00419308
-i==132, vzWeight=0.665065
+i==135, vzWeight=922634 , vzLow=-11.5999
+MC function LowEdge = -11.6
+Function fit weight=844329
+
+Low Bin Edge = -11.5
 bin content = 0.00393286
-i==133, vzWeight=0.648374
+i==136, vzWeight=899480
+Function fit weight=853418
+
+Low Bin Edge = -11.4
 bin content = 0.00446484
-i==134, vzWeight=0.622434
+i==137, vzWeight=863493
+Function fit weight=862531
+
+Low Bin Edge = -11.3
 bin content = 0.00526136
-i==135, vzWeight=0.635655 , vzLow=-10.4999
+i==138, vzWeight=881835
+Function fit weight=871667
+
+Low Bin Edge = -11.2
 bin content = 0.00488869
-i==136, vzWeight=0.650594
+i==139, vzWeight=902559
+Function fit weight=880824
+
+Low Bin Edge = -11.1
 bin content = 0.00528803
-i==137, vzWeight=0.652847
+i==140, vzWeight=905685 , vzLow=-11.0999
+MC function LowEdge = -11.1
+Function fit weight=890001
+
+Low Bin Edge = -11
 bin content = 0.00477335
-i==138, vzWeight=0.674347
+i==141, vzWeight=935511
+Function fit weight=899197
+
+Low Bin Edge = -10.9
 bin content = 0.00557492
-i==139, vzWeight=0.710256
+i==142, vzWeight=985327
+Function fit weight=908410
+
+Low Bin Edge = -10.8
 bin content = 0.00555257
-i==140, vzWeight=0.696097 , vzLow=-9.99995
+i==143, vzWeight=965684
+Function fit weight=917639
+
+Low Bin Edge = -10.7
 bin content = 0.00555546
-i==141, vzWeight=0.709879
+i==144, vzWeight=984804
+Function fit weight=926882
+
+Low Bin Edge = -10.6
 bin content = 0.00597066
-i==142, vzWeight=0.726825
+i==145, vzWeight=1.00831e+06 , vzLow=-10.5999
+MC function LowEdge = -10.6
+Function fit weight=936139
+
+Low Bin Edge = -10.5
 bin content = 0.00646154
-i==143, vzWeight=0.720531
+i==146, vzWeight=999582
+Function fit weight=945407
+
+Low Bin Edge = -10.4
 bin content = 0.00746134
-i==144, vzWeight=0.728595
+i==147, vzWeight=1.01077e+06
+Function fit weight=954685
+
+Low Bin Edge = -10.3
 bin content = 0.0069755
-i==145, vzWeight=0.718911 , vzLow=-9.49994
+i==148, vzWeight=997334
+Function fit weight=963971
+
+Low Bin Edge = -10.2
 bin content = 0.00748152
-i==146, vzWeight=0.736957
+i==149, vzWeight=1.02237e+06
+Function fit weight=973265
+
+Low Bin Edge = -10.1
 bin content = 0.00679601
-i==147, vzWeight=0.756571
+i==150, vzWeight=1.04958e+06 , vzLow=-10.0999
+MC function LowEdge = -10.1
+Function fit weight=982564
+
+Low Bin Edge = -10
 bin content = 0.00705839
-i==148, vzWeight=0.773886
+i==151, vzWeight=1.0736e+06
+Function fit weight=991867
+
+Low Bin Edge = -9.9
 bin content = 0.00883236
-i==149, vzWeight=0.763508
+i==152, vzWeight=1.0592e+06
+Function fit weight=1.00117e+06
+
+Low Bin Edge = -9.8
 bin content = 0.0080654
-i==150, vzWeight=0.764561 , vzLow=-8.99994
+i==153, vzWeight=1.06066e+06
+Function fit weight=1.01048e+06
+
+Low Bin Edge = -9.7
 bin content = 0.00925837
-i==151, vzWeight=0.780064
+i==154, vzWeight=1.08217e+06
+Function fit weight=1.01978e+06
+
+Low Bin Edge = -9.6
 bin content = 0.00759109
-i==152, vzWeight=0.780293
+i==155, vzWeight=1.08249e+06 , vzLow=-9.59994
+MC function LowEdge = -9.6
+Function fit weight=1.02909e+06
+
+Low Bin Edge = -9.5
 bin content = 0.00894914
-i==153, vzWeight=0.842588
+i==156, vzWeight=1.16891e+06
+Function fit weight=1.03839e+06
+
+Low Bin Edge = -9.4
 bin content = 0.00884606
-i==154, vzWeight=0.806459
+i==157, vzWeight=1.11879e+06
+Function fit weight=1.04768e+06
+
+Low Bin Edge = -9.3
 bin content = 0.00918269
-i==155, vzWeight=0.79309 , vzLow=-8.49994
+i==158, vzWeight=1.10024e+06
+Function fit weight=1.05697e+06
+
+Low Bin Edge = -9.2
 bin content = 0.00878551
-i==156, vzWeight=0.814386
+i==159, vzWeight=1.12979e+06
+Function fit weight=1.06624e+06
+
+Low Bin Edge = -9.1
 bin content = 0.00965699
-i==157, vzWeight=0.845598
+i==160, vzWeight=1.17309e+06 , vzLow=-9.09994
+MC function LowEdge = -9.1
+Function fit weight=1.07551e+06
+
+Low Bin Edge = -9
 bin content = 0.0101508
-i==158, vzWeight=0.839493
+i==161, vzWeight=1.16462e+06
+Function fit weight=1.08476e+06
+
+Low Bin Edge = -8.9
 bin content = 0.0106863
-i==159, vzWeight=0.828682
+i==162, vzWeight=1.14962e+06
+Function fit weight=1.094e+06
+
+Low Bin Edge = -8.8
 bin content = 0.0114252
-i==160, vzWeight=0.847233 , vzLow=-7.99994
+i==163, vzWeight=1.17535e+06
+Function fit weight=1.10323e+06
+
+Low Bin Edge = -8.7
 bin content = 0.0116624
-i==161, vzWeight=0.83854
+i==164, vzWeight=1.16329e+06
+Function fit weight=1.11244e+06
+
+Low Bin Edge = -8.6
 bin content = 0.0112753
-i==162, vzWeight=0.849374
+i==165, vzWeight=1.17832e+06 , vzLow=-8.59994
+MC function LowEdge = -8.6
+Function fit weight=1.12162e+06
+
+Low Bin Edge = -8.5
 bin content = 0.0118526
-i==163, vzWeight=0.859919
+i==166, vzWeight=1.19295e+06
+Function fit weight=1.13079e+06
+
+Low Bin Edge = -8.4
 bin content = 0.011986
-i==164, vzWeight=0.860995
+i==167, vzWeight=1.19445e+06
+Function fit weight=1.13994e+06
+
+Low Bin Edge = -8.3
 bin content = 0.01274
-i==165, vzWeight=0.875308 , vzLow=-7.49994
+i==168, vzWeight=1.2143e+06
+Function fit weight=1.14906e+06
+
+Low Bin Edge = -8.2
 bin content = 0.0124207
-i==166, vzWeight=0.897602
+i==169, vzWeight=1.24523e+06
+Function fit weight=1.15815e+06
+
+Low Bin Edge = -8.1
 bin content = 0.0128935
-i==167, vzWeight=0.875367
+i==170, vzWeight=1.21438e+06 , vzLow=-8.09994
+MC function LowEdge = -8.1
+Function fit weight=1.16722e+06
+
+Low Bin Edge = -8
 bin content = 0.0139726
-i==168, vzWeight=0.893188
+i==171, vzWeight=1.23911e+06
+Function fit weight=1.17625e+06
+
+Low Bin Edge = -7.9
 bin content = 0.0133606
-i==169, vzWeight=0.901936
+i==172, vzWeight=1.25124e+06
+Function fit weight=1.18526e+06
+
+Low Bin Edge = -7.8
 bin content = 0.0150906
-i==170, vzWeight=0.905305 , vzLow=-6.99994
+i==173, vzWeight=1.25592e+06
+Function fit weight=1.19423e+06
+
+Low Bin Edge = -7.7
 bin content = 0.0147158
-i==171, vzWeight=0.885105
+i==174, vzWeight=1.22789e+06
+Function fit weight=1.20317e+06
+
+Low Bin Edge = -7.6
 bin content = 0.0140735
-i==172, vzWeight=0.913061
+i==175, vzWeight=1.26668e+06 , vzLow=-7.59994
+MC function LowEdge = -7.6
+Function fit weight=1.21207e+06
+
+Low Bin Edge = -7.5
 bin content = 0.0161683
-i==173, vzWeight=0.91391
+i==176, vzWeight=1.26785e+06
+Function fit weight=1.22093e+06
+
+Low Bin Edge = -7.4
 bin content = 0.0165474
-i==174, vzWeight=0.906709
+i==177, vzWeight=1.25786e+06
+Function fit weight=1.22975e+06
+
+Low Bin Edge = -7.3
 bin content = 0.0168769
-i==175, vzWeight=0.918151 , vzLow=-6.49994
+i==178, vzWeight=1.27374e+06
+Function fit weight=1.23853e+06
+
+Low Bin Edge = -7.2
 bin content = 0.0190141
-i==176, vzWeight=0.92222
+i==179, vzWeight=1.27938e+06
+Function fit weight=1.24726e+06
+
+Low Bin Edge = -7.1
 bin content = 0.0179646
-i==177, vzWeight=0.921396
+i==180, vzWeight=1.27824e+06 , vzLow=-7.09994
+MC function LowEdge = -7.1
+Function fit weight=1.25595e+06
+
+Low Bin Edge = -7
 bin content = 0.0187683
-i==178, vzWeight=0.927895
+i==181, vzWeight=1.28725e+06
+Function fit weight=1.26459e+06
+
+Low Bin Edge = -6.9
 bin content = 0.0179084
-i==179, vzWeight=0.936276
+i==182, vzWeight=1.29888e+06
+Function fit weight=1.27318e+06
+
+Low Bin Edge = -6.8
 bin content = 0.0188159
-i==180, vzWeight=0.947859 , vzLow=-5.99994
+i==183, vzWeight=1.31495e+06
+Function fit weight=1.28172e+06
+
+Low Bin Edge = -6.7
 bin content = 0.0192448
-i==181, vzWeight=0.953153
+i==184, vzWeight=1.32229e+06
+Function fit weight=1.29021e+06
+
+Low Bin Edge = -6.6
 bin content = 0.0198582
-i==182, vzWeight=0.980831
+i==185, vzWeight=1.36069e+06 , vzLow=-6.59994
+MC function LowEdge = -6.6
+Function fit weight=1.29864e+06
+
+Low Bin Edge = -6.5
 bin content = 0.0227221
-i==183, vzWeight=0.942597
+i==186, vzWeight=1.30765e+06
+Function fit weight=1.30701e+06
+
+Low Bin Edge = -6.4
 bin content = 0.0205675
-i==184, vzWeight=1.00455
+i==187, vzWeight=1.3936e+06
+Function fit weight=1.31533e+06
+
+Low Bin Edge = -6.3
 bin content = 0.022655
-i==185, vzWeight=0.97729 , vzLow=-5.49994
+i==188, vzWeight=1.35578e+06
+Function fit weight=1.32359e+06
+
+Low Bin Edge = -6.2
 bin content = 0.0226363
-i==186, vzWeight=0.98961
+i==189, vzWeight=1.37287e+06
+Function fit weight=1.33178e+06
+
+Low Bin Edge = -6.1
 bin content = 0.0239922
-i==187, vzWeight=1.01308
+i==190, vzWeight=1.40543e+06 , vzLow=-6.09994
+MC function LowEdge = -6.1
+Function fit weight=1.33991e+06
+
+Low Bin Edge = -6
 bin content = 0.0229621
-i==188, vzWeight=1.02048
+i==191, vzWeight=1.41569e+06
+Function fit weight=1.34798e+06
+
+Low Bin Edge = -5.9
 bin content = 0.0251297
-i==189, vzWeight=1.03312
+i==192, vzWeight=1.43324e+06
+Function fit weight=1.35597e+06
+
+Low Bin Edge = -5.8
 bin content = 0.0234775
-i==190, vzWeight=1.01741 , vzLow=-4.99994
+i==193, vzWeight=1.41144e+06
+Function fit weight=1.3639e+06
+
+Low Bin Edge = -5.7
 bin content = 0.0249732
-i==191, vzWeight=1.0355
+i==194, vzWeight=1.43654e+06
+Function fit weight=1.37176e+06
+
+Low Bin Edge = -5.6
 bin content = 0.0258649
-i==192, vzWeight=1.03273
+i==195, vzWeight=1.43269e+06 , vzLow=-5.59994
+MC function LowEdge = -5.6
+Function fit weight=1.37954e+06
+
+Low Bin Edge = -5.5
 bin content = 0.0279005
-i==193, vzWeight=1.01691
+i==196, vzWeight=1.41074e+06
+Function fit weight=1.38725e+06
+
+Low Bin Edge = -5.4
 bin content = 0.0289039
-i==194, vzWeight=1.01173
+i==197, vzWeight=1.40356e+06
+Function fit weight=1.39488e+06
+
+Low Bin Edge = -5.3
 bin content = 0.0295686
-i==195, vzWeight=1.03778 , vzLow=-4.49994
+i==198, vzWeight=1.43969e+06
+Function fit weight=1.40244e+06
+
+Low Bin Edge = -5.2
 bin content = 0.0304235
-i==196, vzWeight=1.02751
+i==199, vzWeight=1.42545e+06
+Function fit weight=1.40991e+06
+
+Low Bin Edge = -5.1
 bin content = 0.0306923
-i==197, vzWeight=1.04521
+i==200, vzWeight=1.45001e+06 , vzLow=-5.09994
+MC function LowEdge = -5.1
+Function fit weight=1.4173e+06
+
+Low Bin Edge = -5
 bin content = 0.0314189
-i==198, vzWeight=1.02536
+i==201, vzWeight=1.42246e+06
+Function fit weight=1.42462e+06
+
+Low Bin Edge = -4.9
 bin content = 0.0295606
-i==199, vzWeight=1.03982
+i==202, vzWeight=1.44253e+06
+Function fit weight=1.43184e+06
+
+Low Bin Edge = -4.8
 bin content = 0.0329918
-i==200, vzWeight=1.02658 , vzLow=-3.99994
+i==203, vzWeight=1.42416e+06
+Function fit weight=1.43898e+06
+
+Low Bin Edge = -4.7
 bin content = 0.0337321
-i==201, vzWeight=1.04558
+i==204, vzWeight=1.45052e+06
+Function fit weight=1.44603e+06
+
+Low Bin Edge = -4.6
 bin content = 0.0346857
-i==202, vzWeight=1.04554
+i==205, vzWeight=1.45045e+06 , vzLow=-4.59994
+MC function LowEdge = -4.6
+Function fit weight=1.45299e+06
+
+Low Bin Edge = -4.5
 bin content = 0.0343217
-i==203, vzWeight=1.06993
+i==206, vzWeight=1.4843e+06
+Function fit weight=1.45986e+06
+
+Low Bin Edge = -4.4
 bin content = 0.0338085
-i==204, vzWeight=1.08087
+i==207, vzWeight=1.49947e+06
+Function fit weight=1.46664e+06
+
+Low Bin Edge = -4.3
 bin content = 0.03924
-i==205, vzWeight=1.05827 , vzLow=-3.49994
+i==208, vzWeight=1.46812e+06
+Function fit weight=1.47332e+06
+
+Low Bin Edge = -4.2
 bin content = 0.0390338
-i==206, vzWeight=1.04478
+i==209, vzWeight=1.4494e+06
+Function fit weight=1.47991e+06
+
+Low Bin Edge = -4.1
 bin content = 0.0403291
-i==207, vzWeight=1.07567
+i==210, vzWeight=1.49226e+06 , vzLow=-4.09994
+MC function LowEdge = -4.1
+Function fit weight=1.48639e+06
+
+Low Bin Edge = -4
 bin content = 0.0385386
-i==208, vzWeight=1.0805
+i==211, vzWeight=1.49897e+06
+Function fit weight=1.49278e+06
+
+Low Bin Edge = -3.9
 bin content = 0.0428557
-i==209, vzWeight=1.1071
+i==212, vzWeight=1.53586e+06
+Function fit weight=1.49907e+06
+
+Low Bin Edge = -3.8
 bin content = 0.0404344
-i==210, vzWeight=1.0865 , vzLow=-2.99994
+i==213, vzWeight=1.50729e+06
+Function fit weight=1.50526e+06
+
+Low Bin Edge = -3.7
 bin content = 0.0427353
-i==211, vzWeight=1.05007
+i==214, vzWeight=1.45674e+06
+Function fit weight=1.51134e+06
+
+Low Bin Edge = -3.6
 bin content = 0.0421521
-i==212, vzWeight=1.09422
+i==215, vzWeight=1.51799e+06 , vzLow=-3.59994
+MC function LowEdge = -3.6
+Function fit weight=1.51731e+06
+
+Low Bin Edge = -3.5
 bin content = 0.0445828
-i==213, vzWeight=1.1088
+i==216, vzWeight=1.53822e+06
+Function fit weight=1.52318e+06
+
+Low Bin Edge = -3.4
 bin content = 0.0462003
-i==214, vzWeight=1.08563
+i==217, vzWeight=1.50607e+06
+Function fit weight=1.52895e+06
+
+Low Bin Edge = -3.3
 bin content = 0.0472549
-i==215, vzWeight=1.09911 , vzLow=-2.49994
+i==218, vzWeight=1.52477e+06
+Function fit weight=1.5346e+06
+
+Low Bin Edge = -3.2
 bin content = 0.0501815
-i==216, vzWeight=1.07861
+i==219, vzWeight=1.49633e+06
+Function fit weight=1.54014e+06
+
+Low Bin Edge = -3.1
 bin content = 0.0492653
-i==217, vzWeight=1.11775
+i==220, vzWeight=1.55064e+06 , vzLow=-3.09994
+MC function LowEdge = -3.1
+Function fit weight=1.54557e+06
+
+Low Bin Edge = -3
 bin content = 0.0485661
-i==218, vzWeight=1.12411
+i==221, vzWeight=1.55947e+06
+Function fit weight=1.55088e+06
+
+Low Bin Edge = -2.9
 bin content = 0.0505664
-i==219, vzWeight=1.10876
+i==222, vzWeight=1.53816e+06
+Function fit weight=1.55608e+06
+
+Low Bin Edge = -2.8
 bin content = 0.0540141
-i==220, vzWeight=1.11068 , vzLow=-1.99995
+i==223, vzWeight=1.54083e+06
+Function fit weight=1.56117e+06
+
+Low Bin Edge = -2.7
 bin content = 0.0515229
-i==221, vzWeight=1.08115
+i==224, vzWeight=1.49986e+06
+Function fit weight=1.56613e+06
+
+Low Bin Edge = -2.6
 bin content = 0.0534807
-i==222, vzWeight=1.11298
+i==225, vzWeight=1.54402e+06 , vzLow=-2.59994
+MC function LowEdge = -2.6
+Function fit weight=1.57098e+06
+
+Low Bin Edge = -2.5
 bin content = 0.0584754
-i==223, vzWeight=1.10993
+i==226, vzWeight=1.53979e+06
+Function fit weight=1.57571e+06
+
+Low Bin Edge = -2.4
 bin content = 0.060968
-i==224, vzWeight=1.13585
+i==227, vzWeight=1.57574e+06
+Function fit weight=1.58032e+06
+
+Low Bin Edge = -2.3
 bin content = 0.0573091
-i==225, vzWeight=1.13001 , vzLow=-1.49994
+i==228, vzWeight=1.56765e+06
+Function fit weight=1.5848e+06
+
+Low Bin Edge = -2.2
 bin content = 0.0624637
-i==226, vzWeight=1.13544
+i==229, vzWeight=1.57517e+06
+Function fit weight=1.58917e+06
+
+Low Bin Edge = -2.1
 bin content = 0.0612917
-i==227, vzWeight=1.13565
+i==230, vzWeight=1.57547e+06 , vzLow=-2.09994
+MC function LowEdge = -2.1
+Function fit weight=1.5934e+06
+
+Low Bin Edge = -2
 bin content = 0.0635313
-i==228, vzWeight=1.1321
+i==231, vzWeight=1.57054e+06
+Function fit weight=1.59752e+06
+
+Low Bin Edge = -1.9
 bin content = 0.0638996
-i==229, vzWeight=1.12801
+i==232, vzWeight=1.56487e+06
+Function fit weight=1.6015e+06
+
+Low Bin Edge = -1.8
 bin content = 0.0642932
-i==230, vzWeight=1.14225 , vzLow=-0.999945
+i==233, vzWeight=1.58463e+06
+Function fit weight=1.60536e+06
+
+Low Bin Edge = -1.7
 bin content = 0.0653406
-i==231, vzWeight=1.14568
+i==234, vzWeight=1.58938e+06
+Function fit weight=1.60909e+06
+
+Low Bin Edge = -1.6
 bin content = 0.0722981
-i==232, vzWeight=1.14388
+i==235, vzWeight=1.58688e+06 , vzLow=-1.59994
+MC function LowEdge = -1.6
+Function fit weight=1.61269e+06
+
+Low Bin Edge = -1.5
 bin content = 0.066765
-i==233, vzWeight=1.1323
+i==236, vzWeight=1.57083e+06
+Function fit weight=1.61616e+06
+
+Low Bin Edge = -1.4
 bin content = 0.0682441
-i==234, vzWeight=1.13885
+i==237, vzWeight=1.57991e+06
+Function fit weight=1.6195e+06
+
+Low Bin Edge = -1.3
 bin content = 0.0722505
-i==235, vzWeight=1.1451 , vzLow=-0.499945
+i==238, vzWeight=1.58858e+06
+Function fit weight=1.62271e+06
+
+Low Bin Edge = -1.2
 bin content = 0.075709
-i==236, vzWeight=1.16257
+i==239, vzWeight=1.61282e+06
+Function fit weight=1.62578e+06
+
+Low Bin Edge = -1.1
 bin content = 0.0745651
-i==237, vzWeight=1.14432
+i==240, vzWeight=1.58749e+06 , vzLow=-1.09994
+MC function LowEdge = -1.1
+Function fit weight=1.62872e+06
+
+Low Bin Edge = -1
 bin content = 0.0769388
-i==238, vzWeight=1.12241
+i==241, vzWeight=1.55711e+06
+Function fit weight=1.63153e+06
+
+Low Bin Edge = -0.9
 bin content = 0.0769107
-i==239, vzWeight=1.14904
+i==242, vzWeight=1.59404e+06
+Function fit weight=1.6342e+06
+
+Low Bin Edge = -0.8
 bin content = 0.0856414
-i==240, vzWeight=1.15077 , vzLow=5.52669e-05
+i==243, vzWeight=1.59645e+06
+Function fit weight=1.63673e+06
+
+Low Bin Edge = -0.7
 bin content = 0.079634
-i==241, vzWeight=1.157
+i==244, vzWeight=1.60509e+06
+Function fit weight=1.63913e+06
+
+Low Bin Edge = -0.6
 bin content = 0.0851584
-i==242, vzWeight=1.14005
+i==245, vzWeight=1.58157e+06 , vzLow=-0.599941
+MC function LowEdge = -0.6
+Function fit weight=1.6414e+06
+
+Low Bin Edge = -0.5
 bin content = 0.0865612
-i==243, vzWeight=1.17108
+i==246, vzWeight=1.62463e+06
+Function fit weight=1.64352e+06
+
+Low Bin Edge = -0.4
 bin content = 0.0866131
-i==244, vzWeight=1.1645
+i==247, vzWeight=1.61549e+06
+Function fit weight=1.64551e+06
+
+Low Bin Edge = -0.3
 bin content = 0.0866167
-i==245, vzWeight=1.15151 , vzLow=0.500055
+i==248, vzWeight=1.59747e+06
+Function fit weight=1.64736e+06
+
+Low Bin Edge = -0.2
 bin content = 0.0904421
-i==246, vzWeight=1.158
+i==249, vzWeight=1.60647e+06
+Function fit weight=1.64906e+06
+
+Low Bin Edge = -0.1
 bin content = 0.0916149
-i==247, vzWeight=1.16254
+i==250, vzWeight=1.61277e+06 , vzLow=-0.0999409
+MC function LowEdge = -0.1
+Function fit weight=1.65063e+06
+
+Low Bin Edge = 0
 bin content = 0.0920172
-i==248, vzWeight=1.1646
+i==251, vzWeight=1.61564e+06
+Function fit weight=1.65206e+06
+
+Low Bin Edge = 0.1
 bin content = 0.0990316
-i==249, vzWeight=1.15385
+i==252, vzWeight=1.60072e+06
+Function fit weight=1.65335e+06
+
+Low Bin Edge = 0.2
 bin content = 0.0954231
-i==250, vzWeight=1.17907 , vzLow=1.00006
+i==253, vzWeight=1.63571e+06
+Function fit weight=1.6545e+06
+
+Low Bin Edge = 0.3
 bin content = 0.100323
-i==251, vzWeight=1.14388
+i==254, vzWeight=1.58689e+06
+Function fit weight=1.65551e+06
+
+Low Bin Edge = 0.4
 bin content = 0.105492
-i==252, vzWeight=1.16576
+i==255, vzWeight=1.61724e+06 , vzLow=0.400059
+MC function LowEdge = 0.4
+Function fit weight=1.65638e+06
+
+Low Bin Edge = 0.5
 bin content = 0.10369
-i==253, vzWeight=1.16411
+i==256, vzWeight=1.61495e+06
+Function fit weight=1.6571e+06
+
+Low Bin Edge = 0.6
 bin content = 0.110569
-i==254, vzWeight=1.16061
+i==257, vzWeight=1.6101e+06
+Function fit weight=1.65769e+06
+
+Low Bin Edge = 0.7
 bin content = 0.109203
-i==255, vzWeight=1.17227 , vzLow=1.50006
+i==258, vzWeight=1.62627e+06
+Function fit weight=1.65813e+06
+
+Low Bin Edge = 0.8
 bin content = 0.108319
-i==256, vzWeight=1.16315
+i==259, vzWeight=1.61362e+06
+Function fit weight=1.65843e+06
+
+Low Bin Edge = 0.9
 bin content = 0.114054
-i==257, vzWeight=1.16247
+i==260, vzWeight=1.61268e+06 , vzLow=0.900059
+MC function LowEdge = 0.9
+Function fit weight=1.65859e+06
+
+Low Bin Edge = 1
 bin content = 0.115934
-i==258, vzWeight=1.15317
+i==261, vzWeight=1.59977e+06
+Function fit weight=1.65861e+06
+
+Low Bin Edge = 1.1
 bin content = 0.118271
-i==259, vzWeight=1.17936
+i==262, vzWeight=1.63611e+06
+Function fit weight=1.65848e+06
+
+Low Bin Edge = 1.2
 bin content = 0.116454
-i==260, vzWeight=1.15455 , vzLow=2.00006
+i==263, vzWeight=1.60168e+06
+Function fit weight=1.65821e+06
+
+Low Bin Edge = 1.3
 bin content = 0.123003
-i==261, vzWeight=1.15758
+i==264, vzWeight=1.60589e+06
+Function fit weight=1.6578e+06
+
+Low Bin Edge = 1.4
 bin content = 0.12266
-i==262, vzWeight=1.14933
+i==265, vzWeight=1.59444e+06 , vzLow=1.40006
+MC function LowEdge = 1.4
+Function fit weight=1.65725e+06
+
+Low Bin Edge = 1.5
 bin content = 0.123719
-i==263, vzWeight=1.19079
+i==266, vzWeight=1.65197e+06
+Function fit weight=1.65656e+06
+
+Low Bin Edge = 1.6
 bin content = 0.125863
-i==264, vzWeight=1.17641
+i==267, vzWeight=1.63202e+06
+Function fit weight=1.65573e+06
+
+Low Bin Edge = 1.7
 bin content = 0.132991
-i==265, vzWeight=1.16237 , vzLow=2.50006
+i==268, vzWeight=1.61253e+06
+Function fit weight=1.65475e+06
+
+Low Bin Edge = 1.8
 bin content = 0.130587
-i==266, vzWeight=1.16054
+i==269, vzWeight=1.61e+06
+Function fit weight=1.65364e+06
+
+Low Bin Edge = 1.9
 bin content = 0.13686
-i==267, vzWeight=1.17536
+i==270, vzWeight=1.63056e+06 , vzLow=1.90006
+MC function LowEdge = 1.9
+Function fit weight=1.65238e+06
+
+Low Bin Edge = 2
 bin content = 0.13838
-i==268, vzWeight=1.17296
+i==271, vzWeight=1.62723e+06
+Function fit weight=1.65098e+06
+
+Low Bin Edge = 2.1
 bin content = 0.139238
-i==269, vzWeight=1.15801
+i==272, vzWeight=1.60649e+06
+Function fit weight=1.64945e+06
+
+Low Bin Edge = 2.2
 bin content = 0.142017
-i==270, vzWeight=1.14315 , vzLow=3.00005
+i==273, vzWeight=1.58587e+06
+Function fit weight=1.64777e+06
+
+Low Bin Edge = 2.3
 bin content = 0.143472
-i==271, vzWeight=1.16767
+i==274, vzWeight=1.6199e+06
+Function fit weight=1.64595e+06
+
+Low Bin Edge = 2.4
 bin content = 0.146803
-i==272, vzWeight=1.13794
+i==275, vzWeight=1.57864e+06 , vzLow=2.40006
+MC function LowEdge = 2.4
+Function fit weight=1.644e+06
+
+Low Bin Edge = 2.5
 bin content = 0.148984
-i==273, vzWeight=1.18107
+i==276, vzWeight=1.63848e+06
+Function fit weight=1.64191e+06
+
+Low Bin Edge = 2.6
 bin content = 0.152359
-i==274, vzWeight=1.14848
+i==277, vzWeight=1.59327e+06
+Function fit weight=1.63968e+06
+
+Low Bin Edge = 2.7
 bin content = 0.152918
-i==275, vzWeight=1.16952 , vzLow=3.50005
+i==278, vzWeight=1.62246e+06
+Function fit weight=1.63731e+06
+
+Low Bin Edge = 2.8
 bin content = 0.152966
-i==276, vzWeight=1.17425
+i==279, vzWeight=1.62901e+06
+Function fit weight=1.63481e+06
+
+Low Bin Edge = 2.9
 bin content = 0.159206
-i==277, vzWeight=1.20554
+i==280, vzWeight=1.67243e+06 , vzLow=2.90006
+MC function LowEdge = 2.9
+Function fit weight=1.63217e+06
+
+Low Bin Edge = 3
 bin content = 0.167126
-i==278, vzWeight=1.13643
+i==281, vzWeight=1.57655e+06
+Function fit weight=1.62939e+06
+
+Low Bin Edge = 3.1
 bin content = 0.166865
-i==279, vzWeight=1.16606
+i==282, vzWeight=1.61766e+06
+Function fit weight=1.62648e+06
+
+Low Bin Edge = 3.2
 bin content = 0.167336
-i==280, vzWeight=1.1658 , vzLow=4.00005
+i==283, vzWeight=1.61729e+06
+Function fit weight=1.62344e+06
+
+Low Bin Edge = 3.3
 bin content = 0.170353
-i==281, vzWeight=1.12143
+i==284, vzWeight=1.55575e+06
+Function fit weight=1.62026e+06
+
+Low Bin Edge = 3.4
 bin content = 0.171773
-i==282, vzWeight=1.15891
+i==285, vzWeight=1.60774e+06 , vzLow=3.40006
+MC function LowEdge = 3.4
+Function fit weight=1.61695e+06
+
+Low Bin Edge = 3.5
 bin content = 0.175511
-i==283, vzWeight=1.12217
+i==286, vzWeight=1.55676e+06
+Function fit weight=1.61352e+06
+
+Low Bin Edge = 3.6
 bin content = 0.174903
-i==284, vzWeight=1.1397
+i==287, vzWeight=1.58109e+06
+Function fit weight=1.60995e+06
+
+Low Bin Edge = 3.7
 bin content = 0.183829
-i==285, vzWeight=1.17211 , vzLow=4.50005
+i==288, vzWeight=1.62604e+06
+Function fit weight=1.60625e+06
+
+Low Bin Edge = 3.8
 bin content = 0.182402
-i==286, vzWeight=1.14171
+i==289, vzWeight=1.58387e+06
+Function fit weight=1.60242e+06
+
+Low Bin Edge = 3.9
 bin content = 0.190954
-i==287, vzWeight=1.14324
+i==290, vzWeight=1.586e+06 , vzLow=3.90006
+MC function LowEdge = 3.9
+Function fit weight=1.59846e+06
+
+Low Bin Edge = 4
 bin content = 0.192348
-i==288, vzWeight=1.17641
+i==291, vzWeight=1.63201e+06
+Function fit weight=1.59438e+06
+
+Low Bin Edge = 4.1
 bin content = 0.195899
-i==289, vzWeight=1.12413
+i==292, vzWeight=1.55949e+06
+Function fit weight=1.59017e+06
+
+Low Bin Edge = 4.2
 bin content = 0.198893
-i==290, vzWeight=1.13316 , vzLow=5.00005
+i==293, vzWeight=1.57202e+06
+Function fit weight=1.58584e+06
+
+Low Bin Edge = 4.3
 bin content = 0.19587
-i==291, vzWeight=1.13085
+i==294, vzWeight=1.56881e+06
+Function fit weight=1.58138e+06
+
+Low Bin Edge = 4.4
 bin content = 0.202056
-i==292, vzWeight=1.12657
+i==295, vzWeight=1.56288e+06 , vzLow=4.40006
+MC function LowEdge = 4.4
+Function fit weight=1.5768e+06
+
+Low Bin Edge = 4.5
 bin content = 0.205528
-i==293, vzWeight=1.13305
+i==296, vzWeight=1.57187e+06
+Function fit weight=1.5721e+06
+
+Low Bin Edge = 4.6
 bin content = 0.20953
-i==294, vzWeight=1.12065
+i==297, vzWeight=1.55466e+06
+Function fit weight=1.56728e+06
+
+Low Bin Edge = 4.7
 bin content = 0.206408
-i==295, vzWeight=1.11951 , vzLow=5.50005
+i==298, vzWeight=1.55308e+06
+Function fit weight=1.56234e+06
+
+Low Bin Edge = 4.8
 bin content = 0.210015
-i==296, vzWeight=1.11763
+i==299, vzWeight=1.55047e+06
+Function fit weight=1.55729e+06
+
+Low Bin Edge = 4.9
 bin content = 0.215739
-i==297, vzWeight=1.13541
+i==300, vzWeight=1.57513e+06 , vzLow=4.90006
+MC function LowEdge = 4.9
+Function fit weight=1.55211e+06
+
+Low Bin Edge = 5
 bin content = 0.225097
-i==298, vzWeight=1.11617
+i==301, vzWeight=1.54844e+06
+Function fit weight=1.54683e+06
+
+Low Bin Edge = 5.1
 bin content = 0.2257
-i==299, vzWeight=1.13276
+i==302, vzWeight=1.57146e+06
+Function fit weight=1.54142e+06
+
+Low Bin Edge = 5.2
 bin content = 0.221138
-i==300, vzWeight=1.13886 , vzLow=6.00005
+i==303, vzWeight=1.57992e+06
+Function fit weight=1.53591e+06
+
+Low Bin Edge = 5.3
 bin content = 0.234176
-i==301, vzWeight=1.11247
+i==304, vzWeight=1.54331e+06
+Function fit weight=1.53028e+06
+
+Low Bin Edge = 5.4
 bin content = 0.242254
-i==302, vzWeight=1.09618
+i==305, vzWeight=1.52071e+06 , vzLow=5.40006
+MC function LowEdge = 5.4
+Function fit weight=1.52455e+06
+
+Low Bin Edge = 5.5
 bin content = 0.243058
-i==303, vzWeight=1.11981
+i==306, vzWeight=1.55349e+06
+Function fit weight=1.5187e+06
+
+Low Bin Edge = 5.6
 bin content = 0.241741
-i==304, vzWeight=1.10312
+i==307, vzWeight=1.53034e+06
+Function fit weight=1.51275e+06
+
+Low Bin Edge = 5.7
 bin content = 0.245862
-i==305, vzWeight=1.1314 , vzLow=6.50005
+i==308, vzWeight=1.56958e+06
+Function fit weight=1.50669e+06
+
+Low Bin Edge = 5.8
 bin content = 0.251731
-i==306, vzWeight=1.08679
+i==309, vzWeight=1.50768e+06
+Function fit weight=1.50053e+06
+
+Low Bin Edge = 5.9
 bin content = 0.248168
-i==307, vzWeight=1.12316
+i==310, vzWeight=1.55814e+06 , vzLow=5.90006
+MC function LowEdge = 5.9
+Function fit weight=1.49427e+06
+
+Low Bin Edge = 6
 bin content = 0.259041
-i==308, vzWeight=1.08691
+i==311, vzWeight=1.50786e+06
+Function fit weight=1.4879e+06
+
+Low Bin Edge = 6.1
 bin content = 0.260513
-i==309, vzWeight=1.07787
+i==312, vzWeight=1.49532e+06
+Function fit weight=1.48144e+06
+
+Low Bin Edge = 6.2
 bin content = 0.260472
-i==310, vzWeight=1.09815 , vzLow=7.00005
+i==313, vzWeight=1.52345e+06
+Function fit weight=1.47487e+06
+
+Low Bin Edge = 6.3
 bin content = 0.265858
-i==311, vzWeight=1.11489
+i==314, vzWeight=1.54667e+06
+Function fit weight=1.46822e+06
+
+Low Bin Edge = 6.4
 bin content = 0.265008
-i==312, vzWeight=1.08037
+i==315, vzWeight=1.49879e+06 , vzLow=6.40006
+MC function LowEdge = 6.4
+Function fit weight=1.46146e+06
+
+Low Bin Edge = 6.5
 bin content = 0.273327
-i==313, vzWeight=1.06745
+i==316, vzWeight=1.48085e+06
+Function fit weight=1.45461e+06
+
+Low Bin Edge = 6.6
 bin content = 0.277203
-i==314, vzWeight=1.03884
+i==317, vzWeight=1.44116e+06
+Function fit weight=1.44767e+06
+
+Low Bin Edge = 6.7
 bin content = 0.273896
-i==315, vzWeight=1.09174 , vzLow=7.50005
+i==318, vzWeight=1.51455e+06
+Function fit weight=1.44064e+06
+
+Low Bin Edge = 6.8
 bin content = 0.287209
-i==316, vzWeight=1.03147
+i==319, vzWeight=1.43094e+06
+Function fit weight=1.43352e+06
+
+Low Bin Edge = 6.9
 bin content = 0.287888
-i==317, vzWeight=1.02004
+i==320, vzWeight=1.41508e+06 , vzLow=6.90005
+MC function LowEdge = 6.9
+Function fit weight=1.42632e+06
+
+Low Bin Edge = 7
 bin content = 0.293375
-i==318, vzWeight=1.03684
+i==321, vzWeight=1.4384e+06
+Function fit weight=1.41903e+06
+
+Low Bin Edge = 7.1
 bin content = 0.303211
-i==319, vzWeight=1.0498
+i==322, vzWeight=1.45637e+06
+Function fit weight=1.41165e+06
+
+Low Bin Edge = 7.2
 bin content = 0.300939
-i==320, vzWeight=1.04227 , vzLow=8.00005
+i==323, vzWeight=1.44592e+06
+Function fit weight=1.4042e+06
+
+Low Bin Edge = 7.3
 bin content = 0.303809
-i==321, vzWeight=1.04865
+i==324, vzWeight=1.45477e+06
+Function fit weight=1.39666e+06
+
+Low Bin Edge = 7.4
 bin content = 0.311163
-i==322, vzWeight=1.04217
+i==325, vzWeight=1.44579e+06 , vzLow=7.40005
+MC function LowEdge = 7.4
+Function fit weight=1.38905e+06
+
+Low Bin Edge = 7.5
 bin content = 0.314329
-i==323, vzWeight=1.02373
+i==326, vzWeight=1.4202e+06
+Function fit weight=1.38136e+06
+
+Low Bin Edge = 7.6
 bin content = 0.312004
-i==324, vzWeight=0.998766
+i==327, vzWeight=1.38557e+06
+Function fit weight=1.37359e+06
+
+Low Bin Edge = 7.7
 bin content = 0.323642
-i==325, vzWeight=1.02009 , vzLow=8.50005
+i==328, vzWeight=1.41516e+06
+Function fit weight=1.36575e+06
+
+Low Bin Edge = 7.8
 bin content = 0.323763
-i==326, vzWeight=1.01359
+i==329, vzWeight=1.40614e+06
+Function fit weight=1.35784e+06
+
+Low Bin Edge = 7.9
 bin content = 0.326797
-i==327, vzWeight=1.02474
+i==330, vzWeight=1.42161e+06 , vzLow=7.90005
+MC function LowEdge = 7.9
+Function fit weight=1.34986e+06
+
+Low Bin Edge = 8
 bin content = 0.335268
-i==328, vzWeight=0.976417
+i==331, vzWeight=1.35457e+06
+Function fit weight=1.34181e+06
+
+Low Bin Edge = 8.1
 bin content = 0.331251
-i==329, vzWeight=0.987471
+i==332, vzWeight=1.3699e+06
+Function fit weight=1.33369e+06
+
+Low Bin Edge = 8.2
 bin content = 0.338452
-i==330, vzWeight=0.989013 , vzLow=9.00005
+i==333, vzWeight=1.37204e+06
+Function fit weight=1.32552e+06
+
+Low Bin Edge = 8.3
 bin content = 0.34373
-i==331, vzWeight=0.973199
+i==334, vzWeight=1.3501e+06
+Function fit weight=1.31727e+06
+
+Low Bin Edge = 8.4
 bin content = 0.348844
-i==332, vzWeight=1.00168
+i==335, vzWeight=1.38962e+06 , vzLow=8.40006
+MC function LowEdge = 8.4
+Function fit weight=1.30897e+06
+
+Low Bin Edge = 8.5
 bin content = 0.353656
-i==333, vzWeight=0.965437
+i==336, vzWeight=1.33934e+06
+Function fit weight=1.30061e+06
+
+Low Bin Edge = 8.6
 bin content = 0.360346
-i==334, vzWeight=0.97457
+i==337, vzWeight=1.35201e+06
+Function fit weight=1.29219e+06
+
+Low Bin Edge = 8.7
 bin content = 0.356122
-i==335, vzWeight=0.933076 , vzLow=9.50006
+i==338, vzWeight=1.29444e+06
+Function fit weight=1.28372e+06
+
+Low Bin Edge = 8.8
 bin content = 0.361492
-i==336, vzWeight=0.949908
+i==339, vzWeight=1.31779e+06
+Function fit weight=1.27519e+06
+
+Low Bin Edge = 8.9
 bin content = 0.366367
-i==337, vzWeight=0.967012
+i==340, vzWeight=1.34152e+06 , vzLow=8.90006
+MC function LowEdge = 8.9
+Function fit weight=1.26661e+06
+
+Low Bin Edge = 9
 bin content = 0.368209
-i==338, vzWeight=0.966876
+i==341, vzWeight=1.34133e+06
+Function fit weight=1.25798e+06
+
+Low Bin Edge = 9.1
 bin content = 0.376399
-i==339, vzWeight=0.924282
+i==342, vzWeight=1.28224e+06
+Function fit weight=1.2493e+06
+
+Low Bin Edge = 9.2
 bin content = 0.383685
-i==340, vzWeight=0.909964 , vzLow=10.0001
+i==343, vzWeight=1.26238e+06
+Function fit weight=1.24058e+06
+
+Low Bin Edge = 9.3
 bin content = 0.379231
-i==341, vzWeight=0.915665
+i==344, vzWeight=1.27029e+06
+Function fit weight=1.23181e+06
+
+Low Bin Edge = 9.4
 bin content = 0.383879
-i==342, vzWeight=0.933913
+i==345, vzWeight=1.2956e+06 , vzLow=9.40006
+MC function LowEdge = 9.4
+Function fit weight=1.223e+06
+
+Low Bin Edge = 9.5
 bin content = 0.396664
-i==343, vzWeight=0.938168
+i==346, vzWeight=1.30151e+06
+Function fit weight=1.21415e+06
+
+Low Bin Edge = 9.6
 bin content = 0.403504
-i==344, vzWeight=0.921808
+i==347, vzWeight=1.27881e+06
+Function fit weight=1.20526e+06
+
+Low Bin Edge = 9.7
 bin content = 0.405491
-i==345, vzWeight=0.925362 , vzLow=10.5001
+i==348, vzWeight=1.28374e+06
+Function fit weight=1.19633e+06
+
+Low Bin Edge = 9.8
 bin content = 0.404772
-i==346, vzWeight=0.881331
+i==349, vzWeight=1.22266e+06
+Function fit weight=1.18737e+06
+
+Low Bin Edge = 9.9
 bin content = 0.41005
-i==347, vzWeight=0.904866
+i==350, vzWeight=1.25531e+06 , vzLow=9.90006
+MC function LowEdge = 9.9
+Function fit weight=1.17837e+06
+
+Low Bin Edge = 10
 bin content = 0.406175
-i==348, vzWeight=0.91726
+i==351, vzWeight=1.2725e+06
+Function fit weight=1.16934e+06
+
+Low Bin Edge = 10.1
 bin content = 0.41951
-i==349, vzWeight=0.868775
+i==352, vzWeight=1.20524e+06
+Function fit weight=1.16028e+06
+
+Low Bin Edge = 10.2
 bin content = 0.430232
-i==350, vzWeight=0.859464 , vzLow=11.0001
+i==353, vzWeight=1.19232e+06
+Function fit weight=1.15119e+06
+
+Low Bin Edge = 10.3
 bin content = 0.42144
-i==351, vzWeight=0.888381
+i==354, vzWeight=1.23244e+06
+Function fit weight=1.14208e+06
+
+Low Bin Edge = 10.4
 bin content = 0.426819
-i==352, vzWeight=0.899024
+i==355, vzWeight=1.2472e+06 , vzLow=10.4001
+MC function LowEdge = 10.4
+Function fit weight=1.13294e+06
+
+Low Bin Edge = 10.5
 bin content = 0.438617
-i==353, vzWeight=0.81954
+i==356, vzWeight=1.13694e+06
+Function fit weight=1.12378e+06
+
+Low Bin Edge = 10.6
 bin content = 0.440565
-i==354, vzWeight=0.82711
+i==357, vzWeight=1.14744e+06
+Function fit weight=1.11459e+06
+
+Low Bin Edge = 10.7
 bin content = 0.447515
-i==355, vzWeight=0.831996 , vzLow=11.5001
+i==358, vzWeight=1.15422e+06
+Function fit weight=1.10539e+06
+
+Low Bin Edge = 10.8
 bin content = 0.447093
-i==356, vzWeight=0.811947
+i==359, vzWeight=1.1264e+06
+Function fit weight=1.09617e+06
+
+Low Bin Edge = 10.9
 bin content = 0.455843
-i==357, vzWeight=0.839312
+i==360, vzWeight=1.16437e+06 , vzLow=10.9001
+MC function LowEdge = 10.9
+Function fit weight=1.08693e+06
+
+Low Bin Edge = 11
 bin content = 0.451276
-i==358, vzWeight=0.819823
+i==361, vzWeight=1.13733e+06
+Function fit weight=1.07768e+06
+
+Low Bin Edge = 11.1
 bin content = 0.470386
-i==359, vzWeight=0.818477
+i==362, vzWeight=1.13546e+06
+Function fit weight=1.06842e+06
+
+Low Bin Edge = 11.2
 bin content = 0.46516
-i==360, vzWeight=0.80245 , vzLow=12.0001
+i==363, vzWeight=1.11323e+06
+Function fit weight=1.05914e+06
+
+Low Bin Edge = 11.3
 bin content = 0.472485
-i==361, vzWeight=0.819312
+i==364, vzWeight=1.13662e+06
+Function fit weight=1.04986e+06
+
+Low Bin Edge = 11.4
 bin content = 0.479558
-i==362, vzWeight=0.802612
+i==365, vzWeight=1.11345e+06 , vzLow=11.4001
+MC function LowEdge = 11.4
+Function fit weight=1.04057e+06
+
+Low Bin Edge = 11.5
 bin content = 0.484079
-i==363, vzWeight=0.768327
+i==366, vzWeight=1.06589e+06
+Function fit weight=1.03127e+06
+
+Low Bin Edge = 11.6
 bin content = 0.484033
-i==364, vzWeight=0.780291
+i==367, vzWeight=1.08249e+06
+Function fit weight=1.02197e+06
+
+Low Bin Edge = 11.7
 bin content = 0.493912
-i==365, vzWeight=0.760397 , vzLow=12.5001
+i==368, vzWeight=1.05489e+06
+Function fit weight=1.01266e+06
+
+Low Bin Edge = 11.8
 bin content = 0.500872
-i==366, vzWeight=0.725535
+i==369, vzWeight=1.00652e+06
+Function fit weight=1.00336e+06
+
+Low Bin Edge = 11.9
 bin content = 0.51146
-i==367, vzWeight=0.702742
+i==370, vzWeight=974904 , vzLow=11.9001
+MC function LowEdge = 11.9
+Function fit weight=994051
+
+Low Bin Edge = 12
 bin content = 0.501517
-i==368, vzWeight=0.748403
+i==371, vzWeight=1.03825e+06
+Function fit weight=984747
+
+Low Bin Edge = 12.1
 bin content = 0.508338
-i==369, vzWeight=0.740829
+i==372, vzWeight=1.02774e+06
+Function fit weight=975447
+
+Low Bin Edge = 12.2
 bin content = 0.508224
-i==370, vzWeight=0.704518 , vzLow=13.0001
+i==373, vzWeight=977366
+Function fit weight=966152
+
+Low Bin Edge = 12.3
 bin content = 0.521827
-i==371, vzWeight=0.72492
+i==374, vzWeight=1.00567e+06
+Function fit weight=956863
+
+Low Bin Edge = 12.4
 bin content = 0.521225
-i==372, vzWeight=0.748486
+i==375, vzWeight=1.03836e+06 , vzLow=12.4001
+MC function LowEdge = 12.4
+Function fit weight=947583
+
+Low Bin Edge = 12.5
 bin content = 0.531832
-i==373, vzWeight=0.684221
+i==376, vzWeight=949209
+Function fit weight=938313
+
+Low Bin Edge = 12.6
 bin content = 0.539365
-i==374, vzWeight=0.645883
+i==377, vzWeight=896024
+Function fit weight=929053
+
+Low Bin Edge = 12.7
 bin content = 0.532368
-i==375, vzWeight=0.718001 , vzLow=13.5001
+i==378, vzWeight=996072
+Function fit weight=919807
+
+Low Bin Edge = 12.8
 bin content = 0.544826
-i==376, vzWeight=0.644524
+i==379, vzWeight=894138
+Function fit weight=910574
+
+Low Bin Edge = 12.9
 bin content = 0.541068
-i==377, vzWeight=0.686049
+i==380, vzWeight=951745 , vzLow=12.9001
+MC function LowEdge = 12.9
+Function fit weight=901357
+
+Low Bin Edge = 13
 bin content = 0.552701
-i==378, vzWeight=0.678566
+i==381, vzWeight=941364
+Function fit weight=892157
+
+Low Bin Edge = 13.1
 bin content = 0.552143
-i==379, vzWeight=0.645618
+i==382, vzWeight=895656
+Function fit weight=882976
+
+Low Bin Edge = 13.2
 bin content = 0.563221
-i==380, vzWeight=0.637579 , vzLow=14.0001
+i==383, vzWeight=884504
+Function fit weight=873814
+
+Low Bin Edge = 13.3
 bin content = 0.56557
-i==381, vzWeight=0.631931
+i==384, vzWeight=876669
+Function fit weight=864673
+
+Low Bin Edge = 13.4
 bin content = 0.569151
-i==382, vzWeight=0.627866
+i==385, vzWeight=871028 , vzLow=13.4001
+MC function LowEdge = 13.4
+Function fit weight=855554
+
+Low Bin Edge = 13.5
 bin content = 0.571093
-i==383, vzWeight=0.598764
+i==386, vzWeight=830656
+Function fit weight=846460
+
+Low Bin Edge = 13.6
 bin content = 0.578457
-i==384, vzWeight=0.603811
+i==387, vzWeight=837658
+Function fit weight=837390
+
+Low Bin Edge = 13.7
 bin content = 0.586725
-i==385, vzWeight=0.579834 , vzLow=14.5001
+i==388, vzWeight=804396
+Function fit weight=828346
+
+Low Bin Edge = 13.8
 bin content = 0.589668
-i==386, vzWeight=0.618893
+i==389, vzWeight=858581
+Function fit weight=819330
+
+Low Bin Edge = 13.9
 bin content = 0.593563
-i==387, vzWeight=0.589254
+i==390, vzWeight=817463 , vzLow=13.9001
+MC function LowEdge = 13.9
+Function fit weight=810343
+
+Low Bin Edge = 14
 bin content = 0.598837
-i==388, vzWeight=0.607857
+i==391, vzWeight=843270
+Function fit weight=801386
+
+Low Bin Edge = 14.1
 bin content = 0.594799
-i==389, vzWeight=0.568996
+i==392, vzWeight=789360
+Function fit weight=792460
+
+Low Bin Edge = 14.2
 bin content = 0.608432
-i==390, vzWeight=0.556205 , vzLow=15.0001
+i==393, vzWeight=771615
+Function fit weight=783567
+
+Low Bin Edge = 14.3
 bin content = 0.610581
-i==391, vzWeight=0.553804
+i==394, vzWeight=768283
+Function fit weight=774706
+
+Low Bin Edge = 14.4
 bin content = 0.622672
-i==392, vzWeight=0.548915
+i==395, vzWeight=761502 , vzLow=14.4001
+MC function LowEdge = 14.4
+Function fit weight=765881
+
+Low Bin Edge = 14.5
 bin content = 0.627219
-i==393, vzWeight=0.521978
+i==396, vzWeight=724133
+Function fit weight=757091
+
+Low Bin Edge = 14.6
 bin content = 0.625696
-i==394, vzWeight=0.508788
+i==397, vzWeight=705834
+Function fit weight=748338
+
+Low Bin Edge = 14.7
 bin content = 0.620911
-i==395, vzWeight=0.518212 , vzLow=15.5001
+i==398, vzWeight=718907
+Function fit weight=739623
+
+Low Bin Edge = 14.8
 bin content = 0.63833
-i==396, vzWeight=0.475178
+i==399, vzWeight=659207
+Function fit weight=730947
+
+Low Bin Edge = 14.9
 bin content = 0.634343
-i==397, vzWeight=0.453585
+i==400, vzWeight=629252 , vzLow=14.9001
+MC function LowEdge = 14.9
+Function fit weight=722311
+
+Low Bin Edge = 15
 bin content = 0.630147
-i==398, vzWeight=0.511558
+i==401, vzWeight=709677
+Function fit weight=713716
+
+Low Bin Edge = 15.1
 bin content = 0.648385
-i==399, vzWeight=0.44857
+i==402, vzWeight=622294
+Function fit weight=705163
+
+Low Bin Edge = 15.2
 bin content = 0.655203
-i==400, vzWeight=0.454867 , vzLow=16.0001
+i==403, vzWeight=631030
+Function fit weight=696653
+
+Low Bin Edge = 15.3
 bin content = 0.663012
-i==401, vzWeight=0.476483
+i==404, vzWeight=661018
+Function fit weight=688186
+
+Low Bin Edge = 15.4
 bin content = 0.648831
-i==402, vzWeight=0.454714
+i==405, vzWeight=630818 , vzLow=15.4001
+MC function LowEdge = 15.4
+Function fit weight=679764
+
+Low Bin Edge = 15.5
 bin content = 0.66357
-i==403, vzWeight=0.468142
+i==406, vzWeight=649446
+Function fit weight=671388
+
+Low Bin Edge = 15.6
 bin content = 0.671951
-i==404, vzWeight=0.428615
+i==407, vzWeight=594611
+Function fit weight=663058
+
+Low Bin Edge = 15.7
 bin content = 0.676777
-i==405, vzWeight=0.432244 , vzLow=16.5001
+i==408, vzWeight=599645
+Function fit weight=654776
+
+Low Bin Edge = 15.8
 bin content = 0.668481
-i==406, vzWeight=0.410062
+i==409, vzWeight=568873
+Function fit weight=646542
+
+Low Bin Edge = 15.9
 bin content = 0.682221
-i==407, vzWeight=0.397133
+i==410, vzWeight=550937 , vzLow=15.9001
+MC function LowEdge = 15.9
+Function fit weight=638356
+
+Low Bin Edge = 16
 bin content = 0.686104
-i==408, vzWeight=0.393327
+i==411, vzWeight=545657
+Function fit weight=630221
+
+Low Bin Edge = 16.1
 bin content = 0.686326
-i==409, vzWeight=0.433892
+i==412, vzWeight=601932
+Function fit weight=622136
+
+Low Bin Edge = 16.2
 bin content = 0.697995
-i==410, vzWeight=0.356488 , vzLow=17.0001
+i==413, vzWeight=494550
+Function fit weight=614101
+
+Low Bin Edge = 16.3
 bin content = 0.703992
-i==411, vzWeight=0.383025
+i==414, vzWeight=531365
+Function fit weight=606119
+
+Low Bin Edge = 16.4
 bin content = 0.710453
-i==412, vzWeight=0.389635
+i==415, vzWeight=540534 , vzLow=16.4001
+MC function LowEdge = 16.4
+Function fit weight=598190
+
+Low Bin Edge = 16.5
 bin content = 0.70988
-i==413, vzWeight=0.37159
+i==416, vzWeight=515502
+Function fit weight=590313
+
+Low Bin Edge = 16.6
 bin content = 0.705908
-i==414, vzWeight=0.346925
+i==417, vzWeight=481283
+Function fit weight=582491
+
+Low Bin Edge = 16.7
 bin content = 0.716808
-i==415, vzWeight=0.374432 , vzLow=17.5001
+i==418, vzWeight=519444
+Function fit weight=574723
+
+Low Bin Edge = 16.8
 bin content = 0.714607
-i==416, vzWeight=0.320862
+i==419, vzWeight=445127
+Function fit weight=567010
+
+Low Bin Edge = 16.9
 bin content = 0.714731
-i==417, vzWeight=0.315108
+i==420, vzWeight=437145 , vzLow=16.9001
+MC function LowEdge = 16.9
+Function fit weight=559352
+
+Low Bin Edge = 17
 bin content = 0.727146
-i==418, vzWeight=0.301609
+i==421, vzWeight=418417
+Function fit weight=551751
+
+Low Bin Edge = 17.1
 bin content = 0.732497
-i==419, vzWeight=0.314621
+i==422, vzWeight=436469
+Function fit weight=544207
+
+Low Bin Edge = 17.2
 bin content = 0.734094
-i==420, vzWeight=0.341115 , vzLow=18.0001
+i==423, vzWeight=473224
+Function fit weight=536719
+
+Low Bin Edge = 17.3
 bin content = 0.740115
-i==421, vzWeight=0.298723
+i==424, vzWeight=414413
+Function fit weight=529290
+
+Low Bin Edge = 17.4
 bin content = 0.741992
-i==422, vzWeight=0.264461
+i==425, vzWeight=366883 , vzLow=17.4001
+MC function LowEdge = 17.4
+Function fit weight=521919
+
+Low Bin Edge = 17.5
 bin content = 0.752212
-i==423, vzWeight=0.326804
+i==426, vzWeight=453370
+Function fit weight=514606
+
+Low Bin Edge = 17.6
 bin content = 0.754355
-i==424, vzWeight=0.260548
+i==427, vzWeight=361454
+Function fit weight=507352
+
+Low Bin Edge = 17.7
 bin content = 0.745579
-i==425, vzWeight=0.257008 , vzLow=18.5001
+i==428, vzWeight=356544
+Function fit weight=500158
+
+Low Bin Edge = 17.8
 bin content = 0.765068
-i==426, vzWeight=0.285318
+i==429, vzWeight=395817
+Function fit weight=493024
+
+Low Bin Edge = 17.9
 bin content = 0.756677
-i==427, vzWeight=0.25409
+i==430, vzWeight=352495 , vzLow=17.9001
+MC function LowEdge = 17.9
+Function fit weight=485949
+
+Low Bin Edge = 18
 bin content = 0.767323
-i==428, vzWeight=0.243075
+i==431, vzWeight=337215
+Function fit weight=478936
+
+Low Bin Edge = 18.1
 bin content = 0.771744
-i==429, vzWeight=0.235124
+i==432, vzWeight=326183
+Function fit weight=471983
+
+Low Bin Edge = 18.2
 bin content = 0.776299
-i==430, vzWeight=0.21776 , vzLow=19.0001
+i==433, vzWeight=302096
+Function fit weight=465091
+
+Low Bin Edge = 18.3
 bin content = 0.785509
-i==431, vzWeight=0.236387
+i==434, vzWeight=327936
+Function fit weight=458261
+
+Low Bin Edge = 18.4
 bin content = 0.779113
-i==432, vzWeight=0.246632
+i==435, vzWeight=342149 , vzLow=18.4001
+MC function LowEdge = 18.4
+Function fit weight=451492
+
+Low Bin Edge = 18.5
 bin content = 0.787311
-i==433, vzWeight=0.228055
+i==436, vzWeight=316377
+Function fit weight=444785
+
+Low Bin Edge = 18.6
 bin content = 0.781393
-i==434, vzWeight=0.220591
+i==437, vzWeight=306023
+Function fit weight=438141
+
+Low Bin Edge = 18.7
 bin content = 0.793868
-i==435, vzWeight=0.237701 , vzLow=19.5001
+i==438, vzWeight=329758
+Function fit weight=431558
+
+Low Bin Edge = 18.8
 bin content = 0.797955
-i==436, vzWeight=0.219628
+i==439, vzWeight=304687
+Function fit weight=425039
+
+Low Bin Edge = 18.9
 bin content = 0.785471
-i==437, vzWeight=0.192836
+i==440, vzWeight=267519 , vzLow=18.9001
+MC function LowEdge = 18.9
+Function fit weight=418582
+
+Low Bin Edge = 19
 bin content = 0.804798
-i==438, vzWeight=0.20549
+i==441, vzWeight=285074
+Function fit weight=412187
+
+Low Bin Edge = 19.1
 bin content = 0.805858
-i==439, vzWeight=0.204447
+i==442, vzWeight=283627
+Function fit weight=405856
+
+Low Bin Edge = 19.2
 bin content = 0.816919
-i==440, vzWeight=0.157256 , vzLow=20.0001
+i==443, vzWeight=218158
+Function fit weight=399588
+
+Low Bin Edge = 19.3
 bin content = 0.814005
-i==441, vzWeight=0.186271
+i==444, vzWeight=258411
+Function fit weight=393382
+
+Low Bin Edge = 19.4
 bin content = 0.817409
-i==442, vzWeight=0.233017
+i==445, vzWeight=323261 , vzLow=19.4001
+MC function LowEdge = 19.4
+Function fit weight=387241
+
+Low Bin Edge = 19.5
 bin content = 0.818229
-i==443, vzWeight=0.150253
+i==446, vzWeight=208444
+Function fit weight=381162
+
+Low Bin Edge = 19.6
 bin content = 0.814072
-i==444, vzWeight=0.166933
+i==447, vzWeight=231584
+Function fit weight=375147
+
+Low Bin Edge = 19.7
 bin content = 0.819887
-i==445, vzWeight=0.200374 , vzLow=20.5001
+i==448, vzWeight=277976
+Function fit weight=369195
+
+Low Bin Edge = 19.8
 bin content = 0.827499
-i==446, vzWeight=0.159533
+i==449, vzWeight=221318
+Function fit weight=363306
+
+Low Bin Edge = 19.9
 bin content = 0.835186
-i==447, vzWeight=0.146922
+i==450, vzWeight=203822 , vzLow=19.9001
+MC function LowEdge = 19.9
+Function fit weight=357481
+
+Low Bin Edge = 20
 bin content = 0.822112
-i==448, vzWeight=0.18168
+i==451, vzWeight=252042
+Function fit weight=351719
+
+Low Bin Edge = 20.1
 bin content = 0.835944
-i==449, vzWeight=0.160411
+i==452, vzWeight=222536
+Function fit weight=346020
+
+Low Bin Edge = 20.2
 bin content = 0.846779
-i==450, vzWeight=0.169097 , vzLow=21.0001
+i==453, vzWeight=234586
+Function fit weight=340384
+
+Low Bin Edge = 20.3
 bin content = 0.847964
-i==451, vzWeight=0.155197
+i==454, vzWeight=215303
+Function fit weight=334812
+
+Low Bin Edge = 20.4
 bin content = 0.855432
-i==452, vzWeight=0.161934
+i==455, vzWeight=224649 , vzLow=20.4001
+MC function LowEdge = 20.4
+Function fit weight=329302
+
+Low Bin Edge = 20.5
 bin content = 0.85453
-i==453, vzWeight=0.145489
+i==456, vzWeight=201835
+Function fit weight=323856
+
+Low Bin Edge = 20.6
 bin content = 0.851021
-i==454, vzWeight=0.123902
+i==457, vzWeight=171887
+Function fit weight=318472
+
+Low Bin Edge = 20.7
 bin content = 0.857833
-i==455, vzWeight=0.119742 , vzLow=21.5001
+i==458, vzWeight=166117
+Function fit weight=313151
+
+Low Bin Edge = 20.8
 bin content = 0.855381
-i==456, vzWeight=0.134192
+i==459, vzWeight=186163
+Function fit weight=307893
+
+Low Bin Edge = 20.9
 bin content = 0.865974
-i==457, vzWeight=0.137462
+i==460, vzWeight=190699 , vzLow=20.9001
+MC function LowEdge = 20.9
+Function fit weight=302697
+
+Low Bin Edge = 21
 bin content = 0.859293
-i==458, vzWeight=0.172528
+i==461, vzWeight=239346
+Function fit weight=297563
+
+Low Bin Edge = 21.1
 bin content = 0.86107
-i==459, vzWeight=0.1252
+i==462, vzWeight=173688
+Function fit weight=292492
+
+Low Bin Edge = 21.2
 bin content = 0.868254
-i==460, vzWeight=0.150138 , vzLow=22.0001
+i==463, vzWeight=208284
+Function fit weight=287482
+
+Low Bin Edge = 21.3
 bin content = 0.86998
-i==461, vzWeight=0.145134
+i==464, vzWeight=201342
+Function fit weight=282534
+
+Low Bin Edge = 21.4
 bin content = 0.87739
-i==462, vzWeight=0.0816703
+i==465, vzWeight=113300 , vzLow=21.4001
+MC function LowEdge = 21.4
+Function fit weight=277647
+
+Low Bin Edge = 21.5
 bin content = 0.876843
-i==463, vzWeight=0.0640217
+i==466, vzWeight=88816.3
+Function fit weight=272821
+
+Low Bin Edge = 21.6
 bin content = 0.878356
-i==464, vzWeight=0.133259
+i==467, vzWeight=184868
+Function fit weight=268056
+
+Low Bin Edge = 21.7
 bin content = 0.868293
-i==465, vzWeight=0.0558461 , vzLow=22.5001
+i==468, vzWeight=77474.4
+Function fit weight=263352
+
+Low Bin Edge = 21.8
 bin content = 0.877752
-i==466, vzWeight=0.0983745
+i==469, vzWeight=136473
+Function fit weight=258709
+
+Low Bin Edge = 21.9
 bin content = 0.887108
-i==467, vzWeight=0.116233
+i==470, vzWeight=161249 , vzLow=21.9001
+MC function LowEdge = 21.9
+Function fit weight=254125
+
+Low Bin Edge = 22
 bin content = 0.872556
-i==468, vzWeight=0.134384
+i==471, vzWeight=186429
+Function fit weight=249601
+
+Low Bin Edge = 22.1
 bin content = 0.873152
-i==469, vzWeight=0.0852044
+i==472, vzWeight=118203
+Function fit weight=245137
+
+Low Bin Edge = 22.2
 bin content = 0.889213
-i==470, vzWeight=0.129839 , vzLow=23.0001
+i==473, vzWeight=180124
+Function fit weight=240732
+
+Low Bin Edge = 22.3
 bin content = 0.898375
-i==471, vzWeight=0.0889904
+i==474, vzWeight=123455
+Function fit weight=236386
+
+Low Bin Edge = 22.4
 bin content = 0.885072
-i==472, vzWeight=0.0963516
+i==475, vzWeight=133667 , vzLow=22.4001
+MC function LowEdge = 22.4
+Function fit weight=232099
+
+Low Bin Edge = 22.5
 bin content = 0.897036
-i==473, vzWeight=0.0814205
+i==476, vzWeight=112953
+Function fit weight=227870
+
+Low Bin Edge = 22.6
 bin content = 0.90013
-i==474, vzWeight=0.058349
+i==477, vzWeight=80946.7
+Function fit weight=223699
+
+Low Bin Edge = 22.7
 bin content = 0.906783
-i==475, vzWeight=0.14622 , vzLow=23.5001
+i==478, vzWeight=202849
+Function fit weight=219585
+
+Low Bin Edge = 22.8
 bin content = 0.900452
-i==476, vzWeight=0.0994205
+i==479, vzWeight=137925
+Function fit weight=215529
+
+Low Bin Edge = 22.9
 bin content = 0.904248
-i==477, vzWeight=0.0540032
+i==480, vzWeight=74917.8 , vzLow=22.9001
+MC function LowEdge = 22.9
+Function fit weight=211529
+
+Low Bin Edge = 23
 bin content = 0.901616
-i==478, vzWeight=0.0626211
+i==481, vzWeight=86873.3
+Function fit weight=207586
+
+Low Bin Edge = 23.1
 bin content = 0.893342
-i==479, vzWeight=0.0357023
+i==482, vzWeight=49529.2
+Function fit weight=203699
+
+Low Bin Edge = 23.2
+bin content = 0.910135
+i==483, vzWeight=122703
+Function fit weight=199868
+
+Low Bin Edge = 23.3
+bin content = 0.918942
+i==484, vzWeight=144265
+Function fit weight=196091
+
+Low Bin Edge = 23.4
+bin content = 0.907783
+i==485, vzWeight=132101 , vzLow=23.4001
+MC function LowEdge = 23.4
+Function fit weight=192370
+
+Low Bin Edge = 23.5
+bin content = 0.905687
+i==486, vzWeight=156004
+Function fit weight=188703
+
+Low Bin Edge = 23.6
+bin content = 0.908344
+i==487, vzWeight=119549
+Function fit weight=185091
+
+Low Bin Edge = 23.7
+bin content = 0.920502
+i==488, vzWeight=77836.4
+Function fit weight=181532
+
+Low Bin Edge = 23.8
+bin content = 0.920027
+i==489, vzWeight=129133
+Function fit weight=178026
+
+Low Bin Edge = 23.9
+bin content = 0.91544
+i==490, vzWeight=128533 , vzLow=23.9001
+MC function LowEdge = 23.9
+Function fit weight=174573
+
+Low Bin Edge = 24
+bin content = 0.914997
+i==491, vzWeight=0
+Function fit weight=171172
+
+Low Bin Edge = 24.1
+bin content = 0.910418
+i==492, vzWeight=0
+Function fit weight=167823
+
+Low Bin Edge = 24.2
+bin content = 0.921613
+i==493, vzWeight=0
+Function fit weight=164526
+
+Low Bin Edge = 24.3
+bin content = 0.92091
+i==494, vzWeight=0
+Function fit weight=161279
+
+Low Bin Edge = 24.4
+bin content = 0.915522
+i==495, vzWeight=0 , vzLow=24.4001
+MC function LowEdge = 24.4
+Function fit weight=158083
+
+Low Bin Edge = 24.5
+bin content = 0.90663
+i==496, vzWeight=0
+Function fit weight=154937
+
+Low Bin Edge = 24.6
+bin content = 0.921961
+i==497, vzWeight=0
+Function fit weight=151841
+
+Low Bin Edge = 24.7
+bin content = 0.910928
+i==498, vzWeight=0
+Function fit weight=148794
+
+Low Bin Edge = 24.8
+bin content = 0.91967
+i==499, vzWeight=0
+Function fit weight=145795
+
+Low Bin Edge = 24.9
+bin content = 0.916317
+i==500, vzWeight=0 , vzLow=24.9001
+MC function LowEdge = 24.9
+Function fit weight=142845
+
+Info in <TCanvas::Print>: png file WeightRatio.png has been created

@@ -87,6 +87,7 @@ int main (int argc, char *argv[]){
   std::cout<<std::endl;
 
   TH1F* theDataEvtQAHist= (TH1F*)finData->Get( "hWeightedVz" );
+  TH1F *theRatio = (TH1F*)theDataEvtQAHist->Rebin(2,"theRatio");
   theDataEvtQAHist->Scale( 1/theDataEvtQAHist->GetBinWidth(1) );
   theDataEvtQAHist->Scale( 1/effIntgrtdLumi_vz );
   
@@ -116,12 +117,10 @@ int main (int argc, char *argv[]){
   TCanWeight = new TCanvas("TCanWeight","Weight: Data/MC",600,600);   
     
   //TH1F *theRatio=(TH1F*)theDataEvtQAHist->Clone("theDataHistClone"); I'm going to replace this with the rebin which should make its own clone
-  TH1F *theRatio = (TH1F*)theDataEvtQAHist->Rebin(2,"theRatio");
-
   double norm = theRatio->GetMaximumStored();
   
-  TH1F* binWeight = new TH1F("binWeight","Bin-based Weight",480,-24,24);
-  TH1F* fnWeight = new TH1F("fnWeight","Fn-based Weight",480,-24,24);
+  TH1F* binWeight = new TH1F("binWeight","Bin-based Weight",500,-25,25);
+  TH1F* fnWeight = new TH1F("fnWeight","Fn-based Weight",500,-25,25);
   
   //make fit functions
   fgaussData = new TF1("fgaussData","gaus", -24, 24);
@@ -159,17 +158,20 @@ int main (int argc, char *argv[]){
   
   std::cout<<"now grabbing vzWeights for "<<NvzWeightBins<<" bins for ( "<<xLow<<"< vz <"<<xHigh<<" )"<<std::endl;
   std::cout<<std::endl;
+  
+  
   for (int i=1;i<=NvzWeightBins;++i){//binsX loop
 
 	Float_t hist_xLow = theRatio->TH1::GetBinLowEdge(i);
 	std::cout<<"Low Bin Edge = "<<hist_xLow<<std::endl;
     Float_t vzWeight = theRatio->TH1::GetBinContent(i);    //TH1 bin counting starts at i=1?! why?!
-	binWeight->Fill(vzWeight);
+	binWeight->SetBinContent(NvzWeightBins-i,vzWeight);
 	//function fit ratio weights //No no no - this needs to be the x value, not the bin content! //so do I want center, low edge, or high edge? Or something else?
 	Double_t gaussMC = fgaussMC->Eval(theMCEvtQAHist->GetBinLowEdge(i));
 	Double_t gaussData = fgaussData->Eval(theMCEvtQAHist->GetBinLowEdge(i));
 	Double_t gaussFit = (gaussData/gaussMC);
-	fnWeight->Fill(gaussFit);
+	//Double_t test = 0.4;
+	fnWeight->SetBinContent(NvzWeightBins-i,gaussFit);
 		
     if(theDataEvtQAHist->GetBinContent(i)<=0.)
       std::cout<<"warning! bin content in data hist zero (numerator)"<<std::endl;
