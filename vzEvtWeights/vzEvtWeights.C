@@ -167,15 +167,15 @@ int main (int argc, char *argv[]){
     Float_t vzWeight = theRatio->TH1::GetBinContent(i);    //TH1 bin counting starts at i=1?! why?!
 	binWeight->SetBinContent(i,vzWeight);
 	//function fit ratio weights //No no no - this needs to be the x value, not the bin content! //so do I want center, low edge, or high edge? Or something else?
-	Double_t gaussMC = fgaussMC->Eval(theMCEvtQAHist->GetBinLowEdge(i));
-	Double_t gaussData = fgaussData->Eval(theMCEvtQAHist->GetBinLowEdge(i));
+	Double_t gaussMC = fgaussMC->Eval(theMCEvtQAHist->GetBinLowEdge(i)+(theMCEvtQAHist->GetBinWidth(i))/2);
+	Double_t gaussData = fgaussData->Eval(theMCEvtQAHist->GetBinLowEdge(i)+(theMCEvtQAHist->GetBinWidth(i))/2);
 	Double_t gaussFit = (gaussData/gaussMC);
 	//Double_t test = 0.4;
 	fnWeight->SetBinContent(i,gaussFit);
 		
-    if(theDataEvtQAHist->GetBinContent(i)<=0.)
+    if(theRatio->GetBinContent(i)<=0.)
       std::cout<<"warning! bin content in data hist zero (numerator)"<<std::endl;
-	  std::cout<<"bin content = "<<theDataEvtQAHist->GetBinContent(i)<<std::endl;
+	  std::cout<<"bin content = "<<theRatio->GetBinContent(i)<<std::endl;
     if(i%5==0) {
       
       std::cout<<"i=="<<i<<", vzWeight="<<vzWeight <<" , vzLow="<<xLow<<std::endl;
