@@ -88,8 +88,8 @@ int main (int argc, char *argv[]){
 
   TH1F* theDataEvtQAHist= (TH1F*)finData->Get( "hWeightedVz" );
   TH1F *theRatio = (TH1F*)theDataEvtQAHist->Rebin(2,"theRatio");
-  theDataEvtQAHist->Scale( 1/theDataEvtQAHist->GetBinWidth(1) );
-  theDataEvtQAHist->Scale( 1/effIntgrtdLumi_vz );
+  theRatio->Scale( 1/theRatio->GetBinWidth(1) );
+  theRatio->Scale( 1/effIntgrtdLumi_vz );
   
   //theDataEvtQAHist->SetTitle (    h_Title.c_str() );
   //theDataEvtQAHist->SetXTitle( h_XAx_Title.c_str() );
@@ -111,7 +111,7 @@ int main (int argc, char *argv[]){
   
   TH1F* theMCEvtQAHist= (TH1F*)finMC->Get( "hpthatWeightedVz" );
   theMCEvtQAHist->Scale( 1/theMCEvtQAHist->GetBinWidth(1) );
-  theMCEvtQAHist->Scale( theDataEvtQAHist->Integral()/theMCEvtQAHist->Integral() );
+  theMCEvtQAHist->Scale( theRatio->Integral()/theMCEvtQAHist->Integral() );
   
   TCanMC = new TCanvas("TCanMC","cMC",600,600);   
   TCanWeight = new TCanvas("TCanWeight","Weight: Data/MC",600,600);   
@@ -165,13 +165,13 @@ int main (int argc, char *argv[]){
 	Float_t hist_xLow = theRatio->TH1::GetBinLowEdge(i);
 	std::cout<<"Low Bin Edge = "<<hist_xLow<<std::endl;
     Float_t vzWeight = theRatio->TH1::GetBinContent(i);    //TH1 bin counting starts at i=1?! why?!
-	binWeight->SetBinContent(NvzWeightBins-i,vzWeight);
+	binWeight->SetBinContent(i,vzWeight);
 	//function fit ratio weights //No no no - this needs to be the x value, not the bin content! //so do I want center, low edge, or high edge? Or something else?
 	Double_t gaussMC = fgaussMC->Eval(theMCEvtQAHist->GetBinLowEdge(i));
 	Double_t gaussData = fgaussData->Eval(theMCEvtQAHist->GetBinLowEdge(i));
 	Double_t gaussFit = (gaussData/gaussMC);
 	//Double_t test = 0.4;
-	fnWeight->SetBinContent(NvzWeightBins-i,gaussFit);
+	fnWeight->SetBinContent(i,gaussFit);
 		
     if(theDataEvtQAHist->GetBinContent(i)<=0.)
       std::cout<<"warning! bin content in data hist zero (numerator)"<<std::endl;
