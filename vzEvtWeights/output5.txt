@@ -31,6 +31,10 @@ Data Fit Status: 0, Fit Error: 0.00220027
    3  Sigma        7.05791e+00   4.95409e-03   2.05912e-06  -2.18677e-02
 MC Fit Status: 0, Fit Error: 0.00687744
 Info in <TCanvas::Print>: png file MCgaussfit.png has been created
+line 148
+data canvas switched
+data hist drawn
+Info in <TCanvas::Print>: png file Datagaussfit.png has been created
 float-division says NBins=499 (exactly)
 int-typecast says NBins=500
 now grabbing vzWeights for 500 bins for ( -25< vz <24.9 )
@@ -2655,4 +2659,6 @@ i==500, vzWeight=0 , vzLow=24.9001
 MC function LowEdge = 24.9
 Function fit weight=0.101917
 
+Info in <TCanvas::Print>: png file fnWeight.png has been created
+Info in <TCanvas::Print>: png file binWeight.png has been created
 Info in <TCanvas::Print>: png file WeightRatio.png has been created

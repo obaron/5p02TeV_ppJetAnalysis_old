@@ -104,8 +104,12 @@ int main (int argc, char *argv[]){
   TF1* fgaussMC = NULL;
   
   TCanvas* TCanMC = NULL;
-  TCanvas* TCanWeight = NULL;
+  TCanvas* TCanData = NULL;
+  TCanvas* TCanWeightRat = NULL;
+  TCanvas* TCanWeightfn = NULL;
+  TCanvas* TCanWeightbin = NULL;
   
+ 
   std::cout<<" now opening MC File "<<std::endl<<input_ppMC_Filename<<std::endl<<std::endl;
   TFile* finMC = new TFile(input_ppMC_Filename.c_str());  
   
@@ -114,8 +118,12 @@ int main (int argc, char *argv[]){
   theMCEvtQAHist->Scale( theRatio->Integral()/theMCEvtQAHist->Integral() );
   
   TCanMC = new TCanvas("TCanMC","cMC",600,600);   
-  TCanWeight = new TCanvas("TCanWeight","Weight: Data/MC",600,600);   
-    
+  TCanData = new TCanvas("TCanData","cData",600,600);   
+  TCanWeightRat = new TCanvas("TCanWeightRat","Weight: Bin/Fn",600,600);   
+  TCanWeightfn = new TCanvas("TCanWeightfn","Weight from Function",600,600);
+  TCanWeightbin = new TCanvas("TCanWeightbin","Weight from Bin",600,600);
+
+  
   //TH1F *theRatio=(TH1F*)theDataEvtQAHist->Clone("theDataHistClone"); I'm going to replace this with the rebin which should make its own clone
   double norm = theRatio->GetMaximumStored();
   
@@ -142,6 +150,11 @@ int main (int argc, char *argv[]){
   theMCEvtQAHist->Draw();
   fgaussMC->Draw("same");
   TCanMC->Print("MCgaussfit.png","png");
+  
+  TCanData->cd();
+  theRatio->Draw();
+  fgaussData->Draw("same");
+  TCanData->Print("Datagaussfit.png","png");
   
   theRatio->Divide(theMCEvtQAHist);
   //theRatio->Draw();  
@@ -194,21 +207,22 @@ int main (int argc, char *argv[]){
     
     
   }
-  //vz from function loop - testing. I think this needs its own loop.
-  	  
+ 
 
+ TCanWeightfn->cd();
+ fnWeight->Draw();
+ TCanWeightfn->Print("fnWeight.png","png");
+
+ TCanWeightbin->cd();
+ binWeight->Draw();
+ TCanWeightbin->Print("binWeight.png","png"); 
+	  
   TH1F* fweightRatio = (TH1F*)binWeight->Clone("fweightRatio");
   fweightRatio->Divide(fnWeight);
-  TCanWeight->cd();
+  TCanWeightRat->cd();
   fweightRatio->Draw();
-  //fnWeight->Draw();
-  TCanWeight->Print("WeightRatio.png","png");
-/*
-//Might not be a good approach:
+  TCanWeightRat->Print("WeightRatio.png","png");
 
-  //make ratio of fit function
-  fgaussratio = new TF1("fgaussratio",fgaussData/fgaussMC,-2,2);
-*/
   
   
   return 0 ;
