@@ -87,7 +87,7 @@ int main (int argc, char *argv[]){
   std::cout<<std::endl;
 
   TH1F* theDataEvtQAHist= (TH1F*)finData->Get( "hWeightedVz" );
-  TH1F *theRatio = (TH1F*)theDataEvtQAHist->Rebin(2,"theRatio");
+  TH1F *theRatio = (TH1F*)theDataEvtQAHist->Rebin(8,"theRatio");
   theRatio->Scale( 1/theRatio->GetBinWidth(1) );
   theRatio->Scale( 1/effIntgrtdLumi_vz );
   
@@ -113,7 +113,8 @@ int main (int argc, char *argv[]){
   std::cout<<" now opening MC File "<<std::endl<<input_ppMC_Filename<<std::endl<<std::endl;
   TFile* finMC = new TFile(input_ppMC_Filename.c_str());  
   
-  TH1F* theMCEvtQAHist= (TH1F*)finMC->Get( "hpthatWeightedVz" );
+  TH1F* theMCEvtInputHist= (TH1F*)finMC->Get( "hpthatWeightedVz" );
+  TH1F* theMCEvtQAHist= (TH1F*)theMCEvtInputHist->Rebin(4,"theMCEvtQAHist");
   theMCEvtQAHist->Scale( 1/theMCEvtQAHist->GetBinWidth(1) );
   theMCEvtQAHist->Scale( theRatio->Integral()/theMCEvtQAHist->Integral() );
   
@@ -127,8 +128,8 @@ int main (int argc, char *argv[]){
   //TH1F *theRatio=(TH1F*)theDataEvtQAHist->Clone("theDataHistClone"); I'm going to replace this with the rebin which should make its own clone
   double norm = theRatio->GetMaximumStored();
   
-  TH1F* binWeight = new TH1F("binWeight","Bin-based Weight",500,-25,25);
-  TH1F* fnWeight = new TH1F("fnWeight","Fn-based Weight",500,-25,25);
+  TH1F* binWeight = new TH1F("binWeight","Bin-based Weight",125,-25,25);
+  TH1F* fnWeight = new TH1F("fnWeight","Fn-based Weight",125,-25,25);
   
   //make fit functions
   fgaussData = new TF1("fgaussData","gaus", -24, 24);
@@ -149,12 +150,12 @@ int main (int argc, char *argv[]){
   TCanMC->cd();
   theMCEvtQAHist->Draw();
   fgaussMC->Draw("same");
-  TCanMC->Print("MCgaussfit.png","png");
+  TCanMC->Print("gaussfitMC.png","png");
   
   TCanData->cd();
   theRatio->Draw();
   fgaussData->Draw("same");
-  TCanData->Print("Datagaussfit.png","png");
+  TCanData->Print("gaussfitData.png","png");
   
   theRatio->Divide(theMCEvtQAHist);
   //theRatio->Draw();  
