@@ -87,7 +87,8 @@ int main (int argc, char *argv[]){
   std::cout<<std::endl;
 
   TH1F* theDataEvtQAHist= (TH1F*)finData->Get( "hWeightedVz" );
-  TH1F *theRatio = (TH1F*)theDataEvtQAHist->Rebin(8,"theRatio");
+  TH1F* theRatio = (TH1F*)theDataEvtQAHist->Rebin(8,"theRatio");
+    
   theRatio->Scale( 1/theRatio->GetBinWidth(1) );
   theRatio->Scale( 1/effIntgrtdLumi_vz );
   
@@ -102,12 +103,14 @@ int main (int argc, char *argv[]){
   //theDataEvtQAHist->SetAxisRange(0.,1.5,"Y");
   TF1* fgaussData = NULL;
   TF1* fgaussMC = NULL;
+  TF1* fpolyRat = NULL;
   
   TCanvas* TCanMC = NULL;
   TCanvas* TCanData = NULL;
   TCanvas* TCanWeightRat = NULL;
   TCanvas* TCanWeightfn = NULL;
   TCanvas* TCanWeightbin = NULL;
+  TCanvas* TCanDatMCRat = NULL;
   
  
   std::cout<<" now opening MC File "<<std::endl<<input_ppMC_Filename<<std::endl<<std::endl;
@@ -123,7 +126,7 @@ int main (int argc, char *argv[]){
   TCanWeightRat = new TCanvas("TCanWeightRat","Weight: Bin/Fn",600,600);   
   TCanWeightfn = new TCanvas("TCanWeightfn","Weight from Function",600,600);
   TCanWeightbin = new TCanvas("TCanWeightbin","Weight from Bin",600,600);
-
+  TCanDatMCRat = new TCanvas("TCanDatMCRat","Data / MC ratio",600,600);
   
   //TH1F *theRatio=(TH1F*)theDataEvtQAHist->Clone("theDataHistClone"); I'm going to replace this with the rebin which should make its own clone
   double norm = theRatio->GetMaximumStored();
@@ -137,14 +140,18 @@ int main (int argc, char *argv[]){
 
   fgaussMC = new TF1("fgaussMC","gaus", -24, 24);
   fgaussMC->SetParameters(norm, 0.9999, 0.15); 
+ 
+  fpolyRat = new TF1("fpolyRat","pol5", -25,25);
   
   int fitstatusdata = 0; 
   fitstatusdata = theRatio->Fit(fgaussData, "R");
+  
   std::cout<< "Data Fit Status: "<< fitstatusdata<< ", Fit Error: "<< fgaussData->GetParError(1)<< std::endl;
   
   int fitstatusMC = 0; 
   fitstatusMC = theMCEvtQAHist->Fit(fgaussMC, "R");
   std::cout<< "MC Fit Status: "<< fitstatusMC<< ", Fit Error: "<< fgaussMC->GetParError(1)<< std::endl;
+ 
   
   //Compare fit to histogram
   TCanMC->cd();
@@ -161,7 +168,12 @@ int main (int argc, char *argv[]){
   //theRatio->Draw();  
   //theRatio->SetLineColor( altRatioLineColor1 );
   //theEvtQALeg->AddEntry(theRatio,"MC not vz-weighted","lp");
-  
+ 
+ 
+  TH1F* tRatPoly = (TH1F*)theRatio->Clone("tRatPoly");
+  int fitstatusPoly = tRatPoly->Fit(fpolyRat, "R");
+  std::cout<< "Polynomial Fit Status: "<< fitstatusPoly<< ", Fit Error: "<< fpolyRat->GetParError(1)<< std::endl;
+ 
   Float_t theVzBinWidth=theRatio->TH1::GetBinWidth(1);
   Float_t xLow = theRatio->TH1::GetBinLowEdge(1), xHigh=theRatio->TH1::GetBinLowEdge(500);
   Float_t NvzWeightBins_F=(xHigh-xLow)/(theVzBinWidth);
@@ -223,7 +235,11 @@ int main (int argc, char *argv[]){
   TCanWeightRat->cd();
   fweightRatio->Draw();
   TCanWeightRat->Print("WeightRatio.png","png");
-
+  
+ TCanDatMCRat->cd();
+ tRatPoly->Draw();
+ fpolyRat->Draw("same");
+ TCanDatMCRat->Print("PolynomialFit.png","png");
   
   
   return 0 ;
