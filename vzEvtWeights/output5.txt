@@ -702,7 +702,11 @@ i==125, vzWeight=0 , vzLow=24.6
 MC function LowEdge = 24.6
 Function fit weight=0.105616
 
-Info in <TCanvas::Print>: png file fnWeight.png has been created
-Info in <TCanvas::Print>: png file binWeight.png has been created
+Info in <TCanvas::Print>: png file weightFn.png has been created
+Info in <TCanvas::Print>: png file weightBin.png has been created
+Info in <TCanvas::Print>: png file weightPoly.png has been created
 Info in <TCanvas::Print>: png file WeightRatio.png has been created
+Info in <TCanvas::Print>: png file PolyBinRatio.png has been created
+Info in <TCanvas::Print>: png file PolyGausRatio.png has been created
 Info in <TCanvas::Print>: png file PolynomialFit.png has been created
+program end

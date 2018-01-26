@@ -9,6 +9,7 @@
 // ROOTSYS
 #include <TSystem.h>
 #include <TProfile.h>
+#include <TROOT.h>
 // I/O
 #include <TChain.h>
 #include <TFile.h>
@@ -60,6 +61,7 @@ const std::string input_ppMC_Filename=ppMC_inCondorDir+"Py8_CUETP8M1_QCDjetAllPt
 int main (int argc, char *argv[]){
   
   gStyle->SetOptFit(1111);
+  gROOT->ForceStyle();
   
   std::cout<<" now opening Data File "<<std::endl<<input_ppData_Filename<<std::endl<<std::endl;
   TFile* finData = new TFile(input_ppData_Filename.c_str());
@@ -110,7 +112,11 @@ int main (int argc, char *argv[]){
   TCanvas* TCanWeightRat = NULL;
   TCanvas* TCanWeightfn = NULL;
   TCanvas* TCanWeightbin = NULL;
+  TCanvas* TCanWeightpoly = NULL;
   TCanvas* TCanDatMCRat = NULL;
+  TCanvas* TCanBinPoly = NULL;
+  TCanvas* TCanGausPoly = NULL;
+  
   
  
   std::cout<<" now opening MC File "<<std::endl<<input_ppMC_Filename<<std::endl<<std::endl;
@@ -127,19 +133,25 @@ int main (int argc, char *argv[]){
   TCanWeightfn = new TCanvas("TCanWeightfn","Weight from Function",600,600);
   TCanWeightbin = new TCanvas("TCanWeightbin","Weight from Bin",600,600);
   TCanDatMCRat = new TCanvas("TCanDatMCRat","Data / MC ratio",600,600);
+  TCanWeightpoly = new TCanvas("TCanWeightpoly","Weight from Polynomial",600,600);
+  TCanBinPoly = new TCanvas("TCanBinPoly","Bin / Poly ratio",600,600);
+  TCanGausPoly = new TCanvas("TCanGausPoly","Gaus / Poly ratio",600,600);
   
   //TH1F *theRatio=(TH1F*)theDataEvtQAHist->Clone("theDataHistClone"); I'm going to replace this with the rebin which should make its own clone
   double norm = theRatio->GetMaximumStored();
   
   TH1F* binWeight = new TH1F("binWeight","Bin-based Weight",125,-25,25);
   TH1F* fnWeight = new TH1F("fnWeight","Fn-based Weight",125,-25,25);
+  TH1F* tPolyweight = new TH1F("tPolyweight","Polynomial-based Weight",125,-25,25); 
   
   //make fit functions
   fgaussData = new TF1("fgaussData","gaus", -24, 24);
   fgaussData->SetParameters(norm, 0.9999, 0.15); 
+  //fgaussData->Update();
 
   fgaussMC = new TF1("fgaussMC","gaus", -24, 24);
   fgaussMC->SetParameters(norm, 0.9999, 0.15); 
+  
  
   fpolyRat = new TF1("fpolyRat","pol5", -25,25);
   
@@ -155,11 +167,13 @@ int main (int argc, char *argv[]){
   
   //Compare fit to histogram
   TCanMC->cd();
+  theMCEvtQAHist->SetTitle("Gaussian Fit of MC");
   theMCEvtQAHist->Draw();
   fgaussMC->Draw("same");
   TCanMC->Print("gaussfitMC.png","png");
   
   TCanData->cd();
+  theRatio->SetTitle("Gaussian Fit of Data");
   theRatio->Draw();
   fgaussData->Draw("same");
   TCanData->Print("gaussfitData.png","png");
@@ -196,8 +210,12 @@ int main (int argc, char *argv[]){
 	Double_t gaussMC = fgaussMC->Eval(theMCEvtQAHist->GetBinLowEdge(i)+(theMCEvtQAHist->GetBinWidth(i))/2);
 	Double_t gaussData = fgaussData->Eval(theMCEvtQAHist->GetBinLowEdge(i)+(theMCEvtQAHist->GetBinWidth(i))/2);
 	Double_t gaussFit = (gaussData/gaussMC);
+	Double_t polyFit = fpolyRat->Eval(theMCEvtQAHist->GetBinLowEdge(i)+(theMCEvtQAHist->GetBinWidth(i))/2);
+	
 	//Double_t test = 0.4;
 	fnWeight->SetBinContent(i,gaussFit);
+	tPolyweight->SetBinContent(i,polyFit);
+	
 		
     if(theRatio->GetBinContent(i)<=0.)
       std::cout<<"warning! bin content in data hist zero (numerator)"<<std::endl;
@@ -224,23 +242,46 @@ int main (int argc, char *argv[]){
 
  TCanWeightfn->cd();
  fnWeight->Draw();
- TCanWeightfn->Print("fnWeight.png","png");
+ TCanWeightfn->Print("weightFn.png","png");
 
  TCanWeightbin->cd();
  binWeight->Draw();
- TCanWeightbin->Print("binWeight.png","png"); 
+ TCanWeightbin->Print("weightBin.png","png"); 
 	  
-  TH1F* fweightRatio = (TH1F*)binWeight->Clone("fweightRatio");
-  fweightRatio->Divide(fnWeight);
-  TCanWeightRat->cd();
-  fweightRatio->Draw();
-  TCanWeightRat->Print("WeightRatio.png","png");
+ TCanWeightpoly->cd();
+ tPolyweight->Draw();
+ TCanWeightpoly->Print("weightPoly.png","png");
+	  
+	  
+ TH1F* tweightRatio = (TH1F*)binWeight->Clone("tweightRatio");
+ tweightRatio->Divide(fnWeight);
+ tweightRatio->SetTitle("Ratio of Bin Weights to Function Weights");
+ TCanWeightRat->cd();
+ tweightRatio->Draw();
+ TCanWeightRat->Print("WeightRatio.png","png");
   
+ TH1F* tBinPolyRatio = (TH1F*)binWeight->Clone("tBinPolyRatio");
+ tBinPolyRatio->Divide(tPolyweight);
+ tBinPolyRatio->SetTitle("Ratio of Bin Weights to Polynomial Weights");
+ TCanBinPoly->cd();
+ tBinPolyRatio->Draw();
+ TCanBinPoly->Print("PolyBinRatio.png","png");
+ 
+ TH1F* tGausPolyRatio = (TH1F*)fnWeight->Clone("tGausPolyRatio");
+ tGausPolyRatio->Divide(tPolyweight);
+ tGausPolyRatio->SetTitle("Ratio of Gaussian Weights to Polynomial Weights");
+ TCanGausPoly->cd();
+ tGausPolyRatio->Draw();
+ TCanGausPoly->Print("PolyGausRatio.png","png");
+  
+ 
  TCanDatMCRat->cd();
+ tRatPoly->SetTitle("Polynomial Fit of MC");
  tRatPoly->Draw();
  fpolyRat->Draw("same");
  TCanDatMCRat->Print("PolynomialFit.png","png");
-  
+
+std::cout<<"program end"<<std::endl; 
   
   return 0 ;
 }
