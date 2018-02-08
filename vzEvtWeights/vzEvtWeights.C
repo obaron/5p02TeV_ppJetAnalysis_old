@@ -50,11 +50,12 @@ const std::string SCRATCH_BASE=
 const std::string input_dir=SCRATCH_BASE;//+"4.07.16_outputCondor/readForests_HIJetRECO_4-07-17/";
 //const std::string readForests_condor_dir=CMSSW_BASE+"src/readForests/outputCondor";
 
-const std::string ppData_inCondorDir=input_dir+"10.11.17_outputCondor/ppData_HighPtJetTrig_ak4PFJets_10-11-17_jetPlots_0.0eta2.0_rec56_HLTCalo/";
+//const std::string ppData_inCondorDir=input_dir+"10.11.17_outputCondor/ppData_HighPtJetTrig_ak4PFJets_10-11-17_jetPlots_0.0eta2.0_rec56_HLTCalo/";
+const std::string ppData_inCondorDir=input_dir+"02.04.18_outputCondor/ppData_HighPtJetTrig_ak4PFJets_02-04-18_jetPlots_0.0eta4.7/";
 const std::string input_ppData_Filename=ppData_inCondorDir+"HighPtJetTrig_ak4PF-allFiles.root";
 //const std::string input_ppData_Filename="HighPtJetTrig_ak4PF-allFiles.root";
 
-const std::string ppMC_inCondorDir  =input_dir+"10.11.17_outputCondor/ppMC_Py8_CUETP8M1_QCDjetAllPtBins_ak4PFJets_10-11-17_JERS_0.0eta2.0_rec56_gen32_HLTCalo/";
+const std::string ppMC_inCondorDir  =input_dir+"02.04.18_outputCondor/ppMC_Py8_CUETP8M1_QCDjetAllPtBins_ak4PFJets_02-04-18_jetPlots_0.0eta4.7/";
 const std::string input_ppMC_Filename=ppMC_inCondorDir+"Py8_CUETP8M1_QCDjetAllPtBins_ak4PF-allFiles.root";
 //const std::string input_ppMC_Filename="Py8_CUETP8M1_QCDjetAllPtBins_ak4PF-allFiles.root";
 
@@ -255,7 +256,7 @@ int main (int argc, char *argv[]){
 	  
  TH1F* tweightRatio = (TH1F*)binWeight->Clone("tweightRatio");
  tweightRatio->Divide(fnWeight);
- tweightRatio->SetTitle("Ratio of Bin Weights to Function Weights");
+ tweightRatio->SetTitle("Ratio of Bin Weights to Gaussian Weights");
  TCanWeightRat->cd();
  tweightRatio->Draw();
  TCanWeightRat->Print("WeightRatio.png","png");
@@ -276,7 +277,7 @@ int main (int argc, char *argv[]){
   
  
  TCanDatMCRat->cd();
- tRatPoly->SetTitle("Polynomial Fit of MC");
+ tRatPoly->SetTitle("Polynomial Fit of Data/MC");
  tRatPoly->Draw();
  fpolyRat->Draw("same");
  TCanDatMCRat->Print("PolynomialFit.png","png");
