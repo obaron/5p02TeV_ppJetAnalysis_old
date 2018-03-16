@@ -90,7 +90,7 @@ int main (int argc, char *argv[]){
   std::cout<<std::endl;
 
   TH1F* theDataEvtQAHist= (TH1F*)finData->Get( "hWeightedVz" );
-  TH1F* theRatio = (TH1F*)theDataEvtQAHist->Rebin(8,"theRatio");
+  TH1F* theRatio = (TH1F*)theDataEvtQAHist->Rebin(10,"theRatio");
     
   theRatio->Scale( 1/theRatio->GetBinWidth(1) );
   theRatio->Scale( 1/effIntgrtdLumi_vz );
@@ -124,9 +124,14 @@ int main (int argc, char *argv[]){
   TFile* finMC = new TFile(input_ppMC_Filename.c_str());  
   
   TH1F* theMCEvtInputHist= (TH1F*)finMC->Get( "hpthatWeightedVz" );
-  TH1F* theMCEvtQAHist= (TH1F*)theMCEvtInputHist->Rebin(4,"theMCEvtQAHist");
+  TH1F* theMCEvtQAHist= (TH1F*)theMCEvtInputHist->Rebin(1,"theMCEvtQAHist");
   theMCEvtQAHist->Scale( 1/theMCEvtQAHist->GetBinWidth(1) );
   theMCEvtQAHist->Scale( theRatio->Integral()/theMCEvtQAHist->Integral() );
+
+  std::cout<<"Input Hist Stats:"<<std::endl;
+  std::cout<<"Data hist nbins = "<<theDataEvtQAHist->GetNbinsX()<<"  Data hist bin width = "<<theDataEvtQAHist->GetBinWidth(1)<<std::endl;
+  std::cout<<"MC hist nbins = "<<theMCEvtInputHist->GetNbinsX()<<"  MC hist bin width = "<<theMCEvtInputHist->GetBinWidth(1)<<std::endl;
+
   
   TCanMC = new TCanvas("TCanMC","cMC",600,600);   
   TCanData = new TCanvas("TCanData","cData",600,600);   
@@ -137,13 +142,16 @@ int main (int argc, char *argv[]){
   TCanWeightpoly = new TCanvas("TCanWeightpoly","Weight from Polynomial",600,600);
   TCanBinPoly = new TCanvas("TCanBinPoly","Bin / Poly ratio",600,600);
   TCanGausPoly = new TCanvas("TCanGausPoly","Gaus / Poly ratio",600,600);
+
+
+
   
   //TH1F *theRatio=(TH1F*)theDataEvtQAHist->Clone("theDataHistClone"); I'm going to replace this with the rebin which should make its own clone
   double norm = theRatio->GetMaximumStored();
   
-  TH1F* binWeight = new TH1F("binWeight","Bin-based Weight",125,-25,25);
-  TH1F* fnWeight = new TH1F("fnWeight","Fn-based Weight",125,-25,25);
-  TH1F* tPolyweight = new TH1F("tPolyweight","Polynomial-based Weight",125,-25,25); 
+  TH1F* binWeight = new TH1F("binWeight","Bin-based Weight",100,-24,24);
+  TH1F* fnWeight = new TH1F("fnWeight","Fn-based Weight",100,-24,24);
+  TH1F* tPolyweight = new TH1F("tPolyweight","Polynomial-based Weight",100,-24,24); 
   
   //make fit functions
   fgaussData = new TF1("fgaussData","gaus", -24, 24);
@@ -154,7 +162,7 @@ int main (int argc, char *argv[]){
   fgaussMC->SetParameters(norm, 0.9999, 0.15); 
   
  
-  fpolyRat = new TF1("fpolyRat","pol5", -25,25);
+  fpolyRat = new TF1("fpolyRat","pol4", -24,24);
   
   int fitstatusdata = 0; 
   fitstatusdata = theRatio->Fit(fgaussData, "R");
