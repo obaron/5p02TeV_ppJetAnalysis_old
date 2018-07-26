@@ -19,6 +19,9 @@
 #include <algorithm>
 #include <vector>
 
+#include <sys/stat.h>
+#include <unistd.h>
+
 // ROOTSYS
 #include <TROOT.h>
 #include <TSystem.h>
@@ -84,9 +87,10 @@
 
 
 // -----------------------------------------------------------------------------------------------------------------------
-const std::string CMSSW_BASE=  "/home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/readForests/outputCondor/";
-const std::string SCRATCH_BASE=  "/cms/heavyion/obaron/5p02TeV_ppJetAnalysis/";
-
+const std::string CMSSW_BASE=
+  "/home/ilaflott/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/readForests/outputCondor/";
+const std::string SCRATCH_BASE=
+  "/cms/heavyion/ilaflott/T2_US_MIT_SCRATCH/5p02TeV_ppJetAnalysis/readForests/";
 //const std::string unfoldSpectra_outdir="output/";
 const std::string unfoldDataSpectra_outdir="output/unfoldDataSpectra/";
 const std::string unfoldMCSpectra_outdir="output/unfoldMCSpectra/";
@@ -95,22 +99,39 @@ const std::string unfoldMCSpectra_outdir="output/unfoldMCSpectra/";
 //Bayes settings
 const int kIter = 4; // recommended is 4, default is 4
 
-
 //SVD settings 
 //    max diff # of kreg to do  /  "width" of kreg from center; i.e. kregs looped over will be kRegCenter +/- kRegRange
 const int nKregMax  = 9 , kRegRange=(nKregMax-1)/2 ;      
 
-//other options, useful or interesting to change
-//const int kRegDraw  = 4 ; // array entries w/ arguments 0-8. 4 -> middle hist on 3x3 SVDplot
-const bool doToyErrs=false;
-const bool clearOverUnderflows=false;
-const bool doMCIntegralScaling=false;//unfoldMCSpectra only
-const bool fillRespHists=false;
-const bool doOverUnderflows=false;    // if normalizedMCMatrix=true; this should be false... why?
-const bool zeroBins=false;
-//const bool normalizedMCMatrix=false;   // do not change for now; 6.24.17
 
-//other options, questionable usefulness, thing before changing...
+
+
+
+
+// generally, fill the response hists
+// generally, dont use over/under flows
+// generally, cut off evts from resp matrix by rebinning. But if you do, make sure clear OverUnderflows = true 
+// generally, MCIntegral scaling doesn't seem to help
+
+const bool doToyErrs          =false; // error options: kCovToy, kCovariance, kErrors, kNoError
+const bool doMCIntegralScaling=false;
+
+const bool fillRespHists      =true;
+const bool useTH2ProjRespHist= fillRespHists&&false;
+
+//const float TH2ProjRecPtLoCut=49.;
+//const float TH2ProjRecPtHiCut=49.;
+//const float TH2ProjGenPtLoCut=937.;
+//const float TH2ProjGenPtHiCut=937.;
+
+const bool doOverUnderflows   =false;//leave false almost always
+const bool clearOverUnderflows=true; 
+
+// settings that don't really get used
+const bool zeroBins=false; //leave false almost always
+//const bool normalizedMCMatrix=false;   
+
+
 
 
 //useful strings, numbers
@@ -153,7 +174,8 @@ float computeEffLumi(TFile* finData){
 
 
 void drawText(const char *text, float xp, float yp, int size){
-  std::cout<<std::endl<<"in drawText"<<std::endl<<std::endl;
+  bool funcDebug=false;
+  if(funcDebug)std::cout<<std::endl<<"in drawText"<<std::endl<<std::endl;
 
   TLatex *tex = new TLatex(xp,yp,text);
   tex->SetTextFont(63);
@@ -164,7 +186,7 @@ void drawText(const char *text, float xp, float yp, int size){
   tex->SetNDC();
   tex->Draw();
 
-  std::cout<<std::endl<<"drawText done"<<std::endl<<std::endl;
+  if(funcDebug)std::cout<<std::endl<<"drawText done"<<std::endl<<std::endl;
   return;
 }
 
@@ -175,11 +197,16 @@ void drawText(const char *text, float xp, float yp, int size){
 
 
 
-void matStylePrint(TH2F* mat, std::string hTitle, TCanvas* canv, std::string outPdfFile, bool useSimpBins){
+//void matStylePrint(TH2F* mat, std::string hTitle, TCanvas* canv, std::string outPdfFile, bool useSimpBins){
+void matStylePrint(TH2 * mat, std::string hTitle, TCanvas* canv, std::string outPdfFile, bool useSimpBins){
   
-  
+  //bool funcDebug=false;
   // general for drawRespMatrix ---------------
   //canv->cd();
+  
+  bool isTMatrixD=( (hTitle.find("Pearson")!=std::string::npos )    ||
+		    (hTitle.find("Covariance")!=std::string::npos ) ||
+		    (hTitle.find("Unfolding")!=std::string::npos ) 		    );
   
   if(!useSimpBins){
     mat->GetYaxis()->SetMoreLogLabels(true);
@@ -188,19 +215,26 @@ void matStylePrint(TH2F* mat, std::string hTitle, TCanvas* canv, std::string out
     mat->GetXaxis()->SetNoExponent(true);      }
   
   mat->GetZaxis()->SetLabelSize(0.025);      
+  
   mat->GetYaxis()->SetLabelSize(0.02);
   mat->GetYaxis()->SetTitleSize(0.023);
-  mat->GetYaxis()->SetTitle("gen p_{t}");      
+  std::string yaxisTitle="GEN Jet p_{T} (GeV)";  
+  if(isTMatrixD)yaxisTitle="GEN Jet p_{T} Bin #";  
+  mat->GetYaxis()->SetTitle(yaxisTitle.c_str());      
+  
   mat->GetXaxis()->SetLabelSize(0.02);
   mat->GetXaxis()->SetTitleSize(0.025);
-  mat->GetXaxis()->SetTitle("reco p_{t}");
+  std::string xaxisTitle="RECO Jet p_{T} (GeV)";  
+  if(isTMatrixD)xaxisTitle="RECO Jet p_{T} Bin #";  
+  mat->GetXaxis()->SetTitle(xaxisTitle.c_str());      
   
   // input resp matrix w/ full range ---------------
   
   mat->SetTitle(hTitle.c_str());
 
-  mat->SetAxisRange(56.,1000.,"X");
-  mat->SetAxisRange(56.,1000.,"Y");
+  //mat->SetAxisRange(56.,1000.,"X");
+  //mat->SetAxisRange(56.,1000.,"Y");
+  
   if( hTitle.find("% Errors") != std::string::npos )
     mat->SetAxisRange(0.1,1000.,"Z");
   else if (hTitle.find("Errors") != std::string::npos )
@@ -209,31 +243,37 @@ void matStylePrint(TH2F* mat, std::string hTitle, TCanvas* canv, std::string out
     mat->SetAxisRange(0.000001,1.,"Z");
   else if (hTitle.find("Row")  != std::string::npos)
     mat->SetAxisRange(0.000001,1.,"Z");
+  else if (hTitle.find("Covariance")  != std::string::npos)
+    mat->SetAxisRange(10e-40,10e-13,"Z");
+  else if (hTitle.find("Pearson")  != std::string::npos)
+    mat->SetAxisRange(-1.,1.,"Z");
+  else if(hTitle.find("Unfolding")  != std::string::npos)
+    mat->SetAxisRange(10e-12,1.,"Z");
   else
     mat->SetAxisRange(0.000000000000000001,.001,"Z");
   
-//  if(useSimpBins){
-//    if( hTitle.find("%errs") != std::string::npos )
-//      mat->SetAxisRange(0.1,1000.,"Z");
-//    else if (hTitle.find("errors") != std::string::npos )
-//      mat->SetAxisRange(0.000000000000000001,.0001,"Z");
-//    else if (hTitle.find("Column")  != std::string::npos)
-//      mat->SetAxisRange(0.000001,1.,"Z");
-//    else if (hTitle.find("Row")  != std::string::npos)
-//      mat->SetAxisRange(0.000001,1.,"Z");
-//    else
-//      mat->SetAxisRange(0.000000000000000001,.001,"Z");}
-//  else{
-//    if( hTitle.find("%errs") != std::string::npos )
-//      mat->SetAxisRange(0.1,1000.,"Z");
-//    else if (hTitle.find("errors") != std::string::npos )
-//      mat->SetAxisRange(0.000000000000000001,.0001,"Z");
-//    else if (hTitle.find("Column")  != std::string::npos)
-//      mat->SetAxisRange(0.000001,1.,"Z");
-//    else if (hTitle.find("Row")  != std::string::npos)
-//      mat->SetAxisRange(0.000001,1.,"Z");
-//    else
-//      mat->SetAxisRange(0.000000000000000001,.001,"Z");}
+  //  if(useSimpBins){
+  //    if( hTitle.find("%errs") != std::string::npos )
+  //      mat->SetAxisRange(0.1,1000.,"Z");
+  //    else if (hTitle.find("errors") != std::string::npos )
+  //      mat->SetAxisRange(0.000000000000000001,.0001,"Z");
+  //    else if (hTitle.find("Column")  != std::string::npos)
+  //      mat->SetAxisRange(0.000001,1.,"Z");
+  //    else if (hTitle.find("Row")  != std::string::npos)
+  //      mat->SetAxisRange(0.000001,1.,"Z");
+  //    else
+  //      mat->SetAxisRange(0.000000000000000001,.001,"Z");}
+  //  else{
+  //    if( hTitle.find("%errs") != std::string::npos )
+  //      mat->SetAxisRange(0.1,1000.,"Z");
+  //    else if (hTitle.find("errors") != std::string::npos )
+  //      mat->SetAxisRange(0.000000000000000001,.0001,"Z");
+  //    else if (hTitle.find("Column")  != std::string::npos)
+  //      mat->SetAxisRange(0.000001,1.,"Z");
+  //    else if (hTitle.find("Row")  != std::string::npos)
+  //      mat->SetAxisRange(0.000001,1.,"Z");
+  //    else
+  //      mat->SetAxisRange(0.000000000000000001,.001,"Z");}
   
   canv->cd();
   
@@ -326,12 +366,13 @@ void setupRatioHist(TH1* h, bool useSimpBins, double* boundaries, int nbins){
   h->SetAxisRange(0.2, 1.8, "Y");
   h->GetXaxis()->SetMoreLogLabels(true);
   h->GetXaxis()->SetNoExponent(true);
+  h->GetXaxis()->SetTitle("jet p_{T} (GeV)");
   //if(!useSimpBins)h->GetXaxis()->SetMoreLogLabels(true);
   //if(!useSimpBins)h->GetXaxis()->SetNoExponent(true);
-  h->SetAxisRange( boundaries[0] ,  
-		   boundaries[nbins] + 
-		   ( boundaries[nbins]-boundaries[nbins-1] ),
-		   "X");           
+//h->SetAxisRange( boundaries[0] ,  
+//		   boundaries[nbins] + 
+//		   ( boundaries[nbins]-boundaries[nbins-1] ),
+//		   "X");           
   
   return;
 }
@@ -345,10 +386,10 @@ void setupSpectraHist(TH1* h, bool useSimpBins, double* boundaries, int nbins){
   //  if(!useSimpBins)h->GetXaxis()->SetNoExponent(true);
   h->GetXaxis()->SetMoreLogLabels(true);
   h->GetXaxis()->SetNoExponent(true);
-  h->SetAxisRange( boundaries[0] ,  
-		   boundaries[nbins] + 
-		   ( boundaries[nbins]-boundaries[nbins-1] ),
-		   "X");           
+//  h->SetAxisRange( boundaries[0] ,  
+//		   boundaries[nbins] + 
+//		   ( boundaries[nbins]-boundaries[nbins-1] ),
+//		   "X");           
 //h->SetAxisRange( boundaries[0] - 
 //		   (boundaries[1] - boundaries[0]), 
 //		   boundaries[nbins] + 
@@ -358,3 +399,46 @@ void setupSpectraHist(TH1* h, bool useSimpBins, double* boundaries, int nbins){
 }
 
 
+
+
+
+inline bool fileExists (const std::string& name) {
+  struct stat buffer;   
+  return (stat (name.c_str(), &buffer) == 0); 
+}
+
+void checkNRenameFiles (const std::string outFileName, std::string *outRespMatPdfFile, std::string *outPdfFile, std::string *outRootFile){
+  bool funcDebug=false;
+  int outputInd=1;
+
+  while( (bool)fileExists(*(outRootFile)) ) {
+    if(funcDebug)std::cout<<"fileExists! adding ind="<<outputInd<<std::endl;
+    (*outRespMatPdfFile)=outFileName+"_"+std::to_string(outputInd)+"_respMat.pdf";
+    (*outPdfFile       )=outFileName+"_"+std::to_string(outputInd)+".pdf";
+    (*outRootFile      )=outFileName+"_"+std::to_string(outputInd)+".root";      
+    if(funcDebug)std::cout<<"outPdffile="<<(*outPdfFile)<<std::endl;    
+    outputInd++;
+  }
+  
+  
+  return;
+}
+
+
+void checkNRenameFilesSVD (const std::string outFileName, std::string *outRespMatPdfFile, std::string *outPdfFile, std::string*outPdfFileSS,std::string *outRootFile){
+  bool funcDebug=false;
+  int outputInd=1;
+  
+  while( (bool)fileExists(*(outRootFile)) ) {
+    if(funcDebug)std::cout<<"fileExists! adding ind="<<outputInd<<std::endl;
+    (*outRespMatPdfFile)=outFileName+"_"+std::to_string(outputInd)+"_respMat.pdf";
+    (*outPdfFile       )=outFileName+"_"+std::to_string(outputInd)+".pdf";
+    (*outPdfFileSS       )=outFileName+"_SS_"+std::to_string(outputInd)+".pdf";
+    (*outRootFile      )=outFileName+"_"+std::to_string(outputInd)+".root";      
+    if(funcDebug)std::cout<<"outPdffile="<<(*outPdfFile)<<std::endl;    
+    outputInd++;
+  }
+  
+  
+  return;
+}

@@ -1,0 +1,17 @@
+Universe       = vanilla
+Executable     = condorRun_readForests.sh
+Arguments      = readForests_ppData_jetPlots.exe 0 0 5p02TeV_HighPtJet80_forests.txt ppData_HighPtJet80_ak4PFJets-0to0.root 4 PF 1 -2 2
+Input          = /dev/null
+Error          = /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/readForests/outputCondor/ppData_HighPtJet80_ak4PFJets_05-28-18_jetPlots_-2eta2/ppData_HighPtJet80_ak4PFJets-0to0.err
+Output         = /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/readForests/outputCondor/ppData_HighPtJet80_ak4PFJets_05-28-18_jetPlots_-2eta2/ppData_HighPtJet80_ak4PFJets-0to0.out
+Log            = /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/readForests/outputCondor/ppData_HighPtJet80_ak4PFJets_05-28-18_jetPlots_-2eta2/ppData_HighPtJet80_ak4PFJets-0to0.log
+# get the environment (path, etc.)
+GetEnv         = True
+# prefer to run on fast, 64 bit computers
+Rank           = kflops
+Requirements   = Arch == "X86_64"
+should_transfer_files   = YES
+transfer_input_files = 5p02TeV_HighPtJet80_forests.txt,readForests_ppData_jetPlots.exe,JECDataDriven.tar.gz
+when_to_transfer_output = ON_EXIT
+Notification  =  never
+Queue

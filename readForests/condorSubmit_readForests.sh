@@ -71,7 +71,7 @@ fi
 ## make strings from input 
 outName="${dataType}_${trig}_ak${radius}${jetType}Jets" #echo "outName is ${outName}" #debug
 dirName="${outName}_$(date +"%m-%d-%y")${readForestsVer}_${etaCutLo}eta${etaCutHi}"
-logFileDir="${PWD}/outputCondor/${dirName}"
+logFileDir="/cms/heavyion/obaron/5p02TeV_ppJetAnalysis/outputCondor/${dirName}"
 
 
 ## create output directory for condor job
@@ -80,8 +80,8 @@ while [[ -d "${logFileDir}"  ]]
   do
   AltCounter=$(( $AltCounter + 1 ))
   echo "dir exists!"
-  dirName="${outName}_$(date +"%m-%d-%y")${readForestsVer}__${etaCutLo}eta${etaCutHi}_${AltCounter}"
-  logFileDir="${PWD}/outputCondor/${dirName}"    
+  dirName="${outName}_$(date +"%m-%d-%y")${readForestsVer}_${etaCutLo}eta${etaCutHi}_${AltCounter}"
+  logFileDir="/cms/heavyion/obaron/5p02TeV_ppJetAnalysis/outputCondor/${dirName}"    
 done
 echo "output in outputCondor/${dirName}"
 mkdir $logFileDir

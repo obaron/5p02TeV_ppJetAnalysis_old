@@ -331,7 +331,7 @@ const float pthatWeights[]={
 
 
 
-const bool doVzWeights=false;
+const bool doVzWeights=true;
 // non-event triggered vz weights
 const float vzWeights[]={           
 0.0579229 ,         // vzLow=-24
