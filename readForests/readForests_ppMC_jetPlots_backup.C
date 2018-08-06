@@ -156,6 +156,14 @@ int readForests_ppMC_jetPlots(std::string inFilelist , int startfile , int endfi
 
 
 
+
+
+
+
+
+
+
+
     hvzWVz    = new TH1F("hvzWeightedVz","", 100,-25.,25.);//vz-weighted evtvz
     hpthatWVz = new TH1F("hpthatWeightedVz","", 100,-25.,25.);//pthat-weighted evtvz
     
@@ -454,7 +462,8 @@ int readForests_ppMC_jetPlots(std::string inFilelist , int startfile , int endfi
     float vzWeight=1.;
     float vzStart=minbinValue_vzWeights, vzBinLeftSide=vzStart, vzBinRightSide=vzBinLeftSide+binsize_vzWeights;
     if(doVzWeights){
-      for( int i=0; i<nbins_vzWeights ; i++ ) { 
+
+ for( int i=0; i<nbins_vzWeights ; i++ ) { 
 	if(vzBinLeftSide<vz_F && vz_F<=vzBinRightSide) {
 	  vzWeight=vzWeights[i];  
 	  break; } 
@@ -466,8 +475,9 @@ int readForests_ppMC_jetPlots(std::string inFilelist , int startfile , int endfi
     float evtPthatWeight=0.;    
     for( int i=0; i<nbins_pthat && pthat_F>=pthatbins[i]; i++ ){ evtPthatWeight=pthatWeights[i]; } 
     
-    float trigWeight=1.;
-    //trigWeight = trigComb(trgDec, treePrescl, triggerPt);    
+	vzWeight=cpuVzWeight_poly(vz_F);
+   double evtPthatWeight=0.;  
+    //ineight = trigComb(trgDec, treePrescl, triggerPt);    
     
     float weight_eS=evtPthatWeight*trigWeight*vzWeight;              
     

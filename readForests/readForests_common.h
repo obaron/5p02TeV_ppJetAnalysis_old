@@ -328,7 +328,37 @@ const float pthatWeights[]={
 //};
 
 
+double cpuVzWeight_poly(float vz_F){
+  bool funcDebug=false;
+  if(funcDebug)
+    std::cout<<"vz_F="<<vz_F<<std::endl;
+  // new set using hVz w/ weight=1 and no trig req. / pthat weighted MC // older weights
+  double p0 = 1.165;//1.159;
+  double p1 = 0.009171;//0.008914;
+  double p2 = -0.003257;//-0.003057;
+  double p3 = -2.919e-05;//-2.287e-05;
+  double p4 = -4.647e-06;//-5.287e-06;
+  double p5 = 2.13e-08;//-1.582e-09;
+  double p6 = 2.399e-08;//2.569e-08;
+  double p7 = 4.267e-12;//2.782e-11;
+  double p8 = -2.078e-11;//-2.097e-11;
+  
+  double vzWeight=0;
+  vzWeight+=p0;
+  vzWeight+=p1*pow(vz_F,1);
+  vzWeight+=p2*pow(vz_F,2);
+  vzWeight+=p3*pow(vz_F,3);
+  vzWeight+=p4*pow(vz_F,4);
+  vzWeight+=p5*pow(vz_F,5);
+  vzWeight+=p6*pow(vz_F,6);
+  vzWeight+=p7*pow(vz_F,7);
+  vzWeight+=p8*pow(vz_F,8);  
 
+  if(funcDebug)
+    std::cout<<"vzWeight="<<vzWeight<<std::endl;
+
+  return vzWeight;
+}
 
 
 const bool doVzWeights=true;

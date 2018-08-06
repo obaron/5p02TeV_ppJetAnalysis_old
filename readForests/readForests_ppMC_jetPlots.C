@@ -153,6 +153,13 @@ int readForests_ppMC_jetPlots(std::string inFilelist , int startfile , int endfi
     hVz       = new TH1F("hVz","", 1000,-25.,25.);//evtvz
     hWVz      = new TH1F("hWeightedVz","", 1000,-25.,25.);//pthat*vz-weighted evt vz
 
+
+
+
+
+
+
+
     hvzWVz    = new TH1F("hvzWeightedVz","", 100,-25.,25.);//vz-weighted evtvz
     hpthatWVz = new TH1F("hpthatWeightedVz","", 100,-25.,25.);//pthat-weighted evtvz
     
@@ -449,19 +456,28 @@ int readForests_ppMC_jetPlots(std::string inFilelist , int startfile , int endfi
     
     // grab vzweight
     float vzWeight=1.;
-    float vzStart=minbinValue_vzWeights, vzBinLeftSide=vzStart, vzBinRightSide=vzBinLeftSide+binsize_vzWeights;
+    //float vzStart=minbinValue_vzWeights, vzBinLeftSide=vzStart, vzBinRightSide=vzBinLeftSide+binsize_vzWeights;
     if(doVzWeights){
-      for( int i=0; i<nbins_vzWeights ; i++ ) { 
+		
+		vzWeight=cpuVzWeight_poly(vz_F);
+/* old
+	for( int i=0; i<nbins_vzWeights ; i++ ) { 
 	if(vzBinLeftSide<vz_F && vz_F<=vzBinRightSide) {
 	  vzWeight=vzWeights[i];  
 	  break; } 
 	else {
 	  vzBinLeftSide+=binsize_vzWeights;
 	  vzBinRightSide+=binsize_vzWeights; } }
+*/
+
     }
 
-    float evtPthatWeight=0.;    
-    for( int i=0; i<nbins_pthat && pthat_F>=pthatbins[i]; i++ ){ evtPthatWeight=pthatWeights[i]; } 
+    double evtPthatWeight=0.;    
+    for( int i=0; i<nbins_pthat && pthat_F>=pthatbins[i]; i++ ){ 
+	
+	evtPthatWeight=pthatWeights[i];
+	//evtPthatWeight*=1e+06;
+	} 
     
     float trigWeight=1.;
     //trigWeight = trigComb(trgDec, treePrescl, triggerPt);    
@@ -687,6 +703,9 @@ int readForests_ppMC_jetPlots(std::string inFilelist , int startfile , int endfi
 	    hMCJetQA_geneta[0]   ->Fill(geneta,weight_eS);
 	    hMCJetQA_genrecpt[0] ->Fill(recpt/genpt,weight_eS);
 	    hMCJetQA_genreceta[0]->Fill(receta-geneta,weight_eS);	}
+
+
+
 
 	}
 	
