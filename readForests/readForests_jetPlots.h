@@ -51,7 +51,7 @@ const float jtPtCut=56; // 49 or 56 or 64 or 74...
 const float jtPtCut_Hi=1890; 
 const float jetQAPtCut=jtPtCut;
 
-const float genJetPtCut=49; 
+const float genJetPtCut=43;
 //const float genJetPtCut=43; 
 //const float genJetPtCut=30; 
 const float genJetPtCut_Hi=1890; 

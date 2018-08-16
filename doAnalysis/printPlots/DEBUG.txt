@@ -1,0 +1,45 @@
+/cms/heavyion/obaron/5p02TeV_ppJetAnalysis/outputCondor/ppData_HighPtLowerJets_ak4PFJets_08-15-18_jetPlots_-2.0eta2.0/ppData_HighPtJet80andLower_ak4PFJets_08-15-18_jetPlots_-2.0eta2.0/Jets-allfiles.root does not exist
+ now opening ppMC:
+ppMC_Py8_CUETP8M1_QCDjetAllPtBins_ak4PFJets_08-15-18_jetPlots_-2.0eta2.0/Jets-allfiles.root
+ in directory: ppMC_Py8_CUETP8M1_QCDjetAllPtBins_ak4PFJets_08-15-18_jetPlots_-2.0eta2.0/
+
+Error in <TFile::TFile>: file /cms/heavyion/obaron/5p02TeV_ppJetAnalysis/outputCondor/ppMC_Py8_CUETP8M1_QCDjetAllPtBins_ak4PFJets_08-15-18_jetPlots_-2.0eta2.0/ppMC_Py8_CUETP8M1_QCDjetAllPtBins_ak4PFJets_08-15-18_jetPlots_-2.0eta2.0/Jets-allfiles.root does not exist
+
+
+ppData_HighPtJet80andLower_ak4PFJets-allfiles.root
+
+ISSUE: jetType includes date
+	jetType string is = PFJets_08-15-18_jetPlots_-2.0eta2.0/
+	fullJetType string is = ak4PFJets_08-15-18_jetPlots_-2.0eta2.0/
+
+	CURRENT INPUT: ppData_HighPtJet80andLower_" +fullJetType+ "Jets-allfiles.root"
+
+TARGET: ppData_HighPtJet80andLower_ak4PFJets-allfiles.root
+
+The date is getting in the jetType >:( (Why wasn't this an issue the last goddamn time I ran it?)
+
+OK, this has to do with where it reads the input string and forms the strings for use in the program:
+in const std::string jetType=input_ppData_condorDir.substr( jetTypePos,(jetsPos-jetTypePos) );
+
+SAMPLE INPUT DIR: ppData_HighPtLowerJets_ak4PFJets_08-15-18_jetPlots_-2.0eta2.0/
+
+added couts and got:
+	radius string is = R4_
+	radPos is = 25
+	jetsPos is = 18
+	jetTypePos is =26
+	jetType string is = PFJets_08-15-18_jetPlots_-2.0eta2.0/
+	fullJetType string is = ak4PFJets_08-15-18_jetPlots_-2.0eta2.0/
+
+radPos=input_ppData_condorDir.find("_ak")+3; //COMMENT: assuming the +3 is here to give the value of where the 4 lies; otherwise it would return the value for the first char in the find.
+radPos clearly referes to position of "4", and since jetTypePos is defined in code as radPos+1 we can see that "PFJets" comes one char after the 4. These line up with the radPos value of 25 if we accept that the first position is 0.
+
+The format of .substr(x,y) seems to be to return the string between position x and position x+y. I will test this. Result: I am correct. This is what I will need to change for the input to make this work.
+As written inthe sample input dir above right now, (jetsPos-jetTypePos) should evaluate to 18-26 = -8. That seems, uh, wrong. IN FACT, a negative number just makes it read to the end of the whole line!! So that is what is causing my issue here.
+So, why is it coded like this? jetsPos is where 'Jets' occurs in the input, and jetTypePos is where PFJets occurs in the input.
+Well, I believe the answer is that while the Jet80 input is just "Jet80", for "LowerJets" it's picking up that first "Jets" too early. To solve this, we will move the allfiles to jet80 instead of lowerjets, and also change readForests output to be "lowerJet" so it doesn't matter in the future. <-- NOTE: there is not an easy way to do this last step. Just make sure to stick it in the jet80 folder instead of the lowerJets folder.
+
+This will also work for MC because that uses the data to determine which file to look at.
+
+ppData_HighPtLowerJets_ak4PFJets_08-15-18_jetPlots_-2.0eta2.0/
+0123456789012345678901234567890123456789

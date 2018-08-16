@@ -50,12 +50,17 @@ int printPlots_jetPlots(const std::string input_ppData_condorDir , const std::st
   
   //figure out what radius/jetcollection we are looking at using the ppData filename
   std::size_t radPos=input_ppData_condorDir.find("_ak")+3;  
-  const std::string radiusInt= input_ppData_condorDir.substr( radPos,1 );
+  const std::string radiusInt= input_ppData_condorDir.substr( radPos,1);
   const std::string radius="R"+radiusInt+"_";
   if(debugMode)std::cout<<"radius string is = "<<radius<<std::endl;
   
   std::size_t jetTypePos=radPos+1;
   std::size_t jetsPos=input_ppData_condorDir.find("Jets");;
+  //if(debugMode)std::cout<<"radPos is = "<<radPos<<std::endl;
+  //if(debugMode)std::cout<<"jetsPos is = "<<jetsPos<<std::endl;
+  //if(debugMode)std::cout<<"jetTypePos is ="<<jetTypePos<<std::endl;
+  
+  
   
   //make final jetType strings
   const std::string jetType=input_ppData_condorDir.substr( jetTypePos,(jetsPos-jetTypePos) );
