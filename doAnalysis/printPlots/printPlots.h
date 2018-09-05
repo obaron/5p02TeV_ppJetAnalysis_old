@@ -563,7 +563,11 @@ void printEvtVtxQAHist( TFile* finData , std::string inDataHistName,
   std::string h_XAx_Title;// ="v_{z}^{evt} (cm)";
   
   if( inDataHistName.find("Vz") != std::string::npos ){
-    h_XAx_Title ="v_{z}^{evt} (cm)";}
+    h_XAx_Title ="v_{z}^{evt} (cm)";
+	theDataEvtQAHist->GetYaxis()->SetRange(0,0.5);
+	theMCEvtQAHist->GetYaxis()->SetRange(0,0.5);
+
+  }
   else if( inDataHistName.find("Vx") != std::string::npos ){
     evtpad1->SetLogy(1);
     h_XAx_Title ="v_{x}^{evt} (cm)";}
@@ -1584,6 +1588,7 @@ void printJetMultQATH1_vtx( TFile* finData ,  TFile* finMC, std::string inHistNa
   theDataJetMultTH1->Draw("E"); 
   theMCJetMultTH1->Draw("HIST E SAME");
    
+   /*
    //I just added this below but it doesn't work
 	if( findsubstr(h_XAx_Title, "evt") ) {
 		theDataJetMultTH1->GetYaxis()->SetRange(0,0.5);
@@ -1593,7 +1598,7 @@ void printJetMultQATH1_vtx( TFile* finData ,  TFile* finMC, std::string inHistNa
 	else std::cout<<"I don't work..."<<std::endl;
   
   std::cout<<"I'm a statement"<<std::endl;
-  
+  */
   
   // legend
   float legx1=0.80, legx2=legx1+0.10;
