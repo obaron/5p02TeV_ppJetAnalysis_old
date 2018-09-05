@@ -70,8 +70,8 @@ const int dijet_varStart=jetConstits_varStart+jetConstits_Nvars;
 
 // variable names, string array
 const std::string var_xAx_Titles[] = {   
-  "jet p_{T}^{RECO} (GeV)" ,  "jet p_{T}^{RAW} (GeV)",  
-  "noRes, jet p_{T}^{RECO} (GeV)" , "L2Res, jet p_{T}^{RECO} (GeV)" , "L3Res, jet p_{T}^{RECO} (GeV)" ,
+  "Jet p_{T}^{RECO} (GeV)" ,  "Jet p_{T}^{RAW} (GeV)",  
+  "noRes, Jet p_{T}^{RECO} (GeV)" , "L2Res, Jet p_{T}^{RECO} (GeV)" , "L3Res, Jet p_{T}^{RECO} (GeV)" ,
   "#eta_{jet}", "#phi_{jet}", //"y_{jet}" ,
 
   "trkN", "trkSum/p_{T}^{raw}", "trkMax/p_{T}^{raw}", 

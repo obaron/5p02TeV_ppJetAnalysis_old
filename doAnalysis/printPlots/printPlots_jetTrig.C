@@ -7,7 +7,7 @@ const bool drawJetTrigQAPlots=true, drawJetRapBinsPlot=false;
 
 const bool comparePFandCalo=true;
 const bool usedHLT100=false;
-//const bool usedHLTPF=true;//if false, HLTCalo was used
+const bool usedHLTPF=true;//if false, HLTCalo was used
 
 // the macro ------------------------
 int printPlots_jetTrig ( const std::string input_ppData_condorDir ,   const std::string output_PDFname_base){
@@ -20,7 +20,8 @@ int printPlots_jetTrig ( const std::string input_ppData_condorDir ,   const std:
   
   
   bool usedHLTPF=false;
-  if( input_ppData_condorDir.find("HLTPF") != std::string::npos )
+  //if( input_ppData_condorDir.find("HLTPF") != std::string::npos )
+  if( input_ppData_condorDir.find("PF") != std::string::npos )
     usedHLTPF=true;
   
   // MAKE STRINGS
@@ -55,7 +56,7 @@ int printPlots_jetTrig ( const std::string input_ppData_condorDir ,   const std:
 
   // OPEN INPUT SECTION
   TFile *finData=NULL;    
-  const std::string input_ppData_Filename="HighPtJetTrig_" +fullJetType+ "-allFiles.root";
+  const std::string input_ppData_Filename="ppData_HighPtJet80andLower_" +fullJetType+ "Jets-allfiles.root";
   const std::string ppData_fullFilename=inputDir+input_ppData_condorDir+input_ppData_Filename;
   
   //open the input files
@@ -114,15 +115,7 @@ int printPlots_jetTrig ( const std::string input_ppData_condorDir ,   const std:
     }
   }
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    
   // GET OUTPUT PDF FILE READY
   std::string thePDFFileName=outputDir+fullJetType+"_"+output_PDFname_base+"_jetTrig.pdf";
   std::string open_thePDFFileName=thePDFFileName+"[";    std::string close_thePDFFileName=thePDFFileName+"]";

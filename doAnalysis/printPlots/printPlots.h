@@ -635,8 +635,10 @@ void printEvtVtxQAHist( TFile* finData , std::string inDataHistName,
   theRatio->GetYaxis()->SetTitleSize(15);
   theRatio->GetYaxis()->SetTitleFont(43);
   theRatio->GetYaxis()->SetTitleOffset(2);
+  theRatio->GetYaxis()->CenterTitle();
   theRatio->GetYaxis()->SetLabelFont(43); 
   theRatio->GetYaxis()->SetLabelSize(13);
+  
   theRatio->GetXaxis()->SetTitleSize(20);
   theRatio->GetXaxis()->SetTitleFont(43);
   theRatio->GetXaxis()->SetTitleOffset(4.);
@@ -646,6 +648,7 @@ void printEvtVtxQAHist( TFile* finData , std::string inDataHistName,
   theRatio->SetTitle("");
   theRatio->SetXTitle( h_XAx_Title.c_str() );
   theRatio->SetYTitle( ratioTitle.c_str() );
+  
 
   theRatio->Divide(theDenom);
   theRatio->SetAxisRange(0.0,2.0, "Y");  
@@ -672,36 +675,6 @@ void printEvtVtxQAHist( TFile* finData , std::string inDataHistName,
   temp_canvEvt->Close();
   return;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -879,6 +852,7 @@ void printEvtNrefQAHist( TFile* finData , std::string inDataHistName,
   theRatio->GetYaxis()->SetTitleOffset(2);
   theRatio->GetYaxis()->SetLabelFont(43); 
   theRatio->GetYaxis()->SetLabelSize(13);
+  theRatio->GetYaxis()->CenterTitle();
 
   theRatio->GetXaxis()->SetTitleSize(20);
   theRatio->GetXaxis()->SetTitleFont(43);
@@ -940,11 +914,13 @@ void printMCEvtQAHist( TFile* finMC   , std::string inMCHistName , std::string t
 
   std::string h_Title=PDStatsString_2;
   std::string h_XAx_Title="MC evt #hat{p}_{t} (GeV)"       ;
-  std::string h_YAx_Title="A.U."       ;
+  std::string h_YAx_Title="N_{jets}"       ;
 
   theMCEvtQAHist->SetTitle( h_Title.c_str() );
   theMCEvtQAHist->SetXTitle( h_XAx_Title.c_str() );
   theMCEvtQAHist->SetYTitle( h_YAx_Title.c_str() );
+  theMCEvtQAHist->GetYaxis()->SetTitleOffset(1.1);
+  
   
   if(inMCHistName.find("pthat")==std::string::npos)theMCEvtQAHist->Draw("HIST E");
   else  theMCEvtQAHist->Draw("E");
@@ -952,8 +928,10 @@ void printMCEvtQAHist( TFile* finMC   , std::string inMCHistName , std::string t
   // test
   float t1x=.65,t1y=.81;
   TLatex *t1;
-  if (inMCHistName=="hWeightedpthat") 
+  if (inMCHistName=="hWeightedpthat") {
     t1=makeTLatex(t1x,t1y,"QCD MC, weighted");
+	theMCEvtQAHist->SetYTitle("nb");
+  }
   else
     t1=makeTLatex(t1x,t1y,"QCD MC, unweighted");
   t1->Draw();	
@@ -1107,12 +1085,12 @@ void printJetQAHist( TFile* finData , TFile* finMC, int j, bool doJetIDPlots,
   theDataJetQAHist->SetTitle (    h_Title.c_str() );
   theDataJetQAHist->SetXTitle( h_XAx_Title.c_str() );
   theDataJetQAHist->SetYTitle( h_YAx_Title.c_str() );
+  //theDataJetQAHist->SetYTitle( "I'm a title");
   
   theMCJetQAHist->SetTitle (    h_Title.c_str() );
   theMCJetQAHist->SetXTitle( h_XAx_Title.c_str() );
   theMCJetQAHist->SetYTitle( h_YAx_Title.c_str() );
-  
-  
+    
   
   
   
@@ -1171,6 +1149,7 @@ void printJetQAHist( TFile* finData , TFile* finMC, int j, bool doJetIDPlots,
     if(var[j]=="jtpt"||var[j]=="rawpt"){
       theMCJetQAHist->Draw("HIST E"); 
       theDataJetQAHist->Draw("E SAME"); 
+	  theMCJetQAHist->SetYTitle("d^{2}#sigma/dp_{T}d#||{y}");
     } 
     else if(var[j]=="jtpt_forRes"||var[j]=="jtpt_L2Res"||var[j]=="jtpt_L3Res"){
       theDataJetQAHist->Draw("E"); 
@@ -1205,6 +1184,7 @@ void printJetQAHist( TFile* finData , TFile* finMC, int j, bool doJetIDPlots,
     theRatio->GetYaxis()->SetTitleSize(15);
     theRatio->GetYaxis()->SetTitleFont(43);
     theRatio->GetYaxis()->SetTitleOffset(2);
+	theRatio->GetYaxis()->CenterTitle();
 
     theRatio->GetYaxis()->SetLabelFont(43); 
     theRatio->GetYaxis()->SetLabelSize(13);
@@ -1293,6 +1273,7 @@ void printJetQAHist( TFile* finData , TFile* finMC, int j, bool doJetIDPlots,
     theRatio->GetYaxis()->SetTitleOffset(2);
     theRatio->GetYaxis()->SetLabelFont(43); 
     theRatio->GetYaxis()->SetLabelSize(13);
+	theRatio->GetYaxis()->CenterTitle();
 
     theRatio->GetXaxis()->SetTitleSize(20);
     theRatio->GetXaxis()->SetTitleFont(43);
@@ -1373,6 +1354,8 @@ void printJetQAHist( TFile* finData , TFile* finMC, int j, bool doJetIDPlots,
     theRatio->GetYaxis()->SetTitleOffset(2);
     theRatio->GetYaxis()->SetLabelFont(43); 
     theRatio->GetYaxis()->SetLabelSize(13);
+	theRatio->GetYaxis()->CenterTitle();
+	
     theRatio->GetXaxis()->SetTitleSize(20);
     theRatio->GetXaxis()->SetTitleFont(43);
     theRatio->GetXaxis()->SetTitleOffset(4.);
@@ -1439,6 +1422,8 @@ void printJetQAHist( TFile* finData , TFile* finMC, int j, bool doJetIDPlots,
     theRatio->GetYaxis()->SetTitleOffset(2);
     theRatio->GetYaxis()->SetLabelFont(43); 
     theRatio->GetYaxis()->SetLabelSize(13);
+	theRatio->GetYaxis()->CenterTitle();
+	
     theRatio->GetXaxis()->SetTitleSize(20);
     theRatio->GetXaxis()->SetTitleFont(43);
     theRatio->GetXaxis()->SetTitleOffset(4.);
@@ -1494,8 +1479,9 @@ void printJetMultQATH1_vtx( TFile* finData ,  TFile* finMC, std::string inHistNa
   //if(findsubstr(inHistName, "_N") ||
   //findsubstr(inHistName, "vtx_r") )
   
-  if( findsubstr(inHistName, "vtx_z") )
+  if( findsubstr(inHistName, "vtx_z") ) {
     temp_canvEvt->SetLogy(0);
+  }
   else 
     temp_canvEvt->SetLogy(1);  
   //else if( findsubstr(inHistName, "Nvtxtrks_vtx0") )
@@ -1592,9 +1578,23 @@ void printJetMultQATH1_vtx( TFile* finData ,  TFile* finMC, std::string inHistNa
   theDataJetMultTH1->SetXTitle( h_XAx_Title.c_str() );
   theDataJetMultTH1->SetYTitle( h_YAx_Title.c_str() );
   
+ 
+  
+  
   theDataJetMultTH1->Draw("E"); 
   theMCJetMultTH1->Draw("HIST E SAME");
-
+   
+   //I just added this below but it doesn't work
+	if( findsubstr(h_XAx_Title, "evt") ) {
+		theDataJetMultTH1->GetYaxis()->SetRange(0,0.5);
+		theMCJetMultTH1->GetYaxis()->SetRange(0,0.5);
+		std::cout<<"I work!"<<std::endl;
+	}
+	else std::cout<<"I don't work..."<<std::endl;
+  
+  std::cout<<"I'm a statement"<<std::endl;
+  
+  
   // legend
   float legx1=0.80, legx2=legx1+0.10;
   float legy1=0.80, legy2=legy1+0.10;
@@ -2482,8 +2482,11 @@ void printJetTrigHist_wRatio( TFile* fin , bool usedHLT100, bool analysisRebin,
     TH1F* theJetTrigQAHist= (TH1F*) ( (TH1*)fin->Get(inHistName.c_str()) );
     if(funcDebug)theJetTrigQAHist->Print("base"); std::cout<<std::endl;
     
-    if(analysisRebin) 
+    if(analysisRebin) {
       theJetTrigQAHist=(TH1F*)theJetTrigQAHist->TH1::Rebin(nbins_pt_debug,(inHistName+"_spec_anabins").c_str(), ptbins_debug    );
+	  //theJetTrigQAHist->SetTitle("Test Title"); //doesn't work
+	 }
+		
     else {
       theJetTrigQAHist=(TH1F*)theJetTrigQAHist->TH1::Rebin(10, (inHistName+"_spec_rebin10").c_str() );
       theJetTrigQAHist->SetAxisRange(ptbins_debug[0],ptbins_debug[nbins_pt_debug],"X");
@@ -2496,12 +2499,18 @@ void printJetTrigHist_wRatio( TFile* fin , bool usedHLT100, bool analysisRebin,
     if(usedHLTPF)JetTrigLegend->AddEntry(theJetTrigQAHist,(HLTPFName_Leg[j]).c_str(),"lp");
     else JetTrigLegend->AddEntry(theJetTrigQAHist,(HLTCaloName_Leg[j]).c_str(),"lp");
     
-    if( j==0 ){
+    if( j==0 ){ 
       
       std::string h_Title;
-      if(trigType=="excl")h_Title="Excl. Jet Spectra by Trigger";
-      else if(trigType=="incl")h_Title="Incl. Jet Spectra by Trigger";      
-      
+	  
+	  if(analysisRebin) {
+		  if(trigType=="excl")h_Title="Excl. Jet Spectra by Trigger (SMP Bins)";
+		  else if(trigType=="incl")h_Title="Incl. Jet Spectra by Trigger (SMP Bins)";      
+		}
+	 else {
+		  if(trigType=="excl")h_Title="Excl. Jet Spectra by Trigger (Rebinned)";
+		  else if(trigType=="incl")h_Title="Incl. Jet Spectra by Trigger (Rebinned)";
+	 }
       theJetTrigQAHist->SetTitle (    h_Title.c_str() );
       
       std::string h_YAx_Title= AUAxTitle;

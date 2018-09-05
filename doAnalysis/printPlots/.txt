@@ -1,0 +1,337 @@
+radius string is = R4_
+jetType string is = PF
+fullJetType string is = ak4PF
+ now opening ppData: 
+ppData_HighPtJet80andLower_ak4PFJets-allfiles.root
+ in directory: /cms/heavyion/obaron/5p02TeV_ppJetAnalysis/outputCondor/ppData_HighPtJet80_ak4PFJets_08-17-18_jetPlots_-2.0eta2.0_1/
+
+comparing HLT PF and HLT Calo...
+first, input_ppData2_condorDir=ppData_HighPtJet80_ak4PFJets_08-17-18_jetPlots_-2.0eta2.0_1/
+used HLTPF!
+... now, input_ppData2_condorDir=ppData_HighPtJet80_ak4PFJets_08-17-18_jetPlots_-2.0eta2.0_1/
+ grabbing raw event counts 
+
+/// Data Evt-Count Summary ///
+
+Total Num of Events in file(s) opened       = 6.57194e+07
+Total Num of Events skipped from those file(s) = 5.25414e+06
+Total Num of Events read from those file(s) = 6.04652e+07
+Total Num of Events read passing skimCuts   = 6.03522e+07
+Total Num of Events read passing vzCuts and skimCuts    = 6.03471e+07
+
+Total Num of Events trigd in those file(s) = 1.59295e+07
+Total Num of Events jet40 in those file(s) = 4.15002e+06
+Total Num of Events jet60 in those file(s) = 4.51139e+06
+Total Num of Events jet80 in those file(s) = 7.26809e+06
+Total Num of Events jet100 in those file(s) = 0
+
+integrated luminosity     =2.74e+07
+lumi efficiency, vz cuts             =0.998047
+effective ingrtdLumi for dataset+cuts=2.73465e+07
+jtptCut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetCutString=p_{T} ^{}>56  ^{}GeV
+etaBinWidth=4
+drawing exclusive trigger spectra + ratios
+jtptCut_str = 56
+jetCutString=p_{T}>56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=0.0<|y|<2.0
+etaBinWidth=4
+
+
+ ------------------------------------------------------------------- 
+ --------------- DRAWING JET SPECTRA BY TRIGGER --------------- 
+ ------------------------------------------------------------------- 
+
+
+
+
+
+
+
+
+ ------------------------------------------------------------------ 
+ --------------- DRAWING JET RATIOS BY TRIGGER --------------- 
+ ------------------------------------------------------------------ 
+
+
+drawing exclusive trigger spectra + ratios
+jtptCut_str = 56
+jetCutString=p_{T}>56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=0.0<|y|<2.0
+etaBinWidth=4
+
+
+ ------------------------------------------------------------------- 
+ --------------- DRAWING JET SPECTRA BY TRIGGER --------------- 
+ ------------------------------------------------------------------- 
+
+
+
+
+
+
+
+
+ ------------------------------------------------------------------ 
+ --------------- DRAWING JET RATIOS BY TRIGGER --------------- 
+ ------------------------------------------------------------------ 
+
+
+drawing exclusive trigger spectra + ratios
+jtptCut_str = 56
+jetCutString=p_{T}>56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=0.0<|y|<2.0
+etaBinWidth=4
+
+
+ ------------------------------------------------------------------- 
+ --------------- DRAWING TRIGGER JET PT SPECTRA FOR TRIGGERS --------------- 
+ ------------------------------------------------------------------- 
+
+
+
+
+
+
+
+
+
+
+drawing exclusive trigger spectra + ratios
+jtptCut_str = 56
+jetCutString=p_{T}>56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=0.0<|y|<2.0
+etaBinWidth=4
+
+
+ ------------------------------------------------------------------- 
+ --------------- DRAWING TRIGGER JET PT SPECTRA FOR TRIGGERS --------------- 
+ ------------------------------------------------------------------- 
+
+
+
+
+
+
+
+
+
+
+drawing exclusive trigger spectra + ratios
+jtptCut_str = 56
+jetCutString=p_{T}>56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=0.0<|y|<2.0
+etaBinWidth=4
+
+
+ ------------------------------------------------------------------- 
+ --------------- DRAWING TRIGGER JET ETA SPECTRA FOR TRIGGERS --------------- 
+ ------------------------------------------------------------------- 
+
+
+
+
+
+
+
+
+
+
+drawing exclusive trigger spectra + ratios
+jtptCut_str = 56
+jetCutString=p_{T}>56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=0.0<|y|<2.0
+etaBinWidth=4
+
+
+ ------------------------------------------------------------------- 
+ --------------- DRAWING TRIGGER JET ASYMM ETA HISTS FOR TRIGGERS --------------- 
+ ------------------------------------------------------------------- 
+
+
+
+
+
+
+
+
+
+
+drawing inclusive trigger spectra + ratios
+jtptCut_str = 56
+jetCutString=p_{T}>56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=0.0<|y|<2.0
+etaBinWidth=4
+
+
+ ------------------------------------------------------------------- 
+ --------------- DRAWING JET SPECTRA BY TRIGGER --------------- 
+ ------------------------------------------------------------------- 
+
+
+
+
+
+
+
+
+ ------------------------------------------------------------------ 
+ --------------- DRAWING JET RATIOS BY TRIGGER --------------- 
+ ------------------------------------------------------------------ 
+
+
+drawing inclusive trigger spectra + ratios
+jtptCut_str = 56
+jetCutString=p_{T}>56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=0.0<|y|<2.0
+etaBinWidth=4
+
+
+ ------------------------------------------------------------------- 
+ --------------- DRAWING JET SPECTRA BY TRIGGER --------------- 
+ ------------------------------------------------------------------- 
+
+
+
+
+
+
+
+
+ ------------------------------------------------------------------ 
+ --------------- DRAWING JET RATIOS BY TRIGGER --------------- 
+ ------------------------------------------------------------------ 
+
+
+drawing inclusive trigger spectra + ratios
+jtptCut_str = 56
+jetCutString=p_{T}>56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=0.0<|y|<2.0
+etaBinWidth=4
+
+
+ ------------------------------------------------------------------- 
+ --------------- DRAWING TRIGGER JET PT SPECTRA FOR TRIGGERS --------------- 
+ ------------------------------------------------------------------- 
+
+
+
+
+
+
+
+
+
+
+drawing inclusive trigger spectra + ratios
+jtptCut_str = 56
+jetCutString=p_{T}>56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=0.0<|y|<2.0
+etaBinWidth=4
+
+
+ ------------------------------------------------------------------- 
+ --------------- DRAWING TRIGGER JET PT SPECTRA FOR TRIGGERS --------------- 
+ ------------------------------------------------------------------- 
+
+
+
+
+
+
+
+
+
+
+drawing inclusive trigger spectra + ratios
+jtptCut_str = 56
+jetCutString=p_{T}>56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=0.0<|y|<2.0
+etaBinWidth=4
+
+
+ ------------------------------------------------------------------- 
+ --------------- DRAWING TRIGGER JET ETA SPECTRA FOR TRIGGERS --------------- 
+ ------------------------------------------------------------------- 
+
+
+
+
+
+
+
+
+
+
+drawing inclusive trigger spectra + ratios
+jtptCut_str = 56
+jetCutString=p_{T}>56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=0.0<|y|<2.0
+etaBinWidth=4
+
+
+ ------------------------------------------------------------------- 
+ --------------- DRAWING TRIGGER JET ASYMM ETA HISTS FOR TRIGGERS --------------- 
+ ------------------------------------------------------------------- 
+
+
+
+
+
+
+
+
+
+
+input file not found, cannot look at event counts
+input file not found, cannot look at event counts
+input file not found, cannot look at event counts
+input file not found, cannot look at event counts
+input file not found, cannot look at event counts
+input file not found, cannot look at event counts
+
+skipping jet rap bin plot...
+
+
+closing the PDF file
+
+closing input files
+done, rStatus=0

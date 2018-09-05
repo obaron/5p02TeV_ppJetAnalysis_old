@@ -1,0 +1,708 @@
+radius string is = R4_
+jetType string is = PF
+fullJetType string is = ak4PF
+
+printing QA Plots, now opening input files!!
+
+ now opening ppData: 
+ppData_HighPtJet80andLower_ak4PFJets-allfiles.root
+ in directory: ppData_HighPtJet80_ak4PFJets_08-17-18_jetPlots_-2.0eta2.0_1/
+
+ now opening ppMC: 
+ppMC_Py8_CUETP8M1_QCDjetAllPtBins_ak4PFJets-allfiles.root
+ in directory: ppMC_Py8_CUETP8M1_QCDjetAllPtBins_ak4PFJets_08-17-18_jetPlots_-2.0eta2.0_1/
+
+Info in <TCanvas::Print>: pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf has been created
+
+printDataEventCountReport Called
+
+
+integrated luminosity     =2.74e+07
+lumi efficiency, vz cuts             =0.998047
+effective ingrtdLumi for dataset+cuts=2.73465e+07
+
+ drawing evt QA Plots now! 
+
+ drawing hpthat
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+ drawing hWeightedpthat
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+ getting hist(s): hWeightedVz
+dataMax=0.372731
+MCMax=0.374351
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+ getting hist(s): hWeightedVy
+dataMax=442.31
+MCMax=667.198
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+ getting hist(s): hWeightedVx
+dataMax=415.393
+MCMax=680.148
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+ getting hist(s): hWeightedVr
+dataMax=428.318
+MCMax=682.1
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+ drawing jet QA Plots...
+
+
+ var =jtpt, j=0
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_jtpt
+
+ opening input MC hJetQA_1wJetID_jtpt
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =rawpt, j=1
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_rawpt
+
+ opening input MC hJetQA_1wJetID_rawpt
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =jtpt_forRes, j=2
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_jtpt_forRes
+
+input data hist not found! skipping hist
+
+
+ var =jtpt_L2Res, j=3
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_jtpt_L2Res
+
+input data hist not found! skipping hist
+
+
+ var =jtpt_L3Res, j=4
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_jtpt_L3Res
+
+input data hist not found! skipping hist
+
+
+ var =jteta, j=5
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_jteta
+
+ opening input MC hJetQA_1wJetID_jteta
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =jtphi, j=6
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_jtphi
+
+ opening input MC hJetQA_1wJetID_jtphi
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =trkN, j=7
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_trkN
+
+ opening input MC hJetQA_1wJetID_trkN
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =trkSum, j=8
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_trkSum
+
+ opening input MC hJetQA_1wJetID_trkSum
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =trkMax, j=9
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_trkMax
+
+ opening input MC hJetQA_1wJetID_trkMax
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =trkHardN, j=10
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_trkHardN
+
+ opening input MC hJetQA_1wJetID_trkHardN
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =trkHardSum, j=11
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_trkHardSum
+
+ opening input MC hJetQA_1wJetID_trkHardSum
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =phN, j=12
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_phN
+
+ opening input MC hJetQA_1wJetID_phN
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =phSum, j=13
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_phSum
+
+ opening input MC hJetQA_1wJetID_phSum
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =phMax, j=14
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_phMax
+
+ opening input MC hJetQA_1wJetID_phMax
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =phHardN, j=15
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_phHardN
+
+ opening input MC hJetQA_1wJetID_phHardN
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =phHardSum, j=16
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_phHardSum
+
+ opening input MC hJetQA_1wJetID_phHardSum
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =chN, j=17
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_chN
+
+ opening input MC hJetQA_1wJetID_chN
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =chSum, j=18
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_chSum
+
+ opening input MC hJetQA_1wJetID_chSum
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =chMax, j=19
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_chMax
+
+ opening input MC hJetQA_1wJetID_chMax
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =chHardN, j=20
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_chHardN
+
+ opening input MC hJetQA_1wJetID_chHardN
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =chHardSum, j=21
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_chHardSum
+
+ opening input MC hJetQA_1wJetID_chHardSum
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =neN, j=22
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_neN
+
+ opening input MC hJetQA_1wJetID_neN
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =neSum, j=23
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_neSum
+
+ opening input MC hJetQA_1wJetID_neSum
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =neMax, j=24
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_neMax
+
+ opening input MC hJetQA_1wJetID_neMax
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =eN, j=25
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_eN
+
+ opening input MC hJetQA_1wJetID_eN
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =eSum, j=26
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_eSum
+
+ opening input MC hJetQA_1wJetID_eSum
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =eMax, j=27
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_eMax
+
+ opening input MC hJetQA_1wJetID_eMax
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =muN, j=28
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_muN
+
+ opening input MC hJetQA_1wJetID_muN
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =muSum, j=29
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_muSum
+
+ opening input MC hJetQA_1wJetID_muSum
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =muMax, j=30
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_muMax
+
+ opening input MC hJetQA_1wJetID_muMax
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =neuMult, j=31
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_neuMult
+
+ opening input MC hJetQA_1wJetID_neuMult
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =chMult, j=32
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_chMult
+
+ opening input MC hJetQA_1wJetID_chMult
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =numConst, j=33
+genjtptCut_str = 49
+genJetCutString=p_{T}^{GEN} > 49 GeV
+jtptCut_str = 56
+jetCutString=p_{T}^{RECO} > 56 GeV
+jtptQACut_str = 56
+jtetaLoCut_str = 0.0
+jtetaHiCut_str = 2.0
+jetEtaCutString=|y| < 2.0
+etaBinWidth=4
+ opening input Data hJetQA_1wJetID_numConst
+
+ opening input MC hJetQA_1wJetID_numConst
+
+
+
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+
+ var =Aj, j=34
+skipping jet plot for Aj
+
+
+ var =xj, j=35
+skipping jet plot for xj
+
+
+ var =dphi, j=36
+skipping jet plot for dphi
+
+
+ var =leadJetPt, j=37
+skipping jet plot for leadJetPt
+
+
+ var =subleadJetPt, j=38
+skipping jet plot for subleadJetPt
+
+closing the PDF file
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_08-31-18_jetPlots_-2eta2_jetPlots.pdf
+
+closing input files
+done, rStatus=0
