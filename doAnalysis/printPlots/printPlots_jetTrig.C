@@ -1,6 +1,5 @@
 #include "printPlots.h"
 
-
 // code/job switches ------------------------
 const bool debugMode=true, doEventCounts=true, doJetIDPlots=true;
 const bool drawJetTrigQAPlots=true, drawJetRapBinsPlot=false;

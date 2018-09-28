@@ -564,10 +564,7 @@ void printEvtVtxQAHist( TFile* finData , std::string inDataHistName,
   
   if( inDataHistName.find("Vz") != std::string::npos ){
     h_XAx_Title ="v_{z}^{evt} (cm)";
-	theDataEvtQAHist->GetYaxis()->SetRange(0,0.5);
-	theMCEvtQAHist->GetYaxis()->SetRange(0,0.5);
-
-  }
+	theMCEvtQAHist->GetYaxis()->SetRange(0,0.5);  }
   else if( inDataHistName.find("Vx") != std::string::npos ){
     evtpad1->SetLogy(1);
     h_XAx_Title ="v_{x}^{evt} (cm)";}
@@ -593,6 +590,14 @@ void printEvtVtxQAHist( TFile* finData , std::string inDataHistName,
     theMCEvtQAHist->Draw("HIST E SAME"); 
     theDataEvtQAHist->Draw("E SAME"); //because i want data points written over MC's red line hist
   }
+  else if (inDataHistName.find("Vz") != std::string::npos ){
+	theMCEvtQAHist->SetTitle (    h_Title.c_str() );
+    theMCEvtQAHist->SetXTitle( h_XAx_Title.c_str() );
+    theMCEvtQAHist->SetYTitle( h_YAx_Title.c_str() );
+	theMCEvtQAHist->GetYaxis()->SetRange(0,0.5);  
+    theMCEvtQAHist->Draw("HIST E"); 
+    theDataEvtQAHist->Draw("E SAME"); 
+		}
   else {
     theMCEvtQAHist->SetTitle (    h_Title.c_str() );
     theMCEvtQAHist->SetXTitle( h_XAx_Title.c_str() );
@@ -655,7 +660,7 @@ void printEvtVtxQAHist( TFile* finData , std::string inDataHistName,
   
 
   theRatio->Divide(theDenom);
-  theRatio->SetAxisRange(0.0,2.0, "Y");  
+  theRatio->SetAxisRange(0.1,1.9, "Y");  
   
   theRatio->Draw("HIST E");
   
@@ -868,7 +873,7 @@ void printEvtNrefQAHist( TFile* finData , std::string inDataHistName,
   theRatio->SetXTitle( h_XAx_Title.c_str() );
   theRatio->SetYTitle( ratioTitle.c_str() );
   theRatio->Divide(theDataEvtQAHist);
-  theRatio->SetAxisRange(0.0,2.0, "Y");  
+  theRatio->SetAxisRange(0.1,1.9, "Y");  
   
   theRatio->Draw("HIST E");
   
@@ -1183,7 +1188,7 @@ void printJetQAHist( TFile* finData , TFile* finMC, int j, bool doJetIDPlots,
     
     theRatio->SetLineColor( theMCLineColor );
     
-    theRatio->SetAxisRange(0.5,1.5,"Y");
+    theRatio->SetAxisRange(0.1,1.9,"Y");
     
     theRatio->GetYaxis()->SetTitleSize(15);
     theRatio->GetYaxis()->SetTitleFont(43);
@@ -1269,7 +1274,7 @@ void printJetQAHist( TFile* finData , TFile* finMC, int j, bool doJetIDPlots,
     theRatio->SetLineColor( theMCLineColor );
     //theRatio->SetLineWidth( 2 );
 
-    theRatio->SetAxisRange(0.,2.,"Y");
+    theRatio->SetAxisRange(0.1,1.9,"Y");
     theRatio->SetAxisRange(jetQAxmin[j],jetQAxmax[j],"X");	
     
     theRatio->GetYaxis()->SetTitleSize(15);
@@ -1350,7 +1355,7 @@ void printJetQAHist( TFile* finData , TFile* finMC, int j, bool doJetIDPlots,
     theRatio->SetLineColor( theMCLineColor );
     //theRatio->SetLineWidth( 2 );
     
-    theRatio->SetAxisRange(0.,2.,"Y");
+    theRatio->SetAxisRange(0.1,1.9,"Y");
     theRatio->SetAxisRange(jetQAxmin[j],jetQAxmax[j],"X");	
     
     theRatio->GetYaxis()->SetTitleSize(15);
@@ -1418,7 +1423,7 @@ void printJetQAHist( TFile* finData , TFile* finMC, int j, bool doJetIDPlots,
     theRatio->SetLineColor( theMCLineColor );
     //theRatio->SetLineWidth( 2 );
     
-    theRatio->SetAxisRange(0.,2.,"Y");
+    theRatio->SetAxisRange(0.1,1.9,"Y");
     theRatio->SetAxisRange(jetQAxmin[j],jetQAxmax[j],"X");	
     
     theRatio->GetYaxis()->SetTitleSize(15);
@@ -2184,6 +2189,7 @@ void printJetIDHist( TFile* fin , int j, bool isData,
   
   jetpad1->SetGridx(1);
   jetpad1->SetGridy(1);
+  //jetpad1->SetGridy(1);
   jetpad1->SetBottomMargin(0);
   jetpad1->Draw();
 
@@ -2375,7 +2381,7 @@ void printJetIDHist( TFile* fin , int j, bool isData,
 
 
 
-
+//JET TRIGGER PLOTS
 
 void printJetTrigHist_wRatio( TFile* fin , bool usedHLT100, bool analysisRebin,
 			      std::string thePDFFileName , std::string fullJetType , 
@@ -2446,7 +2452,8 @@ void printJetTrigHist_wRatio( TFile* fin , bool usedHLT100, bool analysisRebin,
   jetpad_excsp->SetLogx(1);
   jetpad_excsp->SetLogy(1);
   jetpad_excsp->SetGridx(1);
-  jetpad_excsp->SetGridy(1);
+  jetpad_excsp->SetGridy(0);
+  //jetpad_excsp->SetGridy(1);
   
   jetpad_excsp->SetBottomMargin(0);
   jetpad_excsp->Draw();
@@ -2454,7 +2461,7 @@ void printJetTrigHist_wRatio( TFile* fin , bool usedHLT100, bool analysisRebin,
   TPad *jetpad_excrat = new TPad("jetpad_excrat", "Ratio Pad", 0.0, 0.05, 1.0, 0.3);
   jetpad_excrat->SetLogx(1);
   jetpad_excrat->SetLogy(0);
-  jetpad_excrat->SetGridx(1);
+  jetpad_excrat->SetGridx(0);
   jetpad_excrat->SetGridy(0);
   
   jetpad_excrat->SetTopMargin(0);
@@ -2464,8 +2471,10 @@ void printJetTrigHist_wRatio( TFile* fin , bool usedHLT100, bool analysisRebin,
   
   jetpad_excsp->cd();
   
+  //gStyle->SetLegendFillColor(2);
   TLegend* JetTrigLegend=new TLegend(0.70,0.66,0.85,0.86, NULL,"brNDC");
   JetTrigLegend->SetFillStyle(0);
+  
 
   for(int j=0; j<(N_trigs); j++){
     
@@ -2541,6 +2550,9 @@ void printJetTrigHist_wRatio( TFile* fin , bool usedHLT100, bool analysisRebin,
     
   }//end loop over trigs for spectra
   
+  //gStyle->SetLegendFillColor(10); //redundant with next line
+  JetTrigLegend->SetFillColor(10);
+  JetTrigLegend->SetFillStyle(1001);  
   JetTrigLegend->Draw();
   
   
@@ -2737,7 +2749,8 @@ void printPFvCaloTrigHist_wRatio( TFile* fin , TFile* fin2, bool usedHLT100, boo
   jetpad_excsp->SetLogx(1);
   jetpad_excsp->SetLogy(1);
   jetpad_excsp->SetGridx(1);
-  jetpad_excsp->SetGridy(1);
+  jetpad_excsp->SetGridy(0);
+  //jetpad_excsp->SetGridy(1);
   
   jetpad_excsp->SetBottomMargin(0);
   jetpad_excsp->Draw();
@@ -2756,7 +2769,7 @@ void printPFvCaloTrigHist_wRatio( TFile* fin , TFile* fin2, bool usedHLT100, boo
   jetpad_excsp->cd();
   
   TLegend* JetTrigLegend=new TLegend(0.70,0.66,0.85,0.86, NULL,"brNDC");
-  JetTrigLegend->SetFillStyle(0);
+  //JetTrigLegend->SetFillStyle(10);
 
   for(int j=0; j<(N_trigs); j++){
     
@@ -2836,9 +2849,10 @@ void printPFvCaloTrigHist_wRatio( TFile* fin , TFile* fin2, bool usedHLT100, boo
     }
     
   }//end loop over trigs for spectra
-  
+  JetTrigLegend->SetFillColor(10);
+  JetTrigLegend->SetFillStyle(1001);  
   JetTrigLegend->Draw();
-  
+
   
   
   std::cout<<std::endl<<std::endl<<" ------------------------------------------------------------------ "<<std::endl;
@@ -3022,7 +3036,8 @@ void printPFvCaloTrigHist_wRatio( TFile* fin , TFile* fin2, bool usedHLT100, boo
   temp_canvJetTrig->SetLogx(1);
   temp_canvJetTrig->SetLogy(1);
   temp_canvJetTrig->SetGridx(1);
-  temp_canvJetTrig->SetGridy(1);
+  temp_canvJetTrig->SetGridy(0);
+  //temp_canvJetTrig->SetGridy(1);
   temp_canvJetTrig->cd();
 
   
@@ -3139,7 +3154,8 @@ void printPFvCaloTrigHist_wRatio( TFile* fin , TFile* fin2, bool usedHLT100, boo
     
     
   }//end loop over trigs for spectra
-  
+  JetTrigLegend->SetFillColor(10);
+  JetTrigLegend->SetFillStyle(1001);  
   JetTrigLegend->Draw();
   
   temp_canvJetTrig->Print(thePDFFileName.c_str());
@@ -3213,7 +3229,8 @@ void printTrigEtaHist( TFile* fin , bool usedHLT100,
   temp_canvJetTrig->SetLogx(0);
   temp_canvJetTrig->SetLogy(1);
   temp_canvJetTrig->SetGridx(1);
-  temp_canvJetTrig->SetGridy(1);
+  temp_canvJetTrig->SetGridy(0);
+  //temp_canvJetTrig->SetGridy(1);
   temp_canvJetTrig->cd();
 
   
@@ -3290,7 +3307,8 @@ void printTrigEtaHist( TFile* fin , bool usedHLT100,
     
     
   }//end loop over trigs for spectra
-  
+  JetTrigLegend->SetFillColor(10);
+  JetTrigLegend->SetFillStyle(1001);  
   JetTrigLegend->Draw();
   
   temp_canvJetTrig->Print(thePDFFileName.c_str());
@@ -3423,7 +3441,8 @@ void printTrigEtaAsymmHist( TFile* fin , bool usedHLT100,
   temp_canvJetTrig->SetLogx(0);
   temp_canvJetTrig->SetLogy(0);
   temp_canvJetTrig->SetGridx(1);
-  temp_canvJetTrig->SetGridy(1);
+  temp_canvJetTrig->SetGridy(0);
+  //temp_canvJetTrig->SetGridy(1);
   temp_canvJetTrig->cd();
 
   
@@ -3498,7 +3517,8 @@ void printTrigEtaAsymmHist( TFile* fin , bool usedHLT100,
       theJetTrigAsymmQAHist->Draw("E SAME");    
 
   }//end loop over trigs for spectra
-  
+  JetTrigLegend->SetFillColor(10);
+  JetTrigLegend->SetFillStyle(1001);  
   JetTrigLegend->Draw();  
 
   temp_canvJetTrig->Print(thePDFFileName.c_str());  
