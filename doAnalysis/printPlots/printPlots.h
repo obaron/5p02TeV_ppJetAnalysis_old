@@ -2362,8 +2362,10 @@ void printJetIDHist( TFile* fin , int j, bool isData,
   lineAtOneHalf->Draw("same");
   lineAtOneEtOneHalf->Draw("same");
   
-
-
+/*	std::cout<<"main plots"<<std::endl;
+	std::cout<<"lowLim = "<<lowLim<<std::endl;
+	std::cout<<"highLim = "<<highLim<<std::endl;
+*/
 
 
 
@@ -2459,6 +2461,7 @@ void printJetTrigHist_wRatio( TFile* fin , bool usedHLT100, bool analysisRebin,
   jetpad_excsp->Draw();
   
   TPad *jetpad_excrat = new TPad("jetpad_excrat", "Ratio Pad", 0.0, 0.05, 1.0, 0.3);
+  jetpad_excrat->SetLogx(0);
   jetpad_excrat->SetLogx(1);
   jetpad_excrat->SetLogy(0);
   jetpad_excrat->SetGridx(0);
@@ -2471,8 +2474,7 @@ void printJetTrigHist_wRatio( TFile* fin , bool usedHLT100, bool analysisRebin,
   
   jetpad_excsp->cd();
   
-  //gStyle->SetLegendFillColor(2);
-  TLegend* JetTrigLegend=new TLegend(0.70,0.66,0.85,0.86, NULL,"brNDC");
+    TLegend* JetTrigLegend=new TLegend(0.70,0.66,0.85,0.86, NULL,"brNDC");
   JetTrigLegend->SetFillStyle(0);
   
 
@@ -2651,6 +2653,13 @@ void printJetTrigHist_wRatio( TFile* fin , bool usedHLT100, bool analysisRebin,
 	lineAtOne->Draw("same");
 	lineAtOneHalf->Draw("same");
 	lineAtOneEtOneHalf->Draw("same");
+	
+	
+	std::cout<<"rebinned plots? = "<<std::endl;
+	std::cout<<"min = "<<min<<std::endl;
+	std::cout<<"max = "<<max<<std::endl;
+	
+	
 	
       }
 
