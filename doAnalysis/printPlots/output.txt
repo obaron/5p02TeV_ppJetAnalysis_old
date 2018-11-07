@@ -9,7 +9,7 @@ comparing HLT PF and HLT Calo...
 first, input_ppData2_condorDir=ppData_HighPtJet80_ak4PFJets_08-17-18_jetPlots_-2.0eta2.0_1/
 used HLTPF!
 ... now, input_ppData2_condorDir=ppData_HighPtJet80_ak4PFJets_08-17-18_jetPlots_-2.0eta2.0_1/
-Info in <TCanvas::Print>: pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_09-27-18_jetTrigPlots_-2eta2_jetTrig.pdf has been created
+Info in <TCanvas::Print>: pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_10-03-18_jetTrigPlots_-2eta2_jetTrig.pdf has been created
  grabbing raw event counts 
 
 /// Data Evt-Count Summary ///
@@ -60,10 +60,11 @@ etaBinWidth=4
  ------------------------------------------------------------------ 
 
 
-rebinned plots
+binning = rebin
+trigType = excl
 min = 43
-max = 1050
-Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_09-27-18_jetTrigPlots_-2eta2_jetTrig.pdf
+max = 1000
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_10-03-18_jetTrigPlots_-2eta2_jetTrig.pdf
 drawing exclusive trigger spectra + ratios
 jtptCut_str = 56
 jetCutString=p_{T}>56 GeV
@@ -90,10 +91,11 @@ etaBinWidth=4
  ------------------------------------------------------------------ 
 
 
-rebinned plots
+binning = SMP
+trigType = excl
 min = 0
 max = 2000
-Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_09-27-18_jetTrigPlots_-2eta2_jetTrig.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_10-03-18_jetTrigPlots_-2eta2_jetTrig.pdf
 drawing exclusive trigger spectra + ratios
 jtptCut_str = 56
 jetCutString=p_{T}>56 GeV
@@ -117,7 +119,7 @@ etaBinWidth=4
 
 
 
-Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_09-27-18_jetTrigPlots_-2eta2_jetTrig.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_10-03-18_jetTrigPlots_-2eta2_jetTrig.pdf
 drawing exclusive trigger spectra + ratios
 jtptCut_str = 56
 jetCutString=p_{T}>56 GeV
@@ -141,7 +143,7 @@ etaBinWidth=4
 
 
 
-Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_09-27-18_jetTrigPlots_-2eta2_jetTrig.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_10-03-18_jetTrigPlots_-2eta2_jetTrig.pdf
 drawing exclusive trigger spectra + ratios
 jtptCut_str = 56
 jetCutString=p_{T}>56 GeV
@@ -165,7 +167,7 @@ etaBinWidth=4
 
 
 
-Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_09-27-18_jetTrigPlots_-2eta2_jetTrig.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_10-03-18_jetTrigPlots_-2eta2_jetTrig.pdf
 drawing exclusive trigger spectra + ratios
 jtptCut_str = 56
 jetCutString=p_{T}>56 GeV
@@ -189,7 +191,7 @@ etaBinWidth=4
 
 
 
-Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_09-27-18_jetTrigPlots_-2eta2_jetTrig.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_10-03-18_jetTrigPlots_-2eta2_jetTrig.pdf
 drawing inclusive trigger spectra + ratios
 jtptCut_str = 56
 jetCutString=p_{T}>56 GeV
@@ -216,10 +218,11 @@ etaBinWidth=4
  ------------------------------------------------------------------ 
 
 
-rebinned plots
+binning = rebin
+trigType = incl
 min = 43
-max = 1050
-Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_09-27-18_jetTrigPlots_-2eta2_jetTrig.pdf
+max = 1000
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_10-03-18_jetTrigPlots_-2eta2_jetTrig.pdf
 drawing inclusive trigger spectra + ratios
 jtptCut_str = 56
 jetCutString=p_{T}>56 GeV
@@ -246,10 +249,11 @@ etaBinWidth=4
  ------------------------------------------------------------------ 
 
 
-rebinned plots
+binning = SMP
+trigType = incl
 min = 0
 max = 2000
-Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_09-27-18_jetTrigPlots_-2eta2_jetTrig.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_10-03-18_jetTrigPlots_-2eta2_jetTrig.pdf
 drawing inclusive trigger spectra + ratios
 jtptCut_str = 56
 jetCutString=p_{T}>56 GeV
@@ -273,7 +277,7 @@ etaBinWidth=4
 
 
 
-Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_09-27-18_jetTrigPlots_-2eta2_jetTrig.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_10-03-18_jetTrigPlots_-2eta2_jetTrig.pdf
 drawing inclusive trigger spectra + ratios
 jtptCut_str = 56
 jetCutString=p_{T}>56 GeV
@@ -297,7 +301,7 @@ etaBinWidth=4
 
 
 
-Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_09-27-18_jetTrigPlots_-2eta2_jetTrig.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_10-03-18_jetTrigPlots_-2eta2_jetTrig.pdf
 drawing inclusive trigger spectra + ratios
 jtptCut_str = 56
 jetCutString=p_{T}>56 GeV
@@ -321,7 +325,7 @@ etaBinWidth=4
 
 
 
-Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_09-27-18_jetTrigPlots_-2eta2_jetTrig.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_10-03-18_jetTrigPlots_-2eta2_jetTrig.pdf
 drawing inclusive trigger spectra + ratios
 jtptCut_str = 56
 jetCutString=p_{T}>56 GeV
@@ -346,7 +350,7 @@ Warning in <TFile::Append>: Replacing existing TH1: HLTComb_trgEta_rebin_asymmHi
 
 
 
-Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_09-27-18_jetTrigPlots_-2eta2_jetTrig.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_10-03-18_jetTrigPlots_-2eta2_jetTrig.pdf
 input file not found, cannot look at event counts
 input file not found, cannot look at event counts
 input file not found, cannot look at event counts
@@ -358,7 +362,7 @@ skipping jet rap bin plot...
 
 
 closing the PDF file
-Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_09-27-18_jetTrigPlots_-2eta2_jetTrig.pdf
+Info in <TCanvas::Print>: Current canvas added to pdf file /home/obaron/5p02TeV_ppJetAnalysis/CMSSW_7_5_8/src/doAnalysis/printPlots/output/ak4PF_HighPtJet80andLower_and_Py8_CUETP8M1_QCDjetAllPtBins_genpt49_ak4PFJets_10-03-18_jetTrigPlots_-2eta2_jetTrig.pdf
 
 closing input files
 done, rStatus=0

@@ -1282,8 +1282,7 @@ void printJetQAHist( TFile* finData , TFile* finMC, int j, bool doJetIDPlots,
     theRatio->GetYaxis()->SetTitleOffset(2);
     theRatio->GetYaxis()->SetLabelFont(43); 
     theRatio->GetYaxis()->SetLabelSize(13);
-	theRatio->GetYaxis()->CenterTitle();
-
+	
     theRatio->GetXaxis()->SetTitleSize(20);
     theRatio->GetXaxis()->SetTitleFont(43);
     theRatio->GetXaxis()->SetTitleOffset(4.);
@@ -2527,7 +2526,10 @@ void printJetTrigHist_wRatio( TFile* fin , bool usedHLT100, bool analysisRebin,
 		  if(trigType=="excl")h_Title="Excl. Jet Spectra by Trigger (Rebinned)";
 		  else if(trigType=="incl")h_Title="Incl. Jet Spectra by Trigger (Rebinned)";
 	 }
-      theJetTrigQAHist->SetTitle (    h_Title.c_str() );
+      //TLatex *histTitle=makeTLatex(Form("#splitline{%s}{%s} ",PDStatsString_2.c_str(),h_Title.c_str()));
+	  theJetTrigQAHist->SetTitle (Form("#splitline{%s}{%s} ",PDStatsString_2.c_str(),h_Title.c_str()));
+      theJetTrigQAHist->SetTitle (Form("#splitline{%s}{%s} ",PDStatsString_2.c_str(),h_Title.c_str()));
+      theJetTrigQAHist->CenterTitle();
       
       std::string h_YAx_Title= AUAxTitle;
       theJetTrigQAHist->SetYTitle( h_YAx_Title.c_str() );
@@ -2643,19 +2645,23 @@ void printJetTrigHist_wRatio( TFile* fin , bool usedHLT100, bool analysisRebin,
 	float max = theJetTrigQAHist->GetBinLowEdge( (int)theJetTrigQAHist->GetNbinsX() ) 
 	  + theJetTrigQAHist->GetBinWidth( (int)theJetTrigQAHist->GetNbinsX() ) ;
 	
-	TLine* lineAtOne          = new TLine(min,1.0,max,1.0);
+	//TLine* lineAtOne          = new TLine(min,1.0,max,1.0);
+	TLine* lineAtOne          = new TLine(min,1.0,1000,1.0);
 	lineAtOne->SetLineColor(12);          lineAtOne->SetLineStyle(2);
-	TLine* lineAtOneHalf      = new TLine(min,0.2,max,0.2);
+	TLine* lineAtOneHalf      = new TLine(min,0.2,1000,0.2);
 	lineAtOneHalf->SetLineColor(12);      lineAtOneHalf->SetLineStyle(2);
-	TLine* lineAtOneEtOneHalf = new TLine(min,1.8,max,1.8);
+	TLine* lineAtOneEtOneHalf = new TLine(min,1.8,1000,1.8);
 	lineAtOneEtOneHalf->SetLineColor(12); lineAtOneEtOneHalf->SetLineStyle(2);
 	
 	lineAtOne->Draw("same");
 	lineAtOneHalf->Draw("same");
 	lineAtOneEtOneHalf->Draw("same");
 	
+	if (analysisRebin)
+	std::cout<<"binning = rebin"<<std::endl;
+	else std::cout<<"binning = SMP"<<std::endl;
 	
-	std::cout<<"rebinned plots? = "<<std::endl;
+	std::cout<<"trigType = "<<trigType<<std::endl;
 	std::cout<<"min = "<<min<<std::endl;
 	std::cout<<"max = "<<max<<std::endl;
 	
@@ -2965,6 +2971,7 @@ void printPFvCaloTrigHist_wRatio( TFile* fin , TFile* fin2, bool usedHLT100, boo
       lineAtOne->Draw("same");
       lineAtOneHalf->Draw("same");
       lineAtOneEtOneHalf->Draw("same");
+	  //std::cout<<"ribbit"<<std::endl;
       
     }
     
@@ -3113,7 +3120,7 @@ void printPFvCaloTrigHist_wRatio( TFile* fin , TFile* fin2, bool usedHLT100, boo
       else if(trigType=="incl")h_Title="Trigger Jet Pt for HLT[40,60,80]";
 
       
-      theJetTrigQAHist->SetTitle (    h_Title.c_str() );
+      theJetTrigQAHist->SetTitle (Form("#splitline{%s}{%s} ",PDStatsString_2.c_str(),h_Title.c_str()));
       theJetTrigQAHist->SetYTitle( (AUAxTitle).c_str() );
       theJetTrigQAHist->SetXTitle( "trigger jet p_{T} (GeV)   ");
 
@@ -3293,7 +3300,7 @@ void printTrigEtaHist( TFile* fin , bool usedHLT100,
       else if(trigType=="incl")h_Title="Trigger Jet Eta for HLT[40,60,80]";
       
       
-      theJetTrigQAHist->SetTitle (    h_Title.c_str() );
+      theJetTrigQAHist->SetTitle (Form("#splitline{%s}{%s} ",PDStatsString_2.c_str(),h_Title.c_str()));
       theJetTrigQAHist->SetYTitle( (AUAxTitle).c_str() );
       theJetTrigQAHist->SetXTitle( "trigger jet #||{y}   ");
 
@@ -3507,7 +3514,8 @@ void printTrigEtaAsymmHist( TFile* fin , bool usedHLT100,
       else if(trigType=="incl")h_Title="Trigger Jet Eta Asymm for HLT[40,60,80]";
       
       
-      theJetTrigAsymmQAHist->SetTitle (    h_Title.c_str() );
+      
+	  theJetTrigAsymmQAHist->SetTitle (Form("#splitline{%s}{%s} ",PDStatsString_2.c_str(),h_Title.c_str()));
       theJetTrigAsymmQAHist->SetYTitle( "+y bin / -y bin" );
       theJetTrigAsymmQAHist->SetXTitle( "trigger jet #||{y}  ");
       
